@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="/photos/brain.jpg" rel="icon">
+    <link href="https://adam2392.github.io/photos/brain.jpg" rel="icon">
 
-<link rel="canonical" href="/blog/2018/01/setup-singularity/">
+<link rel="canonical" href="https://adam2392.github.io/blog/2018/01/setup-singularity/">
 
         <meta name="author" content="Adam Li" />
         <meta name="keywords" content="cloud,singularity,python,hpc,tensorflow,deep-learning" />
@@ -19,7 +19,7 @@
         <meta property="og:site_name" content="Adam Li's blog" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Setting Up Singularity Containers"/>
-        <meta property="og:url" content="/blog/2018/01/setup-singularity/"/>
+        <meta property="og:url" content="https://adam2392.github.io/blog/2018/01/setup-singularity/"/>
         <meta property="og:description" content="A short walkthrough of setting up the Singularity containers"/>
         <meta property="article:published_time" content="2018-01-31" />
             <meta property="article:section" content="Coding" />
@@ -34,19 +34,18 @@
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://adam2392.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://adam2392.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/theme/css/pygments/native.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+    <link href="https://adam2392.github.io/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://adam2392.github.io/theme/css/style.css" type="text/css"/>
 
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://adam2392.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Adam Li's blog ATOM Feed"/>
 
-        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+        <link href="https://adam2392.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
               title="Adam Li's blog RSS Feed"/>
-        <link href="/feeds/coding.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Adam Li's blog Coding ATOM Feed"/></head>
+</head>
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -58,7 +57,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="navbar-brand">
+            <a href="https://adam2392.github.io/" class="navbar-brand">
 Adam Li's blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -67,10 +66,10 @@ Adam Li's blog            </a>
                     <li><a href="/archives.html">Timeline</a></li>
                     <li><a href="/tags.html">Tags</a></li>
                     <li><a href="/pdfs/AdamLi_CV.pdf">Curriculum Vitae</a></li>
-                         <li><a href="/contact/">
+                         <li><a href="https://adam2392.github.io/contact/">
                              Contact
                           </a></li>
-                         <li><a href="/gallery/">
+                         <li><a href="https://adam2392.github.io/gallery/">
                              Gallery
                           </a></li>
             </ul>
@@ -92,7 +91,7 @@ Adam Li's blog            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/blog/2018/01/setup-singularity/"
+                    <a href="https://adam2392.github.io/blog/2018/01/setup-singularity/"
                        rel="bookmark"
                        title="Permalink to Setting Up Singularity Containers">
                         Setting Up Singularity Containers
@@ -113,17 +112,17 @@ Adam Li's blog            </a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/cloud.html">cloud</a>
+	<a href="https://adam2392.github.io/tag/cloud.html">cloud</a>
         /
-	<a href="/tag/singularity.html">singularity</a>
+	<a href="https://adam2392.github.io/tag/singularity.html">singularity</a>
         /
-	<a href="/tag/python.html">python</a>
+	<a href="https://adam2392.github.io/tag/python.html">python</a>
         /
-	<a href="/tag/hpc.html">hpc</a>
+	<a href="https://adam2392.github.io/tag/hpc.html">hpc</a>
         /
-	<a href="/tag/tensorflow.html">tensorflow</a>
+	<a href="https://adam2392.github.io/tag/tensorflow.html">tensorflow</a>
         /
-	<a href="/tag/deep-learning.html">deep-learning</a>
+	<a href="https://adam2392.github.io/tag/deep-learning.html">deep-learning</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -149,7 +148,7 @@ Adam Li's blog            </a>
 <h1>Installation</h1>
 <p>To install singularity locally with root privelages, you can then build up containers that can be hosted online.</p>
 <h1>Setting Up A Tensorflow Container Recipe (Example):</h1>
-<div class="highlight"><pre><span></span><span class="nl">Bootstrap</span><span class="p">:</span> <span class="n">docker</span>
+<div class="highlight"><pre><span></span><code><span class="nl">Bootstrap</span><span class="p">:</span> <span class="n">docker</span>
 <span class="nl">From</span><span class="p">:</span> <span class="n">tensorflow</span><span class="o">/</span><span class="nl">tensorflow</span><span class="p">:</span><span class="n">latest</span><span class="o">-</span><span class="n">gpu</span>
 <span class="nf">%environment</span>
   <span class="cp"># use bash as default shell</span>
@@ -181,21 +180,18 @@ Adam Li's blog            </a>
   <span class="cp"># delete this section to use existing docker ENTRYPOINT command</span>
 <span class="nf">%test</span>
   <span class="cp"># test that script is a success</span>
-</pre></div>
-
+</code></pre></div>
 
 <h2>1. Needed Docker Containers:</h2>
 <p>The best thing to do is start off with a docker container that is already prebuilt. The nice thing is that for cloud computing with tensorflow-gpu, tensorflow is maintained on docker and up to date. </p>
-<div class="highlight"><pre><span></span><span class="n">Bootstrap</span><span class="o">:</span> <span class="n">Docker</span>
+<div class="highlight"><pre><span></span><code><span class="n">Bootstrap</span><span class="o">:</span> <span class="n">Docker</span>
 <span class="n">From</span><span class="o">:</span> <span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span><span class="o">:</span><span class="n">latest</span><span class="o">-</span><span class="n">gpu</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Other options are:</p>
-<div class="highlight"><pre><span></span><span class="n">Bootstrap</span><span class="o">:</span> <span class="n">shub</span>
+<div class="highlight"><pre><span></span><code><span class="n">Bootstrap</span><span class="o">:</span> <span class="n">shub</span>
 <span class="n">From</span><span class="o">:</span>
-</pre></div>
-
+</code></pre></div>
 
 <h2>2. Environment / Setup</h2>
 <p>These are commands that can be used to export variables into the environment. Then you can run setup of files/variables before running any installations.</p>
@@ -203,21 +199,19 @@ Adam Li's blog            </a>
 <p>This is the main area where your image will install different packages and load different environment variables.</p>
 <h2>4. Run Script</h2>
 <p>This will run a script afterwards, say a scientific experiment:</p>
-<div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">main</span><span class="p">.</span><span class="n">py</span> <span class="c1">--args</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">python3 main.py --args</span>
+</code></pre></div>
 
 <h2>5. Test</h2>
 <p>This will run test scripts to see that your "main.py" did what it was supposed to do. Were files saved? Were computations correct?</p>
 <h1>Common Commands</h1>
 <p>Pulling images, shelling into the image and executing the image with a script</p>
-<div class="highlight"><pre><span></span><span class="nv">singularity</span> <span class="nv">pull</span>
+<div class="highlight"><pre><span></span><code><span class="n">singularity</span> <span class="n">pull</span>
 
-<span class="nv">singularity</span> <span class="nv">shell</span>
+<span class="n">singularity</span> <span class="n">shell</span>
 
-<span class="nv">singularity</span> <span class="k">exec</span>
-</pre></div>
-
+<span class="n">singularity</span> <span class="k">exec</span>
+</code></pre></div>
 
 <p>Common argument flags:
 * verbose mode(s): -v, -vv, -vvv
@@ -225,9 +219,8 @@ Adam Li's blog            </a>
 * link nvidia driver &amp; GPU: --nv
 * binds an existing directory onto the image: -B</p>
 <p>An example use case that runs a tensorflow simg and runs a training script:</p>
-<div class="highlight"><pre><span></span><span class="nv">singularity</span> <span class="k">exec</span> <span class="o">--</span><span class="nv">nv</span> .<span class="o">/</span><span class="nv">tensorflow</span>.<span class="nv">simg</span> <span class="nv">python</span> <span class="nv">main</span>.<span class="nv">py</span> ${<span class="nv">traindatadir</span>} ${<span class="nv">testdatadir</span>} <span class="o">--</span><span class="nv">output_data_dir</span> ${<span class="nv">outputdatadir</span>} <span class="o">--</span><span class="nv">log_data_dir</span> ${<span class="nv">logdatadir</span>} <span class="o">--</span><span class="nv">patient_to_loo</span> ${<span class="nv">patient</span>} <span class="o">--</span><span class="nv">expname</span> ${<span class="nv">expname</span>}
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>singularity exec --nv ./tensorflow.simg python main.py <span class="cp">${</span><span class="n">traindatadir</span><span class="cp">}</span> <span class="cp">${</span><span class="n">testdatadir</span><span class="cp">}</span> --output_data_dir <span class="cp">${</span><span class="n">outputdatadir</span><span class="cp">}</span> --log_data_dir <span class="cp">${</span><span class="n">logdatadir</span><span class="cp">}</span> --patient_to_loo <span class="cp">${</span><span class="n">patient</span><span class="cp">}</span> --expname <span class="cp">${</span><span class="n">expname</span><span class="cp">}</span>
+</code></pre></div>
 
 <h1>Conclusions</h1>
 <p>This allows an end-to-end HPC/scientific computation analysis that uses Docker/Singularityhub to setup your system, and then runs setup, main scripts and testing to create a consistent output.</p>
@@ -244,8 +237,8 @@ Adam Li's blog            </a>
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
-        <li><a href="/blog/2017/06/setup-pelican-site/">Setting Up a Pelican Site</a></li>
-        <li><a href="/blog/2017/06/setup-virtual-env/">Setting Up a Virtual Environment for Python</a></li>
+        <li><a href="https://adam2392.github.io/blog/2017/06/setup-pelican-site/">Setting Up a Pelican Site</a></li>
+        <li><a href="https://adam2392.github.io/blog/2017/06/setup-virtual-env/">Setting Up a Virtual Environment for Python</a></li>
     </ul>
 </section>
         </article>
@@ -290,7 +283,7 @@ Adam Li's blog            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2019 Adam Li
+         <div class="col-xs-10">&copy; 2020 Adam Li
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
@@ -298,13 +291,13 @@ Adam Li's blog            </a>
       </div>
    </div>
 </footer>
-<script src="/theme/js/jquery.min.js"></script>
+<script src="https://adam2392.github.io/theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/theme/js/bootstrap.min.js"></script>
+<script src="https://adam2392.github.io/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="/theme/js/respond.min.js"></script>
+<script src="https://adam2392.github.io/theme/js/respond.min.js"></script>
 
 
 
@@ -314,7 +307,7 @@ $(document).ready(function () {
   if (!window.jXHR) {
     var jxhr = document.createElement('script');
     jxhr.type = 'text/javascript';
-    jxhr.src = '/theme/js/jXHR.js';
+    jxhr.src = 'https://adam2392.github.io/theme/js/jXHR.js';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(jxhr, s);
   }
@@ -327,7 +320,7 @@ $(document).ready(function () {
   });
 });
 </script>
-<script src="/theme/js/github.js" type="text/javascript"></script>
+<script src="https://adam2392.github.io/theme/js/github.js" type="text/javascript"></script>
 <!-- End GitHub JS Code -->
     <!-- Google Analytics -->
     <script type="text/javascript">
