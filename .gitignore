@@ -8,8 +8,8 @@ __pycache__/
 *.avi
 *.m~
 *.npz
-pelican-plugins/*
-pelican-themes/*
+pelican-plugins
+pelican-themes
 
 # C extensions
 *.so
