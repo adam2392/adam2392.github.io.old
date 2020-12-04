@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="/photos/brain.jpg" rel="icon">
+    <link href="/images/brain.jpg" rel="icon">
 
 <link rel="canonical" href="/blog/2018/06/setup-docker/">
 
@@ -158,13 +158,12 @@ Adam Li's blog            </a>
 
 <h1>Installation</h1>
 <p>The following packages need to be installed for a test time environment:</p>
-<div class="highlight"><pre><span></span><span class="n">brew</span> <span class="k">update</span>
-<span class="n">brew</span> <span class="n">prune</span>
-<span class="n">brew</span> <span class="n">doctor</span>
-<span class="n">brew</span> <span class="n">install</span> <span class="n">postgres</span>
-<span class="n">brew</span> <span class="n">install</span> <span class="n">docker</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">brew update</span>
+<span class="err">brew prune</span>
+<span class="err">brew doctor</span>
+<span class="err">brew install postgres</span>
+<span class="err">brew install docker</span>
+</code></pre></div>
 
 <h1>Setting Hardware Requirements:</h1>
 <p>Some packages need minimum hardware requirements assigned to Docker usage.</p>
@@ -177,27 +176,23 @@ Adam Li's blog            </a>
 <p>Volumes are a way of allowing containers persistent storage across usage.</p>
 <h3>1a. Setting Base Docker Volume</h3>
 <p>This will create a docker with a volume (in the docker image) at the volume you specify with the "-v" tag. The docker image has the name that you set, and then it is based off of "busybox", which is a generalized light-weight docker image by Docker.</p>
-<div class="highlight"><pre><span></span><span class="n">docker</span> <span class="k">create</span> <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">postgresql</span><span class="o">/</span><span class="k">data</span> <span class="c1">--name postgres10.4-data busybox</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">docker create -v /var/lib/postgresql/data --name postgres10.4-data busybox</span>
+</code></pre></div>
 
 <h3>1b. Creating The Container</h3>
-<div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="c1">--name local-postgres10.4 -e POSTGRES_PASSWORD=dappstore -d --volumes-from postgres10.4-data postgres:10.4</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">docker run --name local-postgres10.4 -e POSTGRES_PASSWORD=dappstore -d --volumes-from postgres10.4-data postgres:10.4</span>
+</code></pre></div>
 
 <h3>1c. Running PostgreSQL via Container</h3>
-<div class="highlight"><pre><span></span><span class="nv">docker</span> <span class="nv">run</span> <span class="o">-</span><span class="nv">it</span> <span class="o">--</span><span class="nv">link</span> <span class="nv">local</span><span class="o">-</span><span class="nv">postgres10</span>.<span class="mi">4</span>:<span class="nv">postgres</span> <span class="o">--</span><span class="nv">rm</span> <span class="nv">postgres</span>:<span class="mi">10</span>.<span class="mi">4</span> <span class="nv">sh</span> <span class="o">-</span><span class="nv">c</span> <span class="s1">&#39;</span><span class="s">exec psql -h &quot;$POSTGRES_PORT_5432_TCP_ADDR&quot; -p &quot;$POSTGRES_PORT_5432_TCP_PORT&quot; -U postgres</span><span class="s1">&#39;</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">docker run -it --link local-postgres10.4:postgres --rm postgres:10.4 sh -c &#39;exec psql -h &quot;$POSTGRES_PORT_5432_TCP_ADDR&quot; -p &quot;$POSTGRES_PORT_5432_TCP_PORT&quot; -U postgres&#39;</span>
+</code></pre></div>
 
 <p>Enter the password you just set.</p>
 <p>Inside, you can modify and begin the basic configuration of the base container volume by creating tables and initializing roles using SQL.</p>
 <p>Now, your base container is set up! Don't remove this if you want to have persistant Postgresql set up.</p>
 <h3>1d. (Optional) Expose Docker Container To Host</h3>
-<div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="c1">--name local-postgres10.4 -p 5432:5432 -e POSTGRES_PASSWORD=asecurepassword -d --volumes-from postgres10.4-data postgres:10.4</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">docker run --name local-postgres10.4 -p 5432:5432 -e POSTGRES_PASSWORD=asecurepassword -d --volumes-from postgres10.4-data postgres:10.4</span>
+</code></pre></div>
 
 <p>This will expose the PostGRESQL docker instance via port 5432 localhost, so that you can connect to it via any application now.</p>
 <h2>2.</h2>
@@ -206,37 +201,32 @@ Adam Li's blog            </a>
 <p>So, for example, here we will compose a docker image that is composed of django, postgres and elasticsearch to have a fully functional web-app with logging capabilities. (Perhaps we should also think about adding Kibana and Logstash for a full ELK stack)?</p>
 <h2>1.</h2>
 <p>Refer to https://medium.com/@leo_hetsch/local-development-with-go-postgresql-and-elasticsearch-in-docker-61bc8a0d5e66 for a nice little explanation for some common docker installation commands for postgresql and elastic search.</p>
-<div class="highlight"><pre><span></span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">-</span><span class="n">f</span> <span class="k">local</span><span class="p">.</span><span class="n">yml</span> <span class="n">build</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">docker-compose -f local.yml build</span>
+</code></pre></div>
 
 <p>or </p>
-<div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">COMPOSE_FILE</span><span class="o">=</span><span class="k">local</span><span class="p">.</span><span class="n">yml</span>
-<span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">up</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">export COMPOSE_FILE=local.yml</span>
+<span class="err">docker-compose up</span>
+</code></pre></div>
 
 <p>Possible / common methods:</p>
-<div class="highlight"><pre><span></span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">-</span><span class="n">f</span> <span class="k">local</span><span class="p">.</span><span class="n">yml</span> <span class="n">run</span> <span class="c1">--rm django python manage.py migrate</span>
-<span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">-</span><span class="n">f</span> <span class="k">local</span><span class="p">.</span><span class="n">yml</span> <span class="n">run</span> <span class="c1">--rm django python manage.py createsuperuser</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">docker-compose -f local.yml run --rm django python manage.py migrate</span>
+<span class="err">docker-compose -f local.yml run --rm django python manage.py createsuperuser</span>
+</code></pre></div>
 
 <p>Since docker is composed of a set of build commands, you should read up on the documentation here:</p>
 <p>https://docs.docker.com/compose/compose-file/#resources</p>
 <h1>Common Commands</h1>
 <h2>Images</h2>
-<div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">image</span> <span class="n">ls</span>
+<div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">image</span> <span class="n">ls</span>
 <span class="n">docker</span> <span class="n">ps</span>
 
 <span class="n">docker</span> <span class="n">rmi</span> <span class="o">&lt;</span><span class="n">image_name</span><span class="o">&gt;</span>
-</pre></div>
-
+</code></pre></div>
 
 <h2>Containers</h2>
-<div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">container</span> <span class="n">ls</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">docker container ls</span>
+</code></pre></div>
 
 <h2>Volumes</h2>
 <h1>Testing</h1>

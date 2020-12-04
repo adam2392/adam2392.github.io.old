@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="/photos/brain.jpg" rel="icon">
+    <link href="/images/brain.jpg" rel="icon">
 
 <link rel="canonical" href="/blog/2018/06/setup-erc-token/">
 
@@ -209,11 +209,10 @@ ethereumjs-testrpc@6.0.3 </p>
 * web3js
 * solc
 * truffle</p>
-<div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="n">ethereumjs</span><span class="o">-</span><span class="n">testrpc</span> <span class="n">web3</span>
-<span class="n">npm</span> <span class="n">install</span> <span class="n">solc</span>
-<span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="k">g</span> <span class="n">truffle</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">npm install ethereumjs-testrpc web3</span>
+<span class="err">npm install solc</span>
+<span class="err">npm install -g truffle</span>
+</code></pre></div>
 
 <ul>
 <li>Testrpc is an in-memory blockchain that can be used to test the development of the application.</li>
@@ -223,12 +222,11 @@ ethereumjs-testrpc@6.0.3 </p>
 </ul>
 <h1>Set Up</h1>
 <h2>1. Creating Your Project Directory</h2>
-<div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">MyToken</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">MyToken</span>
-<span class="n">truffle</span> <span class="n">init</span>
-<span class="n">npm</span> <span class="n">init</span> <span class="o">-</span><span class="n">y</span>
-<span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">E</span> <span class="n">zeppelin</span><span class="o">-</span><span class="n">solidity</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">mkdir MyToken &amp;&amp; cd MyToken</span>
+<span class="err">truffle init</span>
+<span class="err">npm init -y</span>
+<span class="err">npm install -E zeppelin-solidity</span>
+</code></pre></div>
 
 <p>This will install zeppelin-solidity for testing code and initialize your project directory using truffle.s</p>
 <h3>1b. Project Directory</h3>
@@ -275,11 +273,10 @@ ethereumjs-testrpc@6.0.3 </p>
 <p>Using remix, or another tool to deploy your contract, you can check basic outputs here on the test network.</p>
 <h2>3. Javascript Truffle Tests</h2>
 <p>These will be customized test suites that you write in the truffle directory.</p>
-<div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">i</span> <span class="n">ethereumjs</span><span class="o">-</span><span class="n">tx</span>
-<span class="n">truffle</span> <span class="n">develop</span>
-<span class="n">truffle</span><span class="p">(</span><span class="n">develop</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">test</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">npm i ethereumjs-tx</span>
+<span class="err">truffle develop</span>
+<span class="err">truffle(develop)&gt; test</span>
+</code></pre></div>
 
 <p>This command will install the ethereum-tx package, boot a test blockchain using truffle and then run all tests within "/test/" directory.</p>
 <h2>4. Metamask and Ganache</h2>
@@ -319,15 +316,13 @@ ethereumjs-testrpc@6.0.3 </p>
 <li>mocha: configuration options for mochajs testing framework.</li>
 </ul>
 <p>You can create an ethereum mnemonic and set it, so your providers can see it within the config file. Here is an example of </p>
-<div class="highlight"><pre><span></span><span class="n">truffle</span> <span class="n">migrate</span> <span class="c1">--network ropsten</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">truffle migrate --network ropsten</span>
+</code></pre></div>
 
 <h2>2. Crowdsalable Ethereum Token</h2>
-<div class="highlight"><pre><span></span><span class="n">mkdir</span><span class="w"> </span><span class="n">crowdsalable</span><span class="o">-</span><span class="n">eth</span><span class="o">-</span><span class="n">token</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="n">crowdsalable</span><span class="o">-</span><span class="n">eth</span><span class="o">-</span><span class="n">token</span><span class="w"></span>
-<span class="n">truffle</span><span class="w"> </span><span class="n">unbox</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">ajb413</span><span class="o">/</span><span class="n">crowdsalable</span><span class="o">-</span><span class="n">eth</span><span class="o">-</span><span class="n">token</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">mkdir crowdsalable-eth-token &amp;&amp; cd crowdsalable-eth-token</span>
+<span class="err">truffle unbox git@github.com:ajb413/crowdsalable-eth-token.git</span>
+</code></pre></div>
 
 <h1>References:</h1>
 <ol>

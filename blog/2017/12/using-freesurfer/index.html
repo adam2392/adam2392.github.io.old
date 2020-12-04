@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="/photos/brain.jpg" rel="icon">
+    <link href="/images/brain.jpg" rel="icon">
 
 <link rel="canonical" href="/blog/2017/12/using-freesurfer/">
 
@@ -172,15 +172,14 @@ http://mrtrix.readthedocs.io/en/latest/installation/mac_install.html</li>
 </ul>
 <p>$$
     dwidenoise </DTI_dicom_dir/> <dti_img_denoise.mif></p>
-<div class="highlight"><pre><span></span><span class="n">dwipreproc</span> <span class="o">-</span><span class="n">rpe_none</span> <span class="n">AP</span> <span class="n">DTI_30_average</span><span class="o">-</span><span class="mi">2</span><span class="n">_denoise</span><span class="p">.</span><span class="n">mif</span> <span class="o">&lt;</span><span class="n">dti_img_preproc_output</span><span class="p">.</span><span class="n">mif</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="n">dwipreproc</span> <span class="o">-</span><span class="n">rpe_none</span> <span class="n">AP</span> <span class="n">DTI_30_average</span><span class="o">-</span><span class="mi">2</span><span class="n">_denoise</span><span class="p">.</span><span class="n">mif</span> <span class="o">&lt;</span><span class="n">dti_img_preproc_output</span><span class="p">.</span><span class="n">mif</span><span class="o">&gt;</span>
 
 <span class="n">dwibiascorrect</span> <span class="o">&lt;</span><span class="n">dti_img_preproc_output</span><span class="p">.</span><span class="n">mif</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">dti_img_preproc_biascorrect_output</span><span class="p">.</span><span class="n">mif</span><span class="o">&gt;</span> <span class="err">–</span><span class="n">fsl</span>
 
 <span class="n">dwi2response</span> <span class="n">tournier</span> <span class="o">&lt;</span><span class="n">dti_img_preproc_biascorrect_output</span><span class="p">.</span><span class="n">mif</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">dti_img_preproc_biascorrect_response</span><span class="p">.</span><span class="n">txt</span><span class="o">&gt;</span>
 
 <span class="n">dwi2fod</span> <span class="n">csd</span> <span class="n">DTI_30_average</span><span class="o">-</span><span class="mi">2</span><span class="n">_denoise_preproc_biascorrected</span><span class="p">.</span><span class="n">mif</span> <span class="n">DTI_30_average</span><span class="o">-</span><span class="mi">2</span><span class="n">_denoise_preproc_biascorrected_response</span><span class="p">.</span><span class="n">txt</span> <span class="n">DTI_30_average</span><span class="o">-</span><span class="mi">2</span><span class="n">_denoise_preproc_biascorrected_fod</span><span class="p">.</span><span class="n">mif</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>$$</p>
 <h2>2. T1 MRI Processing</h2>
@@ -203,36 +202,32 @@ Linux:
     ## bash
     $&gt; export FREESURFER_HOME=/usr/local/freesurfer
     $&gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh</p>
-<div class="highlight"><pre><span></span>## <span class="nv">tcsh</span>
-$<span class="o">&gt;</span> <span class="k">setenv</span> <span class="nv">FREESURFER_HOME</span> <span class="o">/</span><span class="nv">usr</span><span class="o">/</span><span class="nv">local</span><span class="o">/</span><span class="nv">freesurfer</span>
-$<span class="o">&gt;</span> <span class="nv">source</span> <span class="mh">$F</span><span class="nv">REESURFER_HOME</span><span class="o">/</span><span class="nv">SetUpFreeSurfer</span>.<span class="nv">csh</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">## tcsh</span>
+<span class="err">$&gt; setenv FREESURFER_HOME /usr/local/freesurfer</span>
+<span class="err">$&gt; source $FREESURFER_HOME/SetUpFreeSurfer.csh</span>
+</code></pre></div>
 
 <p>Mac:
     $&gt; export FREESURFER_HOME=/Applications/freesurfer
     $&gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh</p>
 <p>Run those commands within your terminal, or add them to ~/.bashrc file to have access to all the command line tools for freeview.</p>
 <p>You will need to setup your own directory where you will hold all your subject data.</p>
-<div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">SUBJECTS_DIR</span><span class="o">=&lt;</span><span class="n">path</span> <span class="k">to</span> <span class="n">subject</span> <span class="k">data</span><span class="o">&gt;</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">export SUBJECTS_DIR=&lt;path to subject data&gt;</span>
+</code></pre></div>
 
 <p>This will be where you store say patient's MRI/CT scans that you will use to reconstruct the brain.</p>
 <h2>2. Running Through T1-Weighted MRI Images</h2>
 <p>First you want to set your current Subjects directory to where you are working with the raw say .dcm data.</p>
-<div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">SUBJECTS_DIR</span><span class="o">=</span><span class="err">$</span><span class="n">PWD</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">export SUBJECTS_DIR=$PWD</span>
+</code></pre></div>
 
 <p>There may be an issue where you can't run the functions with your .dcm files. I have no idea why this occurs, but an easy fix is to externally run a dicom to nii converter and pass this type of file instead. Here is a link to a matlab converter that can do this:
 https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter--nifti-tool-and-viewer</p>
 <p>There are also other resources online.</p>
 <p>Afterwards, you can run the following command(s):</p>
-<div class="highlight"><pre><span></span><span class="n">recon</span><span class="o">-</span><span class="k">all</span> <span class="o">-</span><span class="n">i</span> <span class="o">&lt;</span><span class="k">data</span><span class="o">&gt;</span><span class="p">.</span><span class="n">nii</span> <span class="o">-</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">subject_name</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">autorecon1</span>
-<span class="n">recon</span><span class="o">-</span><span class="k">all</span> <span class="o">-</span><span class="n">i</span> <span class="o">&lt;</span><span class="k">data</span><span class="o">&gt;</span><span class="p">.</span><span class="n">nii</span> <span class="o">-</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">subject_name</span><span class="o">&gt;</span> <span class="o">-</span><span class="k">all</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">recon-all -i &lt;data&gt;.nii -s &lt;subject_name&gt; -autorecon1</span>
+<span class="err">recon-all -i &lt;data&gt;.nii -s &lt;subject_name&gt; -all</span>
+</code></pre></div>
 
 <p>This will take a long time! So be prepared to run this on a compute engine that has time.</p>
 <h2>3. Running Through CT Images</h2>

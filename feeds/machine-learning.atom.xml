@@ -283,7 +283,7 @@ This is a nonlinear system property because no linear dynamical system (i.e. x(t
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="phd"></category><category term="machine learning"></category></entry><entry><title>Optimization: Convex, Nonlinear, Unconstrained and Constrained</title><link href="/blog/2019/06/optimization-landscape-overview/" rel="alternate"></link><published>2019-06-18T00:00:00-04:00</published><updated>2019-06-18T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2019-06-18:/blog/2019/06/optimization-landscape-overview/</id><summary type="html">&lt;p&gt;An overview of optimization frameworks and algorithms under different general settings.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
+&lt;/script&gt;</content><category term="Machine Learning"></category><category term="phd"></category><category term="machine learning"></category></entry><entry><title>Optimization: Convex, Nonlinear, Unconstrained and Constrained</title><link href="/blog/2019/06/optimization-landscape-overview/" rel="alternate"></link><published>2019-06-18T00:00:00-04:00</published><updated>2019-06-18T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2019-06-18:/blog/2019/06/optimization-landscape-overview/</id><summary type="html">&lt;p&gt;An overview of optimization frameworks and algorithms under different general settings.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
@@ -529,4 +529,4 @@ TBD&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="phd"></category><category term="machine learning"></category></entry></feed>
+&lt;/script&gt;</content><category term="Machine Learning"></category><category term="phd"></category><category term="machine learning"></category></entry></feed>
