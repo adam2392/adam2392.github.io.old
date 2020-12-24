@@ -17,7 +17,7 @@ Summary: A summary of how to visit Dublin and get the most out of your trip.
     - [Airports](#airports)
         - [1. Dublin Airport](#1-dublin-airport)
     - [Sights](#sights)
-        - [1. Guiness St. James Gate Brewery](#1-guiness-st-james-gate-brewery)
+        - [1. Guinness St. James Gate Brewery](#1-guiness-st-james-gate-brewery)
         - [2. Jameson Distillery](#2-jameson-distillery)
     - [Food](#food)
         - [1. Klaw](#1-klaw)
@@ -44,7 +44,7 @@ Big international airport that you can get RT bus tickets to the city for 12 eur
 Note that I only spent 2 days here, and I think it's not worth anymore then that, unless you are planning daytrips from Dublin!
 
 ## Sights
-#### 1. Guiness St. James Gate Brewery
+#### 1. Guinness St. James Gate Brewery
 Self-explanatory and a must-see. There's a sick panoramic view at the top with a free beer waiting for you with the purchase of the tour ticket.
 
 #### 2. Jameson Distillery
@@ -58,7 +58,7 @@ Sick seafood restaurant. Very small, so don't be surprised if you have to wait! 
 
 ## Nightlife/Drinking
 #### 1. Temple Bar
-There is live music every night and this area (i.e. Temple Street) is always lively and busy. Pop into different bars and get some Guiness!
+There is live music every night and this area (i.e. Temple Street) is always lively and busy. Pop into different bars and get some Guinness!
 
 ## Getting Around
 You can definitely use the tram/bus system here! The overall city isn't that big, so you can honestly just walk everywhere.

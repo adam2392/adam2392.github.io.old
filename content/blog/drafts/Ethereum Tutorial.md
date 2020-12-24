@@ -77,7 +77,7 @@ Then you can run
 You should not see any errors at this point.
 
 ## 2. Modifying Migrations and Adding New Contracts
-Any new contracts you write will go in the /contracts/ direcotry, and then the corresponding requirements need to be loaded in the /migrations/ directory. There is boiler code there that shows you how to add things.
+Any new contracts you write will go in the /contracts/ directory, and then the corresponding requirements need to be loaded in the /migrations/ directory. There is boiler code there that shows you how to add things.
 
 #
 

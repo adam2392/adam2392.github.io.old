@@ -5,6 +5,7 @@ Tags: phd, journals, reviews
 Slug: fundamental-papers
 Authors: Adam Li
 Summary: To keep a log of important papers I read about and how they are relevant.
+status: draft
 
 <!-- MarkdownTOC autolink="true" -->
 

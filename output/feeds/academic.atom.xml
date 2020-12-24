@@ -28,7 +28,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /MarkdownTOC --&gt;
-
 &lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;Here, I will attempt to give a brief introduction to the core concepts in my research and relate it to the clinical problem of epilepsy.&lt;/p&gt;
 &lt;h2&gt;0. Short Blurb About Brains and Network Neuroscience&lt;/h2&gt;
@@ -97,7 +96,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;li&gt;http://www.thevirtualbrain.org/tvb/&lt;/li&gt;
 &lt;li&gt;https://ieeexplore.ieee.org/document/7963378/&lt;/li&gt;
 &lt;li&gt;https://www.ncbi.nlm.nih.gov/pubmed/29060480&lt;/li&gt;
-&lt;/ol&gt;</content><category term="tvb"></category><category term="phd"></category></entry><entry><title>Using FreeSurfer</title><link href="/blog/2017/12/using-freesurfer/" rel="alternate"></link><published>2017-12-07T00:00:00-05:00</published><updated>2017-12-07T00:00:00-05:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-12-07:/blog/2017/12/using-freesurfer/</id><summary type="html">&lt;p&gt;To guide the user in how to setup freesurfer correctly.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
+&lt;/ol&gt;</content><category term="Academic"></category><category term="tvb"></category><category term="phd"></category></entry><entry><title>Using FreeSurfer</title><link href="/blog/2017/12/using-freesurfer/" rel="alternate"></link><published>2017-12-07T00:00:00-05:00</published><updated>2017-12-07T00:00:00-05:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-12-07:/blog/2017/12/using-freesurfer/</id><summary type="html">&lt;p&gt;To guide the user in how to setup freesurfer correctly.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#necessary-tools"&gt;Necessary Tools&lt;/a&gt;&lt;/li&gt;
@@ -148,15 +147,14 @@ http://mrtrix.readthedocs.io/en/latest/installation/mac_install.html&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$
     dwidenoise &lt;/DTI_dicom_dir/&gt; &lt;dti_img_denoise.mif&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dwipreproc&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rpe_none&lt;/span&gt; &lt;span class="n"&gt;AP&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;dwipreproc&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rpe_none&lt;/span&gt; &lt;span class="n"&gt;AP&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 
 &lt;span class="n"&gt;dwibiascorrect&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="err"&gt;–&lt;/span&gt;&lt;span class="n"&gt;fsl&lt;/span&gt;
 
 &lt;span class="n"&gt;dwi2response&lt;/span&gt; &lt;span class="n"&gt;tournier&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 
 &lt;span class="n"&gt;dwi2fod&lt;/span&gt; &lt;span class="n"&gt;csd&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected_response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected_fod&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;$$&lt;/p&gt;
 &lt;h2&gt;2. T1 MRI Processing&lt;/h2&gt;
@@ -179,36 +177,32 @@ Linux:
     ## bash
     $&amp;gt; export FREESURFER_HOME=/usr/local/freesurfer
     $&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;## &lt;span class="nv"&gt;tcsh&lt;/span&gt;
-$&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;setenv&lt;/span&gt; &lt;span class="nv"&gt;FREESURFER_HOME&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;freesurfer&lt;/span&gt;
-$&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nv"&gt;source&lt;/span&gt; &lt;span class="mh"&gt;$F&lt;/span&gt;&lt;span class="nv"&gt;REESURFER_HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;SetUpFreeSurfer&lt;/span&gt;.&lt;span class="nv"&gt;csh&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;## tcsh&lt;/span&gt;
+&lt;span class="err"&gt;$&amp;gt; setenv FREESURFER_HOME /usr/local/freesurfer&lt;/span&gt;
+&lt;span class="err"&gt;$&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.csh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Mac:
     $&amp;gt; export FREESURFER_HOME=/Applications/freesurfer
     $&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/p&gt;
 &lt;p&gt;Run those commands within your terminal, or add them to ~/.bashrc file to have access to all the command line tools for freeview.&lt;/p&gt;
 &lt;p&gt;You will need to setup your own directory where you will hold all your subject data.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;SUBJECTS_DIR&lt;/span&gt;&lt;span class="o"&gt;=&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt; &lt;span class="k"&gt;to&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt; &lt;span class="k"&gt;data&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;export SUBJECTS_DIR=&amp;lt;path to subject data&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This will be where you store say patient's MRI/CT scans that you will use to reconstruct the brain.&lt;/p&gt;
 &lt;h2&gt;2. Running Through T1-Weighted MRI Images&lt;/h2&gt;
 &lt;p&gt;First you want to set your current Subjects directory to where you are working with the raw say .dcm data.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;SUBJECTS_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;PWD&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;export SUBJECTS_DIR=$PWD&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;There may be an issue where you can't run the functions with your .dcm files. I have no idea why this occurs, but an easy fix is to externally run a dicom to nii converter and pass this type of file instead. Here is a link to a matlab converter that can do this:
 https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter--nifti-tool-and-viewer&lt;/p&gt;
 &lt;p&gt;There are also other resources online.&lt;/p&gt;
 &lt;p&gt;Afterwards, you can run the following command(s):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;recon&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;all&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="k"&gt;data&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nii&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;subject_name&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;autorecon1&lt;/span&gt;
-&lt;span class="n"&gt;recon&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;all&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="k"&gt;data&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nii&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;subject_name&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;all&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;recon-all -i &amp;lt;data&amp;gt;.nii -s &amp;lt;subject_name&amp;gt; -autorecon1&lt;/span&gt;
+&lt;span class="err"&gt;recon-all -i &amp;lt;data&amp;gt;.nii -s &amp;lt;subject_name&amp;gt; -all&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This will take a long time! So be prepared to run this on a compute engine that has time.&lt;/p&gt;
 &lt;h2&gt;3. Running Through CT Images&lt;/h2&gt;
@@ -222,7 +216,7 @@ https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-conver
 &lt;ol&gt;
 &lt;li&gt;https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall#Setup.26Configuration&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="brain rendering"></category></entry><entry><title>Important Concepts for Computational Modeling</title><link href="/blog/2017/09/fundamental-computational-modeling/" rel="alternate"></link><published>2017-09-27T00:00:00-04:00</published><updated>2017-09-27T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-27:/blog/2017/09/fundamental-computational-modeling/</id><summary type="html">&lt;p&gt;To keep a log of important concepts in computational modeling.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
+&lt;/ol&gt;</content><category term="Academic"></category><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="brain rendering"></category></entry><entry><title>Important Concepts for Computational Modeling</title><link href="/blog/2017/09/fundamental-computational-modeling/" rel="alternate"></link><published>2017-09-27T00:00:00-04:00</published><updated>2017-09-27T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-27:/blog/2017/09/fundamental-computational-modeling/</id><summary type="html">&lt;p&gt;To keep a log of important concepts in computational modeling.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
@@ -247,7 +241,6 @@ https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-conver
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /MarkdownTOC --&gt;
-
 &lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;Computational modeling involves setting up mathematical equations that represent some sort of statics, or dynamics within a system. You want to simulate these equations to understand behavior, fixed points, bifurcations and changes wrt parameter values.&lt;/p&gt;
 &lt;h1&gt;Concepts&lt;/h1&gt;
@@ -350,7 +343,7 @@ Stratonovich integral =&amp;gt;&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="phd"></category><category term="journals"></category><category term="reviews"></category><category term="computational modeling"></category></entry><entry><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link href="/blog/2017/09/simulating-tvb/" rel="alternate"></link><published>2017-09-27T00:00:00-04:00</published><updated>2017-09-27T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-27:/blog/2017/09/simulating-tvb/</id><summary type="html">&lt;p&gt;To guide the simulation of Epileptic iEEG activity using TVB in Marseille, France.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
+&lt;/script&gt;</content><category term="Academic"></category><category term="phd"></category><category term="journals"></category><category term="reviews"></category><category term="computational modeling"></category></entry><entry><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link href="/blog/2017/09/simulating-tvb/" rel="alternate"></link><published>2017-09-27T00:00:00-04:00</published><updated>2017-09-27T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-27:/blog/2017/09/simulating-tvb/</id><summary type="html">&lt;p&gt;To guide the simulation of Epileptic iEEG activity using TVB in Marseille, France.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
@@ -405,13 +398,12 @@ In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activ
 &lt;h1&gt;Implementation&lt;/h1&gt;
 &lt;h2&gt;1. Setting Up Environment&lt;/h2&gt;
 &lt;p&gt;First you may want to set up a conda environment, or a virtualenv that will separate the entire python project from your normal OS.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;
-&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;nibabel&lt;/span&gt; &lt;span class="n"&gt;networkx&lt;/span&gt;
-&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;virtual&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;brain&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tvb&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;data&lt;/span&gt;
-&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;virtual&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;brain&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tvb&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;library&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;span class="err"&gt;pip install nibabel networkx&lt;/span&gt;
+&lt;span class="err"&gt;git clone https://github.com/the-virtual-brain/tvb-data&lt;/span&gt;
+&lt;span class="err"&gt;git clone https://github.com/the-virtual-brain/tvb-library&lt;/span&gt;
 &lt;span class="err"&gt;$&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you want to have a script to add these all to path for your jupyter notebook, use the following:&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
@@ -422,7 +414,7 @@ In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activ
 6
 7
 8
-9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Launching IPython Notebook from TVB Distribution&amp;quot;&lt;/span&gt;
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$LANG&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
     &lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;en_US.UTF-8
@@ -431,19 +423,17 @@ In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activ
 &lt;span class="c1"&gt;# add tvb data and library to path and launch notebook&lt;/span&gt;
 &lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PYTHONPATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/_tvbdata:&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/_tvblibrary:&lt;span class="nv"&gt;$PYTHONPATH&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 jupyter notebook
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
 &lt;h2&gt;1b. Setting Up Environment on a Cluster&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;soft&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;miniconda3&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
-&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;env&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;
-&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="k"&gt;create&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;tridesclous&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt; &lt;span class="n"&gt;numpy&lt;/span&gt; &lt;span class="n"&gt;pandas&lt;/span&gt; &lt;span class="n"&gt;scikit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;learn&lt;/span&gt; &lt;span class="n"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;seaborn&lt;/span&gt; &lt;span class="n"&gt;pyqt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="n"&gt;ipykernel&lt;/span&gt;
-&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="n"&gt;activate&lt;/span&gt; &lt;span class="n"&gt;tridesclous&lt;/span&gt;
-&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;pyqtgraph&lt;/span&gt;
-&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tridesclous&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tridesclous&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zip&lt;/span&gt;
-&lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;ipykernel&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="c1"&gt;--name tridesclous-testing —user&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;. /soft/miniconda3/activate&lt;/span&gt;
+&lt;span class="err"&gt;conda env list&lt;/span&gt;
+&lt;span class="err"&gt;conda create -n tridesclous python=3.6 scipy numpy pandas scikit-learn matplotlib seaborn pyqt=5 ipykernel&lt;/span&gt;
+&lt;span class="err"&gt;source activate tridesclous&lt;/span&gt;
+&lt;span class="err"&gt;pip install pyqtgraph&lt;/span&gt;
+&lt;span class="err"&gt;pip install https://github.com/tridesclous/tridesclous/archive/master.zip&lt;/span&gt;
+&lt;span class="err"&gt;python -m ipykernel install --name tridesclous-testing —user&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;1c. Using Docker / Singularity&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
@@ -470,7 +460,7 @@ Ex: State variables, iEEG activity from sampling rate and period.&lt;/p&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-library&lt;/li&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-epilepsy&lt;/li&gt;
 &lt;li&gt;https://www.thevirtualbrain.org/tvb/zwei&lt;/li&gt;
-&lt;/ol&gt;</content><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="computational modeling"></category></entry><entry><title>Important Papers for Fundamentals in Computational Neuroscience / Data Science</title><link href="/blog/2017/09/fundamental-papers/" rel="alternate"></link><published>2017-09-25T00:00:00-04:00</published><updated>2017-09-25T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-25:/blog/2017/09/fundamental-papers/</id><summary type="html">&lt;p&gt;To keep a log of important papers I read about and how they are relevant.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
+&lt;/ol&gt;</content><category term="Academic"></category><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="computational modeling"></category></entry><entry><title>Important Papers for Fundamentals in Computational Neuroscience / Data Science</title><link href="/blog/2017/09/fundamental-papers/" rel="alternate"></link><published>2017-09-25T00:00:00-04:00</published><updated>2017-09-25T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-25:/blog/2017/09/fundamental-papers/</id><summary type="html">&lt;p&gt;To keep a log of important papers I read about and how they are relevant.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#papers"&gt;Papers&lt;/a&gt;&lt;ul&gt;
@@ -637,7 +627,7 @@ It seems that the hidden layers converge to the optiaml IB representations. Howe
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="phd"></category><category term="journals"></category><category term="reviews"></category></entry><entry><title>Doctoral Board Oral Exam (PhD)</title><link href="/blog/2017/08/doctoral-board-oral/" rel="alternate"></link><published>2017-08-05T00:00:00-04:00</published><updated>2017-08-05T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-08-05:/blog/2017/08/doctoral-board-oral/</id><summary type="html">&lt;p&gt;A short walkthrough of my experience with the DBO exam at Johns Hopkins University&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Doctoral Board Oral Exam&lt;/h1&gt;
+&lt;/script&gt;</content><category term="Academic"></category><category term="phd"></category><category term="journals"></category><category term="reviews"></category></entry><entry><title>Doctoral Board Oral Exam (PhD)</title><link href="/blog/2017/08/doctoral-board-oral/" rel="alternate"></link><published>2017-08-05T00:00:00-04:00</published><updated>2017-08-05T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-08-05:/blog/2017/08/doctoral-board-oral/</id><summary type="html">&lt;p&gt;A short walkthrough of my experience with the DBO exam at Johns Hopkins University&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Doctoral Board Oral Exam&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -690,7 +680,6 @@ It seems that the hidden layers converge to the optiaml IB representations. Howe
 &lt;li&gt;&lt;a href="#faq"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /MarkdownTOC --&gt;
-
 &lt;h1&gt;1. Cable Theory and Compartmental Modeling&lt;/h1&gt;
 &lt;h2&gt;Examples of different types of neurons&lt;/h2&gt;
 &lt;p&gt;There are thalamic cells, pyramidal cells, double pyramidal cells, granule cells, purkinje cells. These all have different morphologies and perform different computations.&lt;/p&gt;
@@ -888,4 +877,4 @@ A: I would study for about 2-3 weeks with nothing else going on. You want to be 
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="doctoral board oral"></category><category term="phd"></category><category term="johns hopkins"></category></entry></feed>
+&lt;/script&gt;</content><category term="Academic"></category><category term="doctoral board oral"></category><category term="phd"></category><category term="johns hopkins"></category></entry></feed>

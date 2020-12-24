@@ -69,7 +69,7 @@ Famous museum. Two entrances that are either through the big iconic pyramid, or 
 TBD
 
 #### 6. Arc de Triomphe
-Iconic. Probaby not worth going up in my opinion, but you can come here and then walk down Champs De Lysee.
+Iconic. Probably not worth going up in my opinion, but you can come here and then walk down Champs De Lysee.
 
 #### 7. Cathedrale Notre-Dame de Paris
 Also... very famous and worth going once.

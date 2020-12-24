@@ -82,7 +82,7 @@ Upscale tapas that is pretty nice!
 Classic hotdog with 5 different sauces, raw onions and fried onions. Need I say more?
 
 #### 3. Pylsuvagninn (Sulfoss)
-Deep fried hotdog with fries and cheese and paprika. Need I say mor?
+Deep fried hotdog with fries and cheese and paprika. Need I say more?
 
 #### 4. Bjargarsteinn mathus (Grundarfjorour)
 Great seafood restaurant near Kikjufell! 

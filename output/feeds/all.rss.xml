@@ -1,5 +1,312 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Adam Li's blog</title><link>https://adam2392.github.io/</link><description></description><lastBuildDate>Wed, 01 Jan 2020 00:00:00 -0500</lastBuildDate><item><title>Personal Goals - 2020</title><link>https://adam2392.github.io/blog/2020/01/goals-2020/</link><description>&lt;p&gt;This year was a great way to end what I like to call a decade of growth. These past 10 years, I went from high school to college. I found out the things I love, the things I hate and the things that I could care less about. Love came and went, along with different friends. Above all else, I am almost certain that I've found what I love to do. Science, and the ability to "make discoveries" that can help people are what I hope to do for the rest of my life. I came to graduate school without understanding why I wanted to be there, and where I wanted to go, but now I'm getting ready to leave... at least understanding why I came. &lt;/p&gt;
+<rss version="2.0"><channel><title>Adam Li's blog</title><link>https://adam2392.github.io/</link><description></description><lastBuildDate>Thu, 24 Dec 2020 00:00:00 -0500</lastBuildDate><item><title>Personal Goals - 2021</title><link>https://adam2392.github.io/blog/2020/12/goals-2021/</link><description>&lt;h1&gt;Summary of 2020&lt;/h1&gt;
+&lt;p&gt;This year has been pretty blessed considering what's happening around the world with Covid-19. 
+I did a cabin trip with Sarah and friends early in the year and did New Years Eve at a club seeing Kaskade(?). 
+Definitely safe to say, I can't do "long" nights out anymore. 
+I went to Cancun with my family and Sarah at the beginning of the year before Covid hit and 
+then spent 3-4 months at the Kim family house, which was definitely... longer then expected. 
+Throughout quarantine, really got to know myself better. Found an interest in gardening and 
+cooking and really had to explicitly focus on mental health. In the summer, got to make a trip home 
+and even go down to San Diego to see some old friends from the BodyRock/SD crew. Was very memorable 
+even with Covid restrictions, and happy I went. In the midst of Covid, got to experience 
+July 4th still with some NYC friends up near Westpoint. Closer to Halloween, 
+saw K-Town in Manhattan with all its outdoor seating! It was actually quite awesome, 
+and something I hope they keep during all the non-winter months in the future. &lt;/p&gt;
+&lt;p&gt;AAMPLIFY managed to get through the pandemic by shifting its gears to a virtual 
+summer program. It actually was quite successful and I was glad to introduce a 
+statistical and data-driven thinking portion to the leadership curriculum. EverydayBME
+managed to shift gears in the face of the pandemic as well. We partnered with BMESDiversity and 
+offered Patagonia 1/4 zips to entice a social media display of the diversity in BME 
+science and research. It was actually quite awesome to see how many minority groups 
+participated because it speaks to some of the successes at least we've had in the BME
+community in terms of diversity.&lt;/p&gt;
+&lt;p&gt;With the start of the Fall semester, my paper was accepted for
+review at a high-profile journal, which was a really nice touch (we'll see 
+if it gets accepted though heh). In addition, I managed to work with a 
+small team (many talented individuals) to get an EEG analytics software in 
+its MVP version approved by the FDA via a 510k approval process. Learned a lot about 
+regulatory and how to work with the FDA and consultants to get a software approved. Finally, 
+I took a very interesting course, called Real Variables with Professor Sogge at JHU. Learned a lot 
+about Lebesgue measure, integration and differentiation theory. In addition, got a 
+very nice introduction to Hilbert spaces and Fourier series, integrals, transforms. 
+Wish I took the course 3 years earlier. I've also been an active contributor in open-source 
+and was later added to the BIDS-standard team by Stefan. I've really become amazed by 
+the open-source community. I've had lengthy Github conversations with many talented individuals 
+that I've never even met, let alone know their face, or voice.&lt;/p&gt;
+&lt;p&gt;I think it's important to reflect on how "blessed" this year was for myself, but also 
+reflect on some of the bad that came with it. This year marked the onset of the Covid-19 
+pandemic, and with it, many many people were forced to stay home. An aggregation of poor response, 
+and misinformation led to the pandemic bringing the USA to its knees. When we look at countries 
+like South Korea, Taiwan, New Zealand, Vietnam and more, it's quite apparent what differences there 
+were to anyone that is scientifically trained. In addition, at the same time, we saw the 
+very public unnecessary deaths of many Black Americans (Ahmaud Arbery, Breonna Taylor and George Floyd 
+to name a few). For people like me that live in a world of first-world privilege, it probably 
+"shocked" us. I know for me at least, it really started making me question the society we live in and 
+what sort of biases I've been engraved with since childhood. It also was hard to come to terms with 
+the fact that this kind of thing has been honestly happening far too frequently since before I 
+was even born. It is a flaw in how we are taught history, and a flaw in our society. 
+With the poor pandemic response, and racial problems of the USA, it is apparent that 
+voting strong local public officials that are knowledgeable, scientifically driven and 
+socially aware is more important then we realize. I'm glad that I was able to at least do a bit 
+more research in my local, state and federal elections then I normally would in the hope that I become 
+a responsible and socially aware voter beyond just this year. A side effect of the pandemic actually 
+made me do more reading and research into climate change and being a "green citizen". It 
+took me by surprise that recycling is more nuanced then just use, recycle, reuse. Projecting 
+forward decades, it was became more apparent to me that we can't keep living the way we do - 
+taking from the earth without thought. It actually will lead to more racial inequality and 
+potentially cause more social issues that we can't even imagine. Part of my personal 
+goals for this new year is to become a more "green citizen", as well as being a 
+"responsible socially aware citizen".&lt;/p&gt;
+&lt;h2&gt;Old 2020 Goals:&lt;/h2&gt;
+&lt;h4&gt;1. Health: (Half-Marathon)&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;13.1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;miles&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Longer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;then&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ve ever ran in my life, but it&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;going&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;be&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;goal&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;year&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;entrance&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;adulthood&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;In&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;order&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;point&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;say&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Boston&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;half&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;marathon&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;October&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2020&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;then&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;there&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;will&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;be&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;decent&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;amount&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;training&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;involved&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;should&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;goal&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;to&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;times&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;per&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;week&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;miles&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;March&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt; &lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;times&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;per&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;week&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;miles&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;June&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Boston&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;June&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt; &lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;then&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;start&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;training&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;July&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;half&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;marathon&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;Learn&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;another&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;few&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;signature&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dishes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;maintain&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cooking&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;health&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pancetta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wrapped&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;stuffed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;chicken&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fetta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cheese&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;spinach&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mushrooms&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;garlic&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;red&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wine&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dish&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fresh&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pasta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dish&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I definitely could have ran more this year, but because of Covid, I've "exercised" less, but 
+have been running significantly more. I've gone up to ~4 mile runs every now and then, but 
+am nowhere close to a half-marathon level. Cooking-wise, Sarah and I have explored 
+many many dishes, such as: eggplant lasagna, medium-rare rib-eye steak, indian marinated chicken, 
+thigh curry chicken, fresh-made linguini with seafood and much more.&lt;/p&gt;
+&lt;h4&gt;2. Professional:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;Internship, or open-source development with at least 10 closed Issues and Pull Requests.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Although I haven't done an internship as I was hoping, I have been significantly more active 
+in open-source. I've contributed to &lt;a href="https://github.com/mne-tools/mne-bids"&gt;mne-bids&lt;/a&gt;, &lt;a href="https://github.com/mne-tools/mne-python"&gt;mne-python&lt;/a&gt;,
+the &lt;a href="https://github.com/bids-standard/bids-specification"&gt;BIDS specification&lt;/a&gt;, &lt;a href="https://github.com/bids-standard/bids-validator"&gt;bids-validator&lt;/a&gt;, 
+and many more. I believe I've definitely gone beyond 10 closed Issues/PRs.&lt;/p&gt;
+&lt;h4&gt;3. Personal:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;Think before speaking more, patience and focus on my friends, family and significant other more then myself. I&amp;#39;ve focused on my self-growth over the last 10 years, and it&amp;#39;s time to focus on my external-growth over these next 10 years.&lt;/span&gt;
+&lt;span class="err"&gt;I should check up on my family more often via WeChat, and give better presents for the birthday and holidays.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I've done this relatively well, considering we grew up not "giving presents" normally. 
+Since I'm very "calendar-oriented", it helps that I have all my birthdays and important events 
+on my google calendar.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;I should check up on my friends that don&amp;#39;t live in Baltimore every few weeks or so. Put things on the schedule for hanging out. I should invite a few friends to do Montreal with me in the summer.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I haven't really had an opportunity to do this as much as I would've liked. However, 
+due to Covid, I've definitely had a few Zoom get-togethers ranging from catchups, to board games
+to playing Among Us.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;I should focus on listening to Sarah more this year. She&amp;#39;s more right then I am in more instances then I would prefer to admit. The fallacy of trying to believe in yourself is that you convince yourself out of hubris that you are right even when you are wrong.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I could probably do better here still. I think I've been marginally improving, but there 
+can be more instances where I reflect more on my thought patterns and actions.&lt;/p&gt;
+&lt;h1&gt;Goals 2021:&lt;/h1&gt;
+&lt;h2&gt;1. Health&lt;/h2&gt;
+&lt;p&gt;This year, I've found that mental and physical health are intricately linked. In addition, they 
+have consequences on professional productivity. Sarah introduced me to yoga this year, and I 
+actually quite enjoy it since it involves a lot of stretching, deep breaths and movements 
+that I otherwise wouldn't do. It's a great way to be active in the morning and after runs.&lt;/p&gt;
+&lt;p&gt;Other activities I've found helpful are running and cooking healthy. Cooking isn't just healthy, 
+but it is a relaxing activity. In addition, now that I'm more comfortable cooking, I want 
+to explore more by cooking healthy. Cooking healthy means cooking with just vegetables and 
+ingredients that are not currently being stressed by human activity (e.g. red meat, 
+fish, fat).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Continue to do yoga 5 times/week for at least 5-10 minutes per day.&lt;/li&gt;
+&lt;li&gt;[ ] Continue running at least 10 miles/week (1-4 miles per day).&lt;/li&gt;
+&lt;li&gt;[ ] Begin learning how to cook vegetable only dishes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. Professional&lt;/h2&gt;
+&lt;p&gt;This upcoming year, I'll be graduating with my PhD and MS from Johns Hopkins. 
+I'm looking forward to taking courses in constrained optimization, stochastic 
+optimization and graph theory. I'll also probably be starting a transition to a 
+post doc, or industry position. In order to feel like my PhD is fulfilled, I would 
+like to publish a few more projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] SickKids dataset&lt;/li&gt;
+&lt;li&gt;[ ] Theory of epileptogenesis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;4. Outreach / Societal Impact&lt;/h2&gt;
+&lt;p&gt;This year I would also like to dedicate more time to outreach. I think there's 
+too often change that could be done at the local volunteer level that isn't because 
+of passiveness.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Volunteer at least once/month&lt;/li&gt;
+&lt;li&gt;[ ] Be more mindful of re-using things (e.g. plastic, etc.). Aim to re-use things 
+until they are broken&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 24 Dec 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2020-12-24:/blog/2020/12/goals-2021/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Real Analysis (Lebesgue Integration, Differentiation and Measure)</title><link>https://adam2392.github.io/blog/2020/12/real-analysis/</link><description>&lt;h1&gt;Summary&lt;/h1&gt;
+&lt;p&gt;Real analysis is the study of real numbers in &lt;span class="math"&gt;\(\mathbb{R}^d\)&lt;/span&gt;, with 
+&lt;code&gt;d&lt;/code&gt; being the dimensionality. Although it is a pretty abstract topic 
+that does not seem to have applications, it is a very fundamental 
+in understanding other branches of applied mathematics. For example, in order
+to define optimization algorithms, one is very interested in the ideas of convergence.
+One then often uses theory of continuity. In computational neuroscience and 
+control theory, one often deals with integrals when defining theory. In 
+statistics, it is absolutely necessary to understand integrals (expectation 
+is defined with an integral).&lt;/p&gt;
+&lt;p&gt;In this blog post, I'll review some of the basic concepts that one
+needs to know in general. A great course sequence I took was both at UCSD with 
+Professor Dragos Oprea (Math 140AB) and with Professor Sogge (Math 605) at Johns Hopkins.&lt;/p&gt;
+&lt;p&gt;Excellent references are:
+- &lt;a href="http://www.cmat.edu.uy/~mordecki/courses/medida2013/book.pdf"&gt;Stein, E. M., Stein, E. M., &amp;amp; Shakarchi, R. (2005). Princeton lectures in analysis: 3. Princeton: Princeton Univ. Press.&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Measurability&lt;/h1&gt;
+&lt;p&gt;Measure is an abstract notion of "volume" of a set. In all "regular" 
+examples, one can assume the sets in consideration are measurable. However,
+using the &lt;a href="https://en.wikipedia.org/wiki/Axiom_of_choice"&gt;Axiom of Choice&lt;/a&gt;, one
+can construct "unmeasurable" sets. This motivates the need to define Borel sets (sigma-algebras)
+in probability theory, which denote measurable family of subsets of a set. This 
+is beyond the scope of this post though. It suffices to know that unmeasurable 
+sets &lt;code&gt;do exist&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Measure from first principles is defined in Stein starting from outer-measure. 
+Outer-measure is simply the measure obtained by covering a set with a countable 
+almost-disjoint union of rectangles (circles, squares also suffice). Outer-measure
+is well-defined for any possible set. Lebesgue measure then is defined by 
+the infimum over the possible outer-measures of a set.&lt;/p&gt;
+&lt;p&gt;Some important properties of measure of a set is non-negativity and 
+countable sub-additivity. Countable additivity is obtained when 
+they are pairwise disjoint sets in consideration.&lt;/p&gt;
+&lt;h1&gt;Convergence&lt;/h1&gt;
+&lt;p&gt;For many interesting functions, and numbers, we are interested in 
+the notion of convergence. That is, if we define a sequence enumerated 
+by &lt;code&gt;n&lt;/code&gt; of numbers, or functions using some rule that depends on &lt;code&gt;n&lt;/code&gt;, 
+then what are conditions that these sequences converge? Generally, 
+if a sequence does not converge, then it goes to &lt;span class="math"&gt;\(\infty\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In real analysis, we generally consider the Euclidean metric space. 
+In fact, these metric spaces are complete (i.e. all Cauchy sequences converge
+inside the metric space).&lt;/p&gt;
+&lt;h2&gt;Important Integral Convergence Theorems&lt;/h2&gt;
+&lt;p&gt;When defining convergence for integrals, there are three fundamental results 
+that are useful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.math3ma.com/blog/fatous-lemma"&gt;Fatou's lemma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.math3ma.com/blog/monotone-convergence-theorem"&gt;Monotone convergence theorem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.math3ma.com/blog/dominated-convergence-theorem"&gt;Dominated convergence theorem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I won't talk about them here because the above links actually provide 
+a very nice reference (that is also accessible to beginners).&lt;/p&gt;
+&lt;h2&gt;Bolzano-Weirstrass Theorem For Sequences of Real Numbers&lt;/h2&gt;
+&lt;p&gt;The main way of proving convergence relies on showing that a sequence 
+is Cauchy. That is for every &lt;span class="math"&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt;, we have:&lt;/p&gt;
+&lt;div class="math"&gt;$$|x_m - x_n| &amp;lt; \epsilon$$&lt;/div&gt;
+&lt;p&gt;for &lt;span class="math"&gt;\(m, n \ge N\)&lt;/span&gt;, for some large number &lt;span class="math"&gt;\(N_\epsilon\)&lt;/span&gt;. The "|...|" sign 
+denotes the distance metric defined. This implies that even if 
+the sequence &lt;span class="math"&gt;\(\{x_k\}\)&lt;/span&gt; potentially oscillates, the range of its oscillation
+is decreasing as you take values further and further down the sequence.
+Note that by construction any sequence that is Cauchy in a metric space 
+is in fact &lt;code&gt;bounded&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem"&gt;Bolzano-Weirstrass theorem, or sequential compactness theorem&lt;/a&gt; 
+states that any bounded sequence in finite-dimensional Euclidean space has 
+a convergent subsequence. Then a sequence is convergent if and only if 
+it has a convergent subsequence, and so every Cauchy sequence is convergent.&lt;/p&gt;
+&lt;h2&gt;Convergence In Norm&lt;/h2&gt;
+&lt;p&gt;Note that convergence of a sequence of real numbers requires a specific 
+component to emerge. In the space of integrable functions, &lt;span class="math"&gt;\(L^1(\mathbb{R}^d)\)&lt;/span&gt;, 
+one can define &lt;code&gt;convergence in norm&lt;/code&gt;. That is the sequence defined might not 
+converge exactly element by element to a fixed component, but their difference in norm
+converges. That is for every &lt;span class="math"&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt;, and &lt;span class="math"&gt;\(\{f_k\} \in L^1\)&lt;/span&gt;, we have:&lt;/p&gt;
+&lt;div class="math"&gt;$$||f_m(x) - f_n(x)||_{L^1} &amp;lt; \epsilon$$&lt;/div&gt;
+&lt;p&gt;where the distance metric is now defined as &lt;span class="math"&gt;\(||.||_{L^1} = \int_{\mathbb{R}^d} |f_m(x) - f_n(x)| dx\)&lt;/span&gt;. 
+Convergence in norm can then be extended in general to &lt;span class="math"&gt;\(L^p\)&lt;/span&gt; spaces, since 
+&lt;span class="math"&gt;\(L^1 \supset L^2 \supset ... \supset L^\infty\)&lt;/span&gt;, which follows from Holder's 
+inequality.&lt;/p&gt;
+&lt;h2&gt;Other Convergences&lt;/h2&gt;
+&lt;p&gt;Note that there are other notions of convergences as well! 
+Weak convergence, strong convergence, etc.&lt;/p&gt;
+&lt;h1&gt;Integrability&lt;/h1&gt;
+&lt;p&gt;Integration with respect to Lebesgue measure is defined by considering the 
+convergence of the integral of the absolute value of the function:&lt;/p&gt;
+&lt;div class="math"&gt;$$\int |f(x)| dx &amp;lt; \infty$$&lt;/div&gt;
+&lt;p&gt;else, the function f is said to be not integrable. The space of 
+Lebesgue integrable functions if formally known as the "L1" space. 
+Note that by the Risz-Fisher theorem, we know that &lt;span class="math"&gt;\(L^p\)&lt;/span&gt; spaces for 
+&lt;span class="math"&gt;\(1 \le p \le \infty\)&lt;/span&gt; is complete. &lt;/p&gt;
+&lt;h1&gt;Differentiation&lt;/h1&gt;
+&lt;p&gt;When considering differentiation in the context of integration, 
+we are primarily interested in when the Fundamental Theorems of Calculus hold
+in the Lebesgue measure theory. We learned in high school calculus the following:&lt;/p&gt;
+&lt;h2&gt;First Fundamental Theorem of Calculus:&lt;/h2&gt;
+&lt;p&gt;If &lt;span class="math"&gt;\(F(x) = \int_a^x f(t) dt\)&lt;/span&gt; for &lt;span class="math"&gt;\(x \in [a, b]\)&lt;/span&gt; interval, then&lt;/p&gt;
+&lt;div class="math"&gt;$$F'(x) = f(x)$$&lt;/div&gt;
+&lt;p&gt;that is, we can reverse integration on f by taking the derivative of F.
+This theorem holds in the space of Lebesgue integrable functions, when the 
+function is &lt;code&gt;locally integrable&lt;/code&gt; (i.e. Lebesgue's differentiation theorem).&lt;/p&gt;
+&lt;h2&gt;Second Fundamental Theorem of Calculus&lt;/h2&gt;
+&lt;p&gt;The second part states that if we take the endpoints of the antiderivative, 
+then we can obtain the integral of the function over those endpoints:&lt;/p&gt;
+&lt;div class="math"&gt;$$F(b) - F(a) = \int_a^b f(t) dt$$&lt;/div&gt;
+&lt;p&gt;The result holds when F is &lt;code&gt;absolutely continuous&lt;/code&gt;, which is a stronger 
+notion then continuity. It essentially bounds the degree of variation and is 
+actually introduced through the concept of Bounded Variation.&lt;/p&gt;
+&lt;h1&gt;Other Important Topics&lt;/h1&gt;
+&lt;p&gt;This blog post is meant to be brief, but in the future, I'll probably 
+try to cover Hilbert spaces (linear operators, orthogonality, compact operators, 
+the Spectral Theorem, and Kernel integral operators), Fourier series and the Fourier transform, which are also 
+broadly applicable across applied mathematics and engineering.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 24 Dec 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2020-12-24:/blog/2020/12/real-analysis/</guid><category>Academic</category><category>math</category><category>phd</category><category>real-analysis</category></item><item><title>Personal Goals - 2020</title><link>https://adam2392.github.io/blog/2020/01/goals-2020/</link><description>&lt;p&gt;This year was a great way to end what I like to call a decade of growth. These past 10 years, I went from high school to college. I found out the things I love, the things I hate and the things that I could care less about. Love came and went, along with different friends. Above all else, I am almost certain that I've found what I love to do. Science, and the ability to "make discoveries" that can help people are what I hope to do for the rest of my life. I came to graduate school without understanding why I wanted to be there, and where I wanted to go, but now I'm getting ready to leave... at least understanding why I came. &lt;/p&gt;
 &lt;p&gt;This year I am glad I found a partner that has been supportive of what I do, and patient enough to listen to my weird and obnoxious thoughts on things ranging from sleeping habits, to science. It has and should continue to be a thrilling experience to make mistakes, reflect and adapt while I face the next challenge of learning how to grow two minds at once. &lt;/p&gt;
 &lt;p&gt;I'm close to graduating from school where I will never have to "take courses" again, but rather then rejoicing that I never have to set foot in a classroom again, I'm realizing I'll miss the lessons in logic you learn from challenging yourself through homework and exams. I took up the Masters in AMS at JHU this year, and I'm glad I went through with it. I am close to publishing most of my thesis work this year and then going through the final defense of the PhD. It didn't seem so far away that I was struggling to understand the basic methodological papers my undergrad PI sent me, but now I'm confident to say that I at least understand 50% of things with a one time read. Time to grow and reflect on this year.&lt;/p&gt;
 &lt;h2&gt;Old 2019 Resolutions:&lt;/h2&gt;
@@ -108,7 +415,7 @@ https://www.instagram.com/ajltravels/
 &lt;h4&gt;2. Baejarins beztu pylsur (Reykjavik)&lt;/h4&gt;
 &lt;p&gt;Classic hotdog with 5 different sauces, raw onions and fried onions. Need I say more?&lt;/p&gt;
 &lt;h4&gt;3. Pylsuvagninn (Sulfoss)&lt;/h4&gt;
-&lt;p&gt;Deep fried hotdog with fries and cheese and paprika. Need I say mor?&lt;/p&gt;
+&lt;p&gt;Deep fried hotdog with fries and cheese and paprika. Need I say more?&lt;/p&gt;
 &lt;h4&gt;4. Bjargarsteinn mathus (Grundarfjorour)&lt;/h4&gt;
 &lt;p&gt;Great seafood restaurant near Kikjufell! &lt;/p&gt;
 &lt;h2&gt;Nightlife/Drinking&lt;/h2&gt;
@@ -334,7 +641,7 @@ This is a nonlinear system property because no linear dynamical system (i.e. x(t
 &lt;p&gt;In the DKVAE, the model adds an additional pseudo-latent state, which is of low-dimension between the high dimensional observation space and the linear state space model. &lt;/p&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2&gt;Possibilities for Improved Deep State Space Models (DSSM)&lt;/h2&gt;
-&lt;p&gt;It seems that a reoccuring theme right now in deep learning is the integration of older techniques (i.e. Linear State Space Models LSSM) with deep neural networks. Since deep neural networks can act as universal function approximators, that are also able to be trained end-to-end using stochastic gradient descent on data, then many challenges in traditional LSSM that had intractable setups can potentially be overcome. Granted, you will need enough data for each situation you are thinking of, but in theory one can really extend the power of DSSM to provide improved interpretability of a deep learning model.&lt;/p&gt;
+&lt;p&gt;It seems that a re-occurring theme right now in deep learning is the integration of older techniques (i.e. Linear State Space Models LSSM) with deep neural networks. Since deep neural networks can act as universal function approximators, that are also able to be trained end-to-end using stochastic gradient descent on data, then many challenges in traditional LSSM that had intractable setups can potentially be overcome. Granted, you will need enough data for each situation you are thinking of, but in theory one can really extend the power of DSSM to provide improved interpretability of a deep learning model.&lt;/p&gt;
 &lt;h1&gt;References:&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;Roweis S. et al. "A Unifying Review of Linear Gaussian Models".http://mlg.eng.cam.ac.uk/zoubin/papers/lds.pdf&lt;/li&gt;
@@ -652,207 +959,8 @@ TBD&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 18 Jun 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2019-06-18:/blog/2019/06/optimization-landscape-overview/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Setting Up Docker</title><link>https://adam2392.github.io/blog/2018/06/setup-docker/</link><description>&lt;h1&gt;Getting Setup on Using Docker&lt;/h1&gt;
-&lt;h1&gt;By: Adam Li&lt;/h1&gt;
-&lt;h3&gt;Table of Contents&lt;/h3&gt;
-&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#setting-hardware-requirements"&gt;Setting Hardware Requirements:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#using-docker"&gt;Using Docker&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-docker-image"&gt;1. Docker Image&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1a-setting-base-docker-volume"&gt;1a. Setting Base Docker Volume&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1b-creating-the-container"&gt;1b. Creating The Container&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1c-running-postgresql-via-container"&gt;1c. Running PostgreSQL via Container&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1d-optional-expose-docker-container-to-host"&gt;1d. (Optional) Expose Docker Container To Host&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2"&gt;2.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#linking-all-this-with-docker-compose"&gt;Linking All This With Docker-Compose&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1"&gt;1.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#common-commands"&gt;Common Commands&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#images"&gt;Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#containers"&gt;Containers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#volumes"&gt;Volumes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#testing"&gt;Testing&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-1"&gt;1.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-1"&gt;2.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Installation&lt;/h1&gt;
-&lt;p&gt;The following packages need to be installed for a test time environment:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;brew update&lt;/span&gt;
-&lt;span class="err"&gt;brew prune&lt;/span&gt;
-&lt;span class="err"&gt;brew doctor&lt;/span&gt;
-&lt;span class="err"&gt;brew install postgres&lt;/span&gt;
-&lt;span class="err"&gt;brew install docker&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1&gt;Setting Hardware Requirements:&lt;/h1&gt;
-&lt;p&gt;Some packages need minimum hardware requirements assigned to Docker usage.&lt;/p&gt;
-&lt;p&gt;A minimum of 4GB RAM assigned to Docker&lt;/p&gt;
-&lt;p&gt;Elasticsearch alone needs at least 2GB of RAM to run.&lt;/p&gt;
-&lt;p&gt;With Docker for Mac, the amount of RAM dedicated to Docker can be set using the UI: see How to increase docker-machine memory Mac (Stack Overflow).&lt;/p&gt;
-&lt;h1&gt;Using Docker&lt;/h1&gt;
-&lt;h2&gt;1. Docker Image&lt;/h2&gt;
-&lt;p&gt;Most docker images have been prebuilt and tested online. Containers are these dynamic "images" of your system that will host data, programs, etc. Images are snapshots of those containers (mainly at the beginning) to setup the baseline container. &lt;/p&gt;
-&lt;p&gt;Volumes are a way of allowing containers persistent storage across usage.&lt;/p&gt;
-&lt;h3&gt;1a. Setting Base Docker Volume&lt;/h3&gt;
-&lt;p&gt;This will create a docker with a volume (in the docker image) at the volume you specify with the "-v" tag. The docker image has the name that you set, and then it is based off of "busybox", which is a generalized light-weight docker image by Docker.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker create -v /var/lib/postgresql/data --name postgres10.4-data busybox&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;1b. Creating The Container&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker run --name local-postgres10.4 -e POSTGRES_PASSWORD=dappstore -d --volumes-from postgres10.4-data postgres:10.4&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;1c. Running PostgreSQL via Container&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker run -it --link local-postgres10.4:postgres --rm postgres:10.4 sh -c &amp;#39;exec psql -h &amp;quot;$POSTGRES_PORT_5432_TCP_ADDR&amp;quot; -p &amp;quot;$POSTGRES_PORT_5432_TCP_PORT&amp;quot; -U postgres&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Enter the password you just set.&lt;/p&gt;
-&lt;p&gt;Inside, you can modify and begin the basic configuration of the base container volume by creating tables and initializing roles using SQL.&lt;/p&gt;
-&lt;p&gt;Now, your base container is set up! Don't remove this if you want to have persistant Postgresql set up.&lt;/p&gt;
-&lt;h3&gt;1d. (Optional) Expose Docker Container To Host&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker run --name local-postgres10.4 -p 5432:5432 -e POSTGRES_PASSWORD=asecurepassword -d --volumes-from postgres10.4-data postgres:10.4&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This will expose the PostGRESQL docker instance via port 5432 localhost, so that you can connect to it via any application now.&lt;/p&gt;
-&lt;h2&gt;2.&lt;/h2&gt;
-&lt;h1&gt;Linking All This With Docker-Compose&lt;/h1&gt;
-&lt;p&gt;Docker-compose is a way of composing up the docker images that you have in a way that fits your needs. You can modularly stack docker images and then run additional installations that fit your specifications.&lt;/p&gt;
-&lt;p&gt;So, for example, here we will compose a docker image that is composed of django, postgres and elasticsearch to have a fully functional web-app with logging capabilities. (Perhaps we should also think about adding Kibana and Logstash for a full ELK stack)?&lt;/p&gt;
-&lt;h2&gt;1.&lt;/h2&gt;
-&lt;p&gt;Refer to https://medium.com/@leo_hetsch/local-development-with-go-postgresql-and-elasticsearch-in-docker-61bc8a0d5e66 for a nice little explanation for some common docker installation commands for postgresql and elastic search.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker-compose -f local.yml build&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;or &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;export COMPOSE_FILE=local.yml&lt;/span&gt;
-&lt;span class="err"&gt;docker-compose up&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Possible / common methods:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker-compose -f local.yml run --rm django python manage.py migrate&lt;/span&gt;
-&lt;span class="err"&gt;docker-compose -f local.yml run --rm django python manage.py createsuperuser&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Since docker is composed of a set of build commands, you should read up on the documentation here:&lt;/p&gt;
-&lt;p&gt;https://docs.docker.com/compose/compose-file/#resources&lt;/p&gt;
-&lt;h1&gt;Common Commands&lt;/h1&gt;
-&lt;h2&gt;Images&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;image&lt;/span&gt; &lt;span class="n"&gt;ls&lt;/span&gt;
-&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;ps&lt;/span&gt;
-
-&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;rmi&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;image_name&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;Containers&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker container ls&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;Volumes&lt;/h2&gt;
-&lt;h1&gt;Testing&lt;/h1&gt;
-&lt;h2&gt;1.&lt;/h2&gt;
-&lt;h2&gt;2.&lt;/h2&gt;
-&lt;h1&gt;References:&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;http://boot2docker.io/&lt;/li&gt;
-&lt;li&gt;https://ryaneschinger.com/blog/dockerized-postgresql-development-environment/&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 17 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-06-17:/blog/2018/06/setup-docker/</guid><category>Coding</category><category>webdev</category><category>docker</category><category>macos</category></item><item><title>Setting Up ERC Standard Tokens</title><link>https://adam2392.github.io/blog/2018/06/setup-erc-token/</link><description>&lt;h1&gt;Getting Setup with Ethereum&lt;/h1&gt;
-&lt;h1&gt;By: Adam Li&lt;/h1&gt;
-&lt;h3&gt;Table of Contents&lt;/h3&gt;
-&lt;!-- MarkdownTOC --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Installation&lt;/li&gt;
-&lt;li&gt;Set Up&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Creating Your Project Directory&lt;/li&gt;
-&lt;li&gt;1b. Project Directory&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Contracts and FrontEnd&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Implementation&lt;ul&gt;
-&lt;li&gt;ERC Standards&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;ERC20&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;ERC721&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Testing&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Remix (http://remix.ethereum.org/)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Ropsten Test Network (https://ropsten.etherscan.io )&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Javascript Truffle Tests&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Metamask and Ganache&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Deployment&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;truffle.js (http://truffleframework.com/docs/advanced/configuration)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;Crowdsalable Ethereum Token&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;References:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;p&gt;pragma solidity ^0.4.18;
-web3@1.0.0-beta.27
-truffle@4.0.4 
-solc@0.4.19 
-ethereumjs-testrpc@6.0.3 &lt;/p&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 18 Jun 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2019-06-18:/blog/2019/06/optimization-landscape-overview/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Setting Up ERC Standard Tokens</title><link>https://adam2392.github.io/blog/2018/06/setup-erc-token/</link><description>&lt;h1&gt;Getting Setup with Ethereum&lt;/h1&gt;
+&lt;p&gt;A summary of walking through Ethereum in 2018.&lt;/p&gt;
 &lt;h1&gt;Installation&lt;/h1&gt;
 &lt;p&gt;The following packages need to be installed for a test time environment:
 * testrpc
@@ -900,7 +1008,7 @@ ethereumjs-testrpc@6.0.3 &lt;/p&gt;
 - allowance
 - approve 
 - transferFrom&lt;/p&gt;
-&lt;p&gt;It also defines two events: Transfer and Approval .&lt;/p&gt;
+&lt;p&gt;It also defines two events: Transfer and Approval.&lt;/p&gt;
 &lt;h3&gt;2. ERC721&lt;/h3&gt;
 &lt;p&gt;These are tokens that are non-fungible. One token does not necessarily equal another. It is slightly more complicated then the erc20 token.&lt;/p&gt;
 &lt;p&gt;The standard defines the functions:
@@ -1157,43 +1265,44 @@ Would you be okay with us writing small posts that may highlight different parts
 (education about the research to the general public that is digestable)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;simulating seizures in the brain to determine if algorithms designed on empirical data can localize the origin of these seizures in-silico.&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-06-01:/blog/2018/06/europe-summary-2018/</guid><category>Personal</category><category>personal</category><category>travel</category><category>europe</category></item><item><title>Using The Virtual Brain to Understand Algorithms</title><link>https://adam2392.github.io/blog/2018/06/whitaker-summary-experience/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#0-short-blurb-about-brains-and-network-neuroscience"&gt;0. Short Blurb About Brains and Network Neuroscience&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1-epilepsy"&gt;1. Epilepsy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-computational-modeling"&gt;2. Computational Modeling&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-algorithms"&gt;3. Algorithms&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#research-project-concepts"&gt;Research Project Concepts&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-the-virtual-brain-tvb-vs-network-data-analysis"&gt;1. The Virtual Brain (TVB) vs Network Data Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-using-tvb-to-augment-neural-datasets-for-deep-learning"&gt;2. Using TVB To Augment Neural Datasets For Deep Learning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#conclusions--future-considerations"&gt;Conclusions / Future Considerations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#random-notes-on-this-year-data-and-phd-research"&gt;Random Notes on This Year, Data and PhD Research&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#data-pipeline-design"&gt;Data Pipeline Design&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#phd-and-research-understanding"&gt;PhD and Research Understanding&lt;/a&gt;
-        - &lt;a href="#1-reading-papers-is-good-to-do-on-a-consistent-basis-but-focus-on-getting-to-the-core-of-the-key-papers-how-you-decide-which-papers-are-key-comes-with-exp"&gt;1. reading papers is good to do on a consistent basis, but focus on getting to the core of the "key" papers (how you decide which papers are key comes with exp)&lt;/a&gt;
-        - &lt;a href="#2-software-engineering-is-very-important-in-data-analysis"&gt;2. software engineering is very important in data analysis.&lt;/a&gt;
-        - &lt;a href="#3-its-easy-to-get-stuck-in-a-loop-of-feeling-like-youre-not-going-anywhere"&gt;3. it's easy to get stuck in a loop of feeling like "you're not going anywhere".&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-&lt;h1&gt;Background&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-06-01:/blog/2018/06/europe-summary-2018/</guid><category>Personal</category><category>personal</category><category>travel</category><category>europe</category></item><item><title>Using The Virtual Brain (TVB) to Understand Algorithms</title><link>https://adam2392.github.io/blog/2018/06/whitaker-summary-experience/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;Here, I will attempt to give a brief introduction to the core concepts in my research and relate it to the clinical problem of epilepsy.&lt;/p&gt;
 &lt;h2&gt;0. Short Blurb About Brains and Network Neuroscience&lt;/h2&gt;
-&lt;p&gt;With all the hype about "AI" and deep learning recently, it can become easy to assume that we are at the apex of our understanding of the human brain. This couldn't be farther from the truth. While we have a decent understanding of how single neurons work and how different regions of our brain work to give rise to very basic behavior (i.e. vision, movement, perception), we essentially have no knowledge as to how hundreds-millions of neurons work together, or how more complex behavior manifests (i.e. imagination, learning, etc.). We don't even know how to quantitatively diagnost epilepsy, Parkinsons disease, Alzheimers disease, or any mental disorder for that matter.&lt;/p&gt;
-&lt;p&gt;Brains are inherently a complex network of highly nonlinear functions. In the past it has been easy to analyze very simple, linear "things". That is because linear means a line. If you add a lot of lines together, it is easy to predict what the result looks like. Now imagine, if instead of a line, you have a highly complex curve and you add many of these together. It quickly becomes insurmountable to imagine how this result would look like. This is exactly what happens with our brain. We initially were able to ask simple questions of the brain and get simple answers from one neuron, or one region of the brain. However, in order to tackle increasingly complex questions of the brain, we have to shift our analysis to look at the entire network of the brain. When we learn, how does the entire brain coordinate this (not just one region)? When we have neurological diseases, how does the entire brain get affected (not just one region)?&lt;/p&gt;
-&lt;p&gt;Obviously, there is a whole field out there growing as a result. That is called, network neuroscience; the science of analyzing how the brain works using network-based analysis (e.g. graphs, neural networks, etc.). My belief is that as our understanding of basic brain network principles improves, our ability to generate increasingly complex AI systems will also improve.&lt;/p&gt;
+&lt;p&gt;With all the hype about "AI" and deep learning recently, it can 
+become easy to assume that we are at the apex of our understanding 
+of the human brain. This couldn't be farther from the truth. 
+While we have a decent understanding of how single neurons work 
+and how different regions of our brain work to give rise to very 
+basic behavior (i.e. vision, movement, perception), we essentially 
+have no knowledge as to how hundreds-millions of neurons work 
+together, or how more complex behavior manifests (i.e. imagination, 
+learning, etc.). We don't even know how to quantitatively diagnostic 
+epilepsy, Parkinsons disease, Alzheimers disease, or any mental 
+disorder for that matter. Brains are inherently a complex network 
+of highly nonlinear functions. In the past it has been easy to analyze
+very simple, linear "things". That is because linear means a line. 
+If you add a lot of lines together, it is easy to predict what the 
+result looks like. Now imagine, if instead of a line, you have a 
+highly complex curve and you add many of these together. It quickly 
+becomes insurmountable to imagine how this result would look like. 
+This is exactly what happens with our brain. We initially were able 
+to ask simple questions of the brain and get simple answers from one 
+neuron, or one region of the brain. However, in order to tackle 
+increasingly complex questions of the brain, we have to shift our 
+analysis to look at the entire network of the brain. When we learn, 
+how does the entire brain coordinate this (not just one region)? 
+When we have neurological diseases, how does the entire brain get 
+affected (not just one region)?&lt;/p&gt;
+&lt;p&gt;Obviously, there is a whole field out there growing as a result. 
+That is called, network neuroscience; the science of analyzing 
+how the brain works using network-based analysis (e.g. graphs, 
+neural networks, etc.). My belief is that as our understanding of 
+basic brain network principles improves, our ability to generate 
+increasingly complex AI systems will also improve.&lt;/p&gt;
 &lt;h2&gt;1. Epilepsy&lt;/h2&gt;
-&lt;p&gt;Epilepsy is a disease that affects more then 70 M people worldwide, which characterizes itself with seizures (i.e. abnormal brain activity) for seconds to several minutes. Epilepsy can be treated with medicine that generally inhibits brain activity (albeit with numerous side effects), and also with surgery. Surgery can involve resection (i.e. cutting a portion of the hypothesized diseased brain) and laser ablation (i.e. heat treatment of small spherical regions within the brain). When successful, surgery can result in complete seizure freedom! &lt;/p&gt;
+&lt;p&gt;Epilepsy is a disease that affects more than 70 M people worldwide, 
+which characterizes itself with seizures (i.e. abnormal brain activity) 
+for seconds to several minutes. Epilepsy can be treated with medicine that generally inhibits brain activity (albeit with numerous side effects), and also with surgery. Surgery can involve resection (i.e. cutting a portion of the hypothesized diseased brain) and laser ablation (i.e. heat treatment of small spherical regions within the brain). When successful, surgery can result in complete seizure freedom! &lt;/p&gt;
 &lt;p&gt;However, the problem is that surgery is extremely variable in success (e.g. ~50% average). Imagine getting permanent brain surgery, when there is a high likelihood of you still having seizures afterwards. A main obstacle to high success rates is incorrect localization of the epileptogenic zone, the clinical region of the brain that seizures originate from. In addition, clinicians employ a strategy similar to cancer resection; they will cut out a greater portion of the brain then possibly hypothesized because it will have good "margins" on the diseased tissue. This can cause unnecessary neural dysfunction, especially when these regions are close to important areas for language, motor or executive function. The goal of any researcher in this field is to identify biomarkers and methods for robustly identifying this diseased brain region given neural data. The result would be more successful surgeries and more accurate maps, leading to less brain regions being resected. Neural data can come in the form of electrophysiological recordings, MRI images, Diffusion weighted MRI images and CT images.&lt;/p&gt;
 &lt;h2&gt;2. Computational Modeling&lt;/h2&gt;
 &lt;p&gt;Computational modeling is the art of using mathematical equations to model how certain systems (i.e. the brain) behaves given parameters you input. These are normally formed in the framework of differential equations (i.e. that class we took in undergrad that made us go "huh?"). So here, at Marseille, the group has developed computational models that take in the patient's specific brain imaging to model epilepsy in a patient-specific manner (i.e. personalized brain modeling). The way it does this is by parcellating the brain into multiple regions, where each region is modeled by a computational model that can exhibit certain seizure phenomena. Then, by coupling (connecting) every region based on realistic brain connectivity, you can simulate brain behavior when you "set" different regions of the brain to be "diseased" that has some form of a realistic brain network. One could then compare the simulation and the real electrophysiological recording data in patients to test different hypotheses, such as: &lt;/p&gt;
@@ -1270,7 +1379,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#sights"&gt;Sights&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-guiness-st-james-gate-brewery"&gt;1. Guiness St. James Gate Brewery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#1-guiness-st-james-gate-brewery"&gt;1. Guinness St. James Gate Brewery&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#2-jameson-distillery"&gt;2. Jameson Distillery&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -1301,7 +1410,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;p&gt;Big international airport that you can get RT bus tickets to the city for 12 euros. It takes about 30-40 minutes and runs pretty frequently.&lt;/p&gt;
 &lt;p&gt;Note that I only spent 2 days here, and I think it's not worth anymore then that, unless you are planning daytrips from Dublin!&lt;/p&gt;
 &lt;h2&gt;Sights&lt;/h2&gt;
-&lt;h4&gt;1. Guiness St. James Gate Brewery&lt;/h4&gt;
+&lt;h4&gt;1. Guinness St. James Gate Brewery&lt;/h4&gt;
 &lt;p&gt;Self-explanatory and a must-see. There's a sick panoramic view at the top with a free beer waiting for you with the purchase of the tour ticket.&lt;/p&gt;
 &lt;h4&gt;2. Jameson Distillery&lt;/h4&gt;
 &lt;p&gt;Also self-explanatory. You get to do a tasting of different types of whiskey, bourbon and scotch! &lt;/p&gt;
@@ -1311,7 +1420,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;p&gt;Sick seafood restaurant. Very small, so don't be surprised if you have to wait! I got the lobster roll and pasta with mussels. Fantastic.&lt;/p&gt;
 &lt;h2&gt;Nightlife/Drinking&lt;/h2&gt;
 &lt;h4&gt;1. Temple Bar&lt;/h4&gt;
-&lt;p&gt;There is live music every night and this area (i.e. Temple Street) is always lively and busy. Pop into different bars and get some Guiness!&lt;/p&gt;
+&lt;p&gt;There is live music every night and this area (i.e. Temple Street) is always lively and busy. Pop into different bars and get some Guinness!&lt;/p&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
 &lt;p&gt;You can definitely use the tram/bus system here! The overall city isn't that big, so you can honestly just walk everywhere.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 08 May 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-05-08:/blog/2018/05/travel-dublin/</guid><category>Travel</category><category>travel</category><category>europe</category><category>ireland</category><category>dublin</category></item><item><title>Travel - Barcelona</title><link>https://adam2392.github.io/blog/2018/05/travel-barcelona/</link><description>&lt;h1&gt;Europe - Barcelona, Spain&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
@@ -1452,7 +1561,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;h2&gt;Sights&lt;/h2&gt;
 &lt;h4&gt;1. De Gooyer Windmill (and Brewery!)&lt;/h4&gt;
 &lt;p&gt;This is an old windmill that was renovated to become a brewery at the bottom. Come here and take a photo of the picturesque windmill and have some great locally brewed beers! &lt;/p&gt;
-&lt;p&gt;The brewery is only open till 8PM though. There is also a great burrito (Burrito Annonymous) place across the street, which is great if you're missing Mexican food.&lt;/p&gt;
+&lt;p&gt;The brewery is only open till 8PM though. There is also a great burrito (Burrito Anonymous) place across the street, which is great if you're missing Mexican food.&lt;/p&gt;
 &lt;h4&gt;2. Red Light District&lt;/h4&gt;
 &lt;p&gt;Sex shows, prostitutes in windows, sex shops and a very red lit district.&lt;/p&gt;
 &lt;h4&gt;3. Van Gogh Museum&lt;/h4&gt;
@@ -1554,26 +1663,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;h2&gt;Nightlife/Drinking&lt;/h2&gt;
 &lt;h4&gt;1.&lt;/h4&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
-&lt;p&gt;You can definitely use the train in Berlin! They are a honor pay system; you can just buy a ticket at any station. Download the app: Fahrinfo!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 20 Feb 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-02-20:/blog/2018/02/travel-berlin/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>berlin</category></item><item><title>Setting Up Singularity Containers</title><link>https://adam2392.github.io/blog/2018/01/setup-singularity/</link><description>&lt;h1&gt;Getting Setup with Singularity&lt;/h1&gt;
-&lt;h1&gt;By: Adam Li&lt;/h1&gt;
-&lt;h3&gt;Table of Contents&lt;/h3&gt;
-&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#setting-up-a-tensorflow-container-recipe-example"&gt;Setting Up A Tensorflow Container Recipe (Example):&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1-needed-docker-containers"&gt;1. Needed Docker Containers:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-environment--setup"&gt;2. Environment / Setup&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-post"&gt;3. Post&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-run-script"&gt;4. Run Script&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#5-test"&gt;5. Test&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#common-commands"&gt;Common Commands&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#conclusions"&gt;Conclusions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;p&gt;You can definitely use the train in Berlin! They are a honor pay system; you can just buy a ticket at any station. Download the app: Fahrinfo!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 20 Feb 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-02-20:/blog/2018/02/travel-berlin/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>berlin</category></item><item><title>Setting Up Singularity Containers</title><link>https://adam2392.github.io/blog/2018/01/setup-singularity/</link><description>&lt;h1&gt;Installation&lt;/h1&gt;
 &lt;p&gt;To install singularity locally with root privelages, you can then build up containers that can be hosted online.&lt;/p&gt;
 &lt;h1&gt;Setting Up A Tensorflow Container Recipe (Example):&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nl"&gt;Bootstrap&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;docker&lt;/span&gt;
@@ -1646,6 +1736,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 * debug mode: -d 
 * link nvidia driver &amp;amp; GPU: --nv
 * binds an existing directory onto the image: -B&lt;/p&gt;
+&lt;h1&gt;Binding Nvidia GPU&lt;/h1&gt;
 &lt;p&gt;An example use case that runs a tensorflow simg and runs a training script:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;singularity exec --nv ./tensorflow.simg python main.py &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;traindatadir&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;testdatadir&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; --output_data_dir &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;outputdatadir&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; --log_data_dir &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;logdatadir&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; --patient_to_loo &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;patient&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; --expname &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;expname&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -1721,7 +1812,7 @@ Rome [ ] &lt;/p&gt;
 &lt;p&gt;This year I'll be making a lot of strides in my professional career. On one hand, I'll be pursuing the development of a startup company that is a result of my PhD research. My PI and I will be developing a seizure localization software that outperforms anything on the market, or in academic research. Interestingly it is not based on deep learning ;). This means that I will have the opportunity to actually experience developing and designing software that complies with a 510K FDA approved software device. The software must be usable by clinicians, which will involve production level coding in Python. I look forward to learning while developing with our software engineering consultants (who definitely know more about production level coding). &lt;/p&gt;
 &lt;p&gt;Obviously, the ideal goal is to be able to sell our technology by the years end to a larger EEG based company who can scale and distribute the technology into the clinic fast. Even if this doesn't happen, I believe there are still many important lessons to learn.&lt;/p&gt;
 &lt;p&gt;As a result of this endeavor, I aim to showcase to myself and others that I am capable of designing and implementing a production level software system that can sit in a clinical center that pulls data, formats data properly, preprocesses it, runs an optimized parallelized algorithm for analysis and outputs high-grade visualizations that are clinically useful. &lt;/p&gt;
-&lt;p&gt;In addition, I want to practice more of my coding skills with data structures and basic algorithms using LeetCode. So far, I've done 20-30 excercises and they are actually quite interesting to sit through. Upon reading the solutions, I always learn something new in terms of how to think like an experienced programmer.&lt;/p&gt;
+&lt;p&gt;In addition, I want to practice more of my coding skills with data structures and basic algorithms using LeetCode. So far, I've done 20-30 exercises and they are actually quite interesting to sit through. Upon reading the solutions, I always learn something new in terms of how to think like an experienced programmer.&lt;/p&gt;
 &lt;h4&gt;5. Improving Photography With New IG Page [ ]&lt;/h4&gt;
 &lt;p&gt;This year, I'm going to try to post new photos to a new instagram blog page with more travel related photos. This is to sort of separate my personal instagram from my photography hobby. I have a lot more to learn about optimal lighting and photography of different scenes (e.g. portraits, landscapes, nightshots). I am aiming to post an additional 12 photos that I am proud of onto this IG page by the end of the year.&lt;/p&gt;
 &lt;p&gt;See link to keep up to dates with my adventure!
@@ -1799,7 +1890,7 @@ This is where the infamous Hadron Collider is! This is where the Higgs Boson was
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;Nightlife/Drinking&lt;/h2&gt;
 &lt;h3&gt;1. Volkshaus&lt;/h3&gt;
-&lt;p&gt;Nice night club with 3 different rooms for 3 differnet music types. Needs cash only.&lt;/p&gt;
+&lt;p&gt;Nice night club with 3 different rooms for 3 different music types. Needs cash only.&lt;/p&gt;
 &lt;h3&gt;2. Langstrasse Street&lt;/h3&gt;
 &lt;p&gt;This is a street within Zurich that features many bars and clubs for all backgrounds.&lt;/p&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
@@ -1841,7 +1932,7 @@ This depends on where you are staying and how long you are staying in Switzerlan
 &lt;h2&gt;Old 2017 Resolutions:&lt;/h2&gt;
 &lt;h4&gt;1. Keep dance a significant part of my life: [ ]&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;This is actually something I thought would impact me a lot. I still watch hella dance vids online and keep up with hip hop news here and there, but I haven't touched the dance floor in a few months and it almost feels normal now. I get my daily excercise and I'm driven by my research and learning opportunities.&lt;/li&gt;
+&lt;li&gt;This is actually something I thought would impact me a lot. I still watch hella dance vids online and keep up with hip hop news here and there, but I haven't touched the dance floor in a few months and it almost feels normal now. I get my daily exercise and I'm driven by my research and learning opportunities.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;2. Run a half-marathon: [ ]&lt;/h4&gt;
 &lt;ul&gt;
@@ -1935,7 +2026,7 @@ Bologna [ ], &lt;/p&gt;
 &lt;/ul&gt;
 &lt;h4&gt;6. Reading and Knowledge [ ]&lt;/h4&gt;
 &lt;p&gt;I want to continuously be reading from highly regarded sources. I want to conssistently read from sources on Twitter, The World Economic Review and Bloomberg. I'll try to update some of my thoughts on the different mechanisms of obtaining knowledge.&lt;/p&gt;
-&lt;p&gt;In order to keep up with my intake of knowledge, I want to challenge myself to write a series of publically available blog posts on trends in technology, medicine, politics and economics/finance.&lt;/p&gt;
+&lt;p&gt;In order to keep up with my intake of knowledge, I want to challenge myself to write a series of publicly available blog posts on trends in technology, medicine, politics and economics/finance.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;bitcoin [X]&lt;/li&gt;
 &lt;li&gt;ethereum/blockchain [ ]&lt;/li&gt;
@@ -1964,7 +2055,7 @@ Bologna [ ], &lt;/p&gt;
 &lt;li&gt;&lt;a href="#sights"&gt;Sights&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="#1-london-eye"&gt;1. London Eye&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#2-buckingham-palace--big-ben"&gt;2. Buckingham Palace / Big Ben&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-millenium-bridge--tower-bridge"&gt;3. Millenium Bridge / Tower Bridge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#3-millenium-bridge--tower-bridge"&gt;3. Millennium Bridge / Tower Bridge&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#4-cambridge"&gt;4. Cambridge&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#5-tate-museum"&gt;5. Tate Museum&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#6-national-gallery-museum"&gt;6. National Gallery Museum&lt;/a&gt;&lt;/li&gt;
@@ -2017,7 +2108,7 @@ Pitt Rivers Museum --&gt;
 &lt;p&gt;Recommended to go and check out, but totally not worth going up. Beware of pick-pockets around this extremely crowded tourist area.&lt;/p&gt;
 &lt;h4&gt;2. Buckingham Palace / Big Ben&lt;/h4&gt;
 &lt;p&gt;Self-explanatory place.&lt;/p&gt;
-&lt;h4&gt;3. Millenium Bridge / Tower Bridge&lt;/h4&gt;
+&lt;h4&gt;3. Millennium Bridge / Tower Bridge&lt;/h4&gt;
 &lt;p&gt;Great looking bridge that you can go up with ~10 pounds. Also recommended at night because it lights up!&lt;/p&gt;
 &lt;h4&gt;4. Cambridge&lt;/h4&gt;
 &lt;p&gt;You get there via Greater Anglia train for 1.5 hrs. Once there, you can go see:
@@ -2044,35 +2135,8 @@ Pitt Rivers Museum --&gt;
 &lt;!-- #### 2. Ministry of Sound --&gt;
 
 &lt;h2&gt;Getting Around&lt;/h2&gt;
-&lt;p&gt;You can definitely use the Underground, or just walk! UberX/Pool/Plus if necessary.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 20 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-12-20:/blog/2017/12/travel-london/</guid><category>Travel</category><category>travel</category><category>europe</category><category>UK</category><category>london</category></item><item><title>Using FreeSurfer</title><link>https://adam2392.github.io/blog/2017/12/using-freesurfer/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#necessary-tools"&gt;Necessary Tools&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#data-processing-pipeline"&gt;Data Processing Pipeline:&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-dwi-processing"&gt;1. DWI Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-t1-mri-processing"&gt;2. T1 MRI Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-optional-ct-processing"&gt;3. (Optional) CT Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-connectome-generation"&gt;4. Connectome Generation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#common-definitions"&gt;Common Definitions:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#implementation"&gt;Implementation&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-set-up"&gt;1. Set Up&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-running-through-t1-weighted-mri-images"&gt;2. Running Through T1-Weighted MRI Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-running-through-ct-images"&gt;3. Running Through CT Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-getting-surface-parcellations"&gt;4. Getting Surface Parcellations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#5-getting-seeg-xyz-coordinates"&gt;5. Getting SEEG XYZ Coordinates&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Necessary Tools&lt;/h1&gt;
-&lt;p&gt;Freesurfer, FSL, and MRtrix3 are the three main neuroimaging and registration softwares that you need to run a systematic data pipeline of neuroimaging data (i.e. CT, MRI, DWI).&lt;/p&gt;
+&lt;p&gt;You can definitely use the Underground, or just walk! UberX/Pool/Plus if necessary.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 20 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-12-20:/blog/2017/12/travel-london/</guid><category>Travel</category><category>travel</category><category>europe</category><category>UK</category><category>london</category></item><item><title>Using FreeSurfer</title><link>https://adam2392.github.io/blog/2017/12/using-freesurfer/</link><description>&lt;h1&gt;Necessary Tools&lt;/h1&gt;
+&lt;p&gt;Freesurfer, FSL, and MRtrix3 are the three main neuroimaging and registration software that you need to run a systematic data pipeline of neuroimaging data (i.e. CT, MRI, DWI).&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Freesurfer
 https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall&lt;/li&gt;
@@ -2091,49 +2155,44 @@ http://mrtrix.readthedocs.io/en/latest/installation/mac_install.html&lt;/li&gt;
 &lt;h1&gt;Data Processing Pipeline:&lt;/h1&gt;
 &lt;h2&gt;1. DWI Processing&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Process diffusion imaging data, by denoising the data, then preprocessing it, then applying bias correction and then estimating the response function.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Process diffusion imaging data, by denoising the data, then preprocessing it, then applying bias correction and then estimating the response function. &lt;/p&gt;
+&lt;p&gt;dwidenoise &lt;/DTI_dicom_dir/&gt; &lt;dti_img_denoise.mif&gt;&lt;/p&gt;
+&lt;p&gt;dwipreproc -rpe_none AP DTI_30_average-2_denoise.mif &lt;dti_img_preproc_output.mif&gt;&lt;/p&gt;
+&lt;p&gt;dwibiascorrect &lt;dti_img_preproc_output.mif&gt; &lt;dti_img_preproc_biascorrect_output.mif&gt; –fsl&lt;/p&gt;
+&lt;p&gt;dwi2response tournier &lt;dti_img_preproc_biascorrect_output.mif&gt; &lt;dti_img_preproc_biascorrect_response.txt&gt;&lt;/p&gt;
+&lt;p&gt;dwi2fod csd DTI_30_average-2_denoise_preproc_biascorrected.mif DTI_30_average-2_denoise_preproc_biascorrected_response.txt DTI_30_average-2_denoise_preproc_biascorrected_fod.mif&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$
-    dwidenoise &lt;/DTI_dicom_dir/&gt; &lt;dti_img_denoise.mif&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;dwipreproc&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rpe_none&lt;/span&gt; &lt;span class="n"&gt;AP&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-
-&lt;span class="n"&gt;dwibiascorrect&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="err"&gt;–&lt;/span&gt;&lt;span class="n"&gt;fsl&lt;/span&gt;
-
-&lt;span class="n"&gt;dwi2response&lt;/span&gt; &lt;span class="n"&gt;tournier&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-
-&lt;span class="n"&gt;dwi2fod&lt;/span&gt; &lt;span class="n"&gt;csd&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected_response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected_fod&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;$$&lt;/p&gt;
 &lt;h2&gt;2. T1 MRI Processing&lt;/h2&gt;
 &lt;h2&gt;3. (Optional) CT Processing&lt;/h2&gt;
 &lt;h2&gt;4. Connectome Generation&lt;/h2&gt;
 &lt;h1&gt;Background&lt;/h1&gt;
-&lt;p&gt;Freesurfer is a tool built for rendering 3D brains using MRI and Ct scans.&lt;/p&gt;
-&lt;p&gt;FSL is a tool for coregistration and image analysis.&lt;/p&gt;
-&lt;p&gt;Download both online:&lt;/p&gt;
+&lt;p&gt;Freesurfer is a tool built for rendering 3D brains using MRI and Ct scans. FSL is a tool for coregistration and image analysis. Download both online:&lt;/p&gt;
 &lt;h2&gt;Common Definitions:&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Registration: to find a common coordinate system for the input data sets&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Implementation&lt;/h1&gt;
+&lt;p&gt;First, let's walk through how implementation occurs.&lt;/p&gt;
 &lt;h2&gt;1. Set Up&lt;/h2&gt;
-&lt;p&gt;First you will want to download freesurfer from the following website:&lt;/p&gt;
-&lt;p&gt;https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
-Linux:
-    ## bash
-    $&amp;gt; export FREESURFER_HOME=/usr/local/freesurfer
-    $&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;## tcsh&lt;/span&gt;
-&lt;span class="err"&gt;$&amp;gt; setenv FREESURFER_HOME /usr/local/freesurfer&lt;/span&gt;
-&lt;span class="err"&gt;$&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.csh&lt;/span&gt;
+&lt;p&gt;First you will want to download FreeSurfer from the following website:
+https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
+Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;freesurfer&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;SetUpFreeSurfer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt;
+
+&lt;span class="o"&gt;##&lt;/span&gt; &lt;span class="n"&gt;tcsh&lt;/span&gt;
+&lt;span class="n"&gt;setenv&lt;/span&gt; &lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;freesurfer&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;SetUpFreeSurfer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;csh&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Mac:
-    $&amp;gt; export FREESURFER_HOME=/Applications/freesurfer
-    $&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/p&gt;
-&lt;p&gt;Run those commands within your terminal, or add them to ~/.bashrc file to have access to all the command line tools for freeview.&lt;/p&gt;
+&lt;p&gt;Mac:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;export FREESURFER_HOME=/Applications/freesurfer&lt;/span&gt;
+&lt;span class="err"&gt;source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Run those commands within your terminal, or add them to &lt;code&gt;~/.bashrc&lt;/code&gt; file to have access to all the command line tools for freeview.&lt;/p&gt;
 &lt;p&gt;You will need to setup your own directory where you will hold all your subject data.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;export SUBJECTS_DIR=&amp;lt;path to subject data&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -2156,14 +2215,9 @@ https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-conver
 &lt;h2&gt;3. Running Through CT Images&lt;/h2&gt;
 &lt;p&gt;flirt -in patient_ct.nii -ref patient_mri.nii -omat patient_omat.mat -out patient_registered.nii.gz&lt;/p&gt;
 &lt;p&gt;This command will coregister the CT data onto the domain of the MRI data and provide a coregistration for you to look at where certain contacts of electrodes are. You can also view in Freeview the different cuts of the brain using either CT, or MRI. &lt;/p&gt;
-&lt;h2&gt;4. Getting Surface Parcellations&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;h2&gt;5. Getting SEEG XYZ Coordinates&lt;/h2&gt;
-&lt;p&gt;Once you have CT images coregistered with MRI images, you can easily extract the locations of all iEEG contacts in the MRI axis system. This is done by noting a contact within each electrode (e.g. A1, B1, C10, etc.) and then an algorithm can fill in the entire electrode's xyz coordinates and output to a file.&lt;/p&gt;
 &lt;h1&gt;References:&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall#Setup.26Configuration&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 07 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-12-07:/blog/2017/12/using-freesurfer/</guid><category>Academic</category><category>data analysis</category><category>eeg</category><category>phd</category><category>brain rendering</category></item><item><title>Travel - Budapest</title><link>https://adam2392.github.io/blog/2017/10/travel-budapest/</link><description>&lt;h1&gt;Europe - Budapest, Hungary&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
@@ -2646,193 +2700,64 @@ Getting to the city from the airport is extremely easy. Just check google maps a
 &lt;p&gt;Christmas Market at the Chinese Tower&lt;/p&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
 &lt;p&gt;The best way to get around would be the S line and the U, which goes throughout the entire city. It is pay by an honor system.&lt;/p&gt;
-&lt;p&gt;Other then that, you can take an Uber or a taxi.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 05 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-10-05:/blog/2017/10/travel-munich/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>munich</category></item><item><title>Important Concepts for Computational Modeling</title><link>https://adam2392.github.io/blog/2017/09/fundamental-computational-modeling/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#concepts"&gt;Concepts&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-numerical-integration"&gt;1. Numerical Integration&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#deterministic-differential-equations"&gt;Deterministic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#stochastic-differential-equations"&gt;Stochastic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#considerations"&gt;Considerations:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-deterministic-and-stochastic-differential-equations"&gt;2. Deterministic and Stochastic Differential Equations&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#deterministic-differential-equations-1"&gt;Deterministic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#stochastic-differential-equations-1"&gt;Stochastic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references-1"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references-2"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-&lt;h1&gt;Background&lt;/h1&gt;
-&lt;p&gt;Computational modeling involves setting up mathematical equations that represent some sort of statics, or dynamics within a system. You want to simulate these equations to understand behavior, fixed points, bifurcations and changes wrt parameter values.&lt;/p&gt;
-&lt;h1&gt;Concepts&lt;/h1&gt;
-&lt;h2&gt;1. Numerical Integration&lt;/h2&gt;
-&lt;p&gt;Numerical integration involves solving system of differential equations via numerical methods. This is in general split into deterministic vs stochastic differential equations. Here we will also split the two.&lt;/p&gt;
-&lt;h3&gt;Deterministic Differential Equations&lt;/h3&gt;
-&lt;p&gt;1) Euler's Method&lt;/p&gt;
-&lt;p&gt;2) Runge-Kutta Method(s)?&lt;/p&gt;
-&lt;h3&gt;Stochastic Differential Equations&lt;/h3&gt;
-&lt;p&gt;Heun methods seem to be more accurate, but more time consuming vs the Milstein method.
-1) Heun Method
-Simple discretization leading to Stratonovich integral. It is a "predictor-corrector method" because given value of X at time &lt;span class="math"&gt;\(t_n\)&lt;/span&gt;, obtain predictors with Euler integration scheme, then correct it using Heun's correction.&lt;/p&gt;
-&lt;p&gt;Details to be filled in.&lt;/p&gt;
-&lt;p&gt;2) Milstein Method
-Uses the derivative of the diffusion coefficients&lt;/p&gt;
-&lt;h3&gt;Considerations:&lt;/h3&gt;
-&lt;p&gt;1) Convergence&lt;/p&gt;
-&lt;h3&gt;References:&lt;/h3&gt;
+&lt;p&gt;Other then that, you can take an Uber or a taxi.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 05 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-10-05:/blog/2017/10/travel-munich/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>munich</category></item><item><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link>https://adam2392.github.io/blog/2017/09/simulating-tvb/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;TVB is a platform for simulating whole-brain dynamics that starts from raw data involving:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Comparison of stochastic integration https://arxiv.org/pdf/1102.4401.pdf&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;structural connectivity derived from DTI&lt;/li&gt;
+&lt;li&gt;brain parcellation derived from MRI and CT&lt;/li&gt;
+&lt;li&gt;SEEG xyz locations derived from MRI and CT&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;2. Deterministic and Stochastic Differential Equations&lt;/h2&gt;
-&lt;h3&gt;Deterministic Differential Equations&lt;/h3&gt;
-&lt;p&gt;An example would be a population growth model. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dx_t = Kx_t dt,\ x(0)=x_0\)&lt;/span&gt;, with K being some constant.&lt;/p&gt;
-&lt;p&gt;However, if we have some inherent randomness, then maybe we can't assume &lt;span class="math"&gt;\(x_0\)&lt;/span&gt; is deterministic constant, but perhaps a random variable.&lt;/p&gt;
-&lt;h3&gt;Stochastic Differential Equations&lt;/h3&gt;
-&lt;p&gt;An example would be a population growth model. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dX_t(w) = KX_t(w) dt,\ X_0(w)\)&lt;/span&gt;, with K being some constant and &lt;span class="math"&gt;\(X_t(w)\)&lt;/span&gt; is a random variable, which comes from the initial condition. K could also be random.&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dX_t(w) = (Kdt + dW_t(w))X_t(w) dt,\ X_0(w)\)&lt;/span&gt;, where &lt;span class="math"&gt;\(dW_t(w)\)&lt;/span&gt; is some noise process that adds randomness to K.&lt;/p&gt;
-&lt;p&gt;This leads us to the general SDE. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dX_t(w) = f_t(X_t(w))dt + \sigma_t(X_t(w))dW_t(w),\ X_0(w)\)&lt;/span&gt;, where f is the deterministic drift of the SDE. &lt;span class="math"&gt;\(\sigma_t\)&lt;/span&gt; is the diffusion coefficient, and &lt;span class="math"&gt;\(dW_t(w)\)&lt;/span&gt; is the noise process. &lt;/p&gt;
-&lt;p&gt;We can rewrite the SDE in integral form, which leads us to the Stratonovich integral and the Ito integral.&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(X_t(w) = X_0(w) + \int_t_0 f_s(X_s(w)) ds + \int_t_0 \sigma_s(X_s(w)) dW_s(w)\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Ito integral =&amp;gt;
-Stratonovich integral =&amp;gt;&lt;/p&gt;
-&lt;h3&gt;References:&lt;/h3&gt;
-&lt;h3&gt;References:&lt;/h3&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-09-27:/blog/2017/09/fundamental-computational-modeling/</guid><category>Academic</category><category>phd</category><category>journals</category><category>reviews</category><category>computational modeling</category></item><item><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link>https://adam2392.github.io/blog/2017/09/simulating-tvb/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#data--metadata"&gt;Data &amp;amp; Metadata&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#implementation"&gt;Implementation&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-setting-up-environment"&gt;1. Setting Up Environment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1b-setting-up-environment-on-a-cluster"&gt;1b. Setting Up Environment on a Cluster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1c-using-docker--singularity"&gt;1c. Using Docker / Singularity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-simulating-epilepsy"&gt;2. Simulating Epilepsy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Background&lt;/h1&gt;
-&lt;p&gt;TVB is a platform for simulating whole-brain dynamics that starts from raw data involving:
-    1. structural connectivity derived from DTI
-    2. brain parcellation derived from MRI and CT
-    3. SEEG xyz locations derived from MRI and CT
-This will then determine a gain matrix to determine SEEG signals from the source signals that are generated from neural mass models.&lt;/p&gt;
-&lt;p&gt;The neural mass models will be implemented with nonlinear, complex models for simulating certain type of electrophysiology. The Epileptor is used for simulating seizure activity from a specific source region. &lt;/p&gt;
-&lt;p&gt;The epileptor is a set of coupled differential equations that rely on 6 different variables. They are described here:&lt;/p&gt;
+&lt;p&gt;This will then determine a gain matrix to determine SEEG signals from the source signals that are 
+generated from neural mass models. The neural mass models will be implemented 
+with nonlinear, complex models for simulating certain type of electrophysiology. 
+The Epileptor is used for simulating seizure activity from a specific source region. &lt;/p&gt;
+&lt;p&gt;The epileptor is a set of coupled differential equations that rely on 6 different variables. 
+They are described here:&lt;/p&gt;
 &lt;h1&gt;Data &amp;amp; Metadata&lt;/h1&gt;
-&lt;p&gt;Generally, refer to my post on "Freesurfer" to establish the preprocessing data pipeline using Freesurfer, FSL and MRtrix3.&lt;/p&gt;
-&lt;p&gt;The minimum necessary requirements for creating the TVB dataset are a set of T1 and DWI images as a list of dicom files, or a single 4-D image nifti file.&lt;/p&gt;
+&lt;p&gt;Generally, refer to my post on &lt;code&gt;Freesurfer&lt;/code&gt; to establish the preprocessing 
+data pipeline using Freesurfer, FSL and MRtrix3.&lt;/p&gt;
+&lt;p&gt;The minimum necessary requirements for creating the TVB dataset are a set 
+of T1 and DWI images as a list of dicom files, or a single 4-D image nifti file.&lt;/p&gt;
 &lt;p&gt;A high level summary of how the pipeline proceeds is:
-1. Construct Cortical Surface, Subcortical Surface
-Using freesurfer, you can get the reconstructed surfaces, which are your files that outline the voxels that belong to each region of the brain. This will give you the surface geometries of the cortical and subcortical surface.&lt;/p&gt;
+1. Construct Cortical Surface, Subcortical Surface&lt;/p&gt;
+&lt;p&gt;Using freesurfer, you can get the reconstructed surfaces, 
+which are your files that outline the voxels that belong 
+to each region of the brain. This will give you the surface 
+geometries of the cortical and subcortical surface.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Construct Parcellation Scheme
-This can range from the default in freesurfer to different atlases available for the human brain. This will give you a region mapping for every vertex/face from your cortical/subcortical surface geometries files.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Construct Corticography Tracts
-First, you need to coregister the DWI images with the T1 scans&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Construct Parcellation Scheme&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Using the DWI images, along with the reconstructed surfaces, you can count fiber tracts between each region of the brain and reconstruct the structural connectivity matrices. This is composed from the weights matrix and the length matrix between parcellated regions.&lt;/p&gt;
+&lt;p&gt;This can range from the default in freesurfer to different 
+atlases available for the human brain. This will give you 
+a region mapping for every vertex/face from your cortical/subcortical
+surface geometries files.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Obtain Electrode Coordinates in T1 Space
-First, you need to coregister the CT reconstructed freesurfer file into the T1 space. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Computing Gain Matrix Between Brain Regions and Electrodes
-In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activity, you need to compute a gain matrix that transforms region activity into electrode activity. &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Construct Corticography Tracts&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;This can be done using an inverse-square method fall-off on the region activity, or using a dipole method as outlined in the "Virtual Epileptic Patient" paper.&lt;/p&gt;
+&lt;p&gt;First, you need to coregister the DWI images with the T1 scans 
+Using the DWI images, along with the reconstructed surfaces, 
+you can count fiber tracts between each region of the brain 
+and reconstruct the structural connectivity matrices. This is composed from the weights matrix and the length matrix between parcellated regions.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Obtain Electrode Coordinates in T1 Space&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;First, you need to coregister the CT reconstructed freesurfer file into the T1 space. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Computing Gain Matrix Between Brain Regions and Electrodes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activity, 
+you need to compute a gain matrix that transforms region activity into electrode activity. 
+This can be done using an inverse-square method fall-off on the region activity, 
+or using a dipole method as outlined in the "Virtual Epileptic Patient" paper.
+Note that these methods have some limitations, as it assumes all 
+activity from brain regions are "projected" to the iEEG electrodes 
+instantaneously.&lt;/p&gt;
 &lt;h1&gt;Implementation&lt;/h1&gt;
 &lt;h2&gt;1. Setting Up Environment&lt;/h2&gt;
 &lt;p&gt;First you may want to set up a conda environment, or a virtualenv that will separate the entire python project from your normal OS.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;
-&lt;span class="err"&gt;pip install nibabel networkx&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pip install nibabel networkx&lt;/span&gt;
 &lt;span class="err"&gt;git clone https://github.com/the-virtual-brain/tvb-data&lt;/span&gt;
 &lt;span class="err"&gt;git clone https://github.com/the-virtual-brain/tvb-library&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you want to have a script to add these all to path for your jupyter notebook, use the following:&lt;/p&gt;
@@ -2865,199 +2790,34 @@ jupyter notebook
 &lt;span class="err"&gt;python -m ipykernel install --name tridesclous-testing —user&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2&gt;1c. Using Docker / Singularity&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
 &lt;h2&gt;2. Simulating Epilepsy&lt;/h2&gt;
-&lt;p&gt;In order to simulate epilepsy, you are going to walk through a pipeline using TVB. Details are left out for now.&lt;/p&gt;
-&lt;p&gt;i. Structural Connectivity
-What is the matrix of connectivities between your brain regions?
+&lt;p&gt;In order to simulate epilepsy, you are going to walk through a pipeline 
+using TVB. Details are left out for now.&lt;/p&gt;
+&lt;p&gt;i. Structural Connectivity&lt;/p&gt;
+&lt;p&gt;What is the matrix of connectivities between your brain regions?
 Ex: Connectivity weights, conduction speed, coupling function between long-range regions&lt;/p&gt;
-&lt;p&gt;ii. Neural Mass Model
-What is the phenomenological model at brain regions?
+&lt;p&gt;ii. Neural Mass Model&lt;/p&gt;
+&lt;p&gt;What is the phenomenological model at brain regions?
 Ex: Epileptor6D, with parameter settings&lt;/p&gt;
-&lt;p&gt;iii. Integrators
-How to solve your stochastic differential equation?
+&lt;p&gt;iii. Integrators&lt;/p&gt;
+&lt;p&gt;How to solve your stochastic differential equation?
 Ex: Heunstochastic, with noise levels&lt;/p&gt;
-&lt;p&gt;iv. Coupling
-How are your brain regions coupled?
+&lt;p&gt;iv. Coupling&lt;/p&gt;
+&lt;p&gt;How are your brain regions coupled? How does activity 
+of one region translate to the next? Is it transformed 
+via a function?
 Ex: linear, additive, hyperbolic&lt;/p&gt;
-&lt;p&gt;v. Monitors
-What variables to monitor and store?
-Ex: State variables, iEEG activity from sampling rate and period.&lt;/p&gt;
+&lt;p&gt;v. Monitors&lt;/p&gt;
+&lt;p&gt;What variables to monitor and store?
+Ex: State variables, iEEG activity from sampling 
+rate and period.&lt;/p&gt;
 &lt;p&gt;Then once these are complete, you can run your simulation.&lt;/p&gt;
 &lt;h2&gt;References:&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-library&lt;/li&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-epilepsy&lt;/li&gt;
 &lt;li&gt;https://www.thevirtualbrain.org/tvb/zwei&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-09-27:/blog/2017/09/simulating-tvb/</guid><category>Academic</category><category>data analysis</category><category>eeg</category><category>phd</category><category>computational modeling</category></item><item><title>Important Papers for Fundamentals in Computational Neuroscience / Data Science</title><link>https://adam2392.github.io/blog/2017/09/fundamental-papers/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#papers"&gt;Papers&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-wilson-cowan-neural-mass-model"&gt;1. Wilson-Cowan Neural Mass Model&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-kalman-filter-model"&gt;2. Kalman Filter Model&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-1"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-1"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-expectation-maximization"&gt;3. Expectation Maximization&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-2"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-2"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-information-bottleneck-method"&gt;4. Information Bottleneck Method&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-3"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-3"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#5-opening-the-black-box-of-deep-neural-networks-via-information"&gt;5. Opening the Black Box of Deep Neural Networks Via Information&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-4"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-4"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#6-reinforcement-learning-an-overview"&gt;6. Reinforcement Learning: An Overview&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-5"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-5"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#7-deep-reinforcement-learning-an-overview"&gt;7. Deep Reinforcement Learning: An Overview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#8-variational-inference"&gt;8. Variational Inference:&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-6"&gt;Summary / Conclusions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-6"&gt;Important Notes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Papers&lt;/h1&gt;
-&lt;h2&gt;1. Wilson-Cowan Neural Mass Model&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;2. Kalman Filter Model&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;3. Expectation Maximization&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;4. Information Bottleneck Method&lt;/h2&gt;
-&lt;p&gt;http://www.cs.huji.ac.il/labs/learning/Papers/allerton.pdf&lt;/p&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;p&gt;Let us define X as input signal, and Y as desired output.&lt;/p&gt;
-&lt;p&gt;Here, they were interested in deriving a quantitative method for optimizing 1) compression rate of a signal and 2) the choice of representation of the original signal.&lt;/p&gt;
-&lt;p&gt;Previous theory looked at minimizing the rate of compression given a constraint on expected distortion of the original signal (with new compression). This was solved via iterative algorithm (similar to EM), but lacked generality to find optimal representatives, which minimize the expected distortion (not just compression) of the signal. &lt;/p&gt;
-&lt;p&gt;The new theory looks at minimizing the rate of compression given a constraint on the amount of information we can keep about Y using X. This produces an iterative algorithm that also can be solved iteratively. It also shows that 1) the Kullback-Leibler divergence is the relevant distortion measure for the information bottleneck setting, and 2) optimization of representation of signal and the signal compression can be done together.&lt;/p&gt;
-&lt;p&gt;This work can be used in applications to information processing problems (e.g. deep learning).&lt;/p&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;p&gt;Mutual information is defined as:&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(I(X;Y) = D_{KL}[P(x,y)||P(x)P(y)] = \sum_{x\in X, y\in Y} P(x,y) log(\frac_{P(x,y)}_{P(x)P(y)})\)&lt;/span&gt;
-&lt;span class="math"&gt;\(= \sum_{x\in X, y\in Y}P(x,y) log(\frac_{P(x|y)}_{P(x)}) = H(X) - H(X|Y)\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;, where &lt;span class="math"&gt;\(D_{KL}(p||q)\)&lt;/span&gt; is the Kullback-Liebler divergence of distributions p and q, and &lt;span class="math"&gt;\(H(X)\)&lt;/span&gt; and &lt;span class="math"&gt;\(H(X|Y)\)&lt;/span&gt; are entropy and conditional entropies, respectively.&lt;/p&gt;
-&lt;p&gt;We want the optimal representations of signal X with respect to output label Y. Sufficient statistics are maps/partitions of X, S(X) that captures all the information X has about Y. The mutual information given Y is equal. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(I(S(X); Y) = I(X; Y)\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;We can allow the map to be stochastic, with encoder P(T|X) and allow map to capture as much as possible of I(X;Y), not necessarily all of it &lt;span class="math"&gt;\(I(S(X); Y) \leq I(X; Y)\)&lt;/span&gt;. Define &lt;span class="math"&gt;\(t \in T\)&lt;/span&gt; as compressed representations of &lt;span class="math"&gt;\(x \in X\)&lt;/span&gt;, stochastically, &lt;span class="math"&gt;\(p(t|x)\)&lt;/span&gt;. The following optimization problem finds a balance between compression of X and prediction of Y.&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(min_{p(t|x),p(y|t),p(t)}\ {I(X;T) - \beta I(T;Y)}\)&lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;5. Opening the Black Box of Deep Neural Networks Via Information&lt;/h2&gt;
-&lt;p&gt;Reference: https://arxiv.org/pdf/1703.00810.pdf&lt;/p&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;p&gt;In this paper, the authors extend their analysis of DNN using information theory. They answered the following questions:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The SGD layer dynamics in the Information plane.
-First the layers increase &lt;span class="math"&gt;\(I(T_i;Y)\)&lt;/span&gt;, and then later decrease &lt;span class="math"&gt;\(I(X; T_i)\)&lt;/span&gt;, which corresponds to increasing the information about Y and then later compressing the representation (empirical error minimization &amp;amp; representation compression phase).&lt;/li&gt;
-&lt;li&gt;The effect of the training sample size on the layers.
-It seems that sample size does not have an effect on empirical error minimization, but does have an effect on the representation compression. Smaller sample sizes has overfitting, which has been seen as overfitting the sample noise. &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What is the benefit of the hidden layers?
-Adding hidden layers reduces the number of training epochs. It also seems to accelerate compression, but adding extra width does not seem to help. With layered diffusion of the SGD optimization (backpropagation), it seems that there is an exponential decrease in epochs with K hidden layers.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What is the final location of the hidden layers?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Do the hidden layers form optimal IB representations?
-It seems that the hidden layers converge to the optiaml IB representations. However, we can see that there can be clearly many different layers that correspond to the same IB representation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Another important hypothesis/conjecture they make is that: attempts to interpret single weights, or even single neurons in such networks can be meaningless because there is a large number of different networks that can achieve optimal performance. This makes sense in terms of how the brain is structured; the brain does not form the same pathway for learning something new between different people, but form a unique network for optimal performance. &lt;/p&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;p&gt;First, they estimated the mutual information of the layers with the input and with the labels &lt;span class="math"&gt;\(I(X;T_i)\)&lt;/span&gt; and &lt;span class="math"&gt;\(I(T_i;Y)\)&lt;/span&gt;. &lt;/p&gt;
-&lt;h2&gt;6. Reinforcement Learning: An Overview&lt;/h2&gt;
-&lt;p&gt;Reference: https://pdfs.semanticscholar.org/b373/b0c6e3b4fef4ac0534965708fc382343f8dc.pdf&lt;/p&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;7. Deep Reinforcement Learning: An Overview&lt;/h2&gt;
-&lt;p&gt;Reference:&lt;/p&gt;
-&lt;h2&gt;8. Variational Inference:&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions&lt;/h3&gt;
-&lt;p&gt;Variational inference&lt;/p&gt;
-&lt;h3&gt;Important Notes&lt;/h3&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 25 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-09-25:/blog/2017/09/fundamental-papers/</guid><category>Academic</category><category>phd</category><category>journals</category><category>reviews</category></item><item><title>Travel - Marseille</title><link>https://adam2392.github.io/blog/2017/09/travel-marseille/</link><description>&lt;h1&gt;Europe - Marseille, France&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-09-27:/blog/2017/09/simulating-tvb/</guid><category>Academic</category><category>data analysis</category><category>eeg</category><category>phd</category><category>computational modeling</category></item><item><title>Travel - Marseille</title><link>https://adam2392.github.io/blog/2017/09/travel-marseille/</link><description>&lt;h1&gt;Europe - Marseille, France&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -3258,7 +3018,7 @@ A: I would stay near Vieux Port, Joliette, or the southern part of the city.&lt;
 &lt;/ol&gt;
 &lt;h1&gt;2. Generalized Linear Models:&lt;/h1&gt;
 &lt;h2&gt;General Form of Exponential Family Distribution&lt;/h2&gt;
-&lt;p&gt;Be able to define all the terms, such as: natural paramters, sufficient statistic, natural link function, dispersion parameter&lt;/p&gt;
+&lt;p&gt;Be able to define all the terms, such as: natural parameters, sufficient statistic, natural link function, dispersion parameter&lt;/p&gt;
 &lt;h2&gt;Normal Linear Regression&lt;/h2&gt;
 &lt;h2&gt;Logistic Regression&lt;/h2&gt;
 &lt;h2&gt;Poisson Regression&lt;/h2&gt;
@@ -3332,7 +3092,7 @@ repeat until there is no further change in L(z, C):
 &lt;p&gt;Good things to know and remember are:
 - Hodgkin Huxley models: a biophysical model that models realistic neuronal firing based on concentration gradients, membrane conductances, membrane potentials and even more.
 - Nernst equation: a fundamental equation for determining the resting potential of a membrane in the presence of a concentration gradient of an ion.
-- Goldman-Katz equation: a model with multiple ions that determins the resting potential of a membrane (extension of Nernst)
+- Goldman-Katz equation: a model with multiple ions that determines the resting potential of a membrane (extension of Nernst)
 - Action potentials and the chronology of cell actions that are taken&lt;/p&gt;
 &lt;h1&gt;9. Gaussian Mixture Models&lt;/h1&gt;
 &lt;p&gt;This is the idea that some data distributions can be the combinations of many different Gaussian models with different means and variance, but superimposed on each other. &lt;/p&gt;
@@ -3508,7 +3268,7 @@ A: Miss Shirley's, Woodberry Kitchen, and Chocolate Over Water to eat. Inner Har
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#airports"&gt;Airports&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sights"&gt;Sights&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-cloud-gate--millenium-park"&gt;1. Cloud Gate / Millenium Park:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#1-cloud-gate--millenium-park"&gt;1. Cloud Gate / Millennium Park:&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#2-art-institute-of-chicago"&gt;2. Art Institute of Chicago:&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#3-chicago-architecture-river-tour"&gt;3. Chicago Architecture River Tour:&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#4-willis-tower--sears-tower"&gt;4. Willis Tower / Sears Tower:&lt;/a&gt;&lt;/li&gt;
@@ -3568,7 +3328,7 @@ This is the main airport that services Southwest.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;Sights&lt;/h2&gt;
-&lt;h4&gt;1. Cloud Gate / Millenium Park: &lt;br /&gt;&lt;/h4&gt;
+&lt;h4&gt;1. Cloud Gate / Millennium Park: &lt;br /&gt;&lt;/h4&gt;
 &lt;p&gt;This is the home of the infamous Chicago Bean. The entire area has very cool architecture, and there is a snake bridge that goes over the highway that leads to a park. &lt;/p&gt;
 &lt;p&gt;I would highly recommend coming to check out the Bean once during the day and once in the late afternoon. The different lights provide for a truly appreciative experience. If you're into checking out cool parks, go to the playground that is across the snake bridge. There's an incredible playground built for kids, but it's a great experience to relive your childhood making your way through the slides, tree houses and swings. &lt;/p&gt;
 &lt;h4&gt;2. Art Institute of Chicago: &lt;br /&gt;&lt;/h4&gt;
@@ -3609,7 +3369,7 @@ It does cost quite a bit of money to go up.&lt;/p&gt;
 &lt;p&gt;I would advise MAKING A RESERVATION well before your trip. If you have a large group, there is no way you will get seated if you are only in town for a few days. &lt;/p&gt;
 &lt;p&gt;I'll leave it to Yelp to advise you on what to eat because truly everything there is worth your money.&lt;/p&gt;
 &lt;h4&gt;5. Wildberry Cafe: &lt;br /&gt;&lt;/h4&gt;
-&lt;p&gt;This is my favorite brunch place. It's right next to Cloud Gate / Millenium Park. Hands down, make sure you try their specialty pancakes and pretty much everything else on the menu is great. There will always be a wait, so you can put your name down and then go check out Millenium Park.&lt;/p&gt;
+&lt;p&gt;This is my favorite brunch place. It's right next to Cloud Gate / Millennium Park. Hands down, make sure you try their specialty pancakes and pretty much everything else on the menu is great. There will always be a wait, so you can put your name down and then go check out Millennium Park.&lt;/p&gt;
 &lt;p&gt;I'll leave it to Yelp to advise you on the rest.&lt;/p&gt;
 &lt;h2&gt;Nightlife/Drinking&lt;/h2&gt;
 &lt;h4&gt;1. The Mid: &lt;br /&gt;&lt;/h4&gt;
@@ -3636,7 +3396,7 @@ A: Generally, I'm an advocate of staying downtown because then everything is wal
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Q: I only have a day in Chicago, where should I go? &lt;br/&gt;
-A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millenium Park and the River Walk to see. Signature Room for a night time drink if you have the time.&lt;/p&gt;
+A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millennium Park and the River Walk to see. Signature Room for a night time drink if you have the time.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Images in Chicago&lt;/h1&gt;
@@ -3881,7 +3641,7 @@ A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millenium Pa
 &lt;h2&gt;Food&lt;/h2&gt;
 &lt;p&gt;Here, I briefly describe a couple of food places that are worth the HYPE. For locations, just use google, tripadvisor, or yelp.&lt;/p&gt;
 &lt;h4&gt;1. Gen Sushi&lt;/h4&gt;
-&lt;p&gt;Great turnstyle sushi place that I've been probably 3-5 times everytime I've been in Tokyo.&lt;/p&gt;
+&lt;p&gt;Great turnstyle sushi place that I've been probably 3-5 times every time I've been in Tokyo.&lt;/p&gt;
 &lt;h4&gt;2. Ichiran Ramen&lt;/h4&gt;
 &lt;p&gt;Great ramen shop that you order from a vending machine and sit in a "cubicle" like area to eat. Absolutely... great.&lt;/p&gt;
 &lt;h4&gt;3. Omakase (Find a sushi restaurant with good reviews)&lt;/h4&gt;
@@ -3955,36 +3715,7 @@ A: I highly suggest getting the Kansai pass ahead of time if you are going to be
 &lt;h2&gt;Getting Around&lt;/h2&gt;
 &lt;p&gt;There are metro stations, but be wary of when they close. Uber is also (as of 2017) only Uberblack, so make sure to do some research and download the local Korean taxi app.&lt;/p&gt;
 &lt;h1&gt;FAQ&lt;/h1&gt;
-&lt;p&gt;TBD&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-07-26:/blog/2017/07/travel-korea/</guid><category>Travel</category><category>travel</category><category>korea</category><category>seoul</category></item><item><title>Setting Up a Pelican Site</title><link>https://adam2392.github.io/blog/2017/06/setup-pelican-site/</link><description>&lt;h1&gt;Getting Setup with Pelican Site&lt;/h1&gt;
-&lt;h1&gt;By: Adam Li&lt;/h1&gt;
-&lt;h3&gt;Table of Contents&lt;/h3&gt;
-&lt;!-- MarkdownTOC autolink="True" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-condapip-install"&gt;1. Conda/Pip Install&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-start-up-pelican"&gt;2. Start up pelican:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-installing-common-pelican-themes-and-pelican-plugins"&gt;3. Installing common pelican-themes and pelican-plugins:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#choosing-your-hosting-server"&gt;Choosing Your Hosting Server&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#installing-and-choosing-themesplugins"&gt;Installing and Choosing Themes/Plugins&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#pushing-content-to-cloud"&gt;Pushing Content to Cloud&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-via-fab-old"&gt;1. Via Fab (Old)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-via-git-directly"&gt;2. Via Git Directly&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#adding-pages-of-static-content"&gt;Adding Pages of Static Content&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#adding-articles-to-your-blog"&gt;Adding Articles To Your Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#adding-gallery--images-to-your-blog"&gt;Adding Gallery / Images To Your Blog&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#modifying-pelican-templates"&gt;Modifying Pelican Templates:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;p&gt;TBD&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-07-26:/blog/2017/07/travel-korea/</guid><category>Travel</category><category>travel</category><category>korea</category><category>seoul</category></item><item><title>Setting Up a Pelican Site</title><link>https://adam2392.github.io/blog/2017/06/setup-pelican-site/</link><description>&lt;h1&gt;Installation&lt;/h1&gt;
 &lt;h2&gt;1. Conda/Pip Install&lt;/h2&gt;
 &lt;p&gt;After getting your virtualenv setup, run 'pip install pelican'. Also include additional packages:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pip install Markdown beautifulsoup4 typogrify Pillow webassets&lt;/span&gt;
@@ -4099,31 +3830,9 @@ http://duncanlock.net/blog/2013/05/29/better-figures-images-plugin-for-pelican/&
 &lt;li&gt;Pelican-plugins: https://github.com/getpelican/pelican-plugins&lt;/li&gt;
 &lt;li&gt;Pelican-themes: https://github.com/getpelican/pelican-themes&lt;/li&gt;
 &lt;li&gt;Walkthru of Pelican w/ Python3.7: https://rsip22.github.io/blog/create-a-blog-with-pelican-and-github-pages.html&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 04 Jun 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-06-04:/blog/2017/06/setup-pelican-site/</guid><category>Coding</category><category>pelican</category><category>publishing</category><category>webdev</category><category>python</category></item><item><title>Setting Up a Virtual Environment for Python</title><link>https://adam2392.github.io/blog/2017/06/setup-virtual-env/</link><description>&lt;h1&gt;Getting Setup with Virtual Environment for Python Development&lt;/h1&gt;
-&lt;h1&gt;By: Adam Li&lt;/h1&gt;
-&lt;h3&gt;Table of Contents&lt;/h3&gt;
-&lt;!-- MarkdownTOC autolink="true" bracket="round" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#installing"&gt;Installing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#basics-create-delete"&gt;Basics (Create, Delete):&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-create"&gt;1. Create&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-delete-a-virtualenv"&gt;2. Delete a Virtualenv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#tips"&gt;Tips&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-starting-up-your-venv"&gt;1. Starting up your Venv&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-requirementstxt"&gt;2. Requirements.txt&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#convenient-tools"&gt;Convenient Tools&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-automatically-cd-to-project-directory"&gt;1. Automatically cd To Project Directory&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 04 Jun 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-06-04:/blog/2017/06/setup-pelican-site/</guid><category>Coding</category><category>pelican</category><category>publishing</category><category>webdev</category><category>python</category></item><item><title>Setting Up a Virtual Environment for Python</title><link>https://adam2392.github.io/blog/2017/06/setup-virtual-env/</link><description>&lt;p&gt;An outdated post on how to work with virtual environments. The 
+latest &lt;code&gt;Pipenv&lt;/code&gt; and &lt;code&gt;pip&lt;/code&gt; commands are more robust.&lt;/p&gt;
+&lt;h1&gt;Getting Setup with Virtual Environment for Python Development&lt;/h1&gt;
 &lt;p&gt;VirtualEnv: 15.1.0
 VirtualEnvWrapper&lt;/p&gt;
 &lt;p&gt;A virtual environment is useful for development in Python because it keeps your packages for certain projects separate from each other. It'll keep everything for that project separated in a separate wrapper.&lt;/p&gt;
@@ -4204,7 +3913,6 @@ VirtualEnvWrapper&lt;/p&gt;
 &lt;h1&gt;References:&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;https://nolar.info/automatically-activate-virtualenv-on-cd/&lt;/li&gt;
-&lt;li&gt;code to input into .bashrc&lt;/li&gt;
 &lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 04 Jun 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-06-04:/blog/2017/06/setup-virtual-env/</guid><category>Coding</category><category>virtualenv</category><category>webdev</category><category>python</category></item><item><title>Travel - Paris</title><link>https://adam2392.github.io/blog/2017/03/travel-paris/</link><description>&lt;h1&gt;Europe - Lyon, France&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
@@ -4272,7 +3980,7 @@ VirtualEnvWrapper&lt;/p&gt;
 &lt;h4&gt;5. Les Catacombes de Paris&lt;/h4&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h4&gt;6. Arc de Triomphe&lt;/h4&gt;
-&lt;p&gt;Iconic. Probaby not worth going up in my opinion, but you can come here and then walk down Champs De Lysee.&lt;/p&gt;
+&lt;p&gt;Iconic. Probably not worth going up in my opinion, but you can come here and then walk down Champs De Lysee.&lt;/p&gt;
 &lt;h4&gt;7. Cathedrale Notre-Dame de Paris&lt;/h4&gt;
 &lt;p&gt;Also... very famous and worth going once.&lt;/p&gt;
 &lt;h2&gt;Food&lt;/h2&gt;
@@ -4355,7 +4063,7 @@ A: I would stay near the Seine river if possible! Preferably on the north side b
 &lt;/ul&gt;
 &lt;h4&gt;5. Put myself in uncomfortable situations: [ ]&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;I think this last one encompasses a number of things I think I need to go through. Although my friend circles aren't the same in Baltimore as in California, there are people I meet everyday that offer unique perspectives. Engaging in making relations is the first one. I haven't really explored doing "activities" for fun, such as hiking and exploring. I want to put myself out there and go on more "naturey" activites. I've had a lot of fun doing that in the past couple of months and I think it will only improve when I go into 2017.&lt;/li&gt;
+&lt;li&gt;I think this last one encompasses a number of things I think I need to go through. Although my friend circles aren't the same in Baltimore as in California, there are people I meet everyday that offer unique perspectives. Engaging in making relations is the first one. I haven't really explored doing "activities" for fun, such as hiking and exploring. I want to put myself out there and go on more "naturey" activities. I've had a lot of fun doing that in the past couple of months and I think it will only improve when I go into 2017.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;6. Begin to learn French: [ ]&lt;/h4&gt;
 &lt;ul&gt;
@@ -4368,9 +4076,8 @@ A: I would stay near the Seine river if possible! Preferably on the north side b
 &lt;h4&gt;8. Build 3 Node, JS, React webapps this year&lt;/h4&gt;
 &lt;p&gt;Keeping it under 10 this year because I recently read about Warren Buffet's 5/25 rule and am inspired by its logic. Happy 2017 everyone.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 31 Dec 2016 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2016-12-31:/blog/2016/12/goals-2017/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Personal Goals - 2016</title><link>https://adam2392.github.io/blog/2015/12/goals-2016/</link><description>&lt;p&gt;Each year passes by faster and faster in my opinion, so I want to make the most out of 2016. As 2016 comes and 2015 comes to a close, I want to make some resolutions and goals for the new year.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Spend more effort and time on good friends and ignore the rest.&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;This year I realized that even someone who you've known for years can exit your life in an instant. I want to spend more time and money on people that are there for you when you're up and down. When shit went down for me, people who I thought I could count on were nowhere to be seen. Why waste time and effort on those people?&lt;/p&gt;
+&lt;p&gt;Spend more effort and time on good friends and ignore the rest.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Read more about politics and current events in our country.&lt;/p&gt;

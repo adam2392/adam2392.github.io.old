@@ -58,7 +58,7 @@ The airport is rather efficient, so I was able to get through security and check
 #### 1. De Gooyer Windmill (and Brewery!)
 This is an old windmill that was renovated to become a brewery at the bottom. Come here and take a photo of the picturesque windmill and have some great locally brewed beers! 
 
-The brewery is only open till 8PM though. There is also a great burrito (Burrito Annonymous) place across the street, which is great if you're missing Mexican food.
+The brewery is only open till 8PM though. There is also a great burrito (Burrito Anonymous) place across the street, which is great if you're missing Mexican food.
 
 #### 2. Red Light District
 Sex shows, prostitutes in windows, sex shops and a very red lit district.

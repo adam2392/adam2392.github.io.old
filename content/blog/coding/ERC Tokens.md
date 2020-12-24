@@ -7,36 +7,7 @@ Authors: Adam Li
 Summary: A short walkthrough of setting up an ethereum token.
 
 # Getting Setup with Ethereum
-# By: Adam Li
-### Table of Contents
-<!-- MarkdownTOC -->
-
-- Installation
-- Set Up
-    - 1. Creating Your Project Directory
-        - 1b. Project Directory
-    - 2. Contracts and FrontEnd
-- Implementation
-    - ERC Standards
-        - 1. ERC20
-        - 2. ERC721
-- Testing
-    - 1. Remix \(http://remix.ethereum.org/\)
-    - 2. Ropsten Test Network \(https://ropsten.etherscan.io \)
-    - 3. Javascript Truffle Tests
-    - 4. Metamask and Ganache
-- Deployment
-    - 1. truffle.js \(http://truffleframework.com/docs/advanced/configuration\)
-    - 2. Crowdsalable Ethereum Token
-- References:
-
-<!-- /MarkdownTOC -->
-
-pragma solidity ^0.4.18;
-web3@1.0.0-beta.27
-truffle@4.0.4 
-solc@0.4.19 
-ethereumjs-testrpc@6.0.3 
+A summary of walking through Ethereum in 2018.
 
 # Installation
 The following packages need to be installed for a test time environment:
@@ -86,7 +57,7 @@ Requirements for it are:
 - approve 
 - transferFrom
 
-It also defines two events: Transfer and Approval .
+It also defines two events: Transfer and Approval.
 
 ### 2. ERC721
 These are tokens that are non-fungible. One token does not necessarily equal another. It is slightly more complicated then the erc20 token.
@@ -138,6 +109,7 @@ Inside your truffle.js file, you'll find the line module.exports. You can modify
     - (options): gas, gasPrice, from, provider
 
 - providers: Specifies the local test network. Make sure you wrap truffle-hdwallet providers in a function closure as shown below to ensure that only one network is ever connected at a time.
+
 
     networks: {
       ropsten: {

@@ -73,7 +73,7 @@ Obviously, the ideal goal is to be able to sell our technology by the years end 
 
 As a result of this endeavor, I aim to showcase to myself and others that I am capable of designing and implementing a production level software system that can sit in a clinical center that pulls data, formats data properly, preprocesses it, runs an optimized parallelized algorithm for analysis and outputs high-grade visualizations that are clinically useful. 
 
-In addition, I want to practice more of my coding skills with data structures and basic algorithms using LeetCode. So far, I've done 20-30 excercises and they are actually quite interesting to sit through. Upon reading the solutions, I always learn something new in terms of how to think like an experienced programmer.
+In addition, I want to practice more of my coding skills with data structures and basic algorithms using LeetCode. So far, I've done 20-30 exercises and they are actually quite interesting to sit through. Upon reading the solutions, I always learn something new in terms of how to think like an experienced programmer.
 
 #### 5. Improving Photography With New IG Page [ ]
 This year, I'm going to try to post new photos to a new instagram blog page with more travel related photos. This is to sort of separate my personal instagram from my photography hobby. I have a lot more to learn about optimal lighting and photography of different scenes (e.g. portraits, landscapes, nightshots). I am aiming to post an additional 12 photos that I am proud of onto this IG page by the end of the year.

@@ -9,7 +9,8 @@ Summary: A summary of goals for 2016.
 Each year passes by faster and faster in my opinion, so I want to make the most out of 2016. As 2016 comes and 2015 comes to a close, I want to make some resolutions and goals for the new year.
 
 1. Spend more effort and time on good friends and ignore the rest.
-- This year I realized that even someone who you've known for years can exit your life in an instant. I want to spend more time and money on people that are there for you when you're up and down. When shit went down for me, people who I thought I could count on were nowhere to be seen. Why waste time and effort on those people?
+
+[comment]: <> (- This year I realized that even someone who you've known for years can exit your life in an instant. I want to spend more time and money on people that are there for you when you're up and down. When shit went down for me, people who I thought I could count on were nowhere to be seen. Why waste time and effort on those people?)
 
 2. Read more about politics and current events in our country.
 - I think that coming from California is a blessing in many ways. However, I think that we take for granted all the things we have. There is a lot of different things happening around the country (e.g. politics) that I did not educate myself on. Using politico and pulse apps to keep up to date

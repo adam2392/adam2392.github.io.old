@@ -6,28 +6,6 @@ Slug: setup-pelican-site
 Authors: Adam Li
 Summary: A short walkthrough of setting up a pelican site
 
-# Getting Setup with Pelican Site
-# By: Adam Li
-### Table of Contents
-<!-- MarkdownTOC autolink="True" -->
-
-- [Installation](#installation)
-    - [1. Conda/Pip Install](#1-condapip-install)
-    - [2. Start up pelican:](#2-start-up-pelican)
-    - [3. Installing common pelican-themes and pelican-plugins:](#3-installing-common-pelican-themes-and-pelican-plugins)
-- [Choosing Your Hosting Server](#choosing-your-hosting-server)
-- [Installing and Choosing Themes/Plugins](#installing-and-choosing-themesplugins)
-- [Pushing Content to Cloud](#pushing-content-to-cloud)
-    - [1. Via Fab \(Old\)](#1-via-fab-old)
-    - [2. Via Git Directly](#2-via-git-directly)
-- [Adding Pages of Static Content](#adding-pages-of-static-content)
-- [Adding Articles To Your Blog](#adding-articles-to-your-blog)
-- [Adding Gallery / Images To Your Blog](#adding-gallery--images-to-your-blog)
-    - [Modifying Pelican Templates:](#modifying-pelican-templates)
-- [References:](#references)
-
-<!-- /MarkdownTOC -->
-
 # Installation
 ## 1. Conda/Pip Install
 After getting your virtualenv setup, run 'pip install pelican'. Also include additional packages:
@@ -138,7 +116,6 @@ Adding images to your blog require the following packages:
 - Knowledge of modifying Pelican templates
 
 ## Modifying Pelican Templates:
-
 
 https://kwkelly.com/blog/adding-galleries-to-pelican-and-bootstrap/
 http://duncanlock.net/blog/2013/05/29/better-figures-images-plugin-for-pelican/

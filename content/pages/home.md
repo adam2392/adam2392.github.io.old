@@ -7,7 +7,7 @@ save_as: index.html
 
 ## Research Work
 I am a fifth year PhD student in biomedical engineering, specializing in computational neuroscience and machine learning 
-at Johns Hopkins University. I work with Dr. Sridevi V. Sarma in the [Neuromedical Control Systms group](http://sarmalab.icm.jhu.edu/). 
+at Johns Hopkins University. I work with Dr. Sridevi V. Sarma in the [Neuromedical Control Systems group](http://sarmalab.icm.jhu.edu/). 
 
 My interest in technology and engineering started at UCSD, where I graduated in 2015 with a double major 
 in Bioengineering and Mathematics. It was there under the guidance of many great faculty, such as [Dr. Todd Coleman](http://coleman.ucsd.edu/), 

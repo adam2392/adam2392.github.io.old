@@ -259,7 +259,7 @@ In the DKVAE, the model adds an additional pseudo-latent state, which is of low-
 TBD
 
 ## Possibilities for Improved Deep State Space Models (DSSM) 
-It seems that a reoccuring theme right now in deep learning is the integration of older techniques (i.e. Linear State Space Models LSSM) with deep neural networks. Since deep neural networks can act as universal function approximators, that are also able to be trained end-to-end using stochastic gradient descent on data, then many challenges in traditional LSSM that had intractable setups can potentially be overcome. Granted, you will need enough data for each situation you are thinking of, but in theory one can really extend the power of DSSM to provide improved interpretability of a deep learning model.
+It seems that a re-occurring theme right now in deep learning is the integration of older techniques (i.e. Linear State Space Models LSSM) with deep neural networks. Since deep neural networks can act as universal function approximators, that are also able to be trained end-to-end using stochastic gradient descent on data, then many challenges in traditional LSSM that had intractable setups can potentially be overcome. Granted, you will need enough data for each situation you are thinking of, but in theory one can really extend the power of DSSM to provide improved interpretability of a deep learning model.
 
 # References:
 1. Roweis S. et al. "A Unifying Review of Linear Gaussian Models".http://mlg.eng.cam.ac.uk/zoubin/papers/lds.pdf

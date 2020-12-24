@@ -114,7 +114,7 @@ Buy bread/lettuce beforehand, or you end up getting ripped off by the local cart
 Here, I briefly describe a couple of food places that are worth the HYPE. For locations, just use google, tripadvisor, or yelp.
 
 #### 1. Gen Sushi
-Great turnstyle sushi place that I've been probably 3-5 times everytime I've been in Tokyo.
+Great turnstyle sushi place that I've been probably 3-5 times every time I've been in Tokyo.
 
 #### 2. Ichiran Ramen
 Great ramen shop that you order from a vending machine and sit in a "cubicle" like area to eat. Absolutely... great.

@@ -20,7 +20,7 @@ gallery:{photo}chicago
         - [If you need lyft \(you'll get a free ride!\):](#if-you-need-lyft-youll-get-a-free-ride)
     - [Airports](#airports)
     - [Sights](#sights)
-        - [1. Cloud Gate / Millenium Park:](#1-cloud-gate--millenium-park)
+        - [1. Cloud Gate / Millennium Park:](#1-cloud-gate--millenium-park)
         - [2. Art Institute of Chicago:](#2-art-institute-of-chicago)
         - [3. Chicago Architecture River Tour:](#3-chicago-architecture-river-tour)
         - [4. Willis Tower / Sears Tower:](#4-willis-tower--sears-tower)
@@ -72,7 +72,7 @@ This is the main airport that is a lot larger.
 This is the main airport that services Southwest.
 
 ## Sights
-#### 1. Cloud Gate / Millenium Park: <br />
+#### 1. Cloud Gate / Millennium Park: <br />
 This is the home of the infamous Chicago Bean. The entire area has very cool architecture, and there is a snake bridge that goes over the highway that leads to a park. 
 
 I would highly recommend coming to check out the Bean once during the day and once in the late afternoon. The different lights provide for a truly appreciative experience. If you're into checking out cool parks, go to the playground that is across the snake bridge. There's an incredible playground built for kids, but it's a great experience to relive your childhood making your way through the slides, tree houses and swings. 
@@ -133,7 +133,7 @@ I would advise MAKING A RESERVATION well before your trip. If you have a large g
 I'll leave it to Yelp to advise you on what to eat because truly everything there is worth your money.
 
 #### 5. Wildberry Cafe: <br />
-This is my favorite brunch place. It's right next to Cloud Gate / Millenium Park. Hands down, make sure you try their specialty pancakes and pretty much everything else on the menu is great. There will always be a wait, so you can put your name down and then go check out Millenium Park.
+This is my favorite brunch place. It's right next to Cloud Gate / Millennium Park. Hands down, make sure you try their specialty pancakes and pretty much everything else on the menu is great. There will always be a wait, so you can put your name down and then go check out Millennium Park.
 
 I'll leave it to Yelp to advise you on the rest.
 
@@ -169,7 +169,7 @@ Once you're downtown, generally you can walk everywhere. So I would advise just 
 A: Generally, I'm an advocate of staying downtown because then everything is walking distance. If not, I would try to stay within walking distance to a subway station. 
 
 2. Q: I only have a day in Chicago, where should I go? <br/>
-A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millenium Park and the River Walk to see. Signature Room for a night time drink if you have the time.
+A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millennium Park and the River Walk to see. Signature Room for a night time drink if you have the time.
 
 # Images in Chicago
 Here are some of my favorite photos in Chicago, taken with my favorite camera:

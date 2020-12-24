@@ -77,7 +77,7 @@ Here, I briefly describe a couple of food places that are worth the HYPE. For lo
 
 ## Nightlife/Drinking
 ### 1. Volkshaus
-Nice night club with 3 different rooms for 3 differnet music types. Needs cash only.
+Nice night club with 3 different rooms for 3 different music types. Needs cash only.
 
 ### 2. Langstrasse Street
 This is a street within Zurich that features many bars and clubs for all backgrounds.

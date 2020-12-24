@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Real Analysis (Lebesgue Integration, Differentiation and Measure) - Adam Li's blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://adam2392.github.io/images/brain.jpg" rel="icon">
+
+<link rel="canonical" href="https://adam2392.github.io/blog/2020/12/real-analysis/">
+
+        <meta name="author" content="Adam Li" />
+        <meta name="keywords" content="math,phd,real-analysis" />
+        <meta name="description" content="A short summary of important concepts in Real Analysis" />
+
+        <meta property="og:site_name" content="Adam Li's blog" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Real Analysis (Lebesgue Integration, Differentiation and Measure)"/>
+        <meta property="og:url" content="https://adam2392.github.io/blog/2020/12/real-analysis/"/>
+        <meta property="og:description" content="A short summary of important concepts in Real Analysis"/>
+        <meta property="article:published_time" content="2020-12-24" />
+            <meta property="article:section" content="Academic" />
+            <meta property="article:tag" content="math" />
+            <meta property="article:tag" content="phd" />
+            <meta property="article:tag" content="real-analysis" />
+            <meta property="article:author" content="Adam Li" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://adam2392.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://adam2392.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://adam2392.github.io/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://adam2392.github.io/theme/css/style.css" type="text/css"/>
+
+        <link href="https://adam2392.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Adam Li's blog ATOM Feed"/>
+
+        <link href="https://adam2392.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Adam Li's blog RSS Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://adam2392.github.io/" class="navbar-brand">
+Adam Li's blog            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/categories.html">Blog</a></li>
+                    <li><a href="/archives.html">Timeline</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+                    <li><a href="/pdfs/AdamLi_CV.pdf">Curriculum Vitae</a></li>
+                         <li><a href="https://adam2392.github.io/contact/">
+                             Contact
+                          </a></li>
+                         <li><a href="https://adam2392.github.io/gallery/">
+                             Gallery
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://adam2392.github.io/blog/2020/12/real-analysis/"
+                       rel="bookmark"
+                       title="Permalink to Real Analysis (Lebesgue Integration, Differentiation and Measure)">
+                        Real Analysis (Lebesgue Integration, Differentiation and Measure)
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2020-12-24T00:00:00-05:00"> Thu 24 December 2020</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://adam2392.github.io/tag/math.html">math</a>
+        /
+	<a href="https://adam2392.github.io/tag/phd.html">phd</a>
+        /
+	<a href="https://adam2392.github.io/tag/real-analysis.html">real-analysis</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>Summary</h1>
+<p>Real analysis is the study of real numbers in <span class="math">\(\mathbb{R}^d\)</span>, with 
+<code>d</code> being the dimensionality. Although it is a pretty abstract topic 
+that does not seem to have applications, it is a very fundamental 
+in understanding other branches of applied mathematics. For example, in order
+to define optimization algorithms, one is very interested in the ideas of convergence.
+One then often uses theory of continuity. In computational neuroscience and 
+control theory, one often deals with integrals when defining theory. In 
+statistics, it is absolutely necessary to understand integrals (expectation 
+is defined with an integral).</p>
+<p>In this blog post, I'll review some of the basic concepts that one
+needs to know in general. A great course sequence I took was both at UCSD with 
+Professor Dragos Oprea (Math 140AB) and with Professor Sogge (Math 605) at Johns Hopkins.</p>
+<p>Excellent references are:
+- <a href="http://www.cmat.edu.uy/~mordecki/courses/medida2013/book.pdf">Stein, E. M., Stein, E. M., &amp; Shakarchi, R. (2005). Princeton lectures in analysis: 3. Princeton: Princeton Univ. Press.</a></p>
+<h1>Measurability</h1>
+<p>Measure is an abstract notion of "volume" of a set. In all "regular" 
+examples, one can assume the sets in consideration are measurable. However,
+using the <a href="https://en.wikipedia.org/wiki/Axiom_of_choice">Axiom of Choice</a>, one
+can construct "unmeasurable" sets. This motivates the need to define Borel sets (sigma-algebras)
+in probability theory, which denote measurable family of subsets of a set. This 
+is beyond the scope of this post though. It suffices to know that unmeasurable 
+sets <code>do exist</code>.</p>
+<p>Measure from first principles is defined in Stein starting from outer-measure. 
+Outer-measure is simply the measure obtained by covering a set with a countable 
+almost-disjoint union of rectangles (circles, squares also suffice). Outer-measure
+is well-defined for any possible set. Lebesgue measure then is defined by 
+the infimum over the possible outer-measures of a set.</p>
+<p>Some important properties of measure of a set is non-negativity and 
+countable sub-additivity. Countable additivity is obtained when 
+they are pairwise disjoint sets in consideration.</p>
+<h1>Convergence</h1>
+<p>For many interesting functions, and numbers, we are interested in 
+the notion of convergence. That is, if we define a sequence enumerated 
+by <code>n</code> of numbers, or functions using some rule that depends on <code>n</code>, 
+then what are conditions that these sequences converge? Generally, 
+if a sequence does not converge, then it goes to <span class="math">\(\infty\)</span>.</p>
+<p>In real analysis, we generally consider the Euclidean metric space. 
+In fact, these metric spaces are complete (i.e. all Cauchy sequences converge
+inside the metric space).</p>
+<h2>Important Integral Convergence Theorems</h2>
+<p>When defining convergence for integrals, there are three fundamental results 
+that are useful:</p>
+<ul>
+<li><a href="https://www.math3ma.com/blog/fatous-lemma">Fatou's lemma</a></li>
+<li><a href="https://www.math3ma.com/blog/monotone-convergence-theorem">Monotone convergence theorem</a></li>
+<li><a href="https://www.math3ma.com/blog/dominated-convergence-theorem">Dominated convergence theorem</a></li>
+</ul>
+<p>I won't talk about them here because the above links actually provide 
+a very nice reference (that is also accessible to beginners).</p>
+<h2>Bolzano-Weirstrass Theorem For Sequences of Real Numbers</h2>
+<p>The main way of proving convergence relies on showing that a sequence 
+is Cauchy. That is for every <span class="math">\(\epsilon &gt; 0\)</span>, we have:</p>
+<div class="math">$$|x_m - x_n| &lt; \epsilon$$</div>
+<p>for <span class="math">\(m, n \ge N\)</span>, for some large number <span class="math">\(N_\epsilon\)</span>. The "|...|" sign 
+denotes the distance metric defined. This implies that even if 
+the sequence <span class="math">\(\{x_k\}\)</span> potentially oscillates, the range of its oscillation
+is decreasing as you take values further and further down the sequence.
+Note that by construction any sequence that is Cauchy in a metric space 
+is in fact <code>bounded</code>.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem">Bolzano-Weirstrass theorem, or sequential compactness theorem</a> 
+states that any bounded sequence in finite-dimensional Euclidean space has 
+a convergent subsequence. Then a sequence is convergent if and only if 
+it has a convergent subsequence, and so every Cauchy sequence is convergent.</p>
+<h2>Convergence In Norm</h2>
+<p>Note that convergence of a sequence of real numbers requires a specific 
+component to emerge. In the space of integrable functions, <span class="math">\(L^1(\mathbb{R}^d)\)</span>, 
+one can define <code>convergence in norm</code>. That is the sequence defined might not 
+converge exactly element by element to a fixed component, but their difference in norm
+converges. That is for every <span class="math">\(\epsilon &gt; 0\)</span>, and <span class="math">\(\{f_k\} \in L^1\)</span>, we have:</p>
+<div class="math">$$||f_m(x) - f_n(x)||_{L^1} &lt; \epsilon$$</div>
+<p>where the distance metric is now defined as <span class="math">\(||.||_{L^1} = \int_{\mathbb{R}^d} |f_m(x) - f_n(x)| dx\)</span>. 
+Convergence in norm can then be extended in general to <span class="math">\(L^p\)</span> spaces, since 
+<span class="math">\(L^1 \supset L^2 \supset ... \supset L^\infty\)</span>, which follows from Holder's 
+inequality.</p>
+<h2>Other Convergences</h2>
+<p>Note that there are other notions of convergences as well! 
+Weak convergence, strong convergence, etc.</p>
+<h1>Integrability</h1>
+<p>Integration with respect to Lebesgue measure is defined by considering the 
+convergence of the integral of the absolute value of the function:</p>
+<div class="math">$$\int |f(x)| dx &lt; \infty$$</div>
+<p>else, the function f is said to be not integrable. The space of 
+Lebesgue integrable functions if formally known as the "L1" space. 
+Note that by the Risz-Fisher theorem, we know that <span class="math">\(L^p\)</span> spaces for 
+<span class="math">\(1 \le p \le \infty\)</span> is complete. </p>
+<h1>Differentiation</h1>
+<p>When considering differentiation in the context of integration, 
+we are primarily interested in when the Fundamental Theorems of Calculus hold
+in the Lebesgue measure theory. We learned in high school calculus the following:</p>
+<h2>First Fundamental Theorem of Calculus:</h2>
+<p>If <span class="math">\(F(x) = \int_a^x f(t) dt\)</span> for <span class="math">\(x \in [a, b]\)</span> interval, then</p>
+<div class="math">$$F'(x) = f(x)$$</div>
+<p>that is, we can reverse integration on f by taking the derivative of F.
+This theorem holds in the space of Lebesgue integrable functions, when the 
+function is <code>locally integrable</code> (i.e. Lebesgue's differentiation theorem).</p>
+<h2>Second Fundamental Theorem of Calculus</h2>
+<p>The second part states that if we take the endpoints of the antiderivative, 
+then we can obtain the integral of the function over those endpoints:</p>
+<div class="math">$$F(b) - F(a) = \int_a^b f(t) dt$$</div>
+<p>The result holds when F is <code>absolutely continuous</code>, which is a stronger 
+notion then continuity. It essentially bounds the degree of variation and is 
+actually introduced through the concept of Bounded Variation.</p>
+<h1>Other Important Topics</h1>
+<p>This blog post is meant to be brief, but in the future, I'll probably 
+try to cover Hilbert spaces (linear operators, orthogonality, compact operators, 
+the Spectral Theorem, and Kernel integral operators), Fourier series and the Fourier transform, which are also 
+broadly applicable across applied mathematics and engineering.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+            </div>
+
+    
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="https://adam2392.github.io/blog/2019/06/gaussian-generative-models/">Linear Gaussian Models</a></li>
+        <li><a href="https://adam2392.github.io/blog/2019/06/optimization-landscape-overview/">Optimization: Convex, Nonlinear, Unconstrained and Constrained</a></li>
+        <li><a href="https://adam2392.github.io/blog/2018/06/whitaker-summary-experience/">Using The Virtual Brain (TVB) to Understand Algorithms</a></li>
+        <li><a href="https://adam2392.github.io/blog/2017/12/using-freesurfer/">Using FreeSurfer</a></li>
+        <li><a href="https://adam2392.github.io/blog/2017/09/simulating-tvb/">Simulating Epileptic iEEG Activity Using The Virtual Brain</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/adam2392"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+    <li class="list-group-item"><a href="https://stackexchange.com/users/4494355/ajl123"><i class="fa fa-stack-overflow fa-lg"></i> stack-overflow</a></li>
+    <li class="list-group-item"><a href="https://github.com/adam2392"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="https://www.linkedin.com/in/adam2392"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Github -->
+<li class="list-group-item">
+  <h4><i class="fa fa-github fa-lg"></i><span class="icon-label">GitHub Repos</span></h4>
+  <div id="gh_repos">
+    <p class="list-group-item">Status updating...</p>
+  </div>
+</li>
+<!-- End Sidebar/Github -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2020 Adam Li
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="https://adam2392.github.io/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://adam2392.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://adam2392.github.io/theme/js/respond.min.js"></script>
+
+
+
+<!-- GitHub JS Code -->
+<script type="text/javascript">
+$(document).ready(function () {
+  if (!window.jXHR) {
+    var jxhr = document.createElement('script');
+    jxhr.type = 'text/javascript';
+    jxhr.src = 'https://adam2392.github.io/theme/js/jXHR.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(jxhr, s);
+  }
+
+  github.showRepos({
+    user: 'adam2392',
+    count: 3,
+    skip_forks: false,
+    target: '#gh_repos'
+  });
+});
+</script>
+<script src="https://adam2392.github.io/theme/js/github.js" type="text/javascript"></script>
+<!-- End GitHub JS Code -->
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-106551801-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
+
+
+</body>
+</html>

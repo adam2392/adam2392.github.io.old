@@ -97,7 +97,7 @@ Understand how coincidence detection (AND operator), shunting inhibition (AND-NO
 
 # 2. Generalized Linear Models:
 ## General Form of Exponential Family Distribution
-Be able to define all the terms, such as: natural paramters, sufficient statistic, natural link function, dispersion parameter
+Be able to define all the terms, such as: natural parameters, sufficient statistic, natural link function, dispersion parameter
 
 ## Normal Linear Regression
 
@@ -190,7 +190,7 @@ The premotor cortex, and also the motor cortex are at the highest levels of cont
 Good things to know and remember are:
 - Hodgkin Huxley models: a biophysical model that models realistic neuronal firing based on concentration gradients, membrane conductances, membrane potentials and even more.
 - Nernst equation: a fundamental equation for determining the resting potential of a membrane in the presence of a concentration gradient of an ion.
-- Goldman-Katz equation: a model with multiple ions that determins the resting potential of a membrane (extension of Nernst)
+- Goldman-Katz equation: a model with multiple ions that determines the resting potential of a membrane (extension of Nernst)
 - Action potentials and the chronology of cell actions that are taken
 
 # 9. Gaussian Mixture Models

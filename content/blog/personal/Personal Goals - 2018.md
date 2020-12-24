@@ -10,7 +10,7 @@ This year has been a fantastic year from beginning to end. I turned the big 2 5 
 
 ## Old 2017 Resolutions:
 #### 1. Keep dance a significant part of my life: [ ]
-- This is actually something I thought would impact me a lot. I still watch hella dance vids online and keep up with hip hop news here and there, but I haven't touched the dance floor in a few months and it almost feels normal now. I get my daily excercise and I'm driven by my research and learning opportunities.
+- This is actually something I thought would impact me a lot. I still watch hella dance vids online and keep up with hip hop news here and there, but I haven't touched the dance floor in a few months and it almost feels normal now. I get my daily exercise and I'm driven by my research and learning opportunities.
 
 #### 2. Run a half-marathon: [ ]
 - Yeah I don't know if this will ever happen... So maybe I'll aim to do a 5k next year.
@@ -110,7 +110,7 @@ I want to be cooking at least 5 times a week, so that I can maintain a healthy d
 #### 6. Reading and Knowledge [ ]
 I want to continuously be reading from highly regarded sources. I want to conssistently read from sources on Twitter, The World Economic Review and Bloomberg. I'll try to update some of my thoughts on the different mechanisms of obtaining knowledge.
 
-In order to keep up with my intake of knowledge, I want to challenge myself to write a series of publically available blog posts on trends in technology, medicine, politics and economics/finance.
+In order to keep up with my intake of knowledge, I want to challenge myself to write a series of publicly available blog posts on trends in technology, medicine, politics and economics/finance.
 
 - bitcoin [X]
 - ethereum/blockchain [ ]

@@ -6,24 +6,10 @@ Slug: setup-virtual-env
 Authors: Adam Li
 Summary: A short walkthrough of setting up a virtual environment for Python development.
 
+An outdated post on how to work with virtual environments. The 
+latest ``Pipenv`` and ``pip`` commands are more robust.
+
 # Getting Setup with Virtual Environment for Python Development
-# By: Adam Li
-
-### Table of Contents
-<!-- MarkdownTOC autolink="true" bracket="round" -->
-
-- [Installing](#installing)
-- [Basics \(Create, Delete\):](#basics-create-delete)
-    - [1. Create](#1-create)
-    - [2. Delete a Virtualenv](#2-delete-a-virtualenv)
-- [Tips](#tips)
-    - [1. Starting up your Venv](#1-starting-up-your-venv)
-    - [2. Requirements.txt](#2-requirementstxt)
-- [Convenient Tools](#convenient-tools)
-    - [1. Automatically cd To Project Directory](#1-automatically-cd-to-project-directory)
-- [References:](#references)
-
-<!-- /MarkdownTOC -->
 
 VirtualEnv: 15.1.0
 VirtualEnvWrapper
@@ -115,4 +101,3 @@ This assumes that your project directory files are all correspondingly named wit
 
 # References:
 1. https://nolar.info/automatically-activate-virtualenv-on-cd/
-- code to input into .bashrc

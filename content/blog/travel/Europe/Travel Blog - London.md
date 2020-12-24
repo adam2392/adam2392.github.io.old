@@ -22,7 +22,7 @@ Summary: A summary of how to visit London and get the most out of your trip.
     - [Sights](#sights)
         - [1. London Eye](#1-london-eye)
         - [2. Buckingham Palace / Big Ben](#2-buckingham-palace--big-ben)
-        - [3. Millenium Bridge / Tower Bridge](#3-millenium-bridge--tower-bridge)
+        - [3. Millennium Bridge / Tower Bridge](#3-millenium-bridge--tower-bridge)
         - [4. Cambridge](#4-cambridge)
         - [5. Tate Museum](#5-tate-museum)
         - [6. National Gallery Museum](#6-national-gallery-museum)
@@ -76,7 +76,7 @@ Recommended to go and check out, but totally not worth going up. Beware of pick-
 #### 2. Buckingham Palace / Big Ben
 Self-explanatory place.
 
-#### 3. Millenium Bridge / Tower Bridge
+#### 3. Millennium Bridge / Tower Bridge
 Great looking bridge that you can go up with ~10 pounds. Also recommended at night because it lights up!
 
 #### 4. Cambridge

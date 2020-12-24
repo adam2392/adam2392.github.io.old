@@ -57,7 +57,7 @@ First I want to look at what I set out to do, and where I've come in regards to 
 - Been exercising at the gym more this year and I'm pretty happy with where I've gotten. I think being able to deadlift 245 and bench 225 are solid goals to have for this year. While continuing dancing, I hope to live a healthier lifestyle. In addition, this could entail just eating healthier through (salad every other day and cooking most nights that I have time).
 
 #### 5. Put myself in uncomfortable situations: [ ]
-- I think this last one encompasses a number of things I think I need to go through. Although my friend circles aren't the same in Baltimore as in California, there are people I meet everyday that offer unique perspectives. Engaging in making relations is the first one. I haven't really explored doing "activities" for fun, such as hiking and exploring. I want to put myself out there and go on more "naturey" activites. I've had a lot of fun doing that in the past couple of months and I think it will only improve when I go into 2017.
+- I think this last one encompasses a number of things I think I need to go through. Although my friend circles aren't the same in Baltimore as in California, there are people I meet everyday that offer unique perspectives. Engaging in making relations is the first one. I haven't really explored doing "activities" for fun, such as hiking and exploring. I want to put myself out there and go on more "naturey" activities. I've had a lot of fun doing that in the past couple of months and I think it will only improve when I go into 2017.
 
 #### 6. Begin to learn French: [ ]
 - Using duolingo and trying to put myself out there with possibly a solo adventure to Europe.

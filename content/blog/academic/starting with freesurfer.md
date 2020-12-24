@@ -6,28 +6,8 @@ Slug: using-freesurfer
 Authors: Adam Li
 Summary: To guide the user in how to setup freesurfer correctly.
 
-<!-- MarkdownTOC autolink="true" -->
-
-- [Necessary Tools](#necessary-tools)
-- [Data Processing Pipeline:](#data-processing-pipeline)
-    - [1. DWI Processing](#1-dwi-processing)
-    - [2. T1 MRI Processing](#2-t1-mri-processing)
-    - [3. \(Optional\) CT Processing](#3-optional-ct-processing)
-    - [4. Connectome Generation](#4-connectome-generation)
-- [Background](#background)
-    - [Common Definitions:](#common-definitions)
-- [Implementation](#implementation)
-    - [1. Set Up](#1-set-up)
-    - [2. Running Through T1-Weighted MRI Images](#2-running-through-t1-weighted-mri-images)
-    - [3. Running Through CT Images](#3-running-through-ct-images)
-    - [4. Getting Surface Parcellations](#4-getting-surface-parcellations)
-    - [5. Getting SEEG XYZ Coordinates](#5-getting-seeg-xyz-coordinates)
-- [References:](#references)
-
-<!-- /MarkdownTOC -->
-
 # Necessary Tools
-Freesurfer, FSL, and MRtrix3 are the three main neuroimaging and registration softwares that you need to run a systematic data pipeline of neuroimaging data (i.e. CT, MRI, DWI).
+Freesurfer, FSL, and MRtrix3 are the three main neuroimaging and registration software that you need to run a systematic data pipeline of neuroimaging data (i.e. CT, MRI, DWI).
 
 1. Freesurfer
 https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
@@ -46,9 +26,9 @@ MRtrix3 is primarily intended to be used for the analysis of diffusion MRI data.
 
 # Data Processing Pipeline:
 ## 1. DWI Processing
-- Process diffusion imaging data, by denoising the data, then preprocessing it, then applying bias correction and then estimating the response function.
-    
-$$
+- Process diffusion imaging data, by denoising the data, then preprocessing it, then applying bias correction and then estimating the response function. 
+
+
     dwidenoise </DTI_dicom_dir/> <dti_img_denoise.mif>
     
     dwipreproc -rpe_none AP DTI_30_average-2_denoise.mif <dti_img_preproc_output.mif>
@@ -58,7 +38,6 @@ $$
     dwi2response tournier <dti_img_preproc_biascorrect_output.mif> <dti_img_preproc_biascorrect_response.txt>
 
     dwi2fod csd DTI_30_average-2_denoise_preproc_biascorrected.mif DTI_30_average-2_denoise_preproc_biascorrected_response.txt DTI_30_average-2_denoise_preproc_biascorrected_fod.mif
-$$
 
 ## 2. T1 MRI Processing
 
@@ -70,33 +49,32 @@ $$
 
 
 # Background
-Freesurfer is a tool built for rendering 3D brains using MRI and Ct scans.
-
-FSL is a tool for coregistration and image analysis.
-
-Download both online:
+Freesurfer is a tool built for rendering 3D brains using MRI and Ct scans. FSL is a tool for coregistration and image analysis. Download both online:
 
 ## Common Definitions:
 1. Registration: to find a common coordinate system for the input data sets
-2. 
-# Implementation
-## 1. Set Up
-First you will want to download freesurfer from the following website:
 
+# Implementation
+First, let's walk through how implementation occurs.
+
+## 1. Set Up
+First you will want to download FreeSurfer from the following website:
 https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
 Linux:
-    ## bash
-    $> export FREESURFER_HOME=/usr/local/freesurfer
-    $> source $FREESURFER_HOME/SetUpFreeSurfer.sh
+
+    export FREESURFER_HOME=/usr/local/freesurfer
+    source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
     ## tcsh
-    $> setenv FREESURFER_HOME /usr/local/freesurfer
-    $> source $FREESURFER_HOME/SetUpFreeSurfer.csh
-Mac:
-    $> export FREESURFER_HOME=/Applications/freesurfer
-    $> source $FREESURFER_HOME/SetUpFreeSurfer.sh
+    setenv FREESURFER_HOME /usr/local/freesurfer
+    source $FREESURFER_HOME/SetUpFreeSurfer.csh
 
-Run those commands within your terminal, or add them to ~/.bashrc file to have access to all the command line tools for freeview.
+Mac:
+
+    export FREESURFER_HOME=/Applications/freesurfer
+    source $FREESURFER_HOME/SetUpFreeSurfer.sh
+
+Run those commands within your terminal, or add them to ```~/.bashrc``` file to have access to all the command line tools for freeview.
 
 You will need to setup your own directory where you will hold all your subject data.
 
@@ -127,12 +105,5 @@ flirt -in patient_ct.nii -ref patient_mri.nii -omat patient_omat.mat -out patien
 
 This command will coregister the CT data onto the domain of the MRI data and provide a coregistration for you to look at where certain contacts of electrodes are. You can also view in Freeview the different cuts of the brain using either CT, or MRI. 
 
-## 4. Getting Surface Parcellations 
-TBD
-
-## 5. Getting SEEG XYZ Coordinates
-Once you have CT images coregistered with MRI images, you can easily extract the locations of all iEEG contacts in the MRI axis system. This is done by noting a contact within each electrode (e.g. A1, B1, C10, etc.) and then an algorithm can fill in the entire electrode's xyz coordinates and output to a file.
-
 # References:
 1. https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall#Setup.26Configuration
-2. 
