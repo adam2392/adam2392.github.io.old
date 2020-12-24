@@ -121,66 +121,64 @@ Adam Li's blog            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <!-- MarkdownTOC autolink="true" -->
-
-<ul>
-<li><a href="#background">Background</a></li>
-<li><a href="#data--metadata">Data &amp; Metadata</a></li>
-<li><a href="#implementation">Implementation</a><ul>
-<li><a href="#1-setting-up-environment">1. Setting Up Environment</a></li>
-<li><a href="#1b-setting-up-environment-on-a-cluster">1b. Setting Up Environment on a Cluster</a></li>
-<li><a href="#1c-using-docker--singularity">1c. Using Docker / Singularity</a></li>
-<li><a href="#2-simulating-epilepsy">2. Simulating Epilepsy</a></li>
-<li><a href="#references">References:</a></li>
-</ul>
-</li>
-</ul>
-<!-- /MarkdownTOC -->
-
-<h1>Background</h1>
-<p>TVB is a platform for simulating whole-brain dynamics that starts from raw data involving:
-    1. structural connectivity derived from DTI
-    2. brain parcellation derived from MRI and CT
-    3. SEEG xyz locations derived from MRI and CT
-This will then determine a gain matrix to determine SEEG signals from the source signals that are generated from neural mass models.</p>
-<p>The neural mass models will be implemented with nonlinear, complex models for simulating certain type of electrophysiology. The Epileptor is used for simulating seizure activity from a specific source region. </p>
-<p>The epileptor is a set of coupled differential equations that rely on 6 different variables. They are described here:</p>
+                <h1>Background</h1>
+<p>TVB is a platform for simulating whole-brain dynamics that starts from raw data involving:</p>
+<ol>
+<li>structural connectivity derived from DTI</li>
+<li>brain parcellation derived from MRI and CT</li>
+<li>SEEG xyz locations derived from MRI and CT</li>
+</ol>
+<p>This will then determine a gain matrix to determine SEEG signals from the source signals that are 
+generated from neural mass models. The neural mass models will be implemented 
+with nonlinear, complex models for simulating certain type of electrophysiology. 
+The Epileptor is used for simulating seizure activity from a specific source region. </p>
+<p>The epileptor is a set of coupled differential equations that rely on 6 different variables. 
+They are described here:</p>
 <h1>Data &amp; Metadata</h1>
-<p>Generally, refer to my post on "Freesurfer" to establish the preprocessing data pipeline using Freesurfer, FSL and MRtrix3.</p>
-<p>The minimum necessary requirements for creating the TVB dataset are a set of T1 and DWI images as a list of dicom files, or a single 4-D image nifti file.</p>
+<p>Generally, refer to my post on <code>Freesurfer</code> to establish the preprocessing 
+data pipeline using Freesurfer, FSL and MRtrix3.</p>
+<p>The minimum necessary requirements for creating the TVB dataset are a set 
+of T1 and DWI images as a list of dicom files, or a single 4-D image nifti file.</p>
 <p>A high level summary of how the pipeline proceeds is:
-1. Construct Cortical Surface, Subcortical Surface
-Using freesurfer, you can get the reconstructed surfaces, which are your files that outline the voxels that belong to each region of the brain. This will give you the surface geometries of the cortical and subcortical surface.</p>
+1. Construct Cortical Surface, Subcortical Surface</p>
+<p>Using freesurfer, you can get the reconstructed surfaces, 
+which are your files that outline the voxels that belong 
+to each region of the brain. This will give you the surface 
+geometries of the cortical and subcortical surface.</p>
 <ol>
-<li>
-<p>Construct Parcellation Scheme
-This can range from the default in freesurfer to different atlases available for the human brain. This will give you a region mapping for every vertex/face from your cortical/subcortical surface geometries files.</p>
-</li>
-<li>
-<p>Construct Corticography Tracts
-First, you need to coregister the DWI images with the T1 scans</p>
-</li>
+<li>Construct Parcellation Scheme</li>
 </ol>
-<p>Using the DWI images, along with the reconstructed surfaces, you can count fiber tracts between each region of the brain and reconstruct the structural connectivity matrices. This is composed from the weights matrix and the length matrix between parcellated regions.</p>
+<p>This can range from the default in freesurfer to different 
+atlases available for the human brain. This will give you 
+a region mapping for every vertex/face from your cortical/subcortical
+surface geometries files.</p>
 <ol>
-<li>
-<p>Obtain Electrode Coordinates in T1 Space
-First, you need to coregister the CT reconstructed freesurfer file into the T1 space. </p>
-</li>
-<li>
-<p>Computing Gain Matrix Between Brain Regions and Electrodes
-In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activity, you need to compute a gain matrix that transforms region activity into electrode activity. </p>
-</li>
+<li>Construct Corticography Tracts</li>
 </ol>
-<p>This can be done using an inverse-square method fall-off on the region activity, or using a dipole method as outlined in the "Virtual Epileptic Patient" paper.</p>
+<p>First, you need to coregister the DWI images with the T1 scans 
+Using the DWI images, along with the reconstructed surfaces, 
+you can count fiber tracts between each region of the brain 
+and reconstruct the structural connectivity matrices. This is composed from the weights matrix and the length matrix between parcellated regions.</p>
+<ol>
+<li>Obtain Electrode Coordinates in T1 Space</li>
+</ol>
+<p>First, you need to coregister the CT reconstructed freesurfer file into the T1 space. </p>
+<ol>
+<li>Computing Gain Matrix Between Brain Regions and Electrodes</li>
+</ol>
+<p>In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activity, 
+you need to compute a gain matrix that transforms region activity into electrode activity. 
+This can be done using an inverse-square method fall-off on the region activity, 
+or using a dipole method as outlined in the "Virtual Epileptic Patient" paper.
+Note that these methods have some limitations, as it assumes all 
+activity from brain regions are "projected" to the iEEG electrodes 
+instantaneously.</p>
 <h1>Implementation</h1>
 <h2>1. Setting Up Environment</h2>
 <p>First you may want to set up a conda environment, or a virtualenv that will separate the entire python project from your normal OS.</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span>
-<span class="err">pip install nibabel networkx</span>
+<div class="highlight"><pre><span></span><code><span class="err">pip install nibabel networkx</span>
 <span class="err">git clone https://github.com/the-virtual-brain/tvb-data</span>
 <span class="err">git clone https://github.com/the-virtual-brain/tvb-library</span>
-<span class="err">$</span>
 </code></pre></div>
 
 <p>If you want to have a script to add these all to path for your jupyter notebook, use the following:</p>
@@ -213,25 +211,27 @@ jupyter notebook
 <span class="err">python -m ipykernel install --name tridesclous-testing —user</span>
 </code></pre></div>
 
-<h2>1c. Using Docker / Singularity</h2>
-<p>TBD</p>
 <h2>2. Simulating Epilepsy</h2>
-<p>In order to simulate epilepsy, you are going to walk through a pipeline using TVB. Details are left out for now.</p>
-<p>i. Structural Connectivity
-What is the matrix of connectivities between your brain regions?
+<p>In order to simulate epilepsy, you are going to walk through a pipeline 
+using TVB. Details are left out for now.</p>
+<p>i. Structural Connectivity</p>
+<p>What is the matrix of connectivities between your brain regions?
 Ex: Connectivity weights, conduction speed, coupling function between long-range regions</p>
-<p>ii. Neural Mass Model
-What is the phenomenological model at brain regions?
+<p>ii. Neural Mass Model</p>
+<p>What is the phenomenological model at brain regions?
 Ex: Epileptor6D, with parameter settings</p>
-<p>iii. Integrators
-How to solve your stochastic differential equation?
+<p>iii. Integrators</p>
+<p>How to solve your stochastic differential equation?
 Ex: Heunstochastic, with noise levels</p>
-<p>iv. Coupling
-How are your brain regions coupled?
+<p>iv. Coupling</p>
+<p>How are your brain regions coupled? How does activity 
+of one region translate to the next? Is it transformed 
+via a function?
 Ex: linear, additive, hyperbolic</p>
-<p>v. Monitors
-What variables to monitor and store?
-Ex: State variables, iEEG activity from sampling rate and period.</p>
+<p>v. Monitors</p>
+<p>What variables to monitor and store?
+Ex: State variables, iEEG activity from sampling 
+rate and period.</p>
 <p>Then once these are complete, you can run your simulation.</p>
 <h2>References:</h2>
 <ol>
@@ -247,10 +247,10 @@ Ex: State variables, iEEG activity from sampling rate and period.</p>
     <h4>Related Posts:</h4>
     <ul>
         <li><a href="/blog/2017/12/using-freesurfer/">Using FreeSurfer</a></li>
-        <li><a href="/blog/2017/09/fundamental-computational-modeling/">Important Concepts for Computational Modeling</a></li>
+        <li><a href="/blog/2020/12/real-analysis/">Real Analysis (Lebesgue Integration, Differentiation and Measure)</a></li>
         <li><a href="/blog/2019/06/gaussian-generative-models/">Linear Gaussian Models</a></li>
         <li><a href="/blog/2019/06/optimization-landscape-overview/">Optimization: Convex, Nonlinear, Unconstrained and Constrained</a></li>
-        <li><a href="/blog/2018/06/whitaker-summary-experience/">Using The Virtual Brain to Understand Algorithms</a></li>
+        <li><a href="/blog/2018/06/whitaker-summary-experience/">Using The Virtual Brain (TVB) to Understand Algorithms</a></li>
     </ul>
 </section>
         </article>
@@ -326,7 +326,7 @@ $(document).ready(function () {
 
   github.showRepos({
     user: 'adam2392',
-    count: 5,
+    count: 3,
     skip_forks: false,
     target: '#gh_repos'
   });

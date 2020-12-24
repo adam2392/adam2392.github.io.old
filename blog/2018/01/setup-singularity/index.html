@@ -127,26 +127,7 @@ Adam Li's blog            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h1>Getting Setup with Singularity</h1>
-<h1>By: Adam Li</h1>
-<h3>Table of Contents</h3>
-<!-- MarkdownTOC autolink="true" -->
-
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#setting-up-a-tensorflow-container-recipe-example">Setting Up A Tensorflow Container Recipe (Example):</a></li>
-<li><a href="#1-needed-docker-containers">1. Needed Docker Containers:</a></li>
-<li><a href="#2-environment--setup">2. Environment / Setup</a></li>
-<li><a href="#3-post">3. Post</a></li>
-<li><a href="#4-run-script">4. Run Script</a></li>
-<li><a href="#5-test">5. Test</a></li>
-<li><a href="#common-commands">Common Commands</a></li>
-<li><a href="#conclusions">Conclusions</a></li>
-<li><a href="#references">References:</a></li>
-</ul>
-<!-- /MarkdownTOC -->
-
-<h1>Installation</h1>
+                <h1>Installation</h1>
 <p>To install singularity locally with root privelages, you can then build up containers that can be hosted online.</p>
 <h1>Setting Up A Tensorflow Container Recipe (Example):</h1>
 <div class="highlight"><pre><span></span><code><span class="nl">Bootstrap</span><span class="p">:</span> <span class="n">docker</span>
@@ -219,6 +200,7 @@ Adam Li's blog            </a>
 * debug mode: -d 
 * link nvidia driver &amp; GPU: --nv
 * binds an existing directory onto the image: -B</p>
+<h1>Binding Nvidia GPU</h1>
 <p>An example use case that runs a tensorflow simg and runs a training script:</p>
 <div class="highlight"><pre><span></span><code>singularity exec --nv ./tensorflow.simg python main.py <span class="cp">${</span><span class="n">traindatadir</span><span class="cp">}</span> <span class="cp">${</span><span class="n">testdatadir</span><span class="cp">}</span> --output_data_dir <span class="cp">${</span><span class="n">outputdatadir</span><span class="cp">}</span> --log_data_dir <span class="cp">${</span><span class="n">logdatadir</span><span class="cp">}</span> --patient_to_loo <span class="cp">${</span><span class="n">patient</span><span class="cp">}</span> --expname <span class="cp">${</span><span class="n">expname</span><span class="cp">}</span>
 </code></pre></div>
@@ -315,7 +297,7 @@ $(document).ready(function () {
 
   github.showRepos({
     user: 'adam2392',
-    count: 5,
+    count: 3,
     skip_forks: false,
     target: '#gh_repos'
   });
