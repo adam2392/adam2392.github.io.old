@@ -57,7 +57,8 @@ the fact that this kind of thing has been honestly happening far too frequently 
 was even born. It is a flaw in how we are taught history, and a flaw in our society. 
 With the poor pandemic response, and racial problems of the USA, it is apparent that 
 voting strong local public officials that are knowledgeable, scientifically driven and 
-socially aware is more important then we realize. I'm glad that I was able to at least do a bit 
+socially aware is more important then we realize. Going to be on the lookout for more ways I can 
+actively, or passively help as time progresses. I'm glad that I was also able to at least do a bit 
 more research in my local, state and federal elections then I normally would in the hope that I become 
 a responsible and socially aware voter beyond just this year. A side effect of the pandemic actually 
 made me do more reading and research into climate change and being a "green citizen". It 
@@ -93,7 +94,7 @@ thigh curry chicken, fresh-made linguini with seafood and much more.
 Although I haven't done an internship as I was hoping, I have been significantly more active 
 in open-source. I've contributed to [mne-bids](https://github.com/mne-tools/mne-bids), [mne-python](https://github.com/mne-tools/mne-python),
 the [BIDS specification](https://github.com/bids-standard/bids-specification), [bids-validator](https://github.com/bids-standard/bids-validator), 
-and many more. I believe I've definitely gone beyond 10 closed Issues/PRs.
+and many more. Open source science rocks! I believe I've definitely gone beyond 10 closed Issues/PRs.
 
 #### 3. Personal:
     Think before speaking more, patience and focus on my friends, family and significant other more then myself. I've focused on my self-growth over the last 10 years, and it's time to focus on my external-growth over these next 10 years.

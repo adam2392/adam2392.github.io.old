@@ -1,41 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam Li's blog - Academic</title><link href="/" rel="alternate"></link><link href="/feeds/academic.atom.xml" rel="self"></link><id>/</id><updated>2018-06-01T00:00:00-04:00</updated><entry><title>Using The Virtual Brain to Understand Algorithms</title><link href="/blog/2018/06/whitaker-summary-experience/" rel="alternate"></link><published>2018-06-01T00:00:00-04:00</published><updated>2018-06-01T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2018-06-01:/blog/2018/06/whitaker-summary-experience/</id><summary type="html">&lt;p&gt;To summarize my Whitaker/Chateaubriand research experience abroad in Marseille, France.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
-
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam Li's blog - Academic</title><link href="/" rel="alternate"></link><link href="/feeds/academic.atom.xml" rel="self"></link><id>/</id><updated>2020-12-24T00:00:00-05:00</updated><entry><title>Real Analysis (Lebesgue Integration, Differentiation and Measure)</title><link href="/blog/2020/12/real-analysis/" rel="alternate"></link><published>2020-12-24T00:00:00-05:00</published><updated>2020-12-24T00:00:00-05:00</updated><author><name>Adam Li</name></author><id>tag:None,2020-12-24:/blog/2020/12/real-analysis/</id><summary type="html">&lt;p&gt;A short summary of important concepts in Real Analysis&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Summary&lt;/h1&gt;
+&lt;p&gt;Real analysis is the study of real numbers in &lt;span class="math"&gt;\(\mathbb{R}^d\)&lt;/span&gt;, with 
+&lt;code&gt;d&lt;/code&gt; being the dimensionality. Although it is a pretty abstract topic 
+that does not seem to have applications, it is a very fundamental 
+in understanding other branches of applied mathematics. For example, in order
+to define optimization algorithms, one is very interested in the ideas of convergence.
+One then often uses theory of continuity. In computational neuroscience and 
+control theory, one often deals with integrals when defining theory. In 
+statistics, it is absolutely necessary to understand integrals (expectation 
+is defined with an integral).&lt;/p&gt;
+&lt;p&gt;In this blog post, I'll review some of the basic concepts that one
+needs to know in general. A great course sequence I took was both at UCSD with 
+Professor Dragos Oprea (Math 140AB) and with Professor Sogge (Math 605) at Johns Hopkins.&lt;/p&gt;
+&lt;p&gt;Excellent references are:
+- &lt;a href="http://www.cmat.edu.uy/~mordecki/courses/medida2013/book.pdf"&gt;Stein, E. M., Stein, E. M., &amp;amp; Shakarchi, R. (2005). Princeton lectures in analysis: 3. Princeton: Princeton Univ. Press.&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Measurability&lt;/h1&gt;
+&lt;p&gt;Measure is an abstract notion of "volume" of a set. In all "regular" 
+examples, one can assume the sets in consideration are measurable. However,
+using the &lt;a href="https://en.wikipedia.org/wiki/Axiom_of_choice"&gt;Axiom of Choice&lt;/a&gt;, one
+can construct "unmeasurable" sets. This motivates the need to define Borel sets (sigma-algebras)
+in probability theory, which denote measurable family of subsets of a set. This 
+is beyond the scope of this post though. It suffices to know that unmeasurable 
+sets &lt;code&gt;do exist&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Measure from first principles is defined in Stein starting from outer-measure. 
+Outer-measure is simply the measure obtained by covering a set with a countable 
+almost-disjoint union of rectangles (circles, squares also suffice). Outer-measure
+is well-defined for any possible set. Lebesgue measure then is defined by 
+the infimum over the possible outer-measures of a set.&lt;/p&gt;
+&lt;p&gt;Some important properties of measure of a set is non-negativity and 
+countable sub-additivity. Countable additivity is obtained when 
+they are pairwise disjoint sets in consideration.&lt;/p&gt;
+&lt;h1&gt;Convergence&lt;/h1&gt;
+&lt;p&gt;For many interesting functions, and numbers, we are interested in 
+the notion of convergence. That is, if we define a sequence enumerated 
+by &lt;code&gt;n&lt;/code&gt; of numbers, or functions using some rule that depends on &lt;code&gt;n&lt;/code&gt;, 
+then what are conditions that these sequences converge? Generally, 
+if a sequence does not converge, then it goes to &lt;span class="math"&gt;\(\infty\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In real analysis, we generally consider the Euclidean metric space. 
+In fact, these metric spaces are complete (i.e. all Cauchy sequences converge
+inside the metric space).&lt;/p&gt;
+&lt;h2&gt;Important Integral Convergence Theorems&lt;/h2&gt;
+&lt;p&gt;When defining convergence for integrals, there are three fundamental results 
+that are useful:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#0-short-blurb-about-brains-and-network-neuroscience"&gt;0. Short Blurb About Brains and Network Neuroscience&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1-epilepsy"&gt;1. Epilepsy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-computational-modeling"&gt;2. Computational Modeling&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-algorithms"&gt;3. Algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.math3ma.com/blog/fatous-lemma"&gt;Fatou's lemma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.math3ma.com/blog/monotone-convergence-theorem"&gt;Monotone convergence theorem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.math3ma.com/blog/dominated-convergence-theorem"&gt;Dominated convergence theorem&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#research-project-concepts"&gt;Research Project Concepts&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-the-virtual-brain-tvb-vs-network-data-analysis"&gt;1. The Virtual Brain (TVB) vs Network Data Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-using-tvb-to-augment-neural-datasets-for-deep-learning"&gt;2. Using TVB To Augment Neural Datasets For Deep Learning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#conclusions--future-considerations"&gt;Conclusions / Future Considerations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#random-notes-on-this-year-data-and-phd-research"&gt;Random Notes on This Year, Data and PhD Research&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#data-pipeline-design"&gt;Data Pipeline Design&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#phd-and-research-understanding"&gt;PhD and Research Understanding&lt;/a&gt;
-        - &lt;a href="#1-reading-papers-is-good-to-do-on-a-consistent-basis-but-focus-on-getting-to-the-core-of-the-key-papers-how-you-decide-which-papers-are-key-comes-with-exp"&gt;1. reading papers is good to do on a consistent basis, but focus on getting to the core of the "key" papers (how you decide which papers are key comes with exp)&lt;/a&gt;
-        - &lt;a href="#2-software-engineering-is-very-important-in-data-analysis"&gt;2. software engineering is very important in data analysis.&lt;/a&gt;
-        - &lt;a href="#3-its-easy-to-get-stuck-in-a-loop-of-feeling-like-youre-not-going-anywhere"&gt;3. it's easy to get stuck in a loop of feeling like "you're not going anywhere".&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;I won't talk about them here because the above links actually provide 
+a very nice reference (that is also accessible to beginners).&lt;/p&gt;
+&lt;h2&gt;Bolzano-Weirstrass Theorem For Sequences of Real Numbers&lt;/h2&gt;
+&lt;p&gt;The main way of proving convergence relies on showing that a sequence 
+is Cauchy. That is for every &lt;span class="math"&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt;, we have:&lt;/p&gt;
+&lt;div class="math"&gt;$$|x_m - x_n| &amp;lt; \epsilon$$&lt;/div&gt;
+&lt;p&gt;for &lt;span class="math"&gt;\(m, n \ge N\)&lt;/span&gt;, for some large number &lt;span class="math"&gt;\(N_\epsilon\)&lt;/span&gt;. The "|...|" sign 
+denotes the distance metric defined. This implies that even if 
+the sequence &lt;span class="math"&gt;\(\{x_k\}\)&lt;/span&gt; potentially oscillates, the range of its oscillation
+is decreasing as you take values further and further down the sequence.
+Note that by construction any sequence that is Cauchy in a metric space 
+is in fact &lt;code&gt;bounded&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem"&gt;Bolzano-Weirstrass theorem, or sequential compactness theorem&lt;/a&gt; 
+states that any bounded sequence in finite-dimensional Euclidean space has 
+a convergent subsequence. Then a sequence is convergent if and only if 
+it has a convergent subsequence, and so every Cauchy sequence is convergent.&lt;/p&gt;
+&lt;h2&gt;Convergence In Norm&lt;/h2&gt;
+&lt;p&gt;Note that convergence of a sequence of real numbers requires a specific 
+component to emerge. In the space of integrable functions, &lt;span class="math"&gt;\(L^1(\mathbb{R}^d)\)&lt;/span&gt;, 
+one can define &lt;code&gt;convergence in norm&lt;/code&gt;. That is the sequence defined might not 
+converge exactly element by element to a fixed component, but their difference in norm
+converges. That is for every &lt;span class="math"&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt;, and &lt;span class="math"&gt;\(\{f_k\} \in L^1\)&lt;/span&gt;, we have:&lt;/p&gt;
+&lt;div class="math"&gt;$$||f_m(x) - f_n(x)||_{L^1} &amp;lt; \epsilon$$&lt;/div&gt;
+&lt;p&gt;where the distance metric is now defined as &lt;span class="math"&gt;\(||.||_{L^1} = \int_{\mathbb{R}^d} |f_m(x) - f_n(x)| dx\)&lt;/span&gt;. 
+Convergence in norm can then be extended in general to &lt;span class="math"&gt;\(L^p\)&lt;/span&gt; spaces, since 
+&lt;span class="math"&gt;\(L^1 \supset L^2 \supset ... \supset L^\infty\)&lt;/span&gt;, which follows from Holder's 
+inequality.&lt;/p&gt;
+&lt;h2&gt;Other Convergences&lt;/h2&gt;
+&lt;p&gt;Note that there are other notions of convergences as well! 
+Weak convergence, strong convergence, etc.&lt;/p&gt;
+&lt;h1&gt;Integrability&lt;/h1&gt;
+&lt;p&gt;Integration with respect to Lebesgue measure is defined by considering the 
+convergence of the integral of the absolute value of the function:&lt;/p&gt;
+&lt;div class="math"&gt;$$\int |f(x)| dx &amp;lt; \infty$$&lt;/div&gt;
+&lt;p&gt;else, the function f is said to be not integrable. The space of 
+Lebesgue integrable functions if formally known as the "L1" space. 
+Note that by the Risz-Fisher theorem, we know that &lt;span class="math"&gt;\(L^p\)&lt;/span&gt; spaces for 
+&lt;span class="math"&gt;\(1 \le p \le \infty\)&lt;/span&gt; is complete. &lt;/p&gt;
+&lt;h1&gt;Differentiation&lt;/h1&gt;
+&lt;p&gt;When considering differentiation in the context of integration, 
+we are primarily interested in when the Fundamental Theorems of Calculus hold
+in the Lebesgue measure theory. We learned in high school calculus the following:&lt;/p&gt;
+&lt;h2&gt;First Fundamental Theorem of Calculus:&lt;/h2&gt;
+&lt;p&gt;If &lt;span class="math"&gt;\(F(x) = \int_a^x f(t) dt\)&lt;/span&gt; for &lt;span class="math"&gt;\(x \in [a, b]\)&lt;/span&gt; interval, then&lt;/p&gt;
+&lt;div class="math"&gt;$$F'(x) = f(x)$$&lt;/div&gt;
+&lt;p&gt;that is, we can reverse integration on f by taking the derivative of F.
+This theorem holds in the space of Lebesgue integrable functions, when the 
+function is &lt;code&gt;locally integrable&lt;/code&gt; (i.e. Lebesgue's differentiation theorem).&lt;/p&gt;
+&lt;h2&gt;Second Fundamental Theorem of Calculus&lt;/h2&gt;
+&lt;p&gt;The second part states that if we take the endpoints of the antiderivative, 
+then we can obtain the integral of the function over those endpoints:&lt;/p&gt;
+&lt;div class="math"&gt;$$F(b) - F(a) = \int_a^b f(t) dt$$&lt;/div&gt;
+&lt;p&gt;The result holds when F is &lt;code&gt;absolutely continuous&lt;/code&gt;, which is a stronger 
+notion then continuity. It essentially bounds the degree of variation and is 
+actually introduced through the concept of Bounded Variation.&lt;/p&gt;
+&lt;h1&gt;Other Important Topics&lt;/h1&gt;
+&lt;p&gt;This blog post is meant to be brief, but in the future, I'll probably 
+try to cover Hilbert spaces (linear operators, orthogonality, compact operators, 
+the Spectral Theorem, and Kernel integral operators), Fourier series and the Fourier transform, which are also 
+broadly applicable across applied mathematics and engineering.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Academic"></category><category term="math"></category><category term="phd"></category><category term="real-analysis"></category></entry><entry><title>Using The Virtual Brain (TVB) to Understand Algorithms</title><link href="/blog/2018/06/whitaker-summary-experience/" rel="alternate"></link><published>2018-06-01T00:00:00-04:00</published><updated>2018-06-01T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2018-06-01:/blog/2018/06/whitaker-summary-experience/</id><summary type="html">&lt;p&gt;To summarize my Whitaker/Chateaubriand research experience abroad in Marseille, France.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;Here, I will attempt to give a brief introduction to the core concepts in my research and relate it to the clinical problem of epilepsy.&lt;/p&gt;
 &lt;h2&gt;0. Short Blurb About Brains and Network Neuroscience&lt;/h2&gt;
-&lt;p&gt;With all the hype about "AI" and deep learning recently, it can become easy to assume that we are at the apex of our understanding of the human brain. This couldn't be farther from the truth. While we have a decent understanding of how single neurons work and how different regions of our brain work to give rise to very basic behavior (i.e. vision, movement, perception), we essentially have no knowledge as to how hundreds-millions of neurons work together, or how more complex behavior manifests (i.e. imagination, learning, etc.). We don't even know how to quantitatively diagnost epilepsy, Parkinsons disease, Alzheimers disease, or any mental disorder for that matter.&lt;/p&gt;
-&lt;p&gt;Brains are inherently a complex network of highly nonlinear functions. In the past it has been easy to analyze very simple, linear "things". That is because linear means a line. If you add a lot of lines together, it is easy to predict what the result looks like. Now imagine, if instead of a line, you have a highly complex curve and you add many of these together. It quickly becomes insurmountable to imagine how this result would look like. This is exactly what happens with our brain. We initially were able to ask simple questions of the brain and get simple answers from one neuron, or one region of the brain. However, in order to tackle increasingly complex questions of the brain, we have to shift our analysis to look at the entire network of the brain. When we learn, how does the entire brain coordinate this (not just one region)? When we have neurological diseases, how does the entire brain get affected (not just one region)?&lt;/p&gt;
-&lt;p&gt;Obviously, there is a whole field out there growing as a result. That is called, network neuroscience; the science of analyzing how the brain works using network-based analysis (e.g. graphs, neural networks, etc.). My belief is that as our understanding of basic brain network principles improves, our ability to generate increasingly complex AI systems will also improve.&lt;/p&gt;
+&lt;p&gt;With all the hype about "AI" and deep learning recently, it can 
+become easy to assume that we are at the apex of our understanding 
+of the human brain. This couldn't be farther from the truth. 
+While we have a decent understanding of how single neurons work 
+and how different regions of our brain work to give rise to very 
+basic behavior (i.e. vision, movement, perception), we essentially 
+have no knowledge as to how hundreds-millions of neurons work 
+together, or how more complex behavior manifests (i.e. imagination, 
+learning, etc.). We don't even know how to quantitatively diagnostic 
+epilepsy, Parkinsons disease, Alzheimers disease, or any mental 
+disorder for that matter. Brains are inherently a complex network 
+of highly nonlinear functions. In the past it has been easy to analyze
+very simple, linear "things". That is because linear means a line. 
+If you add a lot of lines together, it is easy to predict what the 
+result looks like. Now imagine, if instead of a line, you have a 
+highly complex curve and you add many of these together. It quickly 
+becomes insurmountable to imagine how this result would look like. 
+This is exactly what happens with our brain. We initially were able 
+to ask simple questions of the brain and get simple answers from one 
+neuron, or one region of the brain. However, in order to tackle 
+increasingly complex questions of the brain, we have to shift our 
+analysis to look at the entire network of the brain. When we learn, 
+how does the entire brain coordinate this (not just one region)? 
+When we have neurological diseases, how does the entire brain get 
+affected (not just one region)?&lt;/p&gt;
+&lt;p&gt;Obviously, there is a whole field out there growing as a result. 
+That is called, network neuroscience; the science of analyzing 
+how the brain works using network-based analysis (e.g. graphs, 
+neural networks, etc.). My belief is that as our understanding of 
+basic brain network principles improves, our ability to generate 
+increasingly complex AI systems will also improve.&lt;/p&gt;
 &lt;h2&gt;1. Epilepsy&lt;/h2&gt;
-&lt;p&gt;Epilepsy is a disease that affects more then 70 M people worldwide, which characterizes itself with seizures (i.e. abnormal brain activity) for seconds to several minutes. Epilepsy can be treated with medicine that generally inhibits brain activity (albeit with numerous side effects), and also with surgery. Surgery can involve resection (i.e. cutting a portion of the hypothesized diseased brain) and laser ablation (i.e. heat treatment of small spherical regions within the brain). When successful, surgery can result in complete seizure freedom! &lt;/p&gt;
+&lt;p&gt;Epilepsy is a disease that affects more than 70 M people worldwide, 
+which characterizes itself with seizures (i.e. abnormal brain activity) 
+for seconds to several minutes. Epilepsy can be treated with medicine that generally inhibits brain activity (albeit with numerous side effects), and also with surgery. Surgery can involve resection (i.e. cutting a portion of the hypothesized diseased brain) and laser ablation (i.e. heat treatment of small spherical regions within the brain). When successful, surgery can result in complete seizure freedom! &lt;/p&gt;
 &lt;p&gt;However, the problem is that surgery is extremely variable in success (e.g. ~50% average). Imagine getting permanent brain surgery, when there is a high likelihood of you still having seizures afterwards. A main obstacle to high success rates is incorrect localization of the epileptogenic zone, the clinical region of the brain that seizures originate from. In addition, clinicians employ a strategy similar to cancer resection; they will cut out a greater portion of the brain then possibly hypothesized because it will have good "margins" on the diseased tissue. This can cause unnecessary neural dysfunction, especially when these regions are close to important areas for language, motor or executive function. The goal of any researcher in this field is to identify biomarkers and methods for robustly identifying this diseased brain region given neural data. The result would be more successful surgeries and more accurate maps, leading to less brain regions being resected. Neural data can come in the form of electrophysiological recordings, MRI images, Diffusion weighted MRI images and CT images.&lt;/p&gt;
 &lt;h2&gt;2. Computational Modeling&lt;/h2&gt;
 &lt;p&gt;Computational modeling is the art of using mathematical equations to model how certain systems (i.e. the brain) behaves given parameters you input. These are normally formed in the framework of differential equations (i.e. that class we took in undergrad that made us go "huh?"). So here, at Marseille, the group has developed computational models that take in the patient's specific brain imaging to model epilepsy in a patient-specific manner (i.e. personalized brain modeling). The way it does this is by parcellating the brain into multiple regions, where each region is modeled by a computational model that can exhibit certain seizure phenomena. Then, by coupling (connecting) every region based on realistic brain connectivity, you can simulate brain behavior when you "set" different regions of the brain to be "diseased" that has some form of a realistic brain network. One could then compare the simulation and the real electrophysiological recording data in patients to test different hypotheses, such as: &lt;/p&gt;
@@ -96,35 +266,8 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;li&gt;http://www.thevirtualbrain.org/tvb/&lt;/li&gt;
 &lt;li&gt;https://ieeexplore.ieee.org/document/7963378/&lt;/li&gt;
 &lt;li&gt;https://www.ncbi.nlm.nih.gov/pubmed/29060480&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Academic"></category><category term="tvb"></category><category term="phd"></category></entry><entry><title>Using FreeSurfer</title><link href="/blog/2017/12/using-freesurfer/" rel="alternate"></link><published>2017-12-07T00:00:00-05:00</published><updated>2017-12-07T00:00:00-05:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-12-07:/blog/2017/12/using-freesurfer/</id><summary type="html">&lt;p&gt;To guide the user in how to setup freesurfer correctly.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#necessary-tools"&gt;Necessary Tools&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#data-processing-pipeline"&gt;Data Processing Pipeline:&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-dwi-processing"&gt;1. DWI Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-t1-mri-processing"&gt;2. T1 MRI Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-optional-ct-processing"&gt;3. (Optional) CT Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-connectome-generation"&gt;4. Connectome Generation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#common-definitions"&gt;Common Definitions:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#implementation"&gt;Implementation&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-set-up"&gt;1. Set Up&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-running-through-t1-weighted-mri-images"&gt;2. Running Through T1-Weighted MRI Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-running-through-ct-images"&gt;3. Running Through CT Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-getting-surface-parcellations"&gt;4. Getting Surface Parcellations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#5-getting-seeg-xyz-coordinates"&gt;5. Getting SEEG XYZ Coordinates&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Necessary Tools&lt;/h1&gt;
-&lt;p&gt;Freesurfer, FSL, and MRtrix3 are the three main neuroimaging and registration softwares that you need to run a systematic data pipeline of neuroimaging data (i.e. CT, MRI, DWI).&lt;/p&gt;
+&lt;/ol&gt;</content><category term="Academic"></category><category term="tvb"></category><category term="phd"></category></entry><entry><title>Using FreeSurfer</title><link href="/blog/2017/12/using-freesurfer/" rel="alternate"></link><published>2017-12-07T00:00:00-05:00</published><updated>2017-12-07T00:00:00-05:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-12-07:/blog/2017/12/using-freesurfer/</id><summary type="html">&lt;p&gt;To guide the user in how to setup freesurfer correctly.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Necessary Tools&lt;/h1&gt;
+&lt;p&gt;Freesurfer, FSL, and MRtrix3 are the three main neuroimaging and registration software that you need to run a systematic data pipeline of neuroimaging data (i.e. CT, MRI, DWI).&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Freesurfer
 https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall&lt;/li&gt;
@@ -143,49 +286,44 @@ http://mrtrix.readthedocs.io/en/latest/installation/mac_install.html&lt;/li&gt;
 &lt;h1&gt;Data Processing Pipeline:&lt;/h1&gt;
 &lt;h2&gt;1. DWI Processing&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Process diffusion imaging data, by denoising the data, then preprocessing it, then applying bias correction and then estimating the response function.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Process diffusion imaging data, by denoising the data, then preprocessing it, then applying bias correction and then estimating the response function. &lt;/p&gt;
+&lt;p&gt;dwidenoise &lt;/DTI_dicom_dir/&gt; &lt;dti_img_denoise.mif&gt;&lt;/p&gt;
+&lt;p&gt;dwipreproc -rpe_none AP DTI_30_average-2_denoise.mif &lt;dti_img_preproc_output.mif&gt;&lt;/p&gt;
+&lt;p&gt;dwibiascorrect &lt;dti_img_preproc_output.mif&gt; &lt;dti_img_preproc_biascorrect_output.mif&gt; –fsl&lt;/p&gt;
+&lt;p&gt;dwi2response tournier &lt;dti_img_preproc_biascorrect_output.mif&gt; &lt;dti_img_preproc_biascorrect_response.txt&gt;&lt;/p&gt;
+&lt;p&gt;dwi2fod csd DTI_30_average-2_denoise_preproc_biascorrected.mif DTI_30_average-2_denoise_preproc_biascorrected_response.txt DTI_30_average-2_denoise_preproc_biascorrected_fod.mif&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;$$
-    dwidenoise &lt;/DTI_dicom_dir/&gt; &lt;dti_img_denoise.mif&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;dwipreproc&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rpe_none&lt;/span&gt; &lt;span class="n"&gt;AP&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-
-&lt;span class="n"&gt;dwibiascorrect&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="err"&gt;–&lt;/span&gt;&lt;span class="n"&gt;fsl&lt;/span&gt;
-
-&lt;span class="n"&gt;dwi2response&lt;/span&gt; &lt;span class="n"&gt;tournier&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_output&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;dti_img_preproc_biascorrect_response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-
-&lt;span class="n"&gt;dwi2fod&lt;/span&gt; &lt;span class="n"&gt;csd&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected_response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt; &lt;span class="n"&gt;DTI_30_average&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;_denoise_preproc_biascorrected_fod&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mif&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;$$&lt;/p&gt;
 &lt;h2&gt;2. T1 MRI Processing&lt;/h2&gt;
 &lt;h2&gt;3. (Optional) CT Processing&lt;/h2&gt;
 &lt;h2&gt;4. Connectome Generation&lt;/h2&gt;
 &lt;h1&gt;Background&lt;/h1&gt;
-&lt;p&gt;Freesurfer is a tool built for rendering 3D brains using MRI and Ct scans.&lt;/p&gt;
-&lt;p&gt;FSL is a tool for coregistration and image analysis.&lt;/p&gt;
-&lt;p&gt;Download both online:&lt;/p&gt;
+&lt;p&gt;Freesurfer is a tool built for rendering 3D brains using MRI and Ct scans. FSL is a tool for coregistration and image analysis. Download both online:&lt;/p&gt;
 &lt;h2&gt;Common Definitions:&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Registration: to find a common coordinate system for the input data sets&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Implementation&lt;/h1&gt;
+&lt;p&gt;First, let's walk through how implementation occurs.&lt;/p&gt;
 &lt;h2&gt;1. Set Up&lt;/h2&gt;
-&lt;p&gt;First you will want to download freesurfer from the following website:&lt;/p&gt;
-&lt;p&gt;https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
-Linux:
-    ## bash
-    $&amp;gt; export FREESURFER_HOME=/usr/local/freesurfer
-    $&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;## tcsh&lt;/span&gt;
-&lt;span class="err"&gt;$&amp;gt; setenv FREESURFER_HOME /usr/local/freesurfer&lt;/span&gt;
-&lt;span class="err"&gt;$&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.csh&lt;/span&gt;
+&lt;p&gt;First you will want to download FreeSurfer from the following website:
+https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
+Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;freesurfer&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;SetUpFreeSurfer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt;
+
+&lt;span class="o"&gt;##&lt;/span&gt; &lt;span class="n"&gt;tcsh&lt;/span&gt;
+&lt;span class="n"&gt;setenv&lt;/span&gt; &lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;freesurfer&lt;/span&gt;
+&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;FREESURFER_HOME&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;SetUpFreeSurfer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;csh&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Mac:
-    $&amp;gt; export FREESURFER_HOME=/Applications/freesurfer
-    $&amp;gt; source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/p&gt;
-&lt;p&gt;Run those commands within your terminal, or add them to ~/.bashrc file to have access to all the command line tools for freeview.&lt;/p&gt;
+&lt;p&gt;Mac:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;export FREESURFER_HOME=/Applications/freesurfer&lt;/span&gt;
+&lt;span class="err"&gt;source $FREESURFER_HOME/SetUpFreeSurfer.sh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Run those commands within your terminal, or add them to &lt;code&gt;~/.bashrc&lt;/code&gt; file to have access to all the command line tools for freeview.&lt;/p&gt;
 &lt;p&gt;You will need to setup your own directory where you will hold all your subject data.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;export SUBJECTS_DIR=&amp;lt;path to subject data&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -208,201 +346,67 @@ https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-conver
 &lt;h2&gt;3. Running Through CT Images&lt;/h2&gt;
 &lt;p&gt;flirt -in patient_ct.nii -ref patient_mri.nii -omat patient_omat.mat -out patient_registered.nii.gz&lt;/p&gt;
 &lt;p&gt;This command will coregister the CT data onto the domain of the MRI data and provide a coregistration for you to look at where certain contacts of electrodes are. You can also view in Freeview the different cuts of the brain using either CT, or MRI. &lt;/p&gt;
-&lt;h2&gt;4. Getting Surface Parcellations&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;h2&gt;5. Getting SEEG XYZ Coordinates&lt;/h2&gt;
-&lt;p&gt;Once you have CT images coregistered with MRI images, you can easily extract the locations of all iEEG contacts in the MRI axis system. This is done by noting a contact within each electrode (e.g. A1, B1, C10, etc.) and then an algorithm can fill in the entire electrode's xyz coordinates and output to a file.&lt;/p&gt;
 &lt;h1&gt;References:&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall#Setup.26Configuration&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Academic"></category><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="brain rendering"></category></entry><entry><title>Important Concepts for Computational Modeling</title><link href="/blog/2017/09/fundamental-computational-modeling/" rel="alternate"></link><published>2017-09-27T00:00:00-04:00</published><updated>2017-09-27T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-27:/blog/2017/09/fundamental-computational-modeling/</id><summary type="html">&lt;p&gt;To keep a log of important concepts in computational modeling.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#concepts"&gt;Concepts&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-numerical-integration"&gt;1. Numerical Integration&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#deterministic-differential-equations"&gt;Deterministic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#stochastic-differential-equations"&gt;Stochastic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#considerations"&gt;Considerations:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-deterministic-and-stochastic-differential-equations"&gt;2. Deterministic and Stochastic Differential Equations&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#deterministic-differential-equations-1"&gt;Deterministic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#stochastic-differential-equations-1"&gt;Stochastic Differential Equations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references-1"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references-2"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-&lt;h1&gt;Background&lt;/h1&gt;
-&lt;p&gt;Computational modeling involves setting up mathematical equations that represent some sort of statics, or dynamics within a system. You want to simulate these equations to understand behavior, fixed points, bifurcations and changes wrt parameter values.&lt;/p&gt;
-&lt;h1&gt;Concepts&lt;/h1&gt;
-&lt;h2&gt;1. Numerical Integration&lt;/h2&gt;
-&lt;p&gt;Numerical integration involves solving system of differential equations via numerical methods. This is in general split into deterministic vs stochastic differential equations. Here we will also split the two.&lt;/p&gt;
-&lt;h3&gt;Deterministic Differential Equations&lt;/h3&gt;
-&lt;p&gt;1) Euler's Method&lt;/p&gt;
-&lt;p&gt;2) Runge-Kutta Method(s)?&lt;/p&gt;
-&lt;h3&gt;Stochastic Differential Equations&lt;/h3&gt;
-&lt;p&gt;Heun methods seem to be more accurate, but more time consuming vs the Milstein method.
-1) Heun Method
-Simple discretization leading to Stratonovich integral. It is a "predictor-corrector method" because given value of X at time &lt;span class="math"&gt;\(t_n\)&lt;/span&gt;, obtain predictors with Euler integration scheme, then correct it using Heun's correction.&lt;/p&gt;
-&lt;p&gt;Details to be filled in.&lt;/p&gt;
-&lt;p&gt;2) Milstein Method
-Uses the derivative of the diffusion coefficients&lt;/p&gt;
-&lt;h3&gt;Considerations:&lt;/h3&gt;
-&lt;p&gt;1) Convergence&lt;/p&gt;
-&lt;h3&gt;References:&lt;/h3&gt;
+&lt;/ol&gt;</content><category term="Academic"></category><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="brain rendering"></category></entry><entry><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link href="/blog/2017/09/simulating-tvb/" rel="alternate"></link><published>2017-09-27T00:00:00-04:00</published><updated>2017-09-27T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-27:/blog/2017/09/simulating-tvb/</id><summary type="html">&lt;p&gt;To guide the simulation of Epileptic iEEG activity using TVB in Marseille, France.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;TVB is a platform for simulating whole-brain dynamics that starts from raw data involving:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Comparison of stochastic integration https://arxiv.org/pdf/1102.4401.pdf&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;structural connectivity derived from DTI&lt;/li&gt;
+&lt;li&gt;brain parcellation derived from MRI and CT&lt;/li&gt;
+&lt;li&gt;SEEG xyz locations derived from MRI and CT&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;2. Deterministic and Stochastic Differential Equations&lt;/h2&gt;
-&lt;h3&gt;Deterministic Differential Equations&lt;/h3&gt;
-&lt;p&gt;An example would be a population growth model. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dx_t = Kx_t dt,\ x(0)=x_0\)&lt;/span&gt;, with K being some constant.&lt;/p&gt;
-&lt;p&gt;However, if we have some inherent randomness, then maybe we can't assume &lt;span class="math"&gt;\(x_0\)&lt;/span&gt; is deterministic constant, but perhaps a random variable.&lt;/p&gt;
-&lt;h3&gt;Stochastic Differential Equations&lt;/h3&gt;
-&lt;p&gt;An example would be a population growth model. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dX_t(w) = KX_t(w) dt,\ X_0(w)\)&lt;/span&gt;, with K being some constant and &lt;span class="math"&gt;\(X_t(w)\)&lt;/span&gt; is a random variable, which comes from the initial condition. K could also be random.&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dX_t(w) = (Kdt + dW_t(w))X_t(w) dt,\ X_0(w)\)&lt;/span&gt;, where &lt;span class="math"&gt;\(dW_t(w)\)&lt;/span&gt; is some noise process that adds randomness to K.&lt;/p&gt;
-&lt;p&gt;This leads us to the general SDE. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(dX_t(w) = f_t(X_t(w))dt + \sigma_t(X_t(w))dW_t(w),\ X_0(w)\)&lt;/span&gt;, where f is the deterministic drift of the SDE. &lt;span class="math"&gt;\(\sigma_t\)&lt;/span&gt; is the diffusion coefficient, and &lt;span class="math"&gt;\(dW_t(w)\)&lt;/span&gt; is the noise process. &lt;/p&gt;
-&lt;p&gt;We can rewrite the SDE in integral form, which leads us to the Stratonovich integral and the Ito integral.&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(X_t(w) = X_0(w) + \int_t_0 f_s(X_s(w)) ds + \int_t_0 \sigma_s(X_s(w)) dW_s(w)\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Ito integral =&amp;gt;
-Stratonovich integral =&amp;gt;&lt;/p&gt;
-&lt;h3&gt;References:&lt;/h3&gt;
-&lt;h3&gt;References:&lt;/h3&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="Academic"></category><category term="phd"></category><category term="journals"></category><category term="reviews"></category><category term="computational modeling"></category></entry><entry><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link href="/blog/2017/09/simulating-tvb/" rel="alternate"></link><published>2017-09-27T00:00:00-04:00</published><updated>2017-09-27T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-27:/blog/2017/09/simulating-tvb/</id><summary type="html">&lt;p&gt;To guide the simulation of Epileptic iEEG activity using TVB in Marseille, France.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#data--metadata"&gt;Data &amp;amp; Metadata&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#implementation"&gt;Implementation&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-setting-up-environment"&gt;1. Setting Up Environment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1b-setting-up-environment-on-a-cluster"&gt;1b. Setting Up Environment on a Cluster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#1c-using-docker--singularity"&gt;1c. Using Docker / Singularity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-simulating-epilepsy"&gt;2. Simulating Epilepsy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#references"&gt;References:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Background&lt;/h1&gt;
-&lt;p&gt;TVB is a platform for simulating whole-brain dynamics that starts from raw data involving:
-    1. structural connectivity derived from DTI
-    2. brain parcellation derived from MRI and CT
-    3. SEEG xyz locations derived from MRI and CT
-This will then determine a gain matrix to determine SEEG signals from the source signals that are generated from neural mass models.&lt;/p&gt;
-&lt;p&gt;The neural mass models will be implemented with nonlinear, complex models for simulating certain type of electrophysiology. The Epileptor is used for simulating seizure activity from a specific source region. &lt;/p&gt;
-&lt;p&gt;The epileptor is a set of coupled differential equations that rely on 6 different variables. They are described here:&lt;/p&gt;
+&lt;p&gt;This will then determine a gain matrix to determine SEEG signals from the source signals that are 
+generated from neural mass models. The neural mass models will be implemented 
+with nonlinear, complex models for simulating certain type of electrophysiology. 
+The Epileptor is used for simulating seizure activity from a specific source region. &lt;/p&gt;
+&lt;p&gt;The epileptor is a set of coupled differential equations that rely on 6 different variables. 
+They are described here:&lt;/p&gt;
 &lt;h1&gt;Data &amp;amp; Metadata&lt;/h1&gt;
-&lt;p&gt;Generally, refer to my post on "Freesurfer" to establish the preprocessing data pipeline using Freesurfer, FSL and MRtrix3.&lt;/p&gt;
-&lt;p&gt;The minimum necessary requirements for creating the TVB dataset are a set of T1 and DWI images as a list of dicom files, or a single 4-D image nifti file.&lt;/p&gt;
+&lt;p&gt;Generally, refer to my post on &lt;code&gt;Freesurfer&lt;/code&gt; to establish the preprocessing 
+data pipeline using Freesurfer, FSL and MRtrix3.&lt;/p&gt;
+&lt;p&gt;The minimum necessary requirements for creating the TVB dataset are a set 
+of T1 and DWI images as a list of dicom files, or a single 4-D image nifti file.&lt;/p&gt;
 &lt;p&gt;A high level summary of how the pipeline proceeds is:
-1. Construct Cortical Surface, Subcortical Surface
-Using freesurfer, you can get the reconstructed surfaces, which are your files that outline the voxels that belong to each region of the brain. This will give you the surface geometries of the cortical and subcortical surface.&lt;/p&gt;
+1. Construct Cortical Surface, Subcortical Surface&lt;/p&gt;
+&lt;p&gt;Using freesurfer, you can get the reconstructed surfaces, 
+which are your files that outline the voxels that belong 
+to each region of the brain. This will give you the surface 
+geometries of the cortical and subcortical surface.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Construct Parcellation Scheme
-This can range from the default in freesurfer to different atlases available for the human brain. This will give you a region mapping for every vertex/face from your cortical/subcortical surface geometries files.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Construct Corticography Tracts
-First, you need to coregister the DWI images with the T1 scans&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Construct Parcellation Scheme&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Using the DWI images, along with the reconstructed surfaces, you can count fiber tracts between each region of the brain and reconstruct the structural connectivity matrices. This is composed from the weights matrix and the length matrix between parcellated regions.&lt;/p&gt;
+&lt;p&gt;This can range from the default in freesurfer to different 
+atlases available for the human brain. This will give you 
+a region mapping for every vertex/face from your cortical/subcortical
+surface geometries files.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Obtain Electrode Coordinates in T1 Space
-First, you need to coregister the CT reconstructed freesurfer file into the T1 space. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Computing Gain Matrix Between Brain Regions and Electrodes
-In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activity, you need to compute a gain matrix that transforms region activity into electrode activity. &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Construct Corticography Tracts&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;This can be done using an inverse-square method fall-off on the region activity, or using a dipole method as outlined in the "Virtual Epileptic Patient" paper.&lt;/p&gt;
+&lt;p&gt;First, you need to coregister the DWI images with the T1 scans 
+Using the DWI images, along with the reconstructed surfaces, 
+you can count fiber tracts between each region of the brain 
+and reconstruct the structural connectivity matrices. This is composed from the weights matrix and the length matrix between parcellated regions.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Obtain Electrode Coordinates in T1 Space&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;First, you need to coregister the CT reconstructed freesurfer file into the T1 space. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Computing Gain Matrix Between Brain Regions and Electrodes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In order to compute forward solutions of electrode (i.e. SEEG, ECoG, etc.) activity, 
+you need to compute a gain matrix that transforms region activity into electrode activity. 
+This can be done using an inverse-square method fall-off on the region activity, 
+or using a dipole method as outlined in the "Virtual Epileptic Patient" paper.
+Note that these methods have some limitations, as it assumes all 
+activity from brain regions are "projected" to the iEEG electrodes 
+instantaneously.&lt;/p&gt;
 &lt;h1&gt;Implementation&lt;/h1&gt;
 &lt;h2&gt;1. Setting Up Environment&lt;/h2&gt;
 &lt;p&gt;First you may want to set up a conda environment, or a virtualenv that will separate the entire python project from your normal OS.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;
-&lt;span class="err"&gt;pip install nibabel networkx&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pip install nibabel networkx&lt;/span&gt;
 &lt;span class="err"&gt;git clone https://github.com/the-virtual-brain/tvb-data&lt;/span&gt;
 &lt;span class="err"&gt;git clone https://github.com/the-virtual-brain/tvb-library&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you want to have a script to add these all to path for your jupyter notebook, use the following:&lt;/p&gt;
@@ -435,199 +439,34 @@ jupyter notebook
 &lt;span class="err"&gt;python -m ipykernel install --name tridesclous-testing —user&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2&gt;1c. Using Docker / Singularity&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
 &lt;h2&gt;2. Simulating Epilepsy&lt;/h2&gt;
-&lt;p&gt;In order to simulate epilepsy, you are going to walk through a pipeline using TVB. Details are left out for now.&lt;/p&gt;
-&lt;p&gt;i. Structural Connectivity
-What is the matrix of connectivities between your brain regions?
+&lt;p&gt;In order to simulate epilepsy, you are going to walk through a pipeline 
+using TVB. Details are left out for now.&lt;/p&gt;
+&lt;p&gt;i. Structural Connectivity&lt;/p&gt;
+&lt;p&gt;What is the matrix of connectivities between your brain regions?
 Ex: Connectivity weights, conduction speed, coupling function between long-range regions&lt;/p&gt;
-&lt;p&gt;ii. Neural Mass Model
-What is the phenomenological model at brain regions?
+&lt;p&gt;ii. Neural Mass Model&lt;/p&gt;
+&lt;p&gt;What is the phenomenological model at brain regions?
 Ex: Epileptor6D, with parameter settings&lt;/p&gt;
-&lt;p&gt;iii. Integrators
-How to solve your stochastic differential equation?
+&lt;p&gt;iii. Integrators&lt;/p&gt;
+&lt;p&gt;How to solve your stochastic differential equation?
 Ex: Heunstochastic, with noise levels&lt;/p&gt;
-&lt;p&gt;iv. Coupling
-How are your brain regions coupled?
+&lt;p&gt;iv. Coupling&lt;/p&gt;
+&lt;p&gt;How are your brain regions coupled? How does activity 
+of one region translate to the next? Is it transformed 
+via a function?
 Ex: linear, additive, hyperbolic&lt;/p&gt;
-&lt;p&gt;v. Monitors
-What variables to monitor and store?
-Ex: State variables, iEEG activity from sampling rate and period.&lt;/p&gt;
+&lt;p&gt;v. Monitors&lt;/p&gt;
+&lt;p&gt;What variables to monitor and store?
+Ex: State variables, iEEG activity from sampling 
+rate and period.&lt;/p&gt;
 &lt;p&gt;Then once these are complete, you can run your simulation.&lt;/p&gt;
 &lt;h2&gt;References:&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-library&lt;/li&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-epilepsy&lt;/li&gt;
 &lt;li&gt;https://www.thevirtualbrain.org/tvb/zwei&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Academic"></category><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="computational modeling"></category></entry><entry><title>Important Papers for Fundamentals in Computational Neuroscience / Data Science</title><link href="/blog/2017/09/fundamental-papers/" rel="alternate"></link><published>2017-09-25T00:00:00-04:00</published><updated>2017-09-25T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-09-25:/blog/2017/09/fundamental-papers/</id><summary type="html">&lt;p&gt;To keep a log of important papers I read about and how they are relevant.&lt;/p&gt;</summary><content type="html">&lt;!-- MarkdownTOC autolink="true" --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#papers"&gt;Papers&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#1-wilson-cowan-neural-mass-model"&gt;1. Wilson-Cowan Neural Mass Model&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#2-kalman-filter-model"&gt;2. Kalman Filter Model&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-1"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-1"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#3-expectation-maximization"&gt;3. Expectation Maximization&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-2"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-2"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#4-information-bottleneck-method"&gt;4. Information Bottleneck Method&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-3"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-3"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#5-opening-the-black-box-of-deep-neural-networks-via-information"&gt;5. Opening the Black Box of Deep Neural Networks Via Information&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-4"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-4"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#6-reinforcement-learning-an-overview"&gt;6. Reinforcement Learning: An Overview&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-5"&gt;Summary / Conclusions:&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-5"&gt;Important Notes:&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#7-deep-reinforcement-learning-an-overview"&gt;7. Deep Reinforcement Learning: An Overview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#8-variational-inference"&gt;8. Variational Inference:&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#summary--conclusions-6"&gt;Summary / Conclusions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#important-notes-6"&gt;Important Notes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h1&gt;Papers&lt;/h1&gt;
-&lt;h2&gt;1. Wilson-Cowan Neural Mass Model&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;2. Kalman Filter Model&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;3. Expectation Maximization&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;4. Information Bottleneck Method&lt;/h2&gt;
-&lt;p&gt;http://www.cs.huji.ac.il/labs/learning/Papers/allerton.pdf&lt;/p&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;p&gt;Let us define X as input signal, and Y as desired output.&lt;/p&gt;
-&lt;p&gt;Here, they were interested in deriving a quantitative method for optimizing 1) compression rate of a signal and 2) the choice of representation of the original signal.&lt;/p&gt;
-&lt;p&gt;Previous theory looked at minimizing the rate of compression given a constraint on expected distortion of the original signal (with new compression). This was solved via iterative algorithm (similar to EM), but lacked generality to find optimal representatives, which minimize the expected distortion (not just compression) of the signal. &lt;/p&gt;
-&lt;p&gt;The new theory looks at minimizing the rate of compression given a constraint on the amount of information we can keep about Y using X. This produces an iterative algorithm that also can be solved iteratively. It also shows that 1) the Kullback-Leibler divergence is the relevant distortion measure for the information bottleneck setting, and 2) optimization of representation of signal and the signal compression can be done together.&lt;/p&gt;
-&lt;p&gt;This work can be used in applications to information processing problems (e.g. deep learning).&lt;/p&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;p&gt;Mutual information is defined as:&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(I(X;Y) = D_{KL}[P(x,y)||P(x)P(y)] = \sum_{x\in X, y\in Y} P(x,y) log(\frac_{P(x,y)}_{P(x)P(y)})\)&lt;/span&gt;
-&lt;span class="math"&gt;\(= \sum_{x\in X, y\in Y}P(x,y) log(\frac_{P(x|y)}_{P(x)}) = H(X) - H(X|Y)\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;, where &lt;span class="math"&gt;\(D_{KL}(p||q)\)&lt;/span&gt; is the Kullback-Liebler divergence of distributions p and q, and &lt;span class="math"&gt;\(H(X)\)&lt;/span&gt; and &lt;span class="math"&gt;\(H(X|Y)\)&lt;/span&gt; are entropy and conditional entropies, respectively.&lt;/p&gt;
-&lt;p&gt;We want the optimal representations of signal X with respect to output label Y. Sufficient statistics are maps/partitions of X, S(X) that captures all the information X has about Y. The mutual information given Y is equal. &lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(I(S(X); Y) = I(X; Y)\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;We can allow the map to be stochastic, with encoder P(T|X) and allow map to capture as much as possible of I(X;Y), not necessarily all of it &lt;span class="math"&gt;\(I(S(X); Y) \leq I(X; Y)\)&lt;/span&gt;. Define &lt;span class="math"&gt;\(t \in T\)&lt;/span&gt; as compressed representations of &lt;span class="math"&gt;\(x \in X\)&lt;/span&gt;, stochastically, &lt;span class="math"&gt;\(p(t|x)\)&lt;/span&gt;. The following optimization problem finds a balance between compression of X and prediction of Y.&lt;/p&gt;
-&lt;p&gt;&lt;span class="math"&gt;\(min_{p(t|x),p(y|t),p(t)}\ {I(X;T) - \beta I(T;Y)}\)&lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;5. Opening the Black Box of Deep Neural Networks Via Information&lt;/h2&gt;
-&lt;p&gt;Reference: https://arxiv.org/pdf/1703.00810.pdf&lt;/p&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;p&gt;In this paper, the authors extend their analysis of DNN using information theory. They answered the following questions:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The SGD layer dynamics in the Information plane.
-First the layers increase &lt;span class="math"&gt;\(I(T_i;Y)\)&lt;/span&gt;, and then later decrease &lt;span class="math"&gt;\(I(X; T_i)\)&lt;/span&gt;, which corresponds to increasing the information about Y and then later compressing the representation (empirical error minimization &amp;amp; representation compression phase).&lt;/li&gt;
-&lt;li&gt;The effect of the training sample size on the layers.
-It seems that sample size does not have an effect on empirical error minimization, but does have an effect on the representation compression. Smaller sample sizes has overfitting, which has been seen as overfitting the sample noise. &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What is the benefit of the hidden layers?
-Adding hidden layers reduces the number of training epochs. It also seems to accelerate compression, but adding extra width does not seem to help. With layered diffusion of the SGD optimization (backpropagation), it seems that there is an exponential decrease in epochs with K hidden layers.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What is the final location of the hidden layers?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Do the hidden layers form optimal IB representations?
-It seems that the hidden layers converge to the optiaml IB representations. However, we can see that there can be clearly many different layers that correspond to the same IB representation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Another important hypothesis/conjecture they make is that: attempts to interpret single weights, or even single neurons in such networks can be meaningless because there is a large number of different networks that can achieve optimal performance. This makes sense in terms of how the brain is structured; the brain does not form the same pathway for learning something new between different people, but form a unique network for optimal performance. &lt;/p&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;p&gt;First, they estimated the mutual information of the layers with the input and with the labels &lt;span class="math"&gt;\(I(X;T_i)\)&lt;/span&gt; and &lt;span class="math"&gt;\(I(T_i;Y)\)&lt;/span&gt;. &lt;/p&gt;
-&lt;h2&gt;6. Reinforcement Learning: An Overview&lt;/h2&gt;
-&lt;p&gt;Reference: https://pdfs.semanticscholar.org/b373/b0c6e3b4fef4ac0534965708fc382343f8dc.pdf&lt;/p&gt;
-&lt;h3&gt;Summary / Conclusions:&lt;/h3&gt;
-&lt;h3&gt;Important Notes:&lt;/h3&gt;
-&lt;h2&gt;7. Deep Reinforcement Learning: An Overview&lt;/h2&gt;
-&lt;p&gt;Reference:&lt;/p&gt;
-&lt;h2&gt;8. Variational Inference:&lt;/h2&gt;
-&lt;h3&gt;Summary / Conclusions&lt;/h3&gt;
-&lt;p&gt;Variational inference&lt;/p&gt;
-&lt;h3&gt;Important Notes&lt;/h3&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="Academic"></category><category term="phd"></category><category term="journals"></category><category term="reviews"></category></entry><entry><title>Doctoral Board Oral Exam (PhD)</title><link href="/blog/2017/08/doctoral-board-oral/" rel="alternate"></link><published>2017-08-05T00:00:00-04:00</published><updated>2017-08-05T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-08-05:/blog/2017/08/doctoral-board-oral/</id><summary type="html">&lt;p&gt;A short walkthrough of my experience with the DBO exam at Johns Hopkins University&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Doctoral Board Oral Exam&lt;/h1&gt;
+&lt;/ol&gt;</content><category term="Academic"></category><category term="data analysis"></category><category term="eeg"></category><category term="phd"></category><category term="computational modeling"></category></entry><entry><title>Doctoral Board Oral Exam (PhD)</title><link href="/blog/2017/08/doctoral-board-oral/" rel="alternate"></link><published>2017-08-05T00:00:00-04:00</published><updated>2017-08-05T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-08-05:/blog/2017/08/doctoral-board-oral/</id><summary type="html">&lt;p&gt;A short walkthrough of my experience with the DBO exam at Johns Hopkins University&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Doctoral Board Oral Exam&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -731,7 +570,7 @@ It seems that the hidden layers converge to the optiaml IB representations. Howe
 &lt;/ol&gt;
 &lt;h1&gt;2. Generalized Linear Models:&lt;/h1&gt;
 &lt;h2&gt;General Form of Exponential Family Distribution&lt;/h2&gt;
-&lt;p&gt;Be able to define all the terms, such as: natural paramters, sufficient statistic, natural link function, dispersion parameter&lt;/p&gt;
+&lt;p&gt;Be able to define all the terms, such as: natural parameters, sufficient statistic, natural link function, dispersion parameter&lt;/p&gt;
 &lt;h2&gt;Normal Linear Regression&lt;/h2&gt;
 &lt;h2&gt;Logistic Regression&lt;/h2&gt;
 &lt;h2&gt;Poisson Regression&lt;/h2&gt;
@@ -805,7 +644,7 @@ repeat until there is no further change in L(z, C):
 &lt;p&gt;Good things to know and remember are:
 - Hodgkin Huxley models: a biophysical model that models realistic neuronal firing based on concentration gradients, membrane conductances, membrane potentials and even more.
 - Nernst equation: a fundamental equation for determining the resting potential of a membrane in the presence of a concentration gradient of an ion.
-- Goldman-Katz equation: a model with multiple ions that determins the resting potential of a membrane (extension of Nernst)
+- Goldman-Katz equation: a model with multiple ions that determines the resting potential of a membrane (extension of Nernst)
 - Action potentials and the chronology of cell actions that are taken&lt;/p&gt;
 &lt;h1&gt;9. Gaussian Mixture Models&lt;/h1&gt;
 &lt;p&gt;This is the idea that some data distributions can be the combinations of many different Gaussian models with different means and variance, but superimposed on each other. &lt;/p&gt;
