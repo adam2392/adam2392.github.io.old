@@ -1,5 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Adam Li's blog</title><link>/</link><description></description><lastBuildDate>Thu, 24 Dec 2020 00:00:00 -0500</lastBuildDate><item><title>Personal Goals - 2021</title><link>/blog/2020/12/goals-2021/</link><description>&lt;h1&gt;Summary of 2020&lt;/h1&gt;
+<rss version="2.0"><channel><title>Adam Li's blog</title><link>/</link><description></description><lastBuildDate>Mon, 11 Jan 2021 00:00:00 -0500</lastBuildDate><item><title>Principle Component Analysis (PCA; Proper Orthogonal Decomposition)</title><link>/blog/2021/01/principle-component-analysis/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;When i.i.d. vector data is collected, then it is generally of interest to 
+represent the data in as low-dimension as possible. &lt;/p&gt;
+&lt;p&gt;Given &lt;span class="math"&gt;\(x_k \in \mathbb{R}^d \sim X\)&lt;/span&gt; for k=1,...,n data points (e.g. 
+if data are images, then d is the number of pixels), one would like to
+simultaneously i) discover interdependencies within the data and ii) reduce dimensions. 
+It is important to note here that the data is &lt;strong&gt;sampled&lt;/strong&gt; from a distribution and so 
+any downstream statistics (e.g. covariance) are &lt;strong&gt;estimates&lt;/strong&gt; of the true 
+underlying statistic.&lt;/p&gt;
+&lt;p&gt;Mathematically, this problem can be represented in many ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Minimizing Cost functions&lt;/p&gt;
+&lt;p&gt;On the one hand we would like to find a lower-dimensional representation of our data, &lt;span class="math"&gt;\(x_k\)&lt;/span&gt;. 
+We would like to find the minimization of the following cost function&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$\argmin_P E[ x - Px ]^2$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;where P is a projection operator of rank r. P takes the data points &lt;span class="math"&gt;\(x_k\)&lt;/span&gt; 
+and maps them from dimension d to r &amp;lt;&amp;lt; d.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Maximizing Cost Functions&lt;/p&gt;
+&lt;p&gt;On the other hand, we can view PCA as a method for maximizing the variance 
+observed in the data, subject to a constraint. If we stack our data samples, &lt;span class="math"&gt;\(x_k\)&lt;/span&gt; 
+column-by-column in a data matrix, X, we seek a linear combination of the columns 
+that give us the &lt;strong&gt;maximal variance&lt;/strong&gt;. &lt;span class="math"&gt;\(Var(Xa) = a^T Var(X) a\)&lt;/span&gt;, where a is a 
+vector of constants to provide linear combinations of X, and &lt;span class="math"&gt;\(Var(X)\)&lt;/span&gt; is the 
+covariance matrix of our data.&lt;/p&gt;
+&lt;p&gt;In addition, we impose a constraint on the vector, a, such that it has unit norm. 
+Thus using the theory of Lagrange multipliers, we can write this as a 
+constrained optimization problem.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$\argmax_a a^T Var(X) a - \lambda(a^T a - 1)$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;When differentiating with respect to a, and solving the equations, one 
+gets the analytical expression:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$Var(X) a = \lambda a$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;which is simply an eigenvalue equation, where &lt;span class="math"&gt;\(\lambda\)&lt;/span&gt; is an eigenvalue of 
+Var(X) and a is an eigenvector. &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Standard PCA and Algorithm&lt;/h1&gt;
+&lt;p&gt;Standard PCA is commonly implemented in &lt;a href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html"&gt;sklearn&lt;/a&gt;
+where the algorithm relies on the Singular Value Decomposition (SVD). Generally, 
+it uses the &lt;code&gt;LAPACK&lt;/code&gt; implementation, which supports full, truncated and randomized SVD. 
+Conceptually the algorithm proceeds in 4 steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Standardization of variable scaling&lt;/p&gt;
+&lt;p&gt;This step attempts to put all dimensions of the data in the same scale. 
+In the downstream step of the SVD, for variables that have a significantly larger 
+amplitude then other variables, then the variability in those variables will dominate. &lt;/p&gt;
+&lt;p&gt;Common standardizations include the z-scoring method:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$x_{k_i} = \frac{x_{k_i} - \mu(x_k)}{\sigma(x_k)}$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Estimate covariance matrix&lt;/p&gt;
+&lt;p&gt;The next step will compute the covariance matrix of the data. 
+If there are n samples of a d-dimensional data, then the covariance 
+matrix will be &lt;span class="math"&gt;\(d \times d\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Matrix decomposition (SVD/EVD)&lt;/p&gt;
+&lt;p&gt;Since the covariance matrix is a positive semi-definite (symmetric and 
+non-negative quadratic form), then its singular values are equivalent to 
+its eigenvalues. The singular/eigen vectors 
+of the covariance matrix are ordered by the values of the singular/eigen values.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Computing Principle Components&lt;/p&gt;
+&lt;p&gt;The principle components of the data are obtained by multiplying the data 
+with the singular vector matrix. For example, the first 5 principle components corresponding to the 
+5 largest singular values can be used to obtain a 5-dimensional representation 
+of the original d-dimensional dataset. We simply take the &lt;span class="math"&gt;\(d \times 5\)&lt;/span&gt; truncated matrix 
+and multiply it with our data to obtain n samples now of a 5-dimensional data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Statistical Considerations&lt;/h1&gt;
+&lt;h2&gt;Independence&lt;/h2&gt;
+&lt;p&gt;If random variables are independent, then they have 0 correlation. Independence is a stronger 
+assumption then non-correlated. Most of the times, independence is not fully realized; it is 
+just a necessary assumption for mathematical modeling. However, when random variables are not necessarily independent, it is not necessary that 
+they have non-zero correlation. In fact, they may have high correlation. &lt;/p&gt;
+&lt;p&gt;When performing PCA on correlated data, most likely there will be a few principle components
+in the data that are captured.&lt;/p&gt;
+&lt;h2&gt;Centering&lt;/h2&gt;
+&lt;p&gt;When computing the principle components, it is in general common practice to 
+center the columns of the data matrix first. &lt;/p&gt;
+&lt;p&gt;Geometrically this centers all data points around the origin. PCA attempts at finding 
+an orthogonal rotation to represent the data; note that this rotation occurs 
+about the origin!&lt;/p&gt;
+&lt;p&gt;If the mean is not subtracted, then essentially the first principle component ends up being 
+the mean vector of the data points, since rotating that mean would result in higher 
+mean-squared error.&lt;/p&gt;
+&lt;h2&gt;Compressed Sensing (n &amp;lt; d) - "Robust PCA"&lt;/h2&gt;
+&lt;p&gt;When dealing with high-dimension data with high-dimensional noise, PCA 
+may become sensitive to outliers within the dataset. To combat this, 
+we can instead model PCA as a convex optimization problem with the cost function&lt;/p&gt;
+&lt;div class="math"&gt;$$\min_{L,S} ||L||_* + \lambda ||S||_1$$&lt;/div&gt;
+&lt;p&gt;such that &lt;span class="math"&gt;\(X = L + S\)&lt;/span&gt;, where L is a low-rank component and S is a sparse component.
+This minimizes the sum of the singular values for the matrix L and the l1-norm of the
+matrix S. The sparse matrix is associated with noise.&lt;/p&gt;
+&lt;h2&gt;Huge Dimensionality (n &amp;gt;&amp;gt; 1, d &amp;gt;&amp;gt; 1)&lt;/h2&gt;
+&lt;p&gt;When you have a large number of samples with extremely high dimensions, the computational 
+workhouse - SVD - becomes computationally expensive. Rather then take a full SVD, 
+it has been shown that taking randomized SVD can capture the principle components of the data.&lt;/p&gt;
+&lt;p&gt;The randomized SVD approach essentially says that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;choose a random unitary projection matrix (&lt;span class="math"&gt;\(d \times r\)&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;multiply that with your data matrix and apply PCA&lt;/li&gt;
+&lt;li&gt;the principle components of that data matrix has &lt;strong&gt;high probability&lt;/strong&gt; of aligning 
+with the principle components of the original large data matrix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: The important point here is that the unitary projection matrix must 
+be chosen at random. Good choices are listed in &lt;a href="https://scikit-learn.org/stable/modules/random_projection.html"&gt;sklearn&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;Questions to Test Understanding&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Given eigenvalues of the covariance matrix, what is one way to measure &lt;em&gt;variance explained&lt;/em&gt; proportion for each component?&lt;/p&gt;
+&lt;p&gt;Take the eigenvalues and sort them, then for each eigenvalue, divide it by the trace of the covariance matrix. This 
+results in a ratio between the corresponding jth eigenvalue and the total sum of all the eigenvalues, which gives 
+the proportion of variance explained in the principle components.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;By performing z-score standardization of the data matrix, the covariance matrix of the data is now equivalent to the correlation matrix?&lt;/p&gt;
+&lt;p&gt;By performing z-score standardization, the columns of the data matrix now all have sample variance equal to 1. Thus, the 
+correlation is defined as:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$\rho_{X, Y} = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;which is equivalent to the covariance when the sample variances are unitary.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;References:&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Jolliffe IT, Cadima J. (2016). Principal component analysis: a review and recent developments.Phil. Trans. R. Soc. A 374:20150202. http://dx.doi.org/10.1098/rsta.2015.0202&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 11 Jan 2021 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2021-01-11:/blog/2021/01/principle-component-analysis/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Personal Goals - 2021</title><link>/blog/2020/12/goals-2021/</link><description>&lt;h1&gt;Summary of 2020&lt;/h1&gt;
 &lt;p&gt;This year has been pretty blessed considering what's happening around the world with Covid-19. 
 I did a cabin trip with Sarah and friends early in the year and did New Years Eve at a club seeing Kaskade(?). 
 Definitely safe to say, I can't do "long" nights out anymore. 
