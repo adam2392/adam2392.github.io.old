@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Real Analysis (Lebesgue Integration, Differentiation and Measure) - Adam Li's blog</title>
+    <title>Principle Component Analysis (PCA; Proper Orthogonal Decomposition) - Adam Li's blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,22 +10,21 @@
 
     <link href="/images/brain.jpg" rel="icon">
 
-<link rel="canonical" href="/blog/2020/12/real-analysis/">
+<link rel="canonical" href="/blog/2021/01/principle-component-analysis/">
 
         <meta name="author" content="Adam Li" />
-        <meta name="keywords" content="math,phd,real-analysis" />
-        <meta name="description" content="A short summary of important concepts in Real Analysis" />
+        <meta name="keywords" content="phd,machine learning" />
+        <meta name="description" content="An overview of principle component analysis." />
 
         <meta property="og:site_name" content="Adam Li's blog" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Real Analysis (Lebesgue Integration, Differentiation and Measure)"/>
-        <meta property="og:url" content="/blog/2020/12/real-analysis/"/>
-        <meta property="og:description" content="A short summary of important concepts in Real Analysis"/>
-        <meta property="article:published_time" content="2020-12-24" />
-            <meta property="article:section" content="Academic" />
-            <meta property="article:tag" content="math" />
+        <meta property="og:title" content="Principle Component Analysis (PCA; Proper Orthogonal Decomposition)"/>
+        <meta property="og:url" content="/blog/2021/01/principle-component-analysis/"/>
+        <meta property="og:description" content="An overview of principle component analysis."/>
+        <meta property="article:published_time" content="2021-01-11" />
+            <meta property="article:section" content="Machine Learning" />
             <meta property="article:tag" content="phd" />
-            <meta property="article:tag" content="real-analysis" />
+            <meta property="article:tag" content="machine learning" />
             <meta property="article:author" content="Adam Li" />
 
 
@@ -42,8 +41,8 @@
 
         <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
               title="Adam Li's blog RSS Feed"/>
-        <link href="/feeds/academic.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Adam Li's blog Academic ATOM Feed"/></head>
+        <link href="/feeds/machine-learning.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Adam Li's blog Machine Learning ATOM Feed"/></head>
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -89,10 +88,10 @@ Adam Li's blog            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/blog/2020/12/real-analysis/"
+                    <a href="/blog/2021/01/principle-component-analysis/"
                        rel="bookmark"
-                       title="Permalink to Real Analysis (Lebesgue Integration, Differentiation and Measure)">
-                        Real Analysis (Lebesgue Integration, Differentiation and Measure)
+                       title="Permalink to Principle Component Analysis (PCA; Proper Orthogonal Decomposition)">
+                        Principle Component Analysis (PCA; Proper Orthogonal Decomposition)
                     </a>
                 </h1>
             </header>
@@ -102,7 +101,7 @@ Adam Li's blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2020-12-24T00:00:00-05:00"> Thu 24 December 2020</time>
+        <i class="fa fa-calendar"></i><time datetime="2021-01-11T00:00:00-05:00"> Mon 11 January 2021</time>
     </span>
 
 
@@ -110,122 +109,155 @@ Adam Li's blog            </a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/math.html">math</a>
-        /
 	<a href="/tag/phd.html">phd</a>
         /
-	<a href="/tag/real-analysis.html">real-analysis</a>
+	<a href="/tag/machine-learning.html">machine learning</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h1>Summary</h1>
-<p>Real analysis is the study of real numbers in <span class="math">\(\mathbb{R}^d\)</span>, with 
-<code>d</code> being the dimensionality. Although it is a pretty abstract topic 
-that does not seem to have applications, it is a very fundamental 
-in understanding other branches of applied mathematics. For example, in order
-to define optimization algorithms, one is very interested in the ideas of convergence.
-One then often uses theory of continuity. In computational neuroscience and 
-control theory, one often deals with integrals when defining theory. In 
-statistics, it is absolutely necessary to understand integrals (expectation 
-is defined with an integral).</p>
-<p>In this blog post, I'll review some of the basic concepts that one
-needs to know in general. A great course sequence I took was both at UCSD with 
-Professor Dragos Oprea (Math 140AB) and with Professor Sogge (Math 605) at Johns Hopkins.</p>
-<p>Excellent references are:
-- <a href="http://www.cmat.edu.uy/~mordecki/courses/medida2013/book.pdf">Stein, E. M., Stein, E. M., &amp; Shakarchi, R. (2005). Princeton lectures in analysis: 3. Princeton: Princeton Univ. Press.</a></p>
-<h1>Measurability</h1>
-<p>Measure is an abstract notion of "volume" of a set. In all "regular" 
-examples, one can assume the sets in consideration are measurable. However,
-using the <a href="https://en.wikipedia.org/wiki/Axiom_of_choice">Axiom of Choice</a>, one
-can construct "unmeasurable" sets. This motivates the need to define Borel sets (sigma-algebras)
-in probability theory, which denote measurable family of subsets of a set. This 
-is beyond the scope of this post though. It suffices to know that unmeasurable 
-sets <code>do exist</code>.</p>
-<p>Measure from first principles is defined in Stein starting from outer-measure. 
-Outer-measure is simply the measure obtained by covering a set with a countable 
-almost-disjoint union of rectangles (circles, squares also suffice). Outer-measure
-is well-defined for any possible set. Lebesgue measure then is defined by 
-the infimum over the possible outer-measures of a set.</p>
-<p>Some important properties of measure of a set is non-negativity and 
-countable sub-additivity. Countable additivity is obtained when 
-they are pairwise disjoint sets in consideration.</p>
-<h1>Convergence</h1>
-<p>For many interesting functions, and numbers, we are interested in 
-the notion of convergence. That is, if we define a sequence enumerated 
-by <code>n</code> of numbers, or functions using some rule that depends on <code>n</code>, 
-then what are conditions that these sequences converge? Generally, 
-if a sequence does not converge, then it goes to <span class="math">\(\infty\)</span>.</p>
-<p>In real analysis, we generally consider the Euclidean metric space. 
-In fact, these metric spaces are complete (i.e. all Cauchy sequences converge
-inside the metric space).</p>
-<h2>Important Integral Convergence Theorems</h2>
-<p>When defining convergence for integrals, there are three fundamental results 
-that are useful:</p>
+                <h1>Background</h1>
+<p>When i.i.d. vector data is collected, then it is generally of interest to 
+represent the data in as low-dimension as possible. </p>
+<p>Given <span class="math">\(x_k \in \mathbb{R}^d \sim X\)</span> for k=1,...,n data points (e.g. 
+if data are images, then d is the number of pixels), one would like to
+simultaneously i) discover interdependencies within the data and ii) reduce dimensions. 
+It is important to note here that the data is <strong>sampled</strong> from a distribution and so 
+any downstream statistics (e.g. covariance) are <strong>estimates</strong> of the true 
+underlying statistic.</p>
+<p>Mathematically, this problem can be represented in many ways:</p>
+<ol>
+<li>
+<p>Minimizing Cost functions</p>
+<p>On the one hand we would like to find a lower-dimensional representation of our data, <span class="math">\(x_k\)</span>. 
+We would like to find the minimization of the following cost function</p>
+<p>
+<div class="math">$$\argmin_P E[ x - Px ]^2$$</div>
+</p>
+<p>where P is a projection operator of rank r. P takes the data points <span class="math">\(x_k\)</span> 
+and maps them from dimension d to r &lt;&lt; d.</p>
+</li>
+<li>
+<p>Maximizing Cost Functions</p>
+<p>On the other hand, we can view PCA as a method for maximizing the variance 
+observed in the data, subject to a constraint. If we stack our data samples, <span class="math">\(x_k\)</span> 
+column-by-column in a data matrix, X, we seek a linear combination of the columns 
+that give us the <strong>maximal variance</strong>. <span class="math">\(Var(Xa) = a^T Var(X) a\)</span>, where a is a 
+vector of constants to provide linear combinations of X, and <span class="math">\(Var(X)\)</span> is the 
+covariance matrix of our data.</p>
+<p>In addition, we impose a constraint on the vector, a, such that it has unit norm. 
+Thus using the theory of Lagrange multipliers, we can write this as a 
+constrained optimization problem.</p>
+<p>
+<div class="math">$$\argmax_a a^T Var(X) a - \lambda(a^T a - 1)$$</div>
+</p>
+<p>When differentiating with respect to a, and solving the equations, one 
+gets the analytical expression:</p>
+<p>
+<div class="math">$$Var(X) a = \lambda a$$</div>
+</p>
+<p>which is simply an eigenvalue equation, where <span class="math">\(\lambda\)</span> is an eigenvalue of 
+Var(X) and a is an eigenvector. </p>
+</li>
+</ol>
+<h1>Standard PCA and Algorithm</h1>
+<p>Standard PCA is commonly implemented in <a href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html">sklearn</a>
+where the algorithm relies on the Singular Value Decomposition (SVD). Generally, 
+it uses the <code>LAPACK</code> implementation, which supports full, truncated and randomized SVD. 
+Conceptually the algorithm proceeds in 4 steps.</p>
+<ol>
+<li>
+<p>Standardization of variable scaling</p>
+<p>This step attempts to put all dimensions of the data in the same scale. 
+In the downstream step of the SVD, for variables that have a significantly larger 
+amplitude then other variables, then the variability in those variables will dominate. </p>
+<p>Common standardizations include the z-scoring method:</p>
+<p>
+<div class="math">$$x_{k_i} = \frac{x_{k_i} - \mu(x_k)}{\sigma(x_k)}$$</div>
+</p>
+</li>
+<li>
+<p>Estimate covariance matrix</p>
+<p>The next step will compute the covariance matrix of the data. 
+If there are n samples of a d-dimensional data, then the covariance 
+matrix will be <span class="math">\(d \times d\)</span>.</p>
+</li>
+<li>
+<p>Matrix decomposition (SVD/EVD)</p>
+<p>Since the covariance matrix is a positive semi-definite (symmetric and 
+non-negative quadratic form), then its singular values are equivalent to 
+its eigenvalues. The singular/eigen vectors 
+of the covariance matrix are ordered by the values of the singular/eigen values.</p>
+</li>
+<li>
+<p>Computing Principle Components</p>
+<p>The principle components of the data are obtained by multiplying the data 
+with the singular vector matrix. For example, the first 5 principle components corresponding to the 
+5 largest singular values can be used to obtain a 5-dimensional representation 
+of the original d-dimensional dataset. We simply take the <span class="math">\(d \times 5\)</span> truncated matrix 
+and multiply it with our data to obtain n samples now of a 5-dimensional data.</p>
+</li>
+</ol>
+<h1>Statistical Considerations</h1>
+<h2>Independence</h2>
+<p>If random variables are independent, then they have 0 correlation. Independence is a stronger 
+assumption then non-correlated. Most of the times, independence is not fully realized; it is 
+just a necessary assumption for mathematical modeling. However, when random variables are not necessarily independent, it is not necessary that 
+they have non-zero correlation. In fact, they may have high correlation. </p>
+<p>When performing PCA on correlated data, most likely there will be a few principle components
+in the data that are captured.</p>
+<h2>Centering</h2>
+<p>When computing the principle components, it is in general common practice to 
+center the columns of the data matrix first. </p>
+<p>Geometrically this centers all data points around the origin. PCA attempts at finding 
+an orthogonal rotation to represent the data; note that this rotation occurs 
+about the origin!</p>
+<p>If the mean is not subtracted, then essentially the first principle component ends up being 
+the mean vector of the data points, since rotating that mean would result in higher 
+mean-squared error.</p>
+<h2>Compressed Sensing (n &lt; d) - "Robust PCA"</h2>
+<p>When dealing with high-dimension data with high-dimensional noise, PCA 
+may become sensitive to outliers within the dataset. To combat this, 
+we can instead model PCA as a convex optimization problem with the cost function</p>
+<div class="math">$$\min_{L,S} ||L||_* + \lambda ||S||_1$$</div>
+<p>such that <span class="math">\(X = L + S\)</span>, where L is a low-rank component and S is a sparse component.
+This minimizes the sum of the singular values for the matrix L and the l1-norm of the
+matrix S. The sparse matrix is associated with noise.</p>
+<h2>Huge Dimensionality (n &gt;&gt; 1, d &gt;&gt; 1)</h2>
+<p>When you have a large number of samples with extremely high dimensions, the computational 
+workhouse - SVD - becomes computationally expensive. Rather then take a full SVD, 
+it has been shown that taking randomized SVD can capture the principle components of the data.</p>
+<p>The randomized SVD approach essentially says that:</p>
 <ul>
-<li><a href="https://www.math3ma.com/blog/fatous-lemma">Fatou's lemma</a></li>
-<li><a href="https://www.math3ma.com/blog/monotone-convergence-theorem">Monotone convergence theorem</a></li>
-<li><a href="https://www.math3ma.com/blog/dominated-convergence-theorem">Dominated convergence theorem</a></li>
+<li>choose a random unitary projection matrix (<span class="math">\(d \times r\)</span>)</li>
+<li>multiply that with your data matrix and apply PCA</li>
+<li>the principle components of that data matrix has <strong>high probability</strong> of aligning 
+with the principle components of the original large data matrix</li>
 </ul>
-<p>I won't talk about them here because the above links actually provide 
-a very nice reference (that is also accessible to beginners).</p>
-<h2>Bolzano-Weirstrass Theorem For Sequences of Real Numbers</h2>
-<p>The main way of proving convergence relies on showing that a sequence 
-is Cauchy. That is for every <span class="math">\(\epsilon &gt; 0\)</span>, we have:</p>
-<div class="math">$$|x_m - x_n| &lt; \epsilon$$</div>
-<p>for <span class="math">\(m, n \ge N\)</span>, for some large number <span class="math">\(N_\epsilon\)</span>. The "|...|" sign 
-denotes the distance metric defined. This implies that even if 
-the sequence <span class="math">\(\{x_k\}\)</span> potentially oscillates, the range of its oscillation
-is decreasing as you take values further and further down the sequence.
-Note that by construction any sequence that is Cauchy in a metric space 
-is in fact <code>bounded</code>.</p>
-<p>The <a href="https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem">Bolzano-Weirstrass theorem, or sequential compactness theorem</a> 
-states that any bounded sequence in finite-dimensional Euclidean space has 
-a convergent subsequence. Then a sequence is convergent if and only if 
-it has a convergent subsequence, and so every Cauchy sequence is convergent.</p>
-<h2>Convergence In Norm</h2>
-<p>Note that convergence of a sequence of real numbers requires a specific 
-component to emerge. In the space of integrable functions, <span class="math">\(L^1(\mathbb{R}^d)\)</span>, 
-one can define <code>convergence in norm</code>. That is the sequence defined might not 
-converge exactly element by element to a fixed component, but their difference in norm
-converges. That is for every <span class="math">\(\epsilon &gt; 0\)</span>, and <span class="math">\(\{f_k\} \in L^1\)</span>, we have:</p>
-<div class="math">$$||f_m(x) - f_n(x)||_{L^1} &lt; \epsilon$$</div>
-<p>where the distance metric is now defined as <span class="math">\(||.||_{L^1} = \int_{\mathbb{R}^d} |f_m(x) - f_n(x)| dx\)</span>. 
-Convergence in norm can then be extended in general to <span class="math">\(L^p\)</span> spaces, since 
-<span class="math">\(L^1 \supset L^2 \supset ... \supset L^\infty\)</span>, which follows from Holder's 
-inequality.</p>
-<h2>Other Convergences</h2>
-<p>Note that there are other notions of convergences as well! 
-Weak convergence, strong convergence, etc.</p>
-<h1>Integrability</h1>
-<p>Integration with respect to Lebesgue measure is defined by considering the 
-convergence of the integral of the absolute value of the function:</p>
-<div class="math">$$\int |f(x)| dx &lt; \infty$$</div>
-<p>else, the function f is said to be not integrable. The space of 
-Lebesgue integrable functions if formally known as the "L1" space. 
-Note that by the Risz-Fisher theorem, we know that <span class="math">\(L^p\)</span> spaces for 
-<span class="math">\(1 \le p \le \infty\)</span> is complete. </p>
-<h1>Differentiation</h1>
-<p>When considering differentiation in the context of integration, 
-we are primarily interested in when the Fundamental Theorems of Calculus hold
-in the Lebesgue measure theory. We learned in high school calculus the following:</p>
-<h2>First Fundamental Theorem of Calculus:</h2>
-<p>If <span class="math">\(F(x) = \int_a^x f(t) dt\)</span> for <span class="math">\(x \in [a, b]\)</span> interval, then</p>
-<div class="math">$$F'(x) = f(x)$$</div>
-<p>that is, we can reverse integration on f by taking the derivative of F.
-This theorem holds in the space of Lebesgue integrable functions, when the 
-function is <code>locally integrable</code> (i.e. Lebesgue's differentiation theorem).</p>
-<h2>Second Fundamental Theorem of Calculus</h2>
-<p>The second part states that if we take the endpoints of the antiderivative, 
-then we can obtain the integral of the function over those endpoints:</p>
-<div class="math">$$F(b) - F(a) = \int_a^b f(t) dt$$</div>
-<p>The result holds when F is <code>absolutely continuous</code>, which is a stronger 
-notion then continuity. It essentially bounds the degree of variation and is 
-actually introduced through the concept of Bounded Variation.</p>
-<h1>Other Important Topics</h1>
-<p>This blog post is meant to be brief, but in the future, I'll probably 
-try to cover Hilbert spaces (linear operators, orthogonality, compact operators, 
-the Spectral Theorem, and Kernel integral operators), Fourier series and the Fourier transform, which are also 
-broadly applicable across applied mathematics and engineering.</p>
+<p>Note: The important point here is that the unitary projection matrix must 
+be chosen at random. Good choices are listed in <a href="https://scikit-learn.org/stable/modules/random_projection.html">sklearn</a>.</p>
+<h1>Questions to Test Understanding</h1>
+<ol>
+<li>
+<p>Given eigenvalues of the covariance matrix, what is one way to measure <em>variance explained</em> proportion for each component?</p>
+<p>Take the eigenvalues and sort them, then for each eigenvalue, divide it by the trace of the covariance matrix. This 
+results in a ratio between the corresponding jth eigenvalue and the total sum of all the eigenvalues, which gives 
+the proportion of variance explained in the principle components.</p>
+</li>
+<li>
+<p>By performing z-score standardization of the data matrix, the covariance matrix of the data is now equivalent to the correlation matrix?</p>
+<p>By performing z-score standardization, the columns of the data matrix now all have sample variance equal to 1. Thus, the 
+correlation is defined as:</p>
+<p>
+<div class="math">$$\rho_{X, Y} = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}$$</div>
+</p>
+<p>which is equivalent to the covariance when the sample variances are unitary.</p>
+</li>
+<li></li>
+</ol>
+<h1>References:</h1>
+<ol>
+<li>Jolliffe IT, Cadima J. (2016). Principal component analysis: a review and recent developments.Phil. Trans. R. Soc. A 374:20150202. http://dx.doi.org/10.1098/rsta.2015.0202</li>
+</ol>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -295,9 +327,9 @@ broadly applicable across applied mathematics and engineering.</p>
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
-        <li><a href="/blog/2021/01/principle-component-analysis/">Principle Component Analysis (PCA; Proper Orthogonal Decomposition)</a></li>
         <li><a href="/blog/2019/06/gaussian-generative-models/">Linear Gaussian Models</a></li>
         <li><a href="/blog/2019/06/optimization-landscape-overview/">Optimization: Convex, Nonlinear, Unconstrained and Constrained</a></li>
+        <li><a href="/blog/2020/12/real-analysis/">Real Analysis (Lebesgue Integration, Differentiation and Measure)</a></li>
         <li><a href="/blog/2018/06/whitaker-summary-experience/">Using The Virtual Brain (TVB) to Understand Algorithms</a></li>
         <li><a href="/blog/2017/12/using-freesurfer/">Using FreeSurfer</a></li>
     </ul>
