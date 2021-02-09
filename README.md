@@ -15,3 +15,6 @@ First just push all your stuff to your path.
 Then:
 
     make github
+
+# TO ADD
+publication list: https://github.com/vene/pelican-bibtex

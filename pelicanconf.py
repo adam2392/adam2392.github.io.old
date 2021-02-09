@@ -110,7 +110,8 @@ TWITTER_USERNAME = "adam2392"
 SOCIAL = (("twitter", "https://twitter.com/adam2392"),
           ("stack-overflow", "https://stackexchange.com/users/4494355/ajl123"),
           ("github", "https://github.com/adam2392"),
-          ("linkedin", "https://www.linkedin.com/in/adam2392"))
+          ("linkedin", "https://www.linkedin.com/in/adam2392"),
+          ("google-scholar", "https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en"))
 
 DEFAULT_PAGINATION = 5
 
