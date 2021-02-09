@@ -32,6 +32,11 @@ These are recommended tools for writing a paper.
 7. Preprint-servers: https://www.biorxiv.org/submit-a-manuscript and https://www.arxiv.org
 8. [open-neuro for depositing open-access data](https://openneuro.org/)
 
+Really, overleaf has an awesome interface that lets you look at latex and PDF and table of contents 
+simultaneously.
+
+![overleaf example](../../images/blog/overleaf_example.png)
+
 The tools are recommended for the following reasons:
 
 1. **Version-control**: whether it is code, manuscript, references, or data, version control is important!
@@ -44,7 +49,8 @@ The tools are recommended for the following reasons:
    fully reproducible by a 3rd party. Many of the steps that lead to these final presentations requires a lot of 
    package installations, environment handling and more. Gigantum is a nice mechanism for having a reproducible engine 
    hosted on the web. Github can maintain the original versions of your code used to produce said analyses/figures.
-   
+5. Math typing: typing math in microsoft word is a painful experience
+
 
 ### Some possible reasons for not using the above tools
 
@@ -52,6 +58,8 @@ Note that many of these tools require some bit of a learning curve. Notably, ove
 for references. If you have collaborators that simply cannot use these tools, then that's an unfortunate 
 circumstance... I have yet to discover an optimal workflow besides: render pdf / convert to word using Adobe, and 
 then incorporate changes/notes afterwards.
+
+Here's a good comparison on [word vs latex](https://openwetware.org/wiki/Word_vs._LaTeX#:~:text=Comparison%20of%20Word%20and%20Latex&text=The%20strength%20of%20Word%20is,layout%20in%20a%20separate%20step.).
 
 Other notable tools
 -------------------
@@ -167,3 +175,12 @@ One must have:
 
 and you are ready to go! Just make an account with the preprint server you are using and go through 
 their submission process!
+
+What to do next?
+----------------
+
+Nowadays, there is a deluge of preprints. To "advertise" your study, it is 
+recommended to send this out to 1) collaborators and 2) post on Twitter!
+
+Last but not least, remember that preprints are version controlled! You 
+can always submit a new version when work has been improved and updated.
