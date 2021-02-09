@@ -1,5 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Adam Li's blog - Adam Li</title><link>/</link><description></description><lastBuildDate>Mon, 11 Jan 2021 00:00:00 -0500</lastBuildDate><item><title>Principle Component Analysis (PCA; Proper Orthogonal Decomposition)</title><link>/blog/2021/01/principle-component-analysis/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
+<rss version="2.0"><channel><title>Adam Li's blog - Adam Li</title><link>/</link><description></description><lastBuildDate>Tue, 02 Feb 2021 00:00:00 -0500</lastBuildDate><item><title>Writing an Academic Journal Paper</title><link>/blog/2021/02/writing-journal-papers/</link><description>&lt;h1&gt;Writing Academic Journal Papers&lt;/h1&gt;
+&lt;p&gt;Academic journal papers (preprint and peer-reviewed published) are the lifeblood of scientific researchers. These
+samples of writing describe pieces of scientific work in a certain sub-field. For example, it might describe experiments
+demonstrating the mechanisms of action to generate an action potential, or a cohort study of epilepsy patients that
+underwent surgery or drug treatment. These are generally characterized by hypotheses, prior art motivation and a
+rigorous methodology that leads to falsifiable results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Here, I assume that you have generated all your results already! I mainly discuss optimal workflows for writing papers
+and dealing with revisions.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Recommended Tools For Saving Time and Preventing Headaches&lt;/h2&gt;
+&lt;p&gt;These are recommended tools for writing a paper.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://github.com/"&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://overleaf.com/"&gt;Overleaf for Latex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gigantum.com/"&gt;Gigantum for web-based reproducing computational experiments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ctan.org/pkg/latexdiff?lang=en"&gt;latexdiff for generating diff between two latex files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inkscape.org/"&gt;inkscape (or Adobe Photoshop if you can afford it)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mendeley.com/download-desktop-new/"&gt;Mendeley or Zotero&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Preprint-servers: https://www.biorxiv.org/submit-a-manuscript and https://www.arxiv.org&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openneuro.org/"&gt;open-neuro for depositing open-access data&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The tools are recommended for the following reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Version-control&lt;/strong&gt;: whether it is code, manuscript, references, or data, version control is important!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ease-of-collaboration&lt;/strong&gt;: Many times you are going to be writing a paper simultaneously with collaborators, you would 
+   to be able to work on things simultaneously! In addition, you could ideally comment in-place (yay overleaf).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modularity&lt;/strong&gt;: if you have ever used Microsoft word and tried to place a figure/caption near text, it is a nightmare. 
+   If you have ever written 5 sections of a manuscript, and then had your PI want to take out 2-3 and then put back 1-2 
+   at a later date, you'll wish you had some way of turning on/off sections. Latex is by design modular.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt;: Whether it is data analyses, or actually plotting the figures, science relies on these items being 
+   fully reproducible by a 3rd party. Many of the steps that lead to these final presentations requires a lot of 
+   package installations, environment handling and more. Gigantum is a nice mechanism for having a reproducible engine 
+   hosted on the web. Github can maintain the original versions of your code used to produce said analyses/figures.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Some possible reasons for not using the above tools&lt;/h3&gt;
+&lt;p&gt;Note that many of these tools require some bit of a learning curve. Notably, overleaf for latex, and Mendeley/Zotero 
+for references. If you have collaborators that simply cannot use these tools, then that's an unfortunate 
+circumstance... I have yet to discover an optimal workflow besides: render pdf / convert to word using Adobe, and 
+then incorporate changes/notes afterwards.&lt;/p&gt;
+&lt;h2&gt;Other notable tools&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Google docs&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://workspace.google.com/marketplace/app/autolatex_equations/850293439076?pann=cwsdp&amp;amp;hl=en-US"&gt;auto-latex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://paperpile.com/"&gt;paperpile&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you intend on using these tools, possibly a similar workflow applies, but these are not directly discussed.&lt;/p&gt;
+&lt;h2&gt;Starting a Paper (Latex)&lt;/h2&gt;
+&lt;p&gt;I recommend using Latex to write papers because they are modular and support version-control, whereas Word documents
+inherently lack these features. In order to use latex, one can setup a local environment, but this becomes difficult 
+to share. Therefore, we highly recommend Overleaf, which is an online latex editor that allows for 
+tracking changes and simultaneous editing across many people. In addition, if you pay for the subscription, it 
+allows integration with Github/Dropbox/Mendeley/Zotero.&lt;/p&gt;
+&lt;h2&gt;Reproducible Figures and Main Experiments (Computational)&lt;/h2&gt;
+&lt;p&gt;Many journal papers are moving towards reproducability, since this has become a major 
+issue in recent years. If you setup your code to do so, it helps facilitate this process, 
+but also has the added benefit that &lt;code&gt;people will more likely cite your study&lt;/code&gt;, since they 
+can confirm results for themselves! In order to facilitate &lt;strong&gt;trivial&lt;/strong&gt; reproduction of your 
+main figures in the paper, I suggest using a github repository with the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;README&lt;/code&gt; file describing installation process, main instructions to generate figures, instructions for downloading
+  additional data and any misc. notes that users need to be aware of.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;data&lt;/code&gt; directory containing all the source data needed to reproduce figures and or run the experiment. These should
+  be relatively small files, since they are housed in a Github repository.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*.ipynb&lt;/code&gt; Jupyter notebooks that contain self-contained code to generate all main 
+  figures and/or experiments described in the paper.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One should also include scripts (e.g. &lt;code&gt;.py&lt;/code&gt; files) needed to support the generation 
+of figures and/or experiments as well. &lt;/p&gt;
+&lt;h2&gt;Modularizing and Creating Figures&lt;/h2&gt;
+&lt;p&gt;Many journal papers before publishing your manuscript will want the raw high-resolution figures. 
+This generally means using &lt;code&gt;.pdf&lt;/code&gt;, or &lt;code&gt;.svg&lt;/code&gt; format, so that they do not lose resolution during
+zooming in/out operations. In order to prepare for these later on, it is helpful to have each 
+figure/subfigure in a file already! Inkscape (and/or Photoshop) can load SVG/PDF files and 
+modify them. If you edit figures in these programs, then if you need to perform downstream 
+edits (due to revisions), it becomes easy because you just pull up the file and perform edits.&lt;/p&gt;
+&lt;p&gt;Due to latex modularizing figures, you simply have to re-save the figures with the same filepath
+as where your latex file is pulling from. An example with Overleaf and Dropbox integration would be:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You have Dropbox integrating your Overleaf document locally, and you need to change Figure 1, 
+   stored at &lt;code&gt;figures/figure-1-blah.svg&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Use inkscape to modify the figure and re-save at &lt;code&gt;figures/figure-1-blah.svg&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Allow Dropbox/Overleaf to integrate (usually takes a few seconds).&lt;/li&gt;
+&lt;li&gt;Re-render the latex/PDF of the manuscript.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Modularizing References and Citations&lt;/h2&gt;
+&lt;p&gt;When writing a manuscript, you'll need to keep track of all your references! Managing this manually 
+is unwieldy and extremely prone to error. Use Mendeley (and/or Zotero)! These tools all have 
+Overleaf integration, Desktop application and a Chrome browser extension. Thus one's workflow looks like:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find reference online&lt;/li&gt;
+&lt;li&gt;Use browser extension to add reference and metadata to a library group&lt;/li&gt;
+&lt;li&gt;Export bibliography (&lt;code&gt;.bib&lt;/code&gt;) file to directory for your Latex file to use&lt;/li&gt;
+&lt;li&gt;Re-render Latex PDF file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This has the advantage that one can easily change the citation formats, edit metadata and easily 
+port the bibliography file to other manuscripts. &lt;/p&gt;
+&lt;h2&gt;Dealing with Revisions&lt;/h2&gt;
+&lt;p&gt;When dealing with revisions, one generally will need to generate a tracked-diff between the 
+submission file and the revision file. This helps facilitate editor/reviewer feedback and 
+if you do not do this, you will not be liked! This is obviously trivial with Microsoft Word, 
+but it is an incredible headache to convert Latex/PDF files to Word. &lt;/p&gt;
+&lt;p&gt;To handle a tracked-diff, &lt;code&gt;save a copy of the Latex version upon initial manuscript submission.&lt;/code&gt;
+Then, when you have your final revised manuscript after revision, use &lt;code&gt;latexdiff&lt;/code&gt; to generate 
+a new Latex file, which will now render a nice PDF with tracked changes inside the PDF file itself!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;latexdiff-so old_version.tex new_version.tex &amp;gt; differences.tex&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here's a great reference: http://www.peteryu.ca/tutorials/publishing/latexdiff&lt;/p&gt;
+&lt;h2&gt;(Optional) Converting Latex/PDF to Word&lt;/h2&gt;
+&lt;p&gt;The only tool I know of currently that even relatively works is Adobe's export PDF to word 
+functionality. Even there, it does not work great when you have mathematical equations,&lt;br&gt;
+complex figures, and custom formatting! However, some journals for some reason still require
+a word document for initial submission, so there you have it.&lt;/p&gt;
+&lt;h1&gt;Submitting to Preprint&lt;/h1&gt;
+&lt;p&gt;Great! Now you have your manuscript version 1 ready to go. Well, unfortunately the submission process for many 
+academic journals is more involved. Fortunately, you can still make your work publicly accessible via preprint 
+servers! &lt;/p&gt;
+&lt;p&gt;The preprint servers (&lt;a href="https://submit.biorxiv.org/"&gt;bioarxiv&lt;/a&gt; and &lt;a href="https://arxiv.org/user/"&gt;arxiv&lt;/a&gt;) are extremely 
+easy to release a preprint. Bioarxiv is for generally more biological related sciences and arxiv is for the 
+physical and mathematical sciences. There are also other preprint servers, like Medarxiv.&lt;/p&gt;
+&lt;p&gt;One must have:
+- the rendered PDF files (main manuscript +/- supplemental pdf)
+- supplemental data (optional)
+- figures data (optional)
+- emails and full names of all collaborators&lt;/p&gt;
+&lt;p&gt;and you are ready to go! Just make an account with the preprint server you are using and go through 
+their submission process!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 02 Feb 2021 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2021-02-02:/blog/2021/02/writing-journal-papers/</guid><category>Academic</category><category>writing</category><category>phd</category><category>johns hopkins</category></item><item><title>Principle Component Analysis (PCA; Proper Orthogonal Decomposition)</title><link>/blog/2021/01/principle-component-analysis/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;When i.i.d. vector data is collected, then it is generally of interest to 
 represent the data in as low-dimension as possible. &lt;/p&gt;
 &lt;p&gt;Given &lt;span class="math"&gt;\(x_k \in \mathbb{R}^d \sim X\)&lt;/span&gt; for k=1,...,n data points (e.g. 
