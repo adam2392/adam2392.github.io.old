@@ -49,7 +49,7 @@ The tools are recommended for the following reasons:
    fully reproducible by a 3rd party. Many of the steps that lead to these final presentations requires a lot of 
    package installations, environment handling and more. Gigantum is a nice mechanism for having a reproducible engine 
    hosted on the web. Github can maintain the original versions of your code used to produce said analyses/figures.
-5. Math typing: typing math in microsoft word is a painful experience
+5. **Math typing**: typing math in microsoft word is a painful experience
 
 
 ### Some possible reasons for not using the above tools
@@ -168,6 +168,7 @@ easy to release a preprint. Bioarxiv is for generally more biological related sc
 physical and mathematical sciences. There are also other preprint servers, like Medarxiv.
 
 One must have:
+
 - the rendered PDF files (main manuscript +/- supplemental pdf)
 - supplemental data (optional)
 - figures data (optional)
