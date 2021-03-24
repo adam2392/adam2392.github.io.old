@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Adam Li's blog - Adam Li</title><link>https://adam2392.github.io/</link><description></description><lastBuildDate>Tue, 02 Feb 2021 00:00:00 -0500</lastBuildDate><item><title>Writing an Academic Journal Paper</title><link>https://adam2392.github.io/blog/2021/02/writing-journal-papers/</link><description>&lt;h1&gt;Writing Academic Journal Papers&lt;/h1&gt;
+<rss version="2.0"><channel><title>Adam Li's blog - Adam Li</title><link>/</link><description></description><lastBuildDate>Tue, 02 Feb 2021 00:00:00 -0500</lastBuildDate><item><title>Writing an Academic Journal Paper</title><link>/blog/2021/02/writing-journal-papers/</link><description>&lt;h1&gt;Writing Academic Journal Papers&lt;/h1&gt;
 &lt;p&gt;Academic journal papers (preprint and peer-reviewed published) are the lifeblood of scientific researchers. These
 samples of writing describe pieces of scientific work in a certain sub-field. For example, it might describe experiments
 demonstrating the mechanisms of action to generate an action potential, or a cohort study of epilepsy patients that
@@ -136,7 +136,7 @@ their submission process!&lt;/p&gt;
 &lt;p&gt;Nowadays, there is a deluge of preprints. To "advertise" your study, it is 
 recommended to send this out to 1) collaborators and 2) post on Twitter!&lt;/p&gt;
 &lt;p&gt;Last but not least, remember that preprints are version controlled! You 
-can always submit a new version when work has been improved and updated.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 02 Feb 2021 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2021-02-02:/blog/2021/02/writing-journal-papers/</guid><category>Academic</category><category>writing</category><category>phd</category><category>johns hopkins</category></item><item><title>Principle Component Analysis (PCA; Proper Orthogonal Decomposition)</title><link>https://adam2392.github.io/blog/2021/01/principle-component-analysis/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
+can always submit a new version when work has been improved and updated.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 02 Feb 2021 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2021-02-02:/blog/2021/02/writing-journal-papers/</guid><category>Academic</category><category>writing</category><category>phd</category><category>johns hopkins</category></item><item><title>Principle Component Analysis (PCA; Proper Orthogonal Decomposition)</title><link>/blog/2021/01/principle-component-analysis/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;When i.i.d. vector data is collected, then it is generally of interest to 
 represent the data in as low-dimension as possible. &lt;/p&gt;
 &lt;p&gt;Given &lt;span class="math"&gt;\(x_k \in \mathbb{R}^d \sim X\)&lt;/span&gt; for k=1,...,n data points (e.g. 
@@ -340,7 +340,7 @@ correlation is defined as:&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 11 Jan 2021 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2021-01-11:/blog/2021/01/principle-component-analysis/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Personal Goals - 2021</title><link>https://adam2392.github.io/blog/2020/12/goals-2021/</link><description>&lt;h1&gt;Summary of 2020&lt;/h1&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 11 Jan 2021 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2021-01-11:/blog/2021/01/principle-component-analysis/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Personal Goals - 2021</title><link>/blog/2020/12/goals-2021/</link><description>&lt;h1&gt;Summary of 2020&lt;/h1&gt;
 &lt;p&gt;This year has been pretty blessed considering what's happening around the world with Covid-19. 
 I did a cabin trip with Sarah and friends early in the year and did New Years Eve at a club seeing Kaskade(?). 
 Definitely safe to say, I can't do "long" nights out anymore. 
@@ -479,7 +479,7 @@ of passiveness.&lt;/p&gt;
 &lt;li&gt;[ ] Volunteer at least once/month&lt;/li&gt;
 &lt;li&gt;[ ] Be more mindful of re-using things (e.g. plastic, etc.). Aim to re-use things 
 until they are broken&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 24 Dec 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2020-12-24:/blog/2020/12/goals-2021/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Real Analysis (Lebesgue Integration, Differentiation and Measure)</title><link>https://adam2392.github.io/blog/2020/12/real-analysis/</link><description>&lt;h1&gt;Summary&lt;/h1&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 24 Dec 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2020-12-24:/blog/2020/12/goals-2021/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Real Analysis (Lebesgue Integration, Differentiation and Measure)</title><link>/blog/2020/12/real-analysis/</link><description>&lt;h1&gt;Summary&lt;/h1&gt;
 &lt;p&gt;Real analysis is the study of real numbers in &lt;span class="math"&gt;\(\mathbb{R}^d\)&lt;/span&gt;, with 
 &lt;code&gt;d&lt;/code&gt; being the dimensionality. Although it is a pretty abstract topic 
 that does not seem to have applications, it is a very fundamental 
@@ -648,7 +648,7 @@ broadly applicable across applied mathematics and engineering.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 24 Dec 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2020-12-24:/blog/2020/12/real-analysis/</guid><category>Academic</category><category>math</category><category>phd</category><category>real-analysis</category></item><item><title>Personal Goals - 2020</title><link>https://adam2392.github.io/blog/2020/01/goals-2020/</link><description>&lt;p&gt;This year was a great way to end what I like to call a decade of growth. These past 10 years, I went from high school to college. I found out the things I love, the things I hate and the things that I could care less about. Love came and went, along with different friends. Above all else, I am almost certain that I've found what I love to do. Science, and the ability to "make discoveries" that can help people are what I hope to do for the rest of my life. I came to graduate school without understanding why I wanted to be there, and where I wanted to go, but now I'm getting ready to leave... at least understanding why I came. &lt;/p&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 24 Dec 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2020-12-24:/blog/2020/12/real-analysis/</guid><category>Academic</category><category>math</category><category>phd</category><category>real-analysis</category></item><item><title>Personal Goals - 2020</title><link>/blog/2020/01/goals-2020/</link><description>&lt;p&gt;This year was a great way to end what I like to call a decade of growth. These past 10 years, I went from high school to college. I found out the things I love, the things I hate and the things that I could care less about. Love came and went, along with different friends. Above all else, I am almost certain that I've found what I love to do. Science, and the ability to "make discoveries" that can help people are what I hope to do for the rest of my life. I came to graduate school without understanding why I wanted to be there, and where I wanted to go, but now I'm getting ready to leave... at least understanding why I came. &lt;/p&gt;
 &lt;p&gt;This year I am glad I found a partner that has been supportive of what I do, and patient enough to listen to my weird and obnoxious thoughts on things ranging from sleeping habits, to science. It has and should continue to be a thrilling experience to make mistakes, reflect and adapt while I face the next challenge of learning how to grow two minds at once. &lt;/p&gt;
 &lt;p&gt;I'm close to graduating from school where I will never have to "take courses" again, but rather then rejoicing that I never have to set foot in a classroom again, I'm realizing I'll miss the lessons in logic you learn from challenging yourself through homework and exams. I took up the Masters in AMS at JHU this year, and I'm glad I went through with it. I am close to publishing most of my thesis work this year and then going through the final defense of the PhD. It didn't seem so far away that I was struggling to understand the basic methodological papers my undergrad PI sent me, but now I'm confident to say that I at least understand 50% of things with a one time read. Time to grow and reflect on this year.&lt;/p&gt;
 &lt;h2&gt;Old 2019 Resolutions:&lt;/h2&gt;
@@ -688,7 +688,7 @@ https://www.instagram.com/ajltravels/
 &lt;p&gt;Think before speaking more, patience and focus on my friends, family and significant other more then myself. I've focused on my self-growth over the last 10 years, and it's time to focus on my external-growth over these next 10 years. &lt;/p&gt;
 &lt;p&gt;I should check up on my family more often via WeChat, and give better presents for the birthday and holidays.&lt;/p&gt;
 &lt;p&gt;I should check up on my friends that don't live in Baltimore every few weeks or so. Put things on the schedule for hanging out. I should invite a few friends to do Montreal with me in the summer.&lt;/p&gt;
-&lt;p&gt;I should focus on listening to Sarah more this year. She's more right then I am in more instances then I would prefer to admit. The fallacy of trying to believe in yourself is that you convince yourself out of hubris that you are right even when you are wrong. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2020-01-01:/blog/2020/01/goals-2020/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Travel - Iceland</title><link>https://adam2392.github.io/blog/2019/07/travel-iceland/</link><description>&lt;h1&gt;Europe - Iceland&lt;/h1&gt;
+&lt;p&gt;I should focus on listening to Sarah more this year. She's more right then I am in more instances then I would prefer to admit. The fallacy of trying to believe in yourself is that you convince yourself out of hubris that you are right even when you are wrong. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2020-01-01:/blog/2020/01/goals-2020/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Travel - Iceland</title><link>/blog/2019/07/travel-iceland/</link><description>&lt;h1&gt;Europe - Iceland&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -771,7 +771,7 @@ https://www.instagram.com/ajltravels/
 &lt;p&gt;Cons:
 - you have to worry about parking and driving and gas
 - if snowy/icey, then it can be pretty dangerous&lt;/p&gt;
-&lt;p&gt;Tourbus: TBD&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 15 Jul 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2019-07-15:/blog/2019/07/travel-iceland/</guid><category>Travel</category><category>travel</category><category>europe</category><category>Iceland</category><category>Reykjavik</category></item><item><title>Linear Gaussian Models</title><link>https://adam2392.github.io/blog/2019/06/gaussian-generative-models/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
+&lt;p&gt;Tourbus: TBD&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 15 Jul 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2019-07-15:/blog/2019/07/travel-iceland/</guid><category>Travel</category><category>travel</category><category>europe</category><category>Iceland</category><category>Reykjavik</category></item><item><title>Linear Gaussian Models</title><link>/blog/2019/06/gaussian-generative-models/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
@@ -1055,7 +1055,7 @@ This is a nonlinear system property because no linear dynamical system (i.e. x(t
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 18 Jun 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2019-06-18:/blog/2019/06/gaussian-generative-models/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Optimization: Convex, Nonlinear, Unconstrained and Constrained</title><link>https://adam2392.github.io/blog/2019/06/optimization-landscape-overview/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 18 Jun 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2019-06-18:/blog/2019/06/gaussian-generative-models/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Optimization: Convex, Nonlinear, Unconstrained and Constrained</title><link>/blog/2019/06/optimization-landscape-overview/</link><description>&lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
@@ -1301,7 +1301,7 @@ TBD&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 18 Jun 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2019-06-18:/blog/2019/06/optimization-landscape-overview/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Setting Up ERC Standard Tokens</title><link>https://adam2392.github.io/blog/2018/06/setup-erc-token/</link><description>&lt;h1&gt;Getting Setup with Ethereum&lt;/h1&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 18 Jun 2019 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2019-06-18:/blog/2019/06/optimization-landscape-overview/</guid><category>Machine Learning</category><category>phd</category><category>machine learning</category></item><item><title>Setting Up ERC Standard Tokens</title><link>/blog/2018/06/setup-erc-token/</link><description>&lt;h1&gt;Getting Setup with Ethereum&lt;/h1&gt;
 &lt;p&gt;A summary of walking through Ethereum in 2018.&lt;/p&gt;
 &lt;h1&gt;Installation&lt;/h1&gt;
 &lt;p&gt;The following packages need to be installed for a test time environment:
@@ -1430,7 +1430,7 @@ TBD&lt;/p&gt;
 &lt;li&gt;https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2&lt;/li&gt;
 &lt;li&gt;http://truffleframework.com/docs/getting_started/project#exploring-the-project&lt;/li&gt;
 &lt;li&gt;https://www.pubnub.com/blog/testing-and-deploying-an-ethereum-token-part-2/&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 10 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-06-10:/blog/2018/06/setup-erc-token/</guid><category>Coding</category><category>webdev</category><category>ethereum</category><category>javascript</category><category>blockchain</category></item><item><title>Travel - Nice</title><link>https://adam2392.github.io/blog/2018/06/travel-nice/</link><description>&lt;h1&gt;Europe - Nice, France&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 10 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2018-06-10:/blog/2018/06/setup-erc-token/</guid><category>Coding</category><category>webdev</category><category>ethereum</category><category>javascript</category><category>blockchain</category></item><item><title>Travel - Nice</title><link>/blog/2018/06/travel-nice/</link><description>&lt;h1&gt;Europe - Nice, France&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -1523,7 +1523,7 @@ TBD&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Q: How do I get around?
 A: Use uber, or the metro line.&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 02 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-06-02:/blog/2018/06/travel-nice/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>nice</category></item><item><title>Europe - Living and Traveling</title><link>https://adam2392.github.io/blog/2018/06/europe-summary-2018/</link><description>&lt;!-- MarkdownTOC --&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 02 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2018-06-02:/blog/2018/06/travel-nice/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>nice</category></item><item><title>Europe - Living and Traveling</title><link>/blog/2018/06/europe-summary-2018/</link><description>&lt;!-- MarkdownTOC --&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Quick Background&lt;/li&gt;
@@ -1607,7 +1607,7 @@ Would you be okay with us writing small posts that may highlight different parts
 (education about the research to the general public that is digestable)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;simulating seizures in the brain to determine if algorithms designed on empirical data can localize the origin of these seizures in-silico.&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-06-01:/blog/2018/06/europe-summary-2018/</guid><category>Personal</category><category>personal</category><category>travel</category><category>europe</category></item><item><title>Using The Virtual Brain (TVB) to Understand Algorithms</title><link>https://adam2392.github.io/blog/2018/06/whitaker-summary-experience/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2018-06-01:/blog/2018/06/europe-summary-2018/</guid><category>Personal</category><category>personal</category><category>travel</category><category>europe</category></item><item><title>Using The Virtual Brain (TVB) to Understand Algorithms</title><link>/blog/2018/06/whitaker-summary-experience/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;Here, I will attempt to give a brief introduction to the core concepts in my research and relate it to the clinical problem of epilepsy.&lt;/p&gt;
 &lt;h2&gt;0. Short Blurb About Brains and Network Neuroscience&lt;/h2&gt;
 &lt;p&gt;With all the hype about "AI" and deep learning recently, it can 
@@ -1705,7 +1705,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;li&gt;http://www.thevirtualbrain.org/tvb/&lt;/li&gt;
 &lt;li&gt;https://ieeexplore.ieee.org/document/7963378/&lt;/li&gt;
 &lt;li&gt;https://www.ncbi.nlm.nih.gov/pubmed/29060480&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-06-01:/blog/2018/06/whitaker-summary-experience/</guid><category>Academic</category><category>tvb</category><category>phd</category></item><item><title>Travel - Dublin</title><link>https://adam2392.github.io/blog/2018/05/travel-dublin/</link><description>&lt;h1&gt;Europe - Dublin, Ireland&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2018-06-01:/blog/2018/06/whitaker-summary-experience/</guid><category>Academic</category><category>tvb</category><category>phd</category></item><item><title>Travel - Dublin</title><link>/blog/2018/05/travel-dublin/</link><description>&lt;h1&gt;Europe - Dublin, Ireland&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -1764,7 +1764,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;h4&gt;1. Temple Bar&lt;/h4&gt;
 &lt;p&gt;There is live music every night and this area (i.e. Temple Street) is always lively and busy. Pop into different bars and get some Guinness!&lt;/p&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
-&lt;p&gt;You can definitely use the tram/bus system here! The overall city isn't that big, so you can honestly just walk everywhere.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 08 May 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-05-08:/blog/2018/05/travel-dublin/</guid><category>Travel</category><category>travel</category><category>europe</category><category>ireland</category><category>dublin</category></item><item><title>Travel - Barcelona</title><link>https://adam2392.github.io/blog/2018/05/travel-barcelona/</link><description>&lt;h1&gt;Europe - Barcelona, Spain&lt;/h1&gt;
+&lt;p&gt;You can definitely use the tram/bus system here! The overall city isn't that big, so you can honestly just walk everywhere.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 08 May 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2018-05-08:/blog/2018/05/travel-dublin/</guid><category>Travel</category><category>travel</category><category>europe</category><category>ireland</category><category>dublin</category></item><item><title>Travel - Barcelona</title><link>/blog/2018/05/travel-barcelona/</link><description>&lt;h1&gt;Europe - Barcelona, Spain&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -1845,7 +1845,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;h4&gt;4. Gothic Quarter&lt;/h4&gt;
 &lt;p&gt;Just this nice area to walk in with a bunch of shops, bars, restaurants scattered throughout. It is an extremely old area and feels like you're walking almost in historical times.&lt;/p&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
-&lt;p&gt;You can definitely use the metro system in Barcelona! I recommend buying the multi-day passes. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-05-01:/blog/2018/05/travel-barcelona/</guid><category>Travel</category><category>travel</category><category>europe</category><category>spain</category><category>barcelona</category></item><item><title>Travel - Amsterdam</title><link>https://adam2392.github.io/blog/2018/04/travel-amsterdam/</link><description>&lt;h1&gt;Europe - Amsterdam, Netherlands&lt;/h1&gt;
+&lt;p&gt;You can definitely use the metro system in Barcelona! I recommend buying the multi-day passes. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2018-05-01:/blog/2018/05/travel-barcelona/</guid><category>Travel</category><category>travel</category><category>europe</category><category>spain</category><category>barcelona</category></item><item><title>Travel - Amsterdam</title><link>/blog/2018/04/travel-amsterdam/</link><description>&lt;h1&gt;Europe - Amsterdam, Netherlands&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -1931,7 +1931,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;p&gt;This is an American style club that will probably play EDM/HipHop and is styled with an Asian theme. Pretty cool, and they also have a lot of bars around the area. There is a bar across the street from the entrance that has live music and cheap drinks for a 2 euro entrance fee!&lt;/p&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
 &lt;p&gt;You can definitely use the tram/bus system in Amsterdam! I recommend buying the multi-day passes. &lt;/p&gt;
-&lt;p&gt;Another option is completely walking the city (uhh), or renting a bike and getting around like the locals do.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 28 Apr 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-04-28:/blog/2018/04/travel-amsterdam/</guid><category>Travel</category><category>travel</category><category>europe</category><category>netherlands</category><category>amsterdam</category></item><item><title>Travel - Berlin</title><link>https://adam2392.github.io/blog/2018/02/travel-berlin/</link><description>&lt;h1&gt;Europe - Berlin, Germany&lt;/h1&gt;
+&lt;p&gt;Another option is completely walking the city (uhh), or renting a bike and getting around like the locals do.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 28 Apr 2018 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2018-04-28:/blog/2018/04/travel-amsterdam/</guid><category>Travel</category><category>travel</category><category>europe</category><category>netherlands</category><category>amsterdam</category></item><item><title>Travel - Berlin</title><link>/blog/2018/02/travel-berlin/</link><description>&lt;h1&gt;Europe - Berlin, Germany&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -2005,7 +2005,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;h2&gt;Nightlife/Drinking&lt;/h2&gt;
 &lt;h4&gt;1.&lt;/h4&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
-&lt;p&gt;You can definitely use the train in Berlin! They are a honor pay system; you can just buy a ticket at any station. Download the app: Fahrinfo!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 20 Feb 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-02-20:/blog/2018/02/travel-berlin/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>berlin</category></item><item><title>Setting Up Singularity Containers</title><link>https://adam2392.github.io/blog/2018/01/setup-singularity/</link><description>&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;p&gt;You can definitely use the train in Berlin! They are a honor pay system; you can just buy a ticket at any station. Download the app: Fahrinfo!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 20 Feb 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2018-02-20:/blog/2018/02/travel-berlin/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>berlin</category></item><item><title>Setting Up Singularity Containers</title><link>/blog/2018/01/setup-singularity/</link><description>&lt;h1&gt;Installation&lt;/h1&gt;
 &lt;p&gt;To install singularity locally with root privelages, you can then build up containers that can be hosted online.&lt;/p&gt;
 &lt;h1&gt;Setting Up A Tensorflow Container Recipe (Example):&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nl"&gt;Bootstrap&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;docker&lt;/span&gt;
@@ -2090,7 +2090,7 @@ Using a batch of real recording data from patients, we can construct a deep lear
 &lt;li&gt;https://www.singularity-hub.org/&lt;/li&gt;
 &lt;li&gt;http://geekyap.blogspot.com/2016/11/docker-vs-singularity-vs-shifter-in-hpc.html&lt;/li&gt;
 &lt;li&gt;https://singularity.lbl.gov/docs-docker&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 31 Jan 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-01-31:/blog/2018/01/setup-singularity/</guid><category>Coding</category><category>cloud</category><category>singularity</category><category>python</category><category>hpc</category><category>tensorflow</category><category>deep-learning</category></item><item><title>Personal Goals - 2019</title><link>https://adam2392.github.io/blog/2018/01/goals-2019/</link><description>&lt;p&gt;Another year has passed, and its getting harder and harder for me to distinguish the years from each other. Every new years goals post seems to be written just a few days ago in my head. This year was filled with transitions, both personal and professional. I started off the year living in France, and traveling to Switzerland to see how a NYE abroad would be like. The time abroad up until August was an experience that really taught me how to survive in a completely different country without a cohort of students around me, or a friend group from college for support. I did a lot of traveling in Europe, seeing countries and cities that I've never been to, such as Hungary, Portugal, Morocco and more. &lt;/p&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 31 Jan 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2018-01-31:/blog/2018/01/setup-singularity/</guid><category>Coding</category><category>cloud</category><category>singularity</category><category>python</category><category>hpc</category><category>tensorflow</category><category>deep-learning</category></item><item><title>Personal Goals - 2019</title><link>/blog/2018/01/goals-2019/</link><description>&lt;p&gt;Another year has passed, and its getting harder and harder for me to distinguish the years from each other. Every new years goals post seems to be written just a few days ago in my head. This year was filled with transitions, both personal and professional. I started off the year living in France, and traveling to Switzerland to see how a NYE abroad would be like. The time abroad up until August was an experience that really taught me how to survive in a completely different country without a cohort of students around me, or a friend group from college for support. I did a lot of traveling in Europe, seeing countries and cities that I've never been to, such as Hungary, Portugal, Morocco and more. &lt;/p&gt;
 &lt;p&gt;Professionally, I grew in ways that I did not expect. Rather then going to the EMBC conference with the rest of my lab, I went to a computationally focused neuroscience conference in Seattle. I reconnected with my high school friends and some old friends from JHU. The time there was perfect and a fond way for me to transition my life back into the USA. My time spent with the Theoretical Neurosciences Group helped me grow as an independent thinker and researcher. I developed a distinct appreciation for how mathematics can drive precise and beautiful descriptions of biological systems. I did some explicit exploration of using deep learning to understand its classification capabilities, and also see the pitfalls that occur when designing an architecture, or training scheme.&lt;/p&gt;
 &lt;h2&gt;Old 2018 Resolutions:&lt;/h2&gt;
 &lt;h4&gt;1. Travel [X]&lt;/h4&gt;
@@ -2158,7 +2158,7 @@ Rome [ ] &lt;/p&gt;
 &lt;h4&gt;5. Improving Photography With New IG Page [ ]&lt;/h4&gt;
 &lt;p&gt;This year, I'm going to try to post new photos to a new instagram blog page with more travel related photos. This is to sort of separate my personal instagram from my photography hobby. I have a lot more to learn about optimal lighting and photography of different scenes (e.g. portraits, landscapes, nightshots). I am aiming to post an additional 12 photos that I am proud of onto this IG page by the end of the year.&lt;/p&gt;
 &lt;p&gt;See link to keep up to dates with my adventure!
-https://www.instagram.com/ajltravels/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 07 Jan 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-01-07:/blog/2018/01/goals-2019/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Travel - Switzerland</title><link>https://adam2392.github.io/blog/2018/01/travel-switzerland/</link><description>&lt;h1&gt;Europe - Switzerland&lt;/h1&gt;
+https://www.instagram.com/ajltravels/&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 07 Jan 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2018-01-07:/blog/2018/01/goals-2019/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Travel - Switzerland</title><link>/blog/2018/01/travel-switzerland/</link><description>&lt;h1&gt;Europe - Switzerland&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -2241,7 +2241,7 @@ This is where the infamous Hadron Collider is! This is where the Higgs Boson was
 &lt;ol&gt;
 &lt;li&gt;Q: Should I get a Swiss Travel Pass?
 This depends on where you are staying and how long you are staying in Switzerland! The minimum multi-day pass is 3 days, so this is definitely worth it if you say plan on going to 3 different mountains because it covers your fee for all the trains and also the cable cars up, which can get pretty expensive!&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 01 Jan 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2018-01-01:/blog/2018/01/travel-switzerland/</guid><category>Travel</category><category>travel</category><category>europe</category><category>switzerland</category></item><item><title>Bitcoin's Problems and Possible Path To Solution - 2017</title><link>https://adam2392.github.io/blog/2017/12/bitcoin-2018/</link><description>&lt;p&gt;Disclaimer: I am a heavy advocate and believer in the ethereum platform, and similar technologies. This assumes that the reader has heard of cryptocurrency and might have the most basic understanding of its underlying technology. I do not presume to be an expert in cryptography, blockchain, the internet, or anything for that matter. I simply wish to express my views for the sake of learning from other’s viewpoints.&lt;/p&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Mon, 01 Jan 2018 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2018-01-01:/blog/2018/01/travel-switzerland/</guid><category>Travel</category><category>travel</category><category>europe</category><category>switzerland</category></item><item><title>Bitcoin's Problems and Possible Path To Solution - 2017</title><link>/blog/2017/12/bitcoin-2018/</link><description>&lt;p&gt;Disclaimer: I am a heavy advocate and believer in the ethereum platform, and similar technologies. This assumes that the reader has heard of cryptocurrency and might have the most basic understanding of its underlying technology. I do not presume to be an expert in cryptography, blockchain, the internet, or anything for that matter. I simply wish to express my views for the sake of learning from other’s viewpoints.&lt;/p&gt;
 &lt;h1&gt;A Personal View on Bitcoin&lt;/h1&gt;
 &lt;p&gt;“Bitcoin is going to change the world.” A few words that I heard in 2014 at a startup conference that stuck with me for the next few years. As an engineer, I looked into bitcoin, blockchain and the technologies that began making headlines (e.g. ethereum, litecoin, etc.). My research led me to make investments into cryptocurrency. However, with the recent explosion of Bitcoin throughout the media, I formed a more rigorous hypothesis that led me to question mainstream thinking. Basing my thoughts on a semi-technical understanding of blockchain and basic economics knowledge, I arrive at three main argument points on the validity of bitcoin, or any cryptocurrency for that matter. &lt;/p&gt;
 &lt;ol&gt;
@@ -2270,7 +2270,7 @@ This depends on where you are staying and how long you are staying in Switzerlan
 &lt;li&gt;&lt;a href="https://www.nytimes.com/2017/12/28/business/south-korea-bitcoin.html"&gt; South Korea Clamps Down On Bitcoin Exchanges &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.blocktrail.com/BTC/pools"&gt; Link to centralized mining rigs for bitcoin &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Financial_position_of_the_United_States"&gt; Link to usd total assets in world &lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 31 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-12-31:/blog/2017/12/bitcoin-2018/</guid><category>Views</category><category>views</category><category>bitcoin</category></item><item><title>Personal Goals - 2018</title><link>https://adam2392.github.io/blog/2017/12/goals-2018/</link><description>&lt;p&gt;This year has been a fantastic year from beginning to end. I turned the big 2 5 (yay 1 year older). However, this year came with a lot of fun as I spent time at Coachella 2017, made it out for birthdays of my friends in Vegas, spent time in SF, LA, SD and Chicago visiting old friends, enjoyed new time with Hopkins friends in NYC, Boston and DC, and spent a lot of time enjoying my "relative" last year in Baltimore. I was fortunate enough to win three prestigious fellowships: the NSF-GRFP, Whitaker and Chateaubriand fellowships. I presented two conference papers at two different conferences, where I was even able to make a trip through Korea and Japan come out of it. It's ending with me being in France working with the Theoretical Neurosciences Group in Marseille. I am incredibly fortunate to be working in a group of extraordinary people from all different countries and backgrounds. I am learning so much and developing new ideas that I honestly can't say I would've had if I were just back in Baltimore. I think I have some explicit goals this year related to my work because I find it fascinating.&lt;/p&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 31 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2017-12-31:/blog/2017/12/bitcoin-2018/</guid><category>Views</category><category>views</category><category>bitcoin</category></item><item><title>Personal Goals - 2018</title><link>/blog/2017/12/goals-2018/</link><description>&lt;p&gt;This year has been a fantastic year from beginning to end. I turned the big 2 5 (yay 1 year older). However, this year came with a lot of fun as I spent time at Coachella 2017, made it out for birthdays of my friends in Vegas, spent time in SF, LA, SD and Chicago visiting old friends, enjoyed new time with Hopkins friends in NYC, Boston and DC, and spent a lot of time enjoying my "relative" last year in Baltimore. I was fortunate enough to win three prestigious fellowships: the NSF-GRFP, Whitaker and Chateaubriand fellowships. I presented two conference papers at two different conferences, where I was even able to make a trip through Korea and Japan come out of it. It's ending with me being in France working with the Theoretical Neurosciences Group in Marseille. I am incredibly fortunate to be working in a group of extraordinary people from all different countries and backgrounds. I am learning so much and developing new ideas that I honestly can't say I would've had if I were just back in Baltimore. I think I have some explicit goals this year related to my work because I find it fascinating.&lt;/p&gt;
 &lt;h2&gt;Old 2017 Resolutions:&lt;/h2&gt;
 &lt;h4&gt;1. Keep dance a significant part of my life: [ ]&lt;/h4&gt;
 &lt;ul&gt;
@@ -2376,7 +2376,7 @@ Bologna [ ], &lt;/p&gt;
 &lt;li&gt;politics&lt;/li&gt;
 &lt;li&gt;foreign markets (EU/Asia) and cryptocurrency/blockchains [ ]&lt;/li&gt;
 &lt;li&gt;emerging markets&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 31 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-12-31:/blog/2017/12/goals-2018/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Travel - London</title><link>https://adam2392.github.io/blog/2017/12/travel-london/</link><description>&lt;h1&gt;Europe - London, United Kingdom&lt;/h1&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 31 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2017-12-31:/blog/2017/12/goals-2018/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Travel - London</title><link>/blog/2017/12/travel-london/</link><description>&lt;h1&gt;Europe - London, United Kingdom&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -2477,7 +2477,7 @@ Pitt Rivers Museum --&gt;
 &lt;!-- #### 2. Ministry of Sound --&gt;
 
 &lt;h2&gt;Getting Around&lt;/h2&gt;
-&lt;p&gt;You can definitely use the Underground, or just walk! UberX/Pool/Plus if necessary.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 20 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-12-20:/blog/2017/12/travel-london/</guid><category>Travel</category><category>travel</category><category>europe</category><category>UK</category><category>london</category></item><item><title>Using FreeSurfer</title><link>https://adam2392.github.io/blog/2017/12/using-freesurfer/</link><description>&lt;h1&gt;Necessary Tools&lt;/h1&gt;
+&lt;p&gt;You can definitely use the Underground, or just walk! UberX/Pool/Plus if necessary.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 20 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2017-12-20:/blog/2017/12/travel-london/</guid><category>Travel</category><category>travel</category><category>europe</category><category>UK</category><category>london</category></item><item><title>Using FreeSurfer</title><link>/blog/2017/12/using-freesurfer/</link><description>&lt;h1&gt;Necessary Tools&lt;/h1&gt;
 &lt;p&gt;Freesurfer, FSL, and MRtrix3 are the three main neuroimaging and registration software that you need to run a systematic data pipeline of neuroimaging data (i.e. CT, MRI, DWI).&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Freesurfer
@@ -2560,7 +2560,7 @@ https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-conver
 &lt;h1&gt;References:&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall#Setup.26Configuration&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 07 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-12-07:/blog/2017/12/using-freesurfer/</guid><category>Academic</category><category>data analysis</category><category>eeg</category><category>phd</category><category>brain rendering</category></item><item><title>Travel - Budapest</title><link>https://adam2392.github.io/blog/2017/10/travel-budapest/</link><description>&lt;h1&gt;Europe - Budapest, Hungary&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 07 Dec 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2017-12-07:/blog/2017/12/using-freesurfer/</guid><category>Academic</category><category>data analysis</category><category>eeg</category><category>phd</category><category>brain rendering</category></item><item><title>Travel - Budapest</title><link>/blog/2017/10/travel-budapest/</link><description>&lt;h1&gt;Europe - Budapest, Hungary&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -2638,7 +2638,7 @@ https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-conver
 &lt;ol&gt;
 &lt;li&gt;Q: Where should I stay?
 A: I would recommend staying on the Pest side of Budapest because there is more night life and restaurants there. The buda side is a nice place to walk to for all the historical sites.&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 22 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-10-22:/blog/2017/10/travel-budapest/</guid><category>Travel</category><category>travel</category><category>europe</category><category>hungary</category><category>budapest</category></item><item><title>Travel - Lyon</title><link>https://adam2392.github.io/blog/2017/10/travel-lyon/</link><description>&lt;h1&gt;Europe - Lyon, France&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 22 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-10-22:/blog/2017/10/travel-budapest/</guid><category>Travel</category><category>travel</category><category>europe</category><category>hungary</category><category>budapest</category></item><item><title>Travel - Lyon</title><link>/blog/2017/10/travel-lyon/</link><description>&lt;h1&gt;Europe - Lyon, France&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -2727,7 +2727,7 @@ A: Use uber, or the metro line.&lt;/p&gt;
 &lt;p&gt;Q: Where should I stay?
 A: I would stay near the rivers Rhone and Saone towards the center of the city, else you'll spend an incredible amount of time walking/ubering.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 22 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-10-22:/blog/2017/10/travel-lyon/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>lyon</category></item><item><title>Travel - Prague</title><link>https://adam2392.github.io/blog/2017/10/travel-prague/</link><description>&lt;h1&gt;Europe - Prague, Czech Republic&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 22 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-10-22:/blog/2017/10/travel-lyon/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>lyon</category></item><item><title>Travel - Prague</title><link>/blog/2017/10/travel-prague/</link><description>&lt;h1&gt;Europe - Prague, Czech Republic&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -2855,7 +2855,7 @@ http://booking.pragueboatsbooking.cz/api_v2/create/pb/lg/en/cruise/Hodinov%C3%A1
 &lt;ol&gt;
 &lt;li&gt;Q: How do I get around?
 Public transportation is recommended for far places, and then walking is nice!&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 22 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-10-22:/blog/2017/10/travel-prague/</guid><category>Travel</category><category>travel</category><category>europe</category><category>austria</category><category>prague</category></item><item><title>Travel - Morocco</title><link>https://adam2392.github.io/blog/2017/10/travel-morocco/</link><description>&lt;h1&gt;Africa - Morocco&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 22 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-10-22:/blog/2017/10/travel-prague/</guid><category>Travel</category><category>travel</category><category>europe</category><category>austria</category><category>prague</category></item><item><title>Travel - Morocco</title><link>/blog/2017/10/travel-morocco/</link><description>&lt;h1&gt;Africa - Morocco&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -2943,7 +2943,7 @@ www.bazaarcafe.ma&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Q: How do I get around?
 A: Probably taxi for within a city and trains/buses/grand taxis for across the country.&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 10 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-10-10:/blog/2017/10/travel-morocco/</guid><category>Travel</category><category>travel</category><category>africa</category><category>morocco</category><category>marrakech</category><category>casablanca</category></item><item><title>Travel - Munich</title><link>https://adam2392.github.io/blog/2017/10/travel-munich/</link><description>&lt;h1&gt;Europe - Munich, Germany&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Tue, 10 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-10-10:/blog/2017/10/travel-morocco/</guid><category>Travel</category><category>travel</category><category>africa</category><category>morocco</category><category>marrakech</category><category>casablanca</category></item><item><title>Travel - Munich</title><link>/blog/2017/10/travel-munich/</link><description>&lt;h1&gt;Europe - Munich, Germany&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -3042,7 +3042,7 @@ Getting to the city from the airport is extremely easy. Just check google maps a
 &lt;p&gt;Christmas Market at the Chinese Tower&lt;/p&gt;
 &lt;h2&gt;Getting Around&lt;/h2&gt;
 &lt;p&gt;The best way to get around would be the S line and the U, which goes throughout the entire city. It is pay by an honor system.&lt;/p&gt;
-&lt;p&gt;Other then that, you can take an Uber or a taxi.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 05 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-10-05:/blog/2017/10/travel-munich/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>munich</category></item><item><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link>https://adam2392.github.io/blog/2017/09/simulating-tvb/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;Other then that, you can take an Uber or a taxi.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 05 Oct 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-10-05:/blog/2017/10/travel-munich/</guid><category>Travel</category><category>travel</category><category>europe</category><category>germany</category><category>munich</category></item><item><title>Simulating Epileptic iEEG Activity Using The Virtual Brain</title><link>/blog/2017/09/simulating-tvb/</link><description>&lt;h1&gt;Background&lt;/h1&gt;
 &lt;p&gt;TVB is a platform for simulating whole-brain dynamics that starts from raw data involving:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;structural connectivity derived from DTI&lt;/li&gt;
@@ -3159,7 +3159,7 @@ rate and period.&lt;/p&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-library&lt;/li&gt;
 &lt;li&gt;https://github.com/the-virtual-brain/tvb-epilepsy&lt;/li&gt;
 &lt;li&gt;https://www.thevirtualbrain.org/tvb/zwei&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-09-27:/blog/2017/09/simulating-tvb/</guid><category>Academic</category><category>data analysis</category><category>eeg</category><category>phd</category><category>computational modeling</category></item><item><title>Travel - Marseille</title><link>https://adam2392.github.io/blog/2017/09/travel-marseille/</link><description>&lt;h1&gt;Europe - Marseille, France&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-09-27:/blog/2017/09/simulating-tvb/</guid><category>Academic</category><category>data analysis</category><category>eeg</category><category>phd</category><category>computational modeling</category></item><item><title>Travel - Marseille</title><link>/blog/2017/09/travel-marseille/</link><description>&lt;h1&gt;Europe - Marseille, France&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -3256,7 +3256,7 @@ rate and period.&lt;/p&gt;
 A: Use uber, or the metro line.&lt;/li&gt;
 &lt;li&gt;Q: Where should I stay?
 A: I would stay near Vieux Port, Joliette, or the southern part of the city.&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 22 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-09-22:/blog/2017/09/travel-marseille/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>marseille</category></item><item><title>Doctoral Board Oral Exam (PhD)</title><link>https://adam2392.github.io/blog/2017/08/doctoral-board-oral/</link><description>&lt;h1&gt;Doctoral Board Oral Exam&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 22 Sep 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-09-22:/blog/2017/09/travel-marseille/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>marseille</category></item><item><title>Doctoral Board Oral Exam (PhD)</title><link>/blog/2017/08/doctoral-board-oral/</link><description>&lt;h1&gt;Doctoral Board Oral Exam&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -3506,7 +3506,7 @@ A: I would study for about 2-3 weeks with nothing else going on. You want to be 
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 05 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-08-05:/blog/2017/08/doctoral-board-oral/</guid><category>Academic</category><category>doctoral board oral</category><category>phd</category><category>johns hopkins</category></item><item><title>Travel - Baltimore</title><link>https://adam2392.github.io/blog/2017/08/travel-baltimore/</link><description>&lt;h1&gt;Baltimore, MD&lt;/h1&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 05 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-08-05:/blog/2017/08/doctoral-board-oral/</guid><category>Academic</category><category>doctoral board oral</category><category>phd</category><category>johns hopkins</category></item><item><title>Travel - Baltimore</title><link>/blog/2017/08/travel-baltimore/</link><description>&lt;h1&gt;Baltimore, MD&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -3595,7 +3595,7 @@ A: Miss Shirley's, Woodberry Kitchen, and Chocolate Over Water to eat. Inner Har
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Images in Baltimore&lt;/h1&gt;
-&lt;p&gt;Here are some of my favorite photos in Baltimore, taken with my favorite camera:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-08-04:/blog/2017/08/travel-baltimore/</guid><category>Travel</category><category>travel</category><category>baltimore</category><category>usa</category></item><item><title>Travel - Chicago</title><link>https://adam2392.github.io/blog/2017/08/travel-chicago/</link><description>&lt;h1&gt;Chicago, Illinois, USA&lt;/h1&gt;
+&lt;p&gt;Here are some of my favorite photos in Baltimore, taken with my favorite camera:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-08-04:/blog/2017/08/travel-baltimore/</guid><category>Travel</category><category>travel</category><category>baltimore</category><category>usa</category></item><item><title>Travel - Chicago</title><link>/blog/2017/08/travel-chicago/</link><description>&lt;h1&gt;Chicago, Illinois, USA&lt;/h1&gt;
 &lt;h3&gt;Table of Contents&lt;/h3&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
@@ -3804,7 +3804,7 @@ A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millennium P
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-08-04:/blog/2017/08/travel-chicago/</guid><category>Travel</category><category>travel</category><category>chicago</category><category>usa</category></item><item><title>Travel - Los Angeles</title><link>https://adam2392.github.io/blog/2017/08/travel-losangeles/</link><description>&lt;h1&gt;Los Angeles, CA&lt;/h1&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-08-04:/blog/2017/08/travel-chicago/</guid><category>Travel</category><category>travel</category><category>chicago</category><category>usa</category></item><item><title>Travel - Los Angeles</title><link>/blog/2017/08/travel-losangeles/</link><description>&lt;h1&gt;Los Angeles, CA&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -3875,7 +3875,7 @@ A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millennium P
 &lt;h2&gt;Getting Around&lt;/h2&gt;
 &lt;p&gt;Uber/Lyft are incredibly cheap within this city. I would use this solely because the subway system is not that great and the bus system isn't ideal.&lt;/p&gt;
 &lt;h1&gt;Images in Los Angeles&lt;/h1&gt;
-&lt;p&gt;Here are some of my favorite photos, taken with my favorite camera:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-08-04:/blog/2017/08/travel-losangeles/</guid><category>Travel</category><category>travel</category><category>los angeles</category><category>usa</category></item><item><title>Travel - Japan</title><link>https://adam2392.github.io/blog/2017/07/travel-japan/</link><description>&lt;h1&gt;Asia - Japan&lt;/h1&gt;
+&lt;p&gt;Here are some of my favorite photos, taken with my favorite camera:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-08-04:/blog/2017/08/travel-losangeles/</guid><category>Travel</category><category>travel</category><category>los angeles</category><category>usa</category></item><item><title>Travel - Japan</title><link>/blog/2017/07/travel-japan/</link><description>&lt;h1&gt;Asia - Japan&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -4000,7 +4000,7 @@ A: Purple pig, Girl on the goat, Lou Malnati's to eat. Cloud Gate / Millennium P
 &lt;ol&gt;
 &lt;li&gt;Q: How do I get around?
 A: I highly suggest getting the Kansai pass ahead of time if you are going to be traveling in that region. &lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-07-26:/blog/2017/07/travel-japan/</guid><category>Travel</category><category>travel</category><category>japan</category></item><item><title>Travel - Korea</title><link>https://adam2392.github.io/blog/2017/07/travel-korea/</link><description>&lt;h1&gt;Asia - Seoul, South Korea&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-07-26:/blog/2017/07/travel-japan/</guid><category>Travel</category><category>travel</category><category>japan</category></item><item><title>Travel - Korea</title><link>/blog/2017/07/travel-korea/</link><description>&lt;h1&gt;Asia - Seoul, South Korea&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -4057,7 +4057,7 @@ A: I highly suggest getting the Kansai pass ahead of time if you are going to be
 &lt;h2&gt;Getting Around&lt;/h2&gt;
 &lt;p&gt;There are metro stations, but be wary of when they close. Uber is also (as of 2017) only Uberblack, so make sure to do some research and download the local Korean taxi app.&lt;/p&gt;
 &lt;h1&gt;FAQ&lt;/h1&gt;
-&lt;p&gt;TBD&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-07-26:/blog/2017/07/travel-korea/</guid><category>Travel</category><category>travel</category><category>korea</category><category>seoul</category></item><item><title>Setting Up a Pelican Site</title><link>https://adam2392.github.io/blog/2017/06/setup-pelican-site/</link><description>&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;p&gt;TBD&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-07-26:/blog/2017/07/travel-korea/</guid><category>Travel</category><category>travel</category><category>korea</category><category>seoul</category></item><item><title>Setting Up a Pelican Site</title><link>/blog/2017/06/setup-pelican-site/</link><description>&lt;h1&gt;Installation&lt;/h1&gt;
 &lt;h2&gt;1. Conda/Pip Install&lt;/h2&gt;
 &lt;p&gt;After getting your virtualenv setup, run 'pip install pelican'. Also include additional packages:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pip install Markdown beautifulsoup4 typogrify Pillow webassets&lt;/span&gt;
@@ -4172,7 +4172,7 @@ http://duncanlock.net/blog/2013/05/29/better-figures-images-plugin-for-pelican/&
 &lt;li&gt;Pelican-plugins: https://github.com/getpelican/pelican-plugins&lt;/li&gt;
 &lt;li&gt;Pelican-themes: https://github.com/getpelican/pelican-themes&lt;/li&gt;
 &lt;li&gt;Walkthru of Pelican w/ Python3.7: https://rsip22.github.io/blog/create-a-blog-with-pelican-and-github-pages.html&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 04 Jun 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-06-04:/blog/2017/06/setup-pelican-site/</guid><category>Coding</category><category>pelican</category><category>publishing</category><category>webdev</category><category>python</category></item><item><title>Setting Up a Virtual Environment for Python</title><link>https://adam2392.github.io/blog/2017/06/setup-virtual-env/</link><description>&lt;p&gt;An outdated post on how to work with virtual environments. The 
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 04 Jun 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-06-04:/blog/2017/06/setup-pelican-site/</guid><category>Coding</category><category>pelican</category><category>publishing</category><category>webdev</category><category>python</category></item><item><title>Setting Up a Virtual Environment for Python</title><link>/blog/2017/06/setup-virtual-env/</link><description>&lt;p&gt;An outdated post on how to work with virtual environments. The 
 latest &lt;code&gt;Pipenv&lt;/code&gt; and &lt;code&gt;pip&lt;/code&gt; commands are more robust.&lt;/p&gt;
 &lt;h1&gt;Getting Setup with Virtual Environment for Python Development&lt;/h1&gt;
 &lt;p&gt;VirtualEnv: 15.1.0
@@ -4255,7 +4255,7 @@ VirtualEnvWrapper&lt;/p&gt;
 &lt;h1&gt;References:&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;https://nolar.info/automatically-activate-virtualenv-on-cd/&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 04 Jun 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-06-04:/blog/2017/06/setup-virtual-env/</guid><category>Coding</category><category>virtualenv</category><category>webdev</category><category>python</category></item><item><title>Travel - Paris</title><link>https://adam2392.github.io/blog/2017/03/travel-paris/</link><description>&lt;h1&gt;Europe - Lyon, France&lt;/h1&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 04 Jun 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-06-04:/blog/2017/06/setup-virtual-env/</guid><category>Coding</category><category>virtualenv</category><category>webdev</category><category>python</category></item><item><title>Travel - Paris</title><link>/blog/2017/03/travel-paris/</link><description>&lt;h1&gt;Europe - Lyon, France&lt;/h1&gt;
 &lt;!-- MarkdownTOC autolink="true" --&gt;
 
 &lt;ul&gt;
@@ -4346,7 +4346,7 @@ A: Use uber, or the metro line.&lt;/p&gt;
 &lt;p&gt;Q: Where should I stay?
 A: I would stay near the Seine river if possible! Preferably on the north side because it's nicer.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 22 Mar 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2017-03-22:/blog/2017/03/travel-paris/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>paris</category></item><item><title>Personal Goals - 2017</title><link>https://adam2392.github.io/blog/2016/12/goals-2017/</link><description>&lt;p&gt;Reflecting on one of the best years ever, I'm grateful for all the people and places that made these memories happen. I took some time around 1 year ago to plan out ten things I wanted to carry out in 2016. I've enjoyed it a lot because it's been a goal to work towards for the entire year.&lt;/p&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 22 Mar 2017 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2017-03-22:/blog/2017/03/travel-paris/</guid><category>Travel</category><category>travel</category><category>europe</category><category>france</category><category>paris</category></item><item><title>Personal Goals - 2017</title><link>/blog/2016/12/goals-2017/</link><description>&lt;p&gt;Reflecting on one of the best years ever, I'm grateful for all the people and places that made these memories happen. I took some time around 1 year ago to plan out ten things I wanted to carry out in 2016. I've enjoyed it a lot because it's been a goal to work towards for the entire year.&lt;/p&gt;
 &lt;p&gt;First I want to look at what I set out to do, and where I've come in regards to those goals. It will be interesting to see how my own priorities simply a year ago changed throughout the year and what I want to keep and discard for 2017.&lt;/p&gt;
 &lt;h2&gt;Old 2016 Resolutions:&lt;/h2&gt;
 &lt;h4&gt;1. Spend more effort and time on good friends and ignore the rest. [x]&lt;/h4&gt;
@@ -4416,7 +4416,7 @@ A: I would stay near the Seine river if possible! Preferably on the north side b
 &lt;li&gt;In my research I have a very focused area that I am developing, but I want to become a thought leader in data science one day. The only way to do that is to continue my reading of papers unrelated to my research and continue my textbook reading of different topics, such as matrix theory and bayesian statistics. The more I understand, the more I might even be able to apply to my PhD research.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;8. Build 3 Node, JS, React webapps this year&lt;/h4&gt;
-&lt;p&gt;Keeping it under 10 this year because I recently read about Warren Buffet's 5/25 rule and am inspired by its logic. Happy 2017 everyone.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 31 Dec 2016 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2016-12-31:/blog/2016/12/goals-2017/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Personal Goals - 2016</title><link>https://adam2392.github.io/blog/2015/12/goals-2016/</link><description>&lt;p&gt;Each year passes by faster and faster in my opinion, so I want to make the most out of 2016. As 2016 comes and 2015 comes to a close, I want to make some resolutions and goals for the new year.&lt;/p&gt;
+&lt;p&gt;Keeping it under 10 this year because I recently read about Warren Buffet's 5/25 rule and am inspired by its logic. Happy 2017 everyone.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sat, 31 Dec 2016 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2016-12-31:/blog/2016/12/goals-2017/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Personal Goals - 2016</title><link>/blog/2015/12/goals-2016/</link><description>&lt;p&gt;Each year passes by faster and faster in my opinion, so I want to make the most out of 2016. As 2016 comes and 2015 comes to a close, I want to make some resolutions and goals for the new year.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Spend more effort and time on good friends and ignore the rest.&lt;/p&gt;
@@ -4474,4 +4474,4 @@ A: I would stay near the Seine river if possible! Preferably on the north side b
 &lt;/li&gt;
 &lt;li&gt;I've always been anxious to accomplish things. However, over the next 4 years, I realized it'll be grind and work. Gaining the technical skills so I can set myself up for maximizing the probability of succeeding in a technical startup. Just have to be patient and have this same dream when I'm 29.
 All resolutions are goals in my opinion. The only real way to accomplish a goal that you set your mind to is work on them in minimal increments. Happy new years. It's going to be a good one.&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 31 Dec 2015 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:adam2392.github.io,2015-12-31:/blog/2015/12/goals-2016/</guid><category>Personal</category><category>personal</category><category>goals</category></item></channel></rss>
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Thu, 31 Dec 2015 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2015-12-31:/blog/2015/12/goals-2016/</guid><category>Personal</category><category>personal</category><category>goals</category></item></channel></rss>
