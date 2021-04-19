@@ -170,9 +170,9 @@ ethereumjs-testrpc@6.0.3 </p>
 * web3js
 * solc
 * truffle</p>
-<div class="highlight"><pre><span></span><code><span class="err">npm install ethereumjs-testrpc web3</span>
-<span class="err">npm install solc</span>
-<span class="err">npm install -g truffle</span>
+<div class="highlight"><pre><span></span><code>npm install ethereumjs-testrpc web3
+npm install solc
+npm install -g truffle
 </code></pre></div>
 
 <ul>
@@ -184,30 +184,30 @@ ethereumjs-testrpc@6.0.3 </p>
 <h1>Setting Up Ethereum</h1>
 <h2>1. Setting Up a Node (For Testing):</h2>
 <p>You can either set up a node that fully connects to the ethereum network, or connect to a test node to test application development! Very cool, so we will probably start with testrpc to run a test client node.</p>
-<div class="highlight"><pre><span></span><code><span class="err">testrpc</span>
+<div class="highlight"><pre><span></span><code>testrpc
 </code></pre></div>
 
 <p>In order to deploy, you need to setup a file directory. For those familiar with express for node.js and any other web framework, this is very similar.</p>
-<div class="highlight"><pre><span></span><code><span class="err">truffle init</span>
+<div class="highlight"><pre><span></span><code>truffle init
 </code></pre></div>
 
 <p>Next, tell truffle how to deploy. You'll need to modify the truffle.js file.</p>
-<div class="highlight"><pre><span></span><code><span class="err">module.exports = {</span>
-<span class="err">  // See &lt;http://truffleframework.com/docs/advanced/configuration&gt;</span>
-<span class="err">  // to customize your Truffle configuration!</span>
-<span class="err">    networks: {</span>
-<span class="err">    development: {</span>
-<span class="err">        host: &quot;localhost&quot;,</span>
-<span class="err">        port: 8545,</span>
-<span class="err">        network_id: &quot;*&quot;, // match any network id</span>
-<span class="err">        gas: 4600000    // to ensure your test node has a lot of gas to run</span>
-<span class="err">    }</span>
-<span class="err">  }</span>
-<span class="err">};</span>
+<div class="highlight"><pre><span></span><code><span class="n">module</span><span class="o">.</span><span class="n">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="n">See</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">truffleframework</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">advanced</span><span class="o">/</span><span class="n">configuration</span><span class="o">&gt;</span>
+  <span class="o">//</span> <span class="n">to</span> <span class="n">customize</span> <span class="n">your</span> <span class="n">Truffle</span> <span class="n">configuration</span><span class="o">!</span>
+    <span class="n">networks</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">development</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">host</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+        <span class="n">port</span><span class="p">:</span> <span class="mi">8545</span><span class="p">,</span>
+        <span class="n">network_id</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="o">//</span> <span class="k">match</span> <span class="n">any</span> <span class="n">network</span> <span class="n">id</span>
+        <span class="n">gas</span><span class="p">:</span> <span class="mi">4600000</span>    <span class="o">//</span> <span class="n">to</span> <span class="n">ensure</span> <span class="n">your</span> <span class="n">test</span> <span class="n">node</span> <span class="n">has</span> <span class="n">a</span> <span class="n">lot</span> <span class="n">of</span> <span class="n">gas</span> <span class="n">to</span> <span class="n">run</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
 </code></pre></div>
 
 <p>Then you can run</p>
-<div class="highlight"><pre><span></span><code><span class="err">truffle deploy</span>
+<div class="highlight"><pre><span></span><code>truffle deploy
 </code></pre></div>
 
 <p>You should not see any errors at this point.</p>

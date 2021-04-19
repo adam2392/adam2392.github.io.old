@@ -176,21 +176,21 @@ instantaneously.</p>
 <h1>Implementation</h1>
 <h2>1. Setting Up Environment</h2>
 <p>First you may want to set up a conda environment, or a virtualenv that will separate the entire python project from your normal OS.</p>
-<div class="highlight"><pre><span></span><code><span class="err">pip install nibabel networkx</span>
-<span class="err">git clone https://github.com/the-virtual-brain/tvb-data</span>
-<span class="err">git clone https://github.com/the-virtual-brain/tvb-library</span>
+<div class="highlight"><pre><span></span><code>pip install nibabel networkx
+git clone https://github.com/the-virtual-brain/tvb-data
+git clone https://github.com/the-virtual-brain/tvb-library
 </code></pre></div>
 
 <p>If you want to have a script to add these all to path for your jupyter notebook, use the following:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 <span class="nb">echo</span> <span class="s2">&quot;Launching IPython Notebook from TVB Distribution&quot;</span>
 <span class="k">if</span> <span class="o">[</span> -z <span class="s2">&quot;</span><span class="nv">$LANG</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
     <span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
@@ -202,13 +202,13 @@ jupyter notebook
 </code></pre></div>
 </td></tr></table>
 <h2>1b. Setting Up Environment on a Cluster</h2>
-<div class="highlight"><pre><span></span><code><span class="err">. /soft/miniconda3/activate</span>
-<span class="err">conda env list</span>
-<span class="err">conda create -n tridesclous python=3.6 scipy numpy pandas scikit-learn matplotlib seaborn pyqt=5 ipykernel</span>
-<span class="err">source activate tridesclous</span>
-<span class="err">pip install pyqtgraph</span>
-<span class="err">pip install https://github.com/tridesclous/tridesclous/archive/master.zip</span>
-<span class="err">python -m ipykernel install --name tridesclous-testing —user</span>
+<div class="highlight"><pre><span></span><code>. /soft/miniconda3/activate
+conda env list
+conda create -n tridesclous python=3.6 scipy numpy pandas scikit-learn matplotlib seaborn pyqt=5 ipykernel
+source activate tridesclous
+pip install pyqtgraph
+pip install https://github.com/tridesclous/tridesclous/archive/master.zip
+python -m ipykernel install --name tridesclous-testing —user
 </code></pre></div>
 
 <h2>2. Simulating Epilepsy</h2>

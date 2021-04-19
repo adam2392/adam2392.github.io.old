@@ -7,9 +7,9 @@
 * web3js
 * solc
 * truffle&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;npm install ethereumjs-testrpc web3&lt;/span&gt;
-&lt;span class="err"&gt;npm install solc&lt;/span&gt;
-&lt;span class="err"&gt;npm install -g truffle&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;npm install ethereumjs-testrpc web3
+npm install solc
+npm install -g truffle
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -20,10 +20,10 @@
 &lt;/ul&gt;
 &lt;h1&gt;Set Up&lt;/h1&gt;
 &lt;h2&gt;1. Creating Your Project Directory&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;mkdir MyToken &amp;amp;&amp;amp; cd MyToken&lt;/span&gt;
-&lt;span class="err"&gt;truffle init&lt;/span&gt;
-&lt;span class="err"&gt;npm init -y&lt;/span&gt;
-&lt;span class="err"&gt;npm install -E zeppelin-solidity&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir MyToken &amp;amp;&amp;amp; cd MyToken
+truffle init
+npm init -y
+npm install -E zeppelin-solidity
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This will install zeppelin-solidity for testing code and initialize your project directory using truffle.s&lt;/p&gt;
@@ -71,9 +71,9 @@
 &lt;p&gt;Using remix, or another tool to deploy your contract, you can check basic outputs here on the test network.&lt;/p&gt;
 &lt;h2&gt;3. Javascript Truffle Tests&lt;/h2&gt;
 &lt;p&gt;These will be customized test suites that you write in the truffle directory.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;npm i ethereumjs-tx&lt;/span&gt;
-&lt;span class="err"&gt;truffle develop&lt;/span&gt;
-&lt;span class="err"&gt;truffle(develop)&amp;gt; test&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;npm i ethereumjs-tx
+truffle develop
+truffle(develop)&amp;gt; test
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This command will install the ethereum-tx package, boot a test blockchain using truffle and then run all tests within "/test/" directory.&lt;/p&gt;
@@ -114,12 +114,12 @@
 &lt;li&gt;mocha: configuration options for mochajs testing framework.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can create an ethereum mnemonic and set it, so your providers can see it within the config file. Here is an example of &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;truffle migrate --network ropsten&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;truffle migrate --network ropsten
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;2. Crowdsalable Ethereum Token&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;mkdir crowdsalable-eth-token &amp;amp;&amp;amp; cd crowdsalable-eth-token&lt;/span&gt;
-&lt;span class="err"&gt;truffle unbox git@github.com:ajb413/crowdsalable-eth-token.git&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;mkdir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;crowdsalable&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;eth&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;crowdsalable&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;eth&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;truffle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;unbox&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ajb413&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;crowdsalable&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;eth&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1&gt;References:&lt;/h1&gt;
@@ -151,7 +151,7 @@
   &lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;scratch&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt; 
   &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;load&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;extra&lt;/span&gt; &lt;span class="n"&gt;packages&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
   &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;locales&lt;/span&gt;
-  &lt;span class="n"&gt;locale&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gen&lt;/span&gt; &lt;span class="n"&gt;en_US&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;UTF&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;
+  &lt;span class="n"&gt;locale&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gen&lt;/span&gt; &lt;span class="n"&gt;en_US&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;UTF&lt;/span&gt;&lt;span class="mi"&gt;-8&lt;/span&gt;
   &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;python3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt; &lt;span class="n"&gt;python3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt;
   &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
   &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;libcupti&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;
@@ -182,18 +182,18 @@
 &lt;p&gt;This is the main area where your image will install different packages and load different environment variables.&lt;/p&gt;
 &lt;h2&gt;4. Run Script&lt;/h2&gt;
 &lt;p&gt;This will run a script afterwards, say a scientific experiment:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;python3 main.py --args&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python3 main.py --args
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;5. Test&lt;/h2&gt;
 &lt;p&gt;This will run test scripts to see that your "main.py" did what it was supposed to do. Were files saved? Were computations correct?&lt;/p&gt;
 &lt;h1&gt;Common Commands&lt;/h1&gt;
 &lt;p&gt;Pulling images, shelling into the image and executing the image with a script&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;singularity&lt;/span&gt; &lt;span class="n"&gt;pull&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;singularity&lt;/span&gt; &lt;span class="nv"&gt;pull&lt;/span&gt;
 
-&lt;span class="n"&gt;singularity&lt;/span&gt; &lt;span class="n"&gt;shell&lt;/span&gt;
+&lt;span class="nv"&gt;singularity&lt;/span&gt; &lt;span class="nv"&gt;shell&lt;/span&gt;
 
-&lt;span class="n"&gt;singularity&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt;
+&lt;span class="nv"&gt;singularity&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Common argument flags:
@@ -216,34 +216,34 @@
 &lt;/ol&gt;</content><category term="Coding"></category><category term="cloud"></category><category term="singularity"></category><category term="python"></category><category term="hpc"></category><category term="tensorflow"></category><category term="deep-learning"></category></entry><entry><title>Setting Up a Pelican Site</title><link href="/blog/2017/06/setup-pelican-site/" rel="alternate"></link><published>2017-06-04T00:00:00-04:00</published><updated>2017-06-04T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2017-06-04:/blog/2017/06/setup-pelican-site/</id><summary type="html">&lt;p&gt;A short walkthrough of setting up a pelican site&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Installation&lt;/h1&gt;
 &lt;h2&gt;1. Conda/Pip Install&lt;/h2&gt;
 &lt;p&gt;After getting your virtualenv setup, run 'pip install pelican'. Also include additional packages:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pip install Markdown beautifulsoup4 typogrify Pillow webassets&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install Markdown beautifulsoup4 typogrify Pillow webassets
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;or&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;conda create -n website python=python3&lt;/span&gt;
-&lt;span class="err"&gt;conda install -c conda-forge pelican&lt;/span&gt;
-&lt;span class="err"&gt;conda install -c conda-forge pyaml &lt;/span&gt;
-&lt;span class="err"&gt;conda install -c anaconda markdown&lt;/span&gt;
-&lt;span class="err"&gt;conda install -c anaconda beautifulsoup4 &lt;/span&gt;
-&lt;span class="err"&gt;conda install -c conda-forge pillow&lt;/span&gt;
-&lt;span class="err"&gt;conda install -c conda-forge gettext &lt;/span&gt;
-&lt;span class="err"&gt;conda install -c damianavila82 piexif # for&lt;/span&gt;
-&lt;span class="err"&gt;pip install pyexif&lt;/span&gt;
-&lt;span class="err"&gt;conda install -c conda-forge ghp-import&lt;/span&gt;
-&lt;span class="err"&gt;conda install -c anaconda pil&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;create&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;n&lt;/span&gt; &lt;span class="nv"&gt;website&lt;/span&gt; &lt;span class="nv"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;python3&lt;/span&gt;
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;conda&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;forge&lt;/span&gt; &lt;span class="nv"&gt;pelican&lt;/span&gt;
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;conda&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;forge&lt;/span&gt; &lt;span class="nv"&gt;pyaml&lt;/span&gt; 
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;anaconda&lt;/span&gt; &lt;span class="nv"&gt;markdown&lt;/span&gt;
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;anaconda&lt;/span&gt; &lt;span class="nv"&gt;beautifulsoup4&lt;/span&gt; 
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;conda&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;forge&lt;/span&gt; &lt;span class="nv"&gt;pillow&lt;/span&gt;
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;conda&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;forge&lt;/span&gt; &lt;span class="nv"&gt;gettext&lt;/span&gt; 
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;damianavila82&lt;/span&gt; &lt;span class="nv"&gt;piexif&lt;/span&gt; # &lt;span class="k"&gt;for&lt;/span&gt;
+&lt;span class="nv"&gt;pip&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="nv"&gt;pyexif&lt;/span&gt;
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;conda&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;forge&lt;/span&gt; &lt;span class="nv"&gt;ghp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;import&lt;/span&gt;
+&lt;span class="nv"&gt;conda&lt;/span&gt; &lt;span class="nv"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="nv"&gt;anaconda&lt;/span&gt; &lt;span class="nv"&gt;pil&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;for helping to write in Markdown and writing pretty text.&lt;/p&gt;
 &lt;h2&gt;2. Start up pelican:&lt;/h2&gt;
 &lt;p&gt;First you will need to create a separate branch that you work on. This branch contains your actual markdown files, which are rendered and then copied OVER to your master branch during the Publishing section. This then renders html using git.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;git checkout - &amp;lt;source_branch&amp;gt;&lt;/span&gt;
-&lt;span class="err"&gt;pelican-quickstart&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git checkout - &amp;lt;source_branch&amp;gt;
+pelican-quickstart
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;then go through the directions and create your project.&lt;/p&gt;
 &lt;h2&gt;3. Installing common pelican-themes and pelican-plugins:&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;git clone --recursive https://github.com/getpelican/pelican-themes&lt;/span&gt;
-&lt;span class="err"&gt;git clone --recursive https://github.com/getpelican/pelican-plugins&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone --recursive https://github.com/getpelican/pelican-themes
+git clone --recursive https://github.com/getpelican/pelican-plugins
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1&gt;Choosing Your Hosting Server&lt;/h1&gt;
@@ -261,9 +261,9 @@
 &lt;/ol&gt;
 &lt;h1&gt;Installing and Choosing Themes/Plugins&lt;/h1&gt;
 &lt;p&gt;You need to install the pelican themes and the pelican plugins, if you want to use the open source themes and plugins developed. Then you can add code to your python files to add certain plugins:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;PLUGIN_PATHS = [&amp;#39;path/to/pelican-plugins&amp;#39;]&lt;/span&gt;
-&lt;span class="err"&gt;PLUGINS = [&amp;#39;assets&amp;#39;, &amp;#39;sitemap&amp;#39;, &amp;#39;gravatar&amp;#39;]&lt;/span&gt;
-&lt;span class="err"&gt;JINJA_ENVIRONMENT = {&amp;#39;extensions&amp;#39;: [&amp;#39;jinja2.ext.i18n&amp;#39;]}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;PLUGIN_PATHS = [&amp;#39;path/to/pelican-plugins&amp;#39;]
+PLUGINS = [&amp;#39;assets&amp;#39;, &amp;#39;sitemap&amp;#39;, &amp;#39;gravatar&amp;#39;]
+JINJA_ENVIRONMENT = {&amp;#39;extensions&amp;#39;: [&amp;#39;jinja2.ext.i18n&amp;#39;]}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1&gt;Pushing Content to Cloud&lt;/h1&gt;
@@ -297,15 +297,15 @@
 &lt;p&gt;to create commits up to the cloud.&lt;/p&gt;
 &lt;h2&gt;2. Via Git Directly&lt;/h2&gt;
 &lt;p&gt;Before doing anything, check locally if files look right:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;make html &amp;amp;&amp;amp; make serve&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make html &amp;amp;&amp;amp; make serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;First just push all your stuff to your path.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;git add -A &amp;amp;&amp;amp; git commit -a -m &amp;#39;first commit&amp;#39; &amp;amp;&amp;amp; git push --all&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add -A &amp;amp;&amp;amp; git commit -a -m &amp;#39;first commit&amp;#39; &amp;amp;&amp;amp; git push --all
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Then:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;make github&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make github
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1&gt;Adding Pages of Static Content&lt;/h1&gt;
@@ -340,70 +340,70 @@ VirtualEnvWrapper&lt;/p&gt;
 &lt;h1&gt;Basics (Create, Delete):&lt;/h1&gt;
 &lt;h2&gt;1. Create&lt;/h2&gt;
 &lt;p&gt;For Virtualenvwrapper: Run the command &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;&amp;#39;mkvirtualenv &amp;lt;envname&amp;gt;&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;#39;mkvirtualenv &amp;lt;envname&amp;gt;&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;For Virtualenv: Run command &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;virtualenv &amp;#39;./venv/&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;virtualenv &amp;#39;./venv/&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;inside your project directory. or&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;mkvirtualenv -p python3&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkvirtualenv -p python3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;or&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;virtualenv -p python3&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;virtualenv -p python3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;to make the virtual environment with a specific python installation (e.g. 2.7, or 3.4). With python3.6 and most of the recent versions, the virtualenvironment is built in, so you can just run&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;python3 -m venv &amp;lt;name_of_venv&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python3 -m venv &amp;lt;name_of_venv&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;which is great because it handles it for you.&lt;/p&gt;
 &lt;h2&gt;2. Delete a Virtualenv&lt;/h2&gt;
 &lt;p&gt;For Virtualenvwrappper: In order to delete a virtual environment, all you need to do is to remove it recursively from your ~/.virtualenvs directory with    &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;&amp;#39;sudo rm -rf &amp;lt;name&amp;gt;&amp;#39;.&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;#39;sudo rm -rf &amp;lt;name&amp;gt;&amp;#39;.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;For Virtualenv: Go to the directory of your project and delete the /venv/ directory.&lt;/p&gt;
 &lt;h1&gt;Tips&lt;/h1&gt;
 &lt;h2&gt;1. Starting up your Venv&lt;/h2&gt;
 &lt;p&gt;Startup your virtual environment by typing:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;workon name_of_virtualenvironment&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;workon name_of_virtualenvironment
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;2. Requirements.txt&lt;/h2&gt;
 &lt;p&gt;This is a convenient file for you to make that keeps track of all your packages. If you ever want to run your project on a new computer, you just create a new virtual environment and run:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pip install -r requirements.txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -r requirements.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;To create the file:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pip freeze &amp;gt; requirements.txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip freeze &amp;gt; requirements.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1&gt;Convenient Tools&lt;/h1&gt;
 &lt;h2&gt;1. Automatically cd To Project Directory&lt;/h2&gt;
 &lt;p&gt;Input the following code to your ./virtualenvs/postactivate file&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    # subtract strings to get the project name
-    function get_project_name() {
-        local venv_dir=&lt;span class="nv"&gt;$VIRTUALENVWRAPPER_HOOK_DIR&lt;/span&gt;
-        local venv=&lt;span class="nv"&gt;$VIRTUAL_ENV&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="c1"&gt;# subtract strings to get the project name&lt;/span&gt;
+    &lt;span class="n"&gt;function&lt;/span&gt; &lt;span class="n"&gt;get_project_name&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;local&lt;/span&gt; &lt;span class="n"&gt;venv_dir&lt;/span&gt;&lt;span class="o"&gt;=$&lt;/span&gt;&lt;span class="n"&gt;VIRTUALENVWRAPPER_HOOK_DIR&lt;/span&gt;
+        &lt;span class="n"&gt;local&lt;/span&gt; &lt;span class="n"&gt;venv&lt;/span&gt;&lt;span class="o"&gt;=$&lt;/span&gt;&lt;span class="n"&gt;VIRTUAL_ENV&lt;/span&gt;
 
-        temp_project_name=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;&lt;span class="c1"&gt;#&amp;quot;$venv_dir&amp;quot;&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;   # get difference between two strings
-        project_name=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;temp_project_name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;     # remove leading &amp;#39;/&amp;#39; character
+        &lt;span class="n"&gt;temp_project_name&lt;/span&gt;&lt;span class="o"&gt;=$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;&lt;span class="c1"&gt;#&amp;quot;$venv_dir&amp;quot;}   # get difference between two strings&lt;/span&gt;
+        &lt;span class="n"&gt;project_name&lt;/span&gt;&lt;span class="o"&gt;=$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;temp_project_name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;     &lt;span class="c1"&gt;# remove leading &amp;#39;/&amp;#39; character&lt;/span&gt;
 
-        echo &lt;span class="nv"&gt;$project_name&lt;/span&gt;
-        ## uncomment for debugging
-        # echo &lt;span class="nv"&gt;$venv_dir&lt;/span&gt;
-        # echo &lt;span class="nv"&gt;$venv&lt;/span&gt;
-        # echo &lt;span class="nv"&gt;$temp_project_name&lt;/span&gt;
-        # echo &lt;span class="nv"&gt;$project_name&lt;/span&gt;
-    }
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;project_name&lt;/span&gt;
+        &lt;span class="c1"&gt;## uncomment for debugging&lt;/span&gt;
+        &lt;span class="c1"&gt;# echo $venv_dir&lt;/span&gt;
+        &lt;span class="c1"&gt;# echo $venv&lt;/span&gt;
+        &lt;span class="c1"&gt;# echo $temp_project_name&lt;/span&gt;
+        &lt;span class="c1"&gt;# echo $project_name&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
 
-    # export proj=&amp;quot;cd ~/Documents/$(get_project_name)&amp;quot;
-    root_dir=&amp;#39;/Users/adam2392/Documents/&amp;#39;
-    project_dir=$(get_project_name)
-    cd &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;root_dir&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;project_dir&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
+    &lt;span class="c1"&gt;# export proj=&amp;quot;cd ~/Documents/$(get_project_name)&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;root_dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/Users/adam2392/Documents/&amp;#39;&lt;/span&gt;
+    &lt;span class="n"&gt;project_dir&lt;/span&gt;&lt;span class="o"&gt;=$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;get_project_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;root_dir&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;project_dir&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Make sure you change 'root_dir' to the correct root directory of your projects. &lt;/p&gt;

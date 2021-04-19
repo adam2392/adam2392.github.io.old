@@ -129,9 +129,9 @@ Adam Li's blog            </a>
 * web3js
 * solc
 * truffle</p>
-<div class="highlight"><pre><span></span><code><span class="err">npm install ethereumjs-testrpc web3</span>
-<span class="err">npm install solc</span>
-<span class="err">npm install -g truffle</span>
+<div class="highlight"><pre><span></span><code>npm install ethereumjs-testrpc web3
+npm install solc
+npm install -g truffle
 </code></pre></div>
 
 <ul>
@@ -142,10 +142,10 @@ Adam Li's blog            </a>
 </ul>
 <h1>Set Up</h1>
 <h2>1. Creating Your Project Directory</h2>
-<div class="highlight"><pre><span></span><code><span class="err">mkdir MyToken &amp;&amp; cd MyToken</span>
-<span class="err">truffle init</span>
-<span class="err">npm init -y</span>
-<span class="err">npm install -E zeppelin-solidity</span>
+<div class="highlight"><pre><span></span><code>mkdir MyToken &amp;&amp; cd MyToken
+truffle init
+npm init -y
+npm install -E zeppelin-solidity
 </code></pre></div>
 
 <p>This will install zeppelin-solidity for testing code and initialize your project directory using truffle.s</p>
@@ -193,9 +193,9 @@ Adam Li's blog            </a>
 <p>Using remix, or another tool to deploy your contract, you can check basic outputs here on the test network.</p>
 <h2>3. Javascript Truffle Tests</h2>
 <p>These will be customized test suites that you write in the truffle directory.</p>
-<div class="highlight"><pre><span></span><code><span class="err">npm i ethereumjs-tx</span>
-<span class="err">truffle develop</span>
-<span class="err">truffle(develop)&gt; test</span>
+<div class="highlight"><pre><span></span><code>npm i ethereumjs-tx
+truffle develop
+truffle(develop)&gt; test
 </code></pre></div>
 
 <p>This command will install the ethereum-tx package, boot a test blockchain using truffle and then run all tests within "/test/" directory.</p>
@@ -236,12 +236,12 @@ Adam Li's blog            </a>
 <li>mocha: configuration options for mochajs testing framework.</li>
 </ul>
 <p>You can create an ethereum mnemonic and set it, so your providers can see it within the config file. Here is an example of </p>
-<div class="highlight"><pre><span></span><code><span class="err">truffle migrate --network ropsten</span>
+<div class="highlight"><pre><span></span><code>truffle migrate --network ropsten
 </code></pre></div>
 
 <h2>2. Crowdsalable Ethereum Token</h2>
-<div class="highlight"><pre><span></span><code><span class="err">mkdir crowdsalable-eth-token &amp;&amp; cd crowdsalable-eth-token</span>
-<span class="err">truffle unbox git@github.com:ajb413/crowdsalable-eth-token.git</span>
+<div class="highlight"><pre><span></span><code><span class="n">mkdir</span><span class="w"> </span><span class="n">crowdsalable</span><span class="o">-</span><span class="n">eth</span><span class="o">-</span><span class="n">token</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="n">crowdsalable</span><span class="o">-</span><span class="n">eth</span><span class="o">-</span><span class="n">token</span><span class="w"></span>
+<span class="n">truffle</span><span class="w"> </span><span class="n">unbox</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">ajb413</span><span class="o">/</span><span class="n">crowdsalable</span><span class="o">-</span><span class="n">eth</span><span class="o">-</span><span class="n">token</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
 </code></pre></div>
 
 <h1>References:</h1>
