@@ -84,7 +84,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (("Blog", "/categories.html"),
              ("Timeline", "/archives.html"),
              ("Tags", "/tags.html"),
-             ("Curriculum Vitae", "/pdfs/AdamLi_CV.pdf"),
+             ("Curriculum Vitae", "/pdfs/Personal_CV.pdf"),
              # ("Gallery", "/album.html"),
              )
 
