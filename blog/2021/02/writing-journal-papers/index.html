@@ -43,7 +43,8 @@
         <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
               title="Adam Li's blog RSS Feed"/>
         <link href="/feeds/academic.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Adam Li's blog Academic ATOM Feed"/></head>
+              title="Adam Li's blog Academic ATOM Feed"/>
+</head>
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -226,7 +227,7 @@ but it is an incredible headache to convert Latex/PDF files to Word. </p>
 <p>To handle a tracked-diff, <code>save a copy of the Latex version upon initial manuscript submission.</code>
 Then, when you have your final revised manuscript after revision, use <code>latexdiff</code> to generate 
 a new Latex file, which will now render a nice PDF with tracked changes inside the PDF file itself!</p>
-<div class="highlight"><pre><span></span><code>latexdiff-so old_version.tex new_version.tex &gt; differences.tex
+<div class="highlight"><pre><span></span><code><span class="err">latexdiff-so old_version.tex new_version.tex &gt; differences.tex</span>
 </code></pre></div>
 
 <p>Here's a great reference: http://www.peteryu.ca/tutorials/publishing/latexdiff</p>
@@ -257,8 +258,6 @@ recommended to send this out to 1) collaborators and 2) post on Twitter!</p>
 <p>Last but not least, remember that preprints are version controlled! You 
 can always submit a new version when work has been improved and updated.</p>
             </div>
-
-    
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
