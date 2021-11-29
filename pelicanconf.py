@@ -10,7 +10,7 @@ AUTHOR = "Adam Li"
 SITENAME = "Adam Li's blog"
 SITEURL = "https://adam2392.github.io"
 SITETITLE = "Adam J. Li"
-COPYRIGHT_YEAR = 2020
+COPYRIGHT_YEAR = 2022
 
 PATH = "content"
 

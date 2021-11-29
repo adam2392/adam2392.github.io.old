@@ -16,5 +16,9 @@ Then:
 
     make github
 
+# To Setup Virtual Environment
+
+I make use of a `Pipfile` to setup a virtual environment.
+
 # TO ADD
 publication list: https://github.com/vene/pelican-bibtex
