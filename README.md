@@ -16,6 +16,13 @@ Then:
 
     make github
 
+
+## Pelican Themes and PlugIns
+
+In order to make the above work, you will need to also have the `pelican-themes` and `pelican-plugins` folder locally as a "sub-module".
+
+You can clone those repos locally from https://github.com/getpelican/pelican-plugins and https://github.com/getpelican/pelican-themes.
+
 # To Setup Virtual Environment
 
 I make use of a `Pipfile` to setup a virtual environment.
