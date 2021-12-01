@@ -3,9 +3,13 @@ status: hidden
 URL:
 save_as: index.html
 
+![Adam Li](./images/adam.JPG)
+
 # About Me
 
 ## Research Work
+
+For a list of my publications, see my [Google Scholar](https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en). If there are any publications not publicly accessible, please shoot me a message and I'm happy to share with you.
 
 I am a sixth year PhD student in biomedical engineering, specializing in computational neuroscience and machine learning
 at Johns Hopkins University. I work with Dr. Sridevi V. Sarma in
@@ -70,4 +74,16 @@ blogs (in progress in the backend), to travel blogs (for my own benefit of keepi
 
 # Blog
 
-Read my [blog](/blog.html).
+Read my [blog](/blog.html). 
+
+Here's a [timeline](/archives.html), or [tags](/tags.html) of my blog posts. 
+
+# Contact
+
+### Email
+
+- `ali39 at jhu dot edu`
+
+### Other
+
+Check my social media links to get in touch!
