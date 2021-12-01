@@ -1,8 +1,5 @@
 Title: Open Science
 Slug: openscience
-save_as:openscience.html
-
-# Open Science
 
 I strongly believe sharing code, knowledge and data openly is a fundamental part of science, especially the computational sciences. I am involved in the development of many open source tools.
 
