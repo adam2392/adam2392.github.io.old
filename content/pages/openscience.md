@@ -5,7 +5,7 @@ I strongly believe sharing code, knowledge and data openly is a fundamental part
 
 I am a [BIDS](https://github.com/bids-standard), [MNE](https://github.com/mne-tools), and [Neurodata](https://github.com/neurodata) team member. I am also a member of the MNE-Python [steering committee](https://mne.tools/dev/overview/governance.html). Specifically, I am a core-contributor to the following software packages:
 
-- [MNE-Python](https://github.com/mne-tools/mne-python): THE Python software package for MEG, EEG and iEEG data analysis
+- [MNE-Python](https://github.com/mne-tools/mne-python): THE Python software package for MEG, EEG and iEEG data analysis, of which I am a core-developer.
 - [MNE-BIDS](https://github.com/mne-tools/mne-bids): A Python package for facilitating formatting and analysis with the Brain Imaging Data Structure (BIDS), which I am a core-team member for EEG and iEEG development.
 - [MNE-Connectivity](https://github.com/mne-tools/mne-connectivity): A Python package for connectivity analysis using MNE.
 - [MNE-HFO](https://github.com/mne-tools/mne-hfo): A Python package for high-frequency oscillation (HFO) detection using MNE.
