@@ -143,7 +143,7 @@ like to publish a few more projects:
 - [ ] SickKids dataset
 - [ ] Theory of epileptogenesis
 
-## 4. Outreach / Societal Impact
+## 3. Outreach / Societal Impact
 This year I would also like to dedicate more time to outreach. I think there's 
 too often change that could be done at the local volunteer level that isn't because 
 of passiveness.
