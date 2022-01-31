@@ -3,26 +3,30 @@ status: hidden
 URL:
 save_as: index.html
 
-![Adam Li](./images/adam.JPG)
+![Adam Li](./images/adam.JPG){width="800" height="600" style="display: block; margin: 0 auto"}
 
 # About Me
 
-## Research Work
-
 For a list of my publications, see my [Google Scholar](https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en). If there are any publications not publicly accessible, please shoot me a message and I'm happy to share with you.
 
-I am a sixth year PhD student in biomedical engineering, specializing in computational neuroscience and machine learning
-at Johns Hopkins University. I work with Dr. Sridevi V. Sarma in
-the [Neuromedical Control Systems group](http://sarmalab.icm.jhu.edu/). I am also jointly pursuing a MS in Applied
-Mathematics and Statistics with a focus in statistical learning theory, optimization and matrix analysis. My thesis work
-focuses on developing algorithms in the context of seizure localization in drug-resistant epilepsy patients.
-Specifically, I analyze multivariate time-series intracranial EEG data using dynamical systems, control theory, machine
-learning and statistics. I combine biological understanding of the brain with mathematical models of dynamical systems.
-I also utilize machine learning and statistical models to answer relevant hypothesis-driven questions. I combine these
-approaches with neuroimaging data analyses of T1 MRI and CT data to analyze the anatomical spatiotemporal dynamics
-present in epileptic neuronal networks. My research interests are broadly in the intersection areas of neuroscience,
-machine learning and statistics, control theory and dynamical systems. I am also extremely passionate about open-source
+My research interests are broadly in the intersection areas of neuroscience,
+statistical machine learning, causal inference, control theory and dynamical systems. I am also extremely passionate about open-source
 everything.
+
+## Research Work
+
+Currently, I am a Postdoctoral Research Scientist at Columbia University in the Causal Artificial Intelligence Lab, directed by Dr. Elias Bareinboim. I am an [NSF-funded Computing Innovation Research Fellow](https://cifellows2021.org/2021-class/).
+
+I did my PhD in biomedical engineering, specializing in computational neuroscience and machine learning
+at Johns Hopkins University. I worked with Dr. Sridevi V. Sarma in
+the [Neuromedical Control Systems group](http://sarmalab.icm.jhu.edu/). I also jointly obtained a MS in Applied
+Mathematics and Statistics with a focus in statistical learning theory, optimization and matrix analysis. My thesis work
+focused on developing algorithms in the context of seizure localization in drug-resistant epilepsy patients.
+Specifically, I analyzed multivariate time-series intracranial EEG data using dynamical systems, control theory, machine
+learning and statistics. I combined biological understanding of the brain with mathematical models of dynamical systems.
+I also utilized machine learning and statistical models to answer relevant hypothesis-driven questions. I combined these
+approaches with neuroimaging data analyses of T1 MRI and CT data to analyze the anatomical spatiotemporal dynamics
+present in epileptic neuronal networks. 
 
 My interest in engineering and medicine started at UCSD, where I graduated in 2015 with a double major in Bioengineering
 and Mathematics. It was there under the guidance of many great faculty, such
@@ -56,14 +60,15 @@ called [EverydayBME](https://www.everydaybme.com/).
 ## Personal Background
 
 I'm originally from Los Angeles, CA and consider myself a true CA native even though I wasn't born there. I have a range
-of hobbies, including, but not limited to: running, gymming (weight lifting), reading, hacking, traveling and
-photography.
+of hobbies, including, but not limited to: running, gymming (weight lifting), reading, hacking, traveling and photography.
 
 ## Technical/Soft Skills
 
 As an engineer, I consider myself an expert in Matlab and Python, being able to work with Numpy, Pandas, Scipy,
-Keras/Tensorflow, Pytorch and more. I am familiar with Bash, Javascript, HTML, CSS, C/C++, MongoDB and SQL. I have
-experience with Django, Pelican web frameworks. I like building stuff with Arduino, and Raspberry Pi; I've made a
+Keras/Tensorflow, Pytorch and more. I am skilled with Cython for optimizing speed in Python. I am familiar with Bash, Javascript, HTML, CSS, C/C++, MongoDB and SQL. I have
+experience with Django, Pelican web frameworks. 
+
+I like building stuff with Arduino, and Raspberry Pi; I've made a
 self-driving toy car using an ultrasound sensor and setup a hacked-version of Alexa using Raspberry Pi. As a data
 analyst, I have experience with PBS/SLURM scheduling systems and GNU parallel.
 

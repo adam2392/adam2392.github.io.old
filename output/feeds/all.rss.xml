@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Adam Li's blog</title><link>/</link><description></description><lastBuildDate>Tue, 02 Feb 2021 00:00:00 -0500</lastBuildDate><item><title>Writing an Academic Journal Paper</title><link>/blog/2021/02/writing-journal-papers/</link><description>&lt;h1&gt;Writing Academic Journal Papers&lt;/h1&gt;
+<rss version="2.0"><channel><title>Adam Li's blog</title><link>/</link><description></description><lastBuildDate>Sun, 02 Jan 2022 00:00:00 -0500</lastBuildDate><item><title>Personal Goals - 2022</title><link>/blog/2022/01/goals-2022/</link><description>&lt;h1&gt;Summary of 2021&lt;/h1&gt;
+&lt;p&gt;Maybe it's because I'm getting older, or maybe it's because of Covid, but the years have been passing by faster and faster. There's a lot to be thankful for this year, especially given the amount of different transitions happening.&lt;/p&gt;
+&lt;p&gt;In terms of trips, I started out with a Vermont skiing trip, which turned into quite a memory when the power went out for approximately 8 hours. We had to burn firewood to keep warm and melt snow to water in order to flush a toilet. Sarah took me on a cabin trip in Severna Park, Maryland, where we stayed at a beautiful AirBnB. During the summer, we also spent a lot of time traveling. First off, we went to Yosemite with Sarah's family, which was awesome. We hiked upper Yosemite Falls, a grueling 3000 feet elevation over 7 miles. We then went to Portland for Sarah's birthday. I went to Miami to celebrate my buddy's Bachelor party and then went back to Baltimore. Afterwards, Sarah and I went back to California, going up the 101 from Thousand Oaks, Santa Barbara, Morro Bay, Monterey all the way to the Bay Area for my friend's wedding. Going back to the east coast, I made the final move into NYC. Throughout the rest of the year, Sarah and I went on a few more trips: Chicago to see Porter Robinson, and then Portugal, going through Lisbon and Porto. To top off the new years, we celebrated in New Orleans.&lt;/p&gt;
+&lt;p&gt;Professionally, I had a lot to celebrate this year. My main PhD study was officially published in Nature Neuroscience, and moreover it was featured as the cover of the October Issue. I took a final course in constrained optimization and received my Master's degree in Applied Mathematics &amp;amp; Statistics. I applied for and got the NSF Computing Innovation Fellowship, which secured my postdoctoral research funding for two years. I also made the move to Columbia Unviersity to begin working with Dr. Elias Bareinboim on causal inference.&lt;/p&gt;
+&lt;p&gt;I've also been an active contributor in open-source, specifically MNE-BIDS, MNE-Python and MNE-Connectivity. I was accepted into the Google Summer of Code 2021 to work on MNE-Connectivity, which ported over the connectivity analysis functions from MNE-Python. As a result of my contributions, the core developers invited me to join the core dev team and the steering council. I also initiated conversations with scikit-learn core developer team to try to bring oblique trees into the scikit-learn codebase, which will probably lead to a multi-year effort due to the complexity and size of the scikit-learn codebase.&lt;/p&gt;
+&lt;p&gt;I'm excited for this year because I'll be turning 30 and starting a new chapter in NYC and Columbia University. I'll be attempting to obtain a tenure-track faculty position, while studying causal inference as a postdoc.&lt;/p&gt;
+&lt;h2&gt;Old 2021 Goals:&lt;/h2&gt;
+&lt;h2&gt;1. Health&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[X] Continue to do yoga 5 times/week for at least 5-10 minutes per day.&lt;/li&gt;
+&lt;li&gt;[X] Continue running at least 10 miles/week (1-4 miles per day).&lt;/li&gt;
+&lt;li&gt;[X] Begin learning how to cook vegetable only dishes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. Professional&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[X] SickKids dataset&lt;/li&gt;
+&lt;li&gt;[ ] Theory of epileptogenesis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;3. Outreach / Societal Impact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Volunteer at least once/month&lt;/li&gt;
+&lt;li&gt;[X] Be more mindful of re-using things (e.g. plastic, etc.). Aim to re-use things until they are broken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2022 Goals:&lt;/h2&gt;
+&lt;h2&gt;0. Communal with Partner&lt;/h2&gt;
+&lt;p&gt;This year, Sarah and I decided to set a few goals together that we can work towards both on our own, but also collectively.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Taking more photos. I want enough photos of awesome moments, so that there's a collage of photos per month (can post on IG, or some other blog form to store the photo collection)&lt;/li&gt;
+&lt;li&gt;[ ] Hanging out with someone new once a month&lt;/li&gt;
+&lt;li&gt;[ ] Working out in the morning (i.e. before 9AM) 3 times per week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;1. Health&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Keep VO2 max on Apple Watch 46 or above. Aim for 47, or 48. This is the maximum volume of VO2, which is estimated on your Apple Watch. If I can hit 47, or 48 while I am in my 30's, then I'll have a high degree of cardio fitness. This will probably require me to run and swim more often.&lt;/li&gt;
+&lt;li&gt;[ ] Lose 10 lbs, or get a 6-pack. While weight and body fat isn't an indicator of health, it's an easily trackable metric that can let me know if I am eating too much, or excercising too little.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. Professional&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Finish a PR into scikit-learn for oblique trees.&lt;/li&gt;
+&lt;li&gt;[ ] Write JOSS paper for mne-connectivity&lt;/li&gt;
+&lt;li&gt;[ ] Write one paper with causal inference.&lt;/li&gt;
+&lt;li&gt;[ ] Try to code one dapp on Algorand blockchain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;3. Misc. / Outreach / Societal Impact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Schedule an EverydayBME trip if Covid ends, possibly to Southeast Asia, China, or South America.&lt;/li&gt;
+&lt;li&gt;[ ] Schedule 1-2 Korean classes per month through italkie (https://www.italki.com/i/ref/bDdDHD?hl=en).&lt;/li&gt;
+&lt;li&gt;[ ] Get back into the habit of reading books, instead of going on Netflix. Read 3-5 books over the year.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Sun, 02 Jan 2022 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:None,2022-01-02:/blog/2022/01/goals-2022/</guid><category>Personal</category><category>personal</category><category>goals</category></item><item><title>Writing an Academic Journal Paper</title><link>/blog/2021/02/writing-journal-papers/</link><description>&lt;h1&gt;Writing Academic Journal Papers&lt;/h1&gt;
 &lt;p&gt;Academic journal papers (preprint and peer-reviewed published) are the lifeblood of scientific researchers. These
 samples of writing describe pieces of scientific work in a certain sub-field. For example, it might describe experiments
 demonstrating the mechanisms of action to generate an action potential, or a cohort study of epilepsy patients that
@@ -471,7 +519,7 @@ like to publish a few more projects:&lt;/p&gt;
 &lt;li&gt;[ ] SickKids dataset&lt;/li&gt;
 &lt;li&gt;[ ] Theory of epileptogenesis&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;4. Outreach / Societal Impact&lt;/h2&gt;
+&lt;h2&gt;3. Outreach / Societal Impact&lt;/h2&gt;
 &lt;p&gt;This year I would also like to dedicate more time to outreach. I think there's 
 too often change that could be done at the local volunteer level that isn't because 
 of passiveness.&lt;/p&gt;
