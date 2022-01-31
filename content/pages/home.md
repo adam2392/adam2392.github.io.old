@@ -3,7 +3,7 @@ status: hidden
 URL:
 save_as: index.html
 
-![Adam Li](./images/adam.JPG){width="800" height="600" style="display: block; margin: 0 auto"}
+![Adam Li](./images/adam.JPG){style="display: block; margin: 0 auto"}
 
 # About Me
 
