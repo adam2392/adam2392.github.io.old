@@ -15,7 +15,7 @@ everything.
 
 ## Research Work
 
-Currently, I am a Postdoctoral Research Scientist at Columbia University in the Causal Artificial Intelligence Lab, directed by Dr. Elias Bareinboim. I am an [NSF-funded Computing Innovation Research Fellow](https://cifellows2021.org/2021-class/).
+Currently, I am a Postdoctoral Research Scientist at Columbia University in the Causal Artificial Intelligence Lab, directed by [Dr. Elias Bareinboim](http://causalai.net). I am an [NSF-funded Computing Innovation Research Fellow](https://cifellows2021.org/2021-class/).
 
 I did my PhD in biomedical engineering, specializing in computational neuroscience and machine learning
 at Johns Hopkins University. I worked with Dr. Sridevi V. Sarma in
