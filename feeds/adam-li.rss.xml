@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Adam Li's blog - Adam Li</title><link>/</link><description></description><lastBuildDate>Wed, 04 May 2022 00:00:00 -0400</lastBuildDate><item><title>Getting started with git for science research</title><link>/blog/2022/05/setup-git/</link><description>&lt;h1&gt;Why Git?&lt;/h1&gt;
+<rss version="2.0"><channel><title>Adam Li's blog - Adam Li</title><link>/</link><description></description><lastBuildDate>Wed, 04 May 2022 00:00:00 -0400</lastBuildDate><item><title>Graphs and their usage in causality</title><link>/blog/2022/05/graphs-causality/</link><description>&lt;h1&gt;What are graphs and what do they imply?&lt;/h1&gt;
+&lt;p&gt;Graphs are mathematical objects defined with a tuple &lt;code&gt;(V, E)&lt;/code&gt;, where V is a set of vertices and E are a set of edges connecting said vertices. For example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$$G = (\{X, Y, Z\}, \{(X, Y), (Y, Z)\})$$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;is a graph. Graphs as their name suggest are "graphical" representations of things that have "relationships" with other things. The graphical aspect is nice because we can easily draw the graph in question as such.&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(&lt;div class="math"&gt;\begin{tikzpicture}\node (v0) at (-2.20,1.52) {A};
+\node (v1) at (1.40,-1.62) {D};
+\node (v2) at (-0.512,-0.127) {E};
+\draw [-&amp;gt;] (v0) edge (v2);
+\draw [-&amp;gt;,&amp;lt;-] (v1) edge (v2);\end{tikzpicture}&lt;/div&gt;\)&lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Recommended Pipeline&lt;/h1&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 04 May 2022 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2022-05-04:/blog/2022/05/graphs-causality/</guid><category>causality</category><category>causality</category><category>machine learning</category></item><item><title>Getting started with git for science research</title><link>/blog/2022/05/setup-git/</link><description>&lt;h1&gt;Why Git?&lt;/h1&gt;
 &lt;h1&gt;Recommended Pipeline&lt;/h1&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Adam Li</dc:creator><pubDate>Wed, 04 May 2022 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2022-05-04:/blog/2022/05/setup-git/</guid><category>Coding</category><category>virtualenv</category><category>python</category><category>git</category></item><item><title>Getting started with Computational Research with Python (for researchers, or generally)</title><link>/blog/2022/05/setup-python/</link><description>&lt;h1&gt;Why Python?&lt;/h1&gt;
 &lt;p&gt;Python is easy to use, easy to read and does not require the user to actually "type" all variables beforehand. "Typing" all variables means explicitly writing in your program that a variable is an "integer", or a "character", or something more exotic. This makes Python technically "slower" than something like C++, but nowadays that's not a huge concern for most applications.&lt;/p&gt;
 &lt;p&gt;Python is also super easy to install and work with assuming you have a setup correctly. That is what this blog post is devoted to!&lt;/p&gt;
