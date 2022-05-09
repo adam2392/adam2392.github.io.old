@@ -100,6 +100,8 @@ MENUITEMS = (("Blog", "/categories.html"),
 #     }
 # }
 
+# for latex and pelican-render-math plugin
+
 """ SOCIAL MEDIA SECTION """
 # Social widget
 GITHUB_URL = "https://github.com/adam2392"
