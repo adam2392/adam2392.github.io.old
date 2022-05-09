@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam Li's blog - Coding</title><link href="/" rel="alternate"></link><link href="/feeds/coding.atom.xml" rel="self"></link><id>/</id><updated>2018-06-10T00:00:00-04:00</updated><entry><title>Setting Up ERC Standard Tokens</title><link href="/blog/2018/06/setup-erc-token/" rel="alternate"></link><published>2018-06-10T00:00:00-04:00</published><updated>2018-06-10T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2018-06-10:/blog/2018/06/setup-erc-token/</id><summary type="html">&lt;p&gt;A short walkthrough of setting up an ethereum token.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Getting Setup with Ethereum&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam Li's blog - Coding</title><link href="/" rel="alternate"></link><link href="/feeds/coding.atom.xml" rel="self"></link><id>/</id><updated>2022-05-04T00:00:00-04:00</updated><entry><title>Getting started with git for science research</title><link href="/blog/2022/05/setup-git/" rel="alternate"></link><published>2022-05-04T00:00:00-04:00</published><updated>2022-05-04T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2022-05-04:/blog/2022/05/setup-git/</id><summary type="html">&lt;p&gt;A short walkthrough of setting up Git for your science projects.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Why Git?&lt;/h1&gt;
+&lt;h1&gt;Recommended Pipeline&lt;/h1&gt;</content><category term="Coding"></category><category term="virtualenv"></category><category term="python"></category><category term="git"></category></entry><entry><title>Getting started with Computational Research with Python (for researchers, or generally)</title><link href="/blog/2022/05/setup-python/" rel="alternate"></link><published>2022-05-04T00:00:00-04:00</published><updated>2022-05-04T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2022-05-04:/blog/2022/05/setup-python/</id><summary type="html">&lt;p&gt;A short walkthrough of setting up for Python development.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Why Python?&lt;/h1&gt;
+&lt;p&gt;Python is easy to use, easy to read and does not require the user to actually "type" all variables beforehand. "Typing" all variables means explicitly writing in your program that a variable is an "integer", or a "character", or something more exotic. This makes Python technically "slower" than something like C++, but nowadays that's not a huge concern for most applications.&lt;/p&gt;
+&lt;p&gt;Python is also super easy to install and work with assuming you have a setup correctly. That is what this blog post is devoted to!&lt;/p&gt;
+&lt;h1&gt;Basic Command-Line Actions&lt;/h1&gt;
+&lt;p&gt;Some people find programming overwhelming because sometimes you need to use the &lt;a href="https://www.makeuseof.com/tag/beginners-guide-mac-terminal/"&gt;terminal&lt;/a&gt;. In reality, one only needs to know a few basic commands to get started! You can google everything else along the way. Open up your terminal and you can play around with the following commands:&lt;/p&gt;
+&lt;h2&gt;Querying the current directory&lt;/h2&gt;
+&lt;p&gt;To see what directory you are in:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;pwd&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt; &lt;span class="k"&gt;output&lt;/span&gt; &lt;span class="n"&gt;says&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;Documents&lt;/span&gt; &lt;span class="n"&gt;folder&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;adam2392&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Documents&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want to list all the files in your current directory:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ls&lt;/span&gt; 
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="k"&gt;For&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt; &lt;span class="n"&gt;have&lt;/span&gt; &lt;span class="n"&gt;two&lt;/span&gt; &lt;span class="n"&gt;things&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="k"&gt;current&lt;/span&gt; &lt;span class="n"&gt;directory&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Zoom&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;test_data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Moving around your computer&lt;/h2&gt;
+&lt;p&gt;To go into a folder within your current directory:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;cd &amp;lt;directory name&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;For example, I might do &lt;code&gt;cd Zoom&lt;/code&gt; to go into the &lt;code&gt;Zoom/&lt;/code&gt; folder inside my Documents directory.&lt;/p&gt;
+&lt;p&gt;To change directories and move one directory up.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="p"&gt;..&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;now&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="n"&gt;pwd&lt;/span&gt; &lt;span class="n"&gt;again&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;span class="n"&gt;pwd&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;one&lt;/span&gt; &lt;span class="n"&gt;directory&lt;/span&gt; &lt;span class="k"&gt;level&lt;/span&gt; &lt;span class="n"&gt;higher&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;adam2392&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In some cases, you want to get back to your root directory, so this is useful:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;
+&lt;span class="n"&gt;pwd&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt; &lt;span class="n"&gt;directory&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;adam2392&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And... that's probably all you need to know to move around your file system! The rest you can google and search stackoverflow.com&lt;/p&gt;
+&lt;h1&gt;Installing Python (I recommend Conda for first-time users)&lt;/h1&gt;
+&lt;p&gt;Okay, now you're convinced that Python is a great tool to program in and do research with. When you use a Mac, or Ubuntu system, a basic Python version comes pre-installed usually! You can use your terminal to do basic command-line actions.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;which&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt; &lt;span class="k"&gt;output&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;might&lt;/span&gt; &lt;span class="n"&gt;see&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt; &lt;span class="n"&gt;your&lt;/span&gt; &lt;span class="n"&gt;terminal&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;adam2392&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Virtual Environments (aka Managing Python packages for different projects)&lt;/h2&gt;
+&lt;p&gt;Now, in projects, you generally will want to use what's known as a "virtual environment". This is just a fancy term for installing Python separately for different projects. The reason you want to do so is because there are many 3rd party libraries that you might want to install, which can possibly clash. This helps keep a separately managed set of Python packages per project. You can do this by installing &lt;a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html"&gt;conda&lt;/a&gt;. Conda is a package-manager that handles all this for you and provides some command-line tools for you to install things!&lt;/p&gt;
+&lt;p&gt;You can follow the above link to install conda. If you have Mac, you can easily install it using &lt;a href="https://formulae.brew.sh/cask/miniconda"&gt;Homebrew&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you've install conda, you should be able to restart your terminal and type in the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="c1"&gt;--version&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt; &lt;span class="n"&gt;have&lt;/span&gt; &lt;span class="n"&gt;installed&lt;/span&gt; &lt;span class="k"&gt;version&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Setting up your virtual environment&lt;/h2&gt;
+&lt;p&gt;When setting up a virtual environment, you can use the command-line terminal again, now with the &lt;code&gt;conda&lt;/code&gt; software installed, you can use &lt;code&gt;conda&lt;/code&gt; commands.&lt;/p&gt;
+&lt;p&gt;You will first create a new environment as follows:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;# conda create -n &amp;lt;name of the environment you want to create&amp;gt; python=&amp;lt;optionally specify the python version&amp;gt;&lt;/span&gt;
+&lt;span class="err"&gt;conda create -n my_project_name python=3.9&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Once you follow the prompt and the environment is created, you can "activate" it, so that way all Python commands occur through this virtual environment.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;activate&lt;/span&gt; &lt;span class="n"&gt;my_project_name&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="n"&gt;command&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;now&lt;/span&gt; &lt;span class="k"&gt;show&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="k"&gt;where&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="k"&gt;called&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt;
+&lt;span class="n"&gt;which&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="k"&gt;output&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;incdicating&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;virtual&lt;/span&gt; &lt;span class="n"&gt;environment&lt;/span&gt; &lt;span class="n"&gt;named&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;causalx64&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;adam2392&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;miniconda3&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;envs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;causalx64&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can install additional packages now! For example, most scientists using Python
+will need &lt;code&gt;numpy&lt;/code&gt; and &lt;code&gt;scipy&lt;/code&gt; for crunching linear algebra.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;within&lt;/span&gt; &lt;span class="n"&gt;your&lt;/span&gt; &lt;span class="n"&gt;virtual&lt;/span&gt; &lt;span class="n"&gt;environment&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;already&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;activate&lt;/span&gt; &lt;span class="n"&gt;my_project_name&lt;/span&gt;
+
+&lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="n"&gt;installs&lt;/span&gt; &lt;span class="n"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;and&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt; &lt;span class="n"&gt;within&lt;/span&gt; &lt;span class="n"&gt;your&lt;/span&gt; &lt;span class="n"&gt;virtual&lt;/span&gt; &lt;span class="n"&gt;environment&lt;/span&gt;
+&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;numpy&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Congrats! Now you can create virtual environments, activate it, and then install packages for the sake of managing software for your Python projects!&lt;/p&gt;
+&lt;h1&gt;Setting up where you code (VSCode)&lt;/h1&gt;
+&lt;p&gt;Now that you've worked on the terminal, you're probably tired of reading and copying and pasting commands. Well, the next step is the last one before you get coding!&lt;/p&gt;
+&lt;p&gt;I advocate for the usage of a code-editor application that is solely designed and built to help people write and test code. It's 2022 and I think &lt;a href="https://code.visualstudio.com/download"&gt;Visual Studio Code (VSCode)&lt;/a&gt; is the best free code editor on the market. Follow the link to download VSCode.&lt;/p&gt;
+&lt;p&gt;Once you have installed VSCode, you can link the "Python interpreter" to your earlier setup Python virtual environment (managed by conda). This allows VSCode to "run Python" through your specific Python virtual environment. You can then run Python files directly inside VSCode and install packages separately using your conda environment!&lt;/p&gt;
+&lt;p&gt;Follow this &lt;a href="https://code.visualstudio.com/docs/python/environments"&gt;link&lt;/a&gt; to see how.&lt;/p&gt;
+&lt;p&gt;Now that you have VSCode setup, you can start coding!&lt;/p&gt;
+&lt;h1&gt;Extra Notes&lt;/h1&gt;
+&lt;p&gt;I highly suggest you also start learning how to perform version control. See &lt;a href=""&gt;version control post&lt;/a&gt; to see a good framework on how.&lt;/p&gt;</content><category term="Coding"></category><category term="virtualenv"></category><category term="python"></category></entry><entry><title>Setting Up ERC Standard Tokens</title><link href="/blog/2018/06/setup-erc-token/" rel="alternate"></link><published>2018-06-10T00:00:00-04:00</published><updated>2018-06-10T00:00:00-04:00</updated><author><name>Adam Li</name></author><id>tag:None,2018-06-10:/blog/2018/06/setup-erc-token/</id><summary type="html">&lt;p&gt;A short walkthrough of setting up an ethereum token.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Getting Setup with Ethereum&lt;/h1&gt;
 &lt;p&gt;A summary of walking through Ethereum in 2018.&lt;/p&gt;
 &lt;h1&gt;Installation&lt;/h1&gt;
 &lt;p&gt;The following packages need to be installed for a test time environment:

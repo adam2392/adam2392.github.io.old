@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Getting started with Computational Research with Python (for researchers, or generally) - Adam Li's blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/images/brain.jpg" rel="icon">
+
+<link rel="canonical" href="/blog/2022/05/setup-python/">
+
+        <meta name="author" content="Adam Li" />
+        <meta name="keywords" content="virtualenv,python" />
+        <meta name="description" content="A short walkthrough of setting up for Python development." />
+
+        <meta property="og:site_name" content="Adam Li's blog" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Getting started with Computational Research with Python (for researchers, or generally)"/>
+        <meta property="og:url" content="/blog/2022/05/setup-python/"/>
+        <meta property="og:description" content="A short walkthrough of setting up for Python development."/>
+        <meta property="article:published_time" content="2022-05-04" />
+            <meta property="article:section" content="Coding" />
+            <meta property="article:tag" content="virtualenv" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:author" content="Adam Li" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Adam Li's blog ATOM Feed"/>
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Adam Li's blog RSS Feed"/>
+        <link href="/feeds/coding.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Adam Li's blog Coding ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Adam Li's blog            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/categories.html">Blog</a></li>
+                    <li><a href="/pdfs/Personal_CV.pdf">Curriculum Vitae</a></li>
+                         <li><a href="/gallery/">
+                             Gallery
+                          </a></li>
+                         <li><a href="/openscience/">
+                             Open Science
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/blog/2022/05/setup-python/"
+                       rel="bookmark"
+                       title="Permalink to Getting started with Computational Research with Python (for researchers, or generally)">
+                        Getting started with Computational Research with Python (for researchers, or generally)
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2022-05-04T00:00:00-04:00"> Wed 04 May 2022</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/virtualenv.html">virtualenv</a>
+        /
+	<a href="/tag/python.html">python</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>Why Python?</h1>
+<p>Python is easy to use, easy to read and does not require the user to actually "type" all variables beforehand. "Typing" all variables means explicitly writing in your program that a variable is an "integer", or a "character", or something more exotic. This makes Python technically "slower" than something like C++, but nowadays that's not a huge concern for most applications.</p>
+<p>Python is also super easy to install and work with assuming you have a setup correctly. That is what this blog post is devoted to!</p>
+<h1>Basic Command-Line Actions</h1>
+<p>Some people find programming overwhelming because sometimes you need to use the <a href="https://www.makeuseof.com/tag/beginners-guide-mac-terminal/">terminal</a>. In reality, one only needs to know a few basic commands to get started! You can google everything else along the way. Open up your terminal and you can play around with the following commands:</p>
+<h2>Querying the current directory</h2>
+<p>To see what directory you are in:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pwd</span>
+
+<span class="o">#</span> <span class="n">example</span> <span class="k">output</span> <span class="n">says</span> <span class="n">I</span><span class="err">&#39;</span><span class="n">m</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Documents</span> <span class="n">folder</span>
+<span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">adam2392</span><span class="o">/</span><span class="n">Documents</span><span class="o">/</span>
+</code></pre></div>
+
+<p>If you want to list all the files in your current directory:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ls</span> 
+
+<span class="o">#</span> <span class="k">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">I</span> <span class="n">have</span> <span class="n">two</span> <span class="n">things</span> <span class="k">in</span> <span class="n">my</span> <span class="k">current</span> <span class="n">directory</span>
+<span class="o">&gt;</span> <span class="n">Zoom</span>
+<span class="o">&gt;</span> <span class="n">test_data</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+
+<h2>Moving around your computer</h2>
+<p>To go into a folder within your current directory:</p>
+<div class="highlight"><pre><span></span><code><span class="err">cd &lt;directory name&gt;</span>
+</code></pre></div>
+
+<p>For example, I might do <code>cd Zoom</code> to go into the <code>Zoom/</code> folder inside my Documents directory.</p>
+<p>To change directories and move one directory up.</p>
+<div class="highlight"><pre><span></span><code><span class="n">cd</span> <span class="p">..</span>
+
+<span class="o">#</span> <span class="n">now</span> <span class="k">if</span> <span class="n">you</span> <span class="n">run</span> <span class="n">pwd</span> <span class="n">again</span><span class="p">...</span>
+<span class="n">pwd</span>
+
+<span class="o">#</span> <span class="n">you</span> <span class="n">should</span> <span class="n">be</span> <span class="n">one</span> <span class="n">directory</span> <span class="k">level</span> <span class="n">higher</span>
+<span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">adam2392</span><span class="o">/</span>
+</code></pre></div>
+
+<p>In some cases, you want to get back to your root directory, so this is useful:</p>
+<div class="highlight"><pre><span></span><code><span class="n">cd</span> <span class="o">~</span>
+<span class="n">pwd</span>
+
+<span class="o">#</span> <span class="n">this</span> <span class="k">is</span> <span class="n">my</span> <span class="n">root</span> <span class="n">directory</span>
+<span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">adam2392</span>
+</code></pre></div>
+
+<p>And... that's probably all you need to know to move around your file system! The rest you can google and search stackoverflow.com</p>
+<h1>Installing Python (I recommend Conda for first-time users)</h1>
+<p>Okay, now you're convinced that Python is a great tool to program in and do research with. When you use a Mac, or Ubuntu system, a basic Python version comes pre-installed usually! You can use your terminal to do basic command-line actions.</p>
+<div class="highlight"><pre><span></span><code><span class="n">which</span> <span class="n">python</span>
+
+<span class="o">#</span> <span class="n">example</span> <span class="k">output</span> <span class="n">you</span> <span class="n">might</span> <span class="n">see</span> <span class="k">on</span> <span class="n">your</span> <span class="n">terminal</span>
+<span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">adam2392</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">python</span>
+</code></pre></div>
+
+<h2>Virtual Environments (aka Managing Python packages for different projects)</h2>
+<p>Now, in projects, you generally will want to use what's known as a "virtual environment". This is just a fancy term for installing Python separately for different projects. The reason you want to do so is because there are many 3rd party libraries that you might want to install, which can possibly clash. This helps keep a separately managed set of Python packages per project. You can do this by installing <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">conda</a>. Conda is a package-manager that handles all this for you and provides some command-line tools for you to install things!</p>
+<p>You can follow the above link to install conda. If you have Mac, you can easily install it using <a href="https://formulae.brew.sh/cask/miniconda">Homebrew</a>.</p>
+<p>Once you've install conda, you should be able to restart your terminal and type in the following:</p>
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="c1">--version</span>
+
+<span class="o">#</span> <span class="k">for</span> <span class="n">example</span><span class="p">,</span> <span class="n">I</span> <span class="n">have</span> <span class="n">installed</span> <span class="k">version</span> <span class="mi">4</span><span class="p">.</span><span class="mi">12</span><span class="p">.</span><span class="mi">0</span>
+<span class="o">&gt;</span> <span class="n">conda</span> <span class="mi">4</span><span class="p">.</span><span class="mi">12</span><span class="p">.</span><span class="mi">0</span>
+</code></pre></div>
+
+<h2>Setting up your virtual environment</h2>
+<p>When setting up a virtual environment, you can use the command-line terminal again, now with the <code>conda</code> software installed, you can use <code>conda</code> commands.</p>
+<p>You will first create a new environment as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="err"># conda create -n &lt;name of the environment you want to create&gt; python=&lt;optionally specify the python version&gt;</span>
+<span class="err">conda create -n my_project_name python=3.9</span>
+</code></pre></div>
+
+<p>Once you follow the prompt and the environment is created, you can "activate" it, so that way all Python commands occur through this virtual environment.</p>
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">activate</span> <span class="n">my_project_name</span>
+
+<span class="o">#</span> <span class="n">this</span> <span class="n">command</span> <span class="n">should</span> <span class="n">now</span> <span class="k">show</span> <span class="n">you</span> <span class="k">where</span> <span class="n">the</span> <span class="n">python</span> <span class="k">is</span> <span class="k">called</span> <span class="k">from</span>
+<span class="n">which</span> <span class="n">python</span>
+<span class="o">#</span> <span class="k">for</span> <span class="n">example</span><span class="p">,</span> <span class="n">my</span> <span class="k">output</span> <span class="k">is</span><span class="p">,</span> <span class="n">incdicating</span> <span class="n">I</span><span class="err">&#39;</span><span class="n">m</span> <span class="k">using</span> <span class="n">python</span>
+<span class="o">#</span> <span class="k">from</span> <span class="n">the</span> <span class="n">virtual</span> <span class="n">environment</span> <span class="n">named</span> <span class="ss">&quot;causalx64&quot;</span>
+<span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">adam2392</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">causalx64</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">python</span>
+</code></pre></div>
+
+<p>You can install additional packages now! For example, most scientists using Python
+will need <code>numpy</code> and <code>scipy</code> for crunching linear algebra.</p>
+<div class="highlight"><pre><span></span><code><span class="o">#</span> <span class="n">you</span> <span class="n">should</span> <span class="n">be</span> <span class="n">within</span> <span class="n">your</span> <span class="n">virtual</span> <span class="n">environment</span> <span class="k">if</span> <span class="k">not</span> <span class="n">already</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">my_project_name</span>
+
+<span class="o">#</span> <span class="n">installs</span> <span class="n">numpy</span> <span class="k">and</span> <span class="n">scipy</span> <span class="n">within</span> <span class="n">your</span> <span class="n">virtual</span> <span class="n">environment</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span> <span class="n">scipy</span>
+</code></pre></div>
+
+<p>Congrats! Now you can create virtual environments, activate it, and then install packages for the sake of managing software for your Python projects!</p>
+<h1>Setting up where you code (VSCode)</h1>
+<p>Now that you've worked on the terminal, you're probably tired of reading and copying and pasting commands. Well, the next step is the last one before you get coding!</p>
+<p>I advocate for the usage of a code-editor application that is solely designed and built to help people write and test code. It's 2022 and I think <a href="https://code.visualstudio.com/download">Visual Studio Code (VSCode)</a> is the best free code editor on the market. Follow the link to download VSCode.</p>
+<p>Once you have installed VSCode, you can link the "Python interpreter" to your earlier setup Python virtual environment (managed by conda). This allows VSCode to "run Python" through your specific Python virtual environment. You can then run Python files directly inside VSCode and install packages separately using your conda environment!</p>
+<p>Follow this <a href="https://code.visualstudio.com/docs/python/environments">link</a> to see how.</p>
+<p>Now that you have VSCode setup, you can start coding!</p>
+<h1>Extra Notes</h1>
+<p>I highly suggest you also start learning how to perform version control. See <a href="">version control post</a> to see a good framework on how.</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/blog/2022/05/setup-git/">Getting started with git for science research</a></li>
+        <li><a href="/blog/2017/06/setup-virtual-env/">Setting Up a Virtual Environment for Python</a></li>
+        <li><a href="/blog/2018/01/setup-singularity/">Setting Up Singularity Containers</a></li>
+        <li><a href="/blog/2017/06/setup-pelican-site/">Setting Up a Pelican Site</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/adam2392"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+    <li class="list-group-item"><a href="https://stackexchange.com/users/4494355/ajl123"><i class="fa fa-stack-overflow fa-lg"></i> stack-overflow</a></li>
+    <li class="list-group-item"><a href="https://github.com/adam2392"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="https://www.linkedin.com/in/adam2392"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+    <li class="list-group-item"><a href="https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en"><i class="fa fa-google-scholar-square fa-lg"></i> google-scholar</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Github -->
+<li class="list-group-item">
+  <h4><i class="fa fa-github fa-lg"></i><span class="icon-label">GitHub Repos</span></h4>
+  <div id="gh_repos">
+    <p class="list-group-item">Status updating...</p>
+  </div>
+</li>
+<!-- End Sidebar/Github -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2022 Adam Li
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+<!-- GitHub JS Code -->
+<script type="text/javascript">
+$(document).ready(function () {
+  if (!window.jXHR) {
+    var jxhr = document.createElement('script');
+    jxhr.type = 'text/javascript';
+    jxhr.src = '/theme/js/jXHR.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(jxhr, s);
+  }
+
+  github.showRepos({
+    user: 'adam2392',
+    count: 3,
+    skip_forks: false,
+    target: '#gh_repos'
+  });
+});
+</script>
+<script src="/theme/js/github.js" type="text/javascript"></script>
+<!-- End GitHub JS Code -->
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-106551801-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
+
+
+</body>
+</html>
