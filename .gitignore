@@ -10,6 +10,7 @@ __pycache__/
 *.npz
 pelican-plugins
 pelican-themes
+.DS_Store
 
 output
 
