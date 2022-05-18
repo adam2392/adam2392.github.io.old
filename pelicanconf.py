@@ -19,12 +19,17 @@ FAVICON = "images/brain.jpg"
 
 # Photo blog settings | https://github.com/getpelican/pelican-plugins/tree/master/images
 PHOTO_LIBRARY = "/Users/adam2392/Documents/adam2392.github.io/content/images/"
-PHOTO_GALLERY = (4288, 2848, 100)  # For images in galleries, maximum width and height, plus JPEG quality
-PHOTO_ARTICLE = (760, 506, 80)  # For images associated with articles, maximum width, height, and quality
-PHOTO_THUMB = (192, 144, 60)  # For thumbnails, maximum width, height, and quality
+# For images in galleries, maximum width and height, plus JPEG quality
+PHOTO_GALLERY = (4288, 2848, 100)
+# For images associated with articles, maximum width, height, and quality
+PHOTO_ARTICLE = (760, 506, 80)
+# For thumbnails, maximum width, height, and quality
+PHOTO_THUMB = (192, 144, 60)
 PHOTO_RESIZE_JOBS = 5  # Number of parallel resize jobs to be run.
-PHOTO_WATERMARK = True  # Adds a watermark to all images in articles and pages. Defaults to using your site name.
-PHOTO_WATERMARK_TEXT = "ADAM LI"  # Allow the user to change the watermark text or remove it completel
+# Adds a watermark to all images in articles and pages. Defaults to using your site name.
+PHOTO_WATERMARK = True
+# Allow the user to change the watermark text or remove it completel
+PHOTO_WATERMARK_TEXT = "ADAM LI"
 PHOTO_EXIF_KEEP = True
 PHOTO_EXIF_REMOVE_GPS = True  # Removes any GPS information from t
 PHOTO_EXIF_COPYRIGHT = "COPYRIGHT"
@@ -82,8 +87,8 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
 MENUITEMS = (("Blog", "/categories.html"),
-            #  ("Timeline", "/archives.html"),
-            #  ("Tags", "/tags.html"),
+             #  ("Timeline", "/archives.html"),
+             #  ("Tags", "/tags.html"),
              ("Curriculum Vitae", "/pdfs/Personal_CV.pdf"),
              # ("Gallery", "/album.html"),
              )
@@ -109,11 +114,13 @@ GITHUB_USER = "adam2392"
 GITHUB_REPO_COUNT = 3
 TWITTER_USERNAME = "adam2392"
 
-SOCIAL = (("twitter", "https://twitter.com/adam2392"),
-          ("stack-overflow", "https://stackexchange.com/users/4494355/ajl123"),
-          ("github", "https://github.com/adam2392"),
-          ("linkedin", "https://www.linkedin.com/in/adam2392"),
-          ("google-scholar", "https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en"))
+SOCIAL = (
+    ("google-scholar", "https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en"),
+    ("twitter", "https://twitter.com/adam2392"),
+    ("stack-overflow", "https://stackexchange.com/users/4494355/ajl123"),
+    ("github", "https://github.com/adam2392"),
+    ("linkedin", "https://www.linkedin.com/in/adam2392"),
+)
 
 DEFAULT_PAGINATION = 5
 

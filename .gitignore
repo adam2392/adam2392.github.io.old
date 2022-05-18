@@ -11,7 +11,7 @@ __pycache__/
 pelican-plugins
 pelican-themes
 .DS_Store
-
+.vscode
 output
 
 # C extensions
