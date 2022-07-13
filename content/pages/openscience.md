@@ -16,10 +16,14 @@ I have also contributed to:
 
 Recently (as of 2021), I am involved in an effort to add oblique trees to [scikit-learn](https://github.com/scikit-learn/scikit-learn), which is tracked via this [Github issue](https://github.com/scikit-learn/scikit-learn/issues/20819).
 
+During my postdoc, I have become involved with [Py-Why](https://github.com/py-why). It is an organization in collaboration with Amazon, Microsoft and IBM on causal inference in Python, covering the entire pipeline from causal discovery, identification, estimation and refutation. I contribute design, ideas and code.
+
 ## Open Data
 
-I have also contribute multiple BIDS-compliant datasets to https://openneuro.org, totaling 105 subjects across multiple publications.
+I have also contributed multiple BIDS-compliant datasets to https://openneuro.org, totaling 105 subjects across multiple publications. Here is a list of contributed datasets and datasets I have helped curate, or collaborated on.
 
 - https://openneuro.org/datasets/ds003029
 - https://openneuro.org/datasets/ds003498
 - https://openneuro.org/datasets/ds003876
+- https://openneuro.org/datasets/ds004178
+- https://openneuro.org/datasets/ds004100
