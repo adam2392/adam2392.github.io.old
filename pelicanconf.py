@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-import os
-import yaml
 from collections import namedtuple
 
 AUTHOR = "Adam Li"
@@ -114,8 +112,13 @@ GITHUB_USER = "adam2392"
 GITHUB_REPO_COUNT = 3
 TWITTER_USERNAME = "adam2392"
 
+# Links in the sidebar: this is not standard, it is for my own modified
+# theme, as it has 3 entries per item:
+# - The link title
+# - The link itself
+# - The icon name on http://fontawesome.io/icons/ after stripping 'fa-'
 SOCIAL = (
-    ("google-scholar", "https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en"),
+    ('google scholar', "https://scholar.google.com/citations?user=KxY17KcAAAAJ&hl=en", 'graduation-cap'),
     ("twitter", "https://twitter.com/adam2392"),
     ("stack-overflow", "https://stackexchange.com/users/4494355/ajl123"),
     ("github", "https://github.com/adam2392"),
