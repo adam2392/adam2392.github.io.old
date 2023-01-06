@@ -10,13 +10,13 @@ Currently, a work-in-progress. If you feel that I'm missing anything, please let
 
 # The goal is REUSE, and LIMIT CONSUMPTION
 
-The overall goal of every single human being (that can afford to do so) should be to drastically reduce their consumption of materials and energy. With that in mind, I won't post things like "recycling plastic water bottles" because most plastic is unable to be recycled more than a few cycles and the goal there should actually be to "reduce any plastic water bottle consumption" [1].
+The overall goal of every single human being (that can afford to do so) should be to drastically reduce their consumption of materials and energy. With that in mind, I won't post things like "recycling plastic water bottles" because most plastic is unable to be recycled more than a few cycles and the goal there should actually be to ["reduce any plastic water bottle consumption"][1].
 
 ## Plastic
 
 ## Metal 
 
-I won't mention commonly recyclable metals, such as soda cans, which typically can still be "recycled for-profit" [1].
+I won't mention commonly recyclable metals, such as soda cans, which typically can still be ["recycled for-profit"][1].
 
 1. Razor blades
     - [Reducing/reusing tips] TBD
@@ -36,7 +36,7 @@ Electronics incur an environmental toll when done at scale. For example, silicon
 
 ### List of options for recycling electronics:
 
-1. `Decluttr <https://decluttr.mention-me.com/m/ol/xr0rv-adam-decluttr>`_ takes in old electronics listed above and gives you cash. Usually this is greater than the resale value from e.g. Apple itself. If they won't take it, remember you can still send it into the manufacturer most likely (e.g. Apple)!
+1. [Decluttr](https://decluttr.mention-me.com/m/ol/xr0rv-adam-decluttr) takes in old electronics listed above and gives you cash. Usually this is greater than the resale value from e.g. Apple itself. If they won't take it, remember you can still send it into the manufacturer most likely (e.g. Apple)!
 
 # References
-[1] [https://www.reuters.com/article/us-environment-plastic-aluminium-insight/plastic-bottles-vs-aluminum-cans-wholl-win-the-global-water-fight-idUSKBN1WW0J5]
+[1]: https://www.reuters.com/article/us-environment-plastic-aluminium-insight/plastic-bottles-vs-aluminum-cans-wholl-win-the-global-water-fight-idUSKBN1WW0J5
