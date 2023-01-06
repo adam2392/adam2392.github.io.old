@@ -97,8 +97,10 @@ This year, Sarah and I decided to set a few goals together that we can work towa
 ## 3. Misc. / Outreach / Societal Impact
 
 - [ ] Schedule 5-6 blood donations this year. As specified above, there are numerous benefits to others (and yourself) for donating blood.
-- [ ] Schedule 1 Chinese speaking class per month through italkie to enhance my vocabulary and phrases during conversation.
-- [ ] Schedule 1-2 Korean classes per month through italkie (https://www.italki.com/i/ref/bDdDHD?hl=en). My goal is to have a basic conversation with the K family by the end of the year.
+- [ ] Donate at least once to Goodwill (note you can get up to a $500 tax credit, so extra incentive for you to donate instead of throwing out stuff!)
+- [ ] Schedule at least 1 Chinese speaking class per month through italkie to enhance my vocabulary and phrases during conversation.
+- [ ] Schedule at least 1-2 Korean classes per month through italkie (https://www.italki.com/i/ref/bDdDHD?hl=en). My goal is to have a basic conversation with the K family by the end of the year.
+- [ ] Maintain a greater than 100 day streak in Duolingo. This goal will enable me to learn better Korean.
 - [ ] Get back into the habit of reading books, instead of going on Netflix. Read 3-5 books over the year.
 
 # References
