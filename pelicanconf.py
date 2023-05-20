@@ -64,7 +64,7 @@ JINJA_ENVIRONMENT = {"extensions": ['jinja2.ext.i18n']}
 PLUGINS = [
     "render_math",
     "related_posts",
-    "images",
+    # "images",
     "pelican_javascript",
     "i18n_subsites",
     "pelican_albums",
