@@ -64,6 +64,9 @@ Adam Li's blog            </a>
             <ul class="nav navbar-nav">
                     <li><a href="/categories.html">Blog</a></li>
                     <li><a href="/pdfs/Personal_CV.pdf">Curriculum Vitae</a></li>
+                         <li><a href="/consulting/">
+                             Consulting
+                          </a></li>
                          <li><a href="/gallery/">
                              Gallery
                           </a></li>
@@ -163,9 +166,9 @@ Adam Li's blog            </a>
 
 <h1>Installation</h1>
 <p>The following packages need to be installed for a test time environment:</p>
-<div class="highlight"><pre><span></span><code><span class="err">brew update</span>
-<span class="err">brew doctor</span>
-<span class="err">brew install postgres</span>
+<div class="highlight"><pre><span></span><code>brew update
+brew doctor
+brew install postgres
 </code></pre></div>
 
 <ul>
@@ -177,20 +180,20 @@ Adam Li's blog            </a>
 <h1>Set Up</h1>
 <h2>1a. Using a LaunchAgent and plist to Launch PostgreSQL on Startup</h2>
 <p>First, you’ll need to create a directory for your LaunchAgents to reside (if the directory doesn’t exist already). LaunchAgents in OS X are simple scripts used by launchd that cause the system to run programs or code during startup.</p>
-<div class="highlight"><pre><span></span><code><span class="err">mkdir -p ~/Library/LaunchAgents</span>
+<div class="highlight"><pre><span></span><code>mkdir -p ~/Library/LaunchAgents
 </code></pre></div>
 
 <p>Now you’ll need to create a symbolic link from the script that actually allows Postgres to run to the LaunchAgents directory. A symbolic link is similar to creating a new copy of a file for use in another directory, but since the link is ‘symbolic’, the link is just a forwarding address: any request made to that symbolic link location is actually “forwarded along” or redirected to where the real file actually resides.</p>
-<div class="highlight"><pre><span></span><code><span class="err">ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents</span>
+<div class="highlight"><pre><span></span><code>ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 </code></pre></div>
 
 <p>Note: Double-check that the command is correct: It should’ve been part of the installation output mentioned above when Homebrew installed Postgres initially.</p>
 <p>Finally, we load the new symbolic linked LaunchAgent file using the launchctl load command, which is specifically what informs the computer to run this script and start Postgres when the computer launches. Again, the exact command to enter for your own installation will be an output during Homebrew’s Postgres installation, but it should look something like this:</p>
-<div class="highlight"><pre><span></span><code><span class="err">launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist</span>
+<div class="highlight"><pre><span></span><code><span class="n">launchctl</span><span class="w"> </span><span class="nb">load</span><span class="w"> </span><span class="o">~/</span><span class="n">Library</span><span class="o">/</span><span class="n">LaunchAgents</span><span class="o">/</span><span class="n">homebrew</span><span class="o">.</span><span class="n">mxcl</span><span class="o">.</span><span class="n">postgresql</span><span class="o">.</span><span class="n">plist</span>
 </code></pre></div>
 
 <h3>1b. Manually Starting PostgreSQL</h3>
-<div class="highlight"><pre><span></span><code><span class="err">postgres -D /usr/local/var/postgres</span>
+<div class="highlight"><pre><span></span><code><span class="n">postgres</span><span class="w"> </span><span class="o">-</span><span class="n">D</span><span class="w"> </span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">postgres</span>
 </code></pre></div>
 
 <h2>2. Initializing Database</h2>
@@ -198,17 +201,17 @@ Adam Li's blog            </a>
 <h2>4.</h2>
 <h3>1c. Use Docker</h3>
 <p>Refer to https://medium.com/@leo_hetsch/local-development-with-go-postgresql-and-elasticsearch-in-docker-61bc8a0d5e66 for a nice little explanation for some common docker installation commands for postgresql and elastic search.</p>
-<div class="highlight"><pre><span></span><code><span class="err">docker-compose -f local.yml build</span>
+<div class="highlight"><pre><span></span><code>docker-compose -f local.yml build
 </code></pre></div>
 
 <p>or </p>
-<div class="highlight"><pre><span></span><code><span class="err">export COMPOSE_FILE=local.yml</span>
-<span class="err">docker-compose up</span>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">COMPOSE_FILE</span><span class="o">=</span><span class="n">local</span><span class="o">.</span><span class="n">yml</span>
+<span class="n">docker</span><span class="o">-</span><span class="n">compose</span><span class="w"> </span><span class="n">up</span>
 </code></pre></div>
 
 <p>Possible / common methods:</p>
-<div class="highlight"><pre><span></span><code><span class="err">docker-compose -f local.yml run --rm django python manage.py migrate</span>
-<span class="err">docker-compose -f local.yml run --rm django python manage.py createsuperuser</span>
+<div class="highlight"><pre><span></span><code>docker-compose -f local.yml run --rm django python manage.py migrate
+docker-compose -f local.yml run --rm django python manage.py createsuperuser
 </code></pre></div>
 
 <p>Since docker is composed of a set of build commands, you should read up on the documentation here:</p>

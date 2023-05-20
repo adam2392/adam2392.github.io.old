@@ -64,6 +64,9 @@ Adam Li's blog            </a>
             <ul class="nav navbar-nav">
                     <li><a href="/categories.html">Blog</a></li>
                     <li><a href="/pdfs/Personal_CV.pdf">Curriculum Vitae</a></li>
+                         <li><a href="/consulting/">
+                             Consulting
+                          </a></li>
                          <li><a href="/gallery/">
                              Gallery
                           </a></li>
@@ -167,36 +170,36 @@ http://mrtrix.readthedocs.io/en/latest/installation/mac_install.html</li>
 <p>First you will want to download FreeSurfer from the following website:
 https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
 Linux:</p>
-<div class="highlight"><pre><span></span><code><span class="n">export</span> <span class="n">FREESURFER_HOME</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="k">local</span><span class="o">/</span><span class="n">freesurfer</span>
-<span class="k">source</span> <span class="err">$</span><span class="n">FREESURFER_HOME</span><span class="o">/</span><span class="n">SetUpFreeSurfer</span><span class="p">.</span><span class="n">sh</span>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">FREESURFER_HOME</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">freesurfer</span>
+<span class="n">source</span><span class="w"> </span><span class="o">$</span><span class="n">FREESURFER_HOME</span><span class="o">/</span><span class="n">SetUpFreeSurfer</span><span class="o">.</span><span class="n">sh</span>
 
-<span class="o">##</span> <span class="n">tcsh</span>
-<span class="n">setenv</span> <span class="n">FREESURFER_HOME</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="k">local</span><span class="o">/</span><span class="n">freesurfer</span>
-<span class="k">source</span> <span class="err">$</span><span class="n">FREESURFER_HOME</span><span class="o">/</span><span class="n">SetUpFreeSurfer</span><span class="p">.</span><span class="n">csh</span>
+<span class="c1">## tcsh</span>
+<span class="n">setenv</span><span class="w"> </span><span class="n">FREESURFER_HOME</span><span class="w"> </span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">freesurfer</span>
+<span class="n">source</span><span class="w"> </span><span class="o">$</span><span class="n">FREESURFER_HOME</span><span class="o">/</span><span class="n">SetUpFreeSurfer</span><span class="o">.</span><span class="n">csh</span>
 </code></pre></div>
 
 <p>Mac:</p>
-<div class="highlight"><pre><span></span><code><span class="err">export FREESURFER_HOME=/Applications/freesurfer</span>
-<span class="err">source $FREESURFER_HOME/SetUpFreeSurfer.sh</span>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">FREESURFER_HOME</span><span class="o">=/</span><span class="n">Applications</span><span class="o">/</span><span class="n">freesurfer</span>
+<span class="n">source</span><span class="w"> </span><span class="o">$</span><span class="n">FREESURFER_HOME</span><span class="o">/</span><span class="n">SetUpFreeSurfer</span><span class="o">.</span><span class="n">sh</span>
 </code></pre></div>
 
 <p>Run those commands within your terminal, or add them to <code>~/.bashrc</code> file to have access to all the command line tools for freeview.</p>
 <p>You will need to setup your own directory where you will hold all your subject data.</p>
-<div class="highlight"><pre><span></span><code><span class="err">export SUBJECTS_DIR=&lt;path to subject data&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">SUBJECTS_DIR</span><span class="o">=&lt;</span><span class="n">path</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">subject</span><span class="w"> </span><span class="n">data</span><span class="o">&gt;</span>
 </code></pre></div>
 
 <p>This will be where you store say patient's MRI/CT scans that you will use to reconstruct the brain.</p>
 <h2>2. Running Through T1-Weighted MRI Images</h2>
 <p>First you want to set your current Subjects directory to where you are working with the raw say .dcm data.</p>
-<div class="highlight"><pre><span></span><code><span class="err">export SUBJECTS_DIR=$PWD</span>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">SUBJECTS_DIR</span><span class="o">=$</span><span class="n">PWD</span>
 </code></pre></div>
 
 <p>There may be an issue where you can't run the functions with your .dcm files. I have no idea why this occurs, but an easy fix is to externally run a dicom to nii converter and pass this type of file instead. Here is a link to a matlab converter that can do this:
 https://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter--nifti-tool-and-viewer</p>
 <p>There are also other resources online.</p>
 <p>Afterwards, you can run the following command(s):</p>
-<div class="highlight"><pre><span></span><code><span class="err">recon-all -i &lt;data&gt;.nii -s &lt;subject_name&gt; -autorecon1</span>
-<span class="err">recon-all -i &lt;data&gt;.nii -s &lt;subject_name&gt; -all</span>
+<div class="highlight"><pre><span></span><code>recon-all -i &lt;data&gt;.nii -s &lt;subject_name&gt; -autorecon1
+recon-all -i &lt;data&gt;.nii -s &lt;subject_name&gt; -all
 </code></pre></div>
 
 <p>This will take a long time! So be prepared to run this on a compute engine that has time.</p>

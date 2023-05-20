@@ -64,6 +64,9 @@ Adam Li's blog            </a>
             <ul class="nav navbar-nav">
                     <li><a href="/categories.html">Blog</a></li>
                     <li><a href="/pdfs/Personal_CV.pdf">Curriculum Vitae</a></li>
+                         <li><a href="/consulting/">
+                             Consulting
+                          </a></li>
                          <li><a href="/gallery/">
                              Gallery
                           </a></li>
@@ -126,34 +129,34 @@ Adam Li's blog            </a>
                 <h1>Installation</h1>
 <h2>1. Conda/Pip Install</h2>
 <p>After getting your virtualenv setup, run 'pip install pelican'. Also include additional packages:</p>
-<div class="highlight"><pre><span></span><code><span class="err">pip install Markdown beautifulsoup4 typogrify Pillow webassets</span>
+<div class="highlight"><pre><span></span><code>pip install Markdown beautifulsoup4 typogrify Pillow webassets
 </code></pre></div>
 
 <p>or</p>
-<div class="highlight"><pre><span></span><code><span class="err">conda create -n website python=python3</span>
-<span class="err">conda install -c conda-forge pelican</span>
-<span class="err">conda install -c conda-forge pyaml </span>
-<span class="err">conda install -c anaconda markdown</span>
-<span class="err">conda install -c anaconda beautifulsoup4 </span>
-<span class="err">conda install -c conda-forge pillow</span>
-<span class="err">conda install -c conda-forge gettext </span>
-<span class="err">conda install -c damianavila82 piexif # for</span>
-<span class="err">pip install pyexif</span>
-<span class="err">conda install -c conda-forge ghp-import</span>
-<span class="err">conda install -c anaconda pil</span>
+<div class="highlight"><pre><span></span><code><span class="nv">conda</span><span class="w"> </span><span class="nv">create</span><span class="w"> </span><span class="o">-</span><span class="nv">n</span><span class="w"> </span><span class="nv">website</span><span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="nv">python3</span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">conda</span><span class="o">-</span><span class="nv">forge</span><span class="w"> </span><span class="nv">pelican</span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">conda</span><span class="o">-</span><span class="nv">forge</span><span class="w"> </span><span class="nv">pyaml</span><span class="w"> </span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">anaconda</span><span class="w"> </span><span class="nv">markdown</span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">anaconda</span><span class="w"> </span><span class="nv">beautifulsoup4</span><span class="w"> </span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">conda</span><span class="o">-</span><span class="nv">forge</span><span class="w"> </span><span class="nv">pillow</span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">conda</span><span class="o">-</span><span class="nv">forge</span><span class="w"> </span><span class="nv">gettext</span><span class="w"> </span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">damianavila82</span><span class="w"> </span><span class="nv">piexif</span><span class="w"> </span>#<span class="w"> </span><span class="k">for</span>
+<span class="nv">pip</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="nv">pyexif</span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">conda</span><span class="o">-</span><span class="nv">forge</span><span class="w"> </span><span class="nv">ghp</span><span class="o">-</span><span class="nv">import</span>
+<span class="nv">conda</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">anaconda</span><span class="w"> </span><span class="nv">pil</span>
 </code></pre></div>
 
 <p>for helping to write in Markdown and writing pretty text.</p>
 <h2>2. Start up pelican:</h2>
 <p>First you will need to create a separate branch that you work on. This branch contains your actual markdown files, which are rendered and then copied OVER to your master branch during the Publishing section. This then renders html using git.</p>
-<div class="highlight"><pre><span></span><code><span class="err">git checkout - &lt;source_branch&gt;</span>
-<span class="err">pelican-quickstart</span>
+<div class="highlight"><pre><span></span><code>git checkout - &lt;source_branch&gt;
+pelican-quickstart
 </code></pre></div>
 
 <p>then go through the directions and create your project.</p>
 <h2>3. Installing common pelican-themes and pelican-plugins:</h2>
-<div class="highlight"><pre><span></span><code><span class="err">git clone --recursive https://github.com/getpelican/pelican-themes</span>
-<span class="err">git clone --recursive https://github.com/getpelican/pelican-plugins</span>
+<div class="highlight"><pre><span></span><code>git clone --recursive https://github.com/getpelican/pelican-themes
+git clone --recursive https://github.com/getpelican/pelican-plugins
 </code></pre></div>
 
 <h1>Choosing Your Hosting Server</h1>
@@ -171,9 +174,9 @@ Adam Li's blog            </a>
 </ol>
 <h1>Installing and Choosing Themes/Plugins</h1>
 <p>You need to install the pelican themes and the pelican plugins, if you want to use the open source themes and plugins developed. Then you can add code to your python files to add certain plugins:</p>
-<div class="highlight"><pre><span></span><code><span class="err">PLUGIN_PATHS = [&#39;path/to/pelican-plugins&#39;]</span>
-<span class="err">PLUGINS = [&#39;assets&#39;, &#39;sitemap&#39;, &#39;gravatar&#39;]</span>
-<span class="err">JINJA_ENVIRONMENT = {&#39;extensions&#39;: [&#39;jinja2.ext.i18n&#39;]}</span>
+<div class="highlight"><pre><span></span><code>PLUGIN_PATHS = [&#39;path/to/pelican-plugins&#39;]
+PLUGINS = [&#39;assets&#39;, &#39;sitemap&#39;, &#39;gravatar&#39;]
+JINJA_ENVIRONMENT = {&#39;extensions&#39;: [&#39;jinja2.ext.i18n&#39;]}
 </code></pre></div>
 
 <h1>Pushing Content to Cloud</h1>
@@ -201,21 +204,21 @@ Adam Li's blog            </a>
 </code></pre></div>
 
 <p>and then run </p>
-<div class="highlight"><pre><span></span><code>$ fab publishghp:<span class="s2">&quot;commit message&quot;</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>fab<span class="w"> </span>publishghp:<span class="s2">&quot;commit message&quot;</span>
 </code></pre></div>
 
 <p>to create commits up to the cloud.</p>
 <h2>2. Via Git Directly</h2>
 <p>Before doing anything, check locally if files look right:</p>
-<div class="highlight"><pre><span></span><code><span class="err">make html &amp;&amp; make serve</span>
+<div class="highlight"><pre><span></span><code>make html &amp;&amp; make serve
 </code></pre></div>
 
 <p>First just push all your stuff to your path.</p>
-<div class="highlight"><pre><span></span><code><span class="err">git add -A &amp;&amp; git commit -a -m &#39;first commit&#39; &amp;&amp; git push --all</span>
+<div class="highlight"><pre><span></span><code>git add -A &amp;&amp; git commit -a -m &#39;first commit&#39; &amp;&amp; git push --all
 </code></pre></div>
 
 <p>Then:</p>
-<div class="highlight"><pre><span></span><code><span class="err">make github</span>
+<div class="highlight"><pre><span></span><code>make github
 </code></pre></div>
 
 <h1>Adding Pages of Static Content</h1>

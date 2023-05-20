@@ -66,6 +66,9 @@ Adam Li's blog            </a>
             <ul class="nav navbar-nav">
                     <li><a href="/categories.html">Blog</a></li>
                     <li><a href="/pdfs/Personal_CV.pdf">Curriculum Vitae</a></li>
+                         <li><a href="/consulting/">
+                             Consulting
+                          </a></li>
                          <li><a href="/gallery/">
                              Gallery
                           </a></li>
@@ -132,48 +135,48 @@ Adam Li's blog            </a>
                 <h1>Installation</h1>
 <p>To install singularity locally with root privelages, you can then build up containers that can be hosted online.</p>
 <h1>Setting Up A Tensorflow Container Recipe (Example):</h1>
-<div class="highlight"><pre><span></span><code><span class="nl">Bootstrap</span><span class="p">:</span> <span class="n">docker</span>
-<span class="nl">From</span><span class="p">:</span> <span class="n">tensorflow</span><span class="o">/</span><span class="nl">tensorflow</span><span class="p">:</span><span class="n">latest</span><span class="o">-</span><span class="n">gpu</span>
+<div class="highlight"><pre><span></span><code><span class="nl">Bootstrap</span><span class="p">:</span><span class="w"> </span><span class="n">docker</span>
+<span class="nl">From</span><span class="p">:</span><span class="w"> </span><span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span><span class="o">:</span><span class="n">latest</span><span class="o">-</span><span class="n">gpu</span>
 <span class="nf">%environment</span>
-  <span class="cp"># use bash as default shell</span>
-  <span class="n">SHELL</span><span class="o">=/</span><span class="n">bin</span><span class="o">/</span><span class="n">bash</span>
-  <span class="k">export</span> <span class="n">SHELL</span>
+<span class="w">  </span><span class="cp"># use bash as default shell</span>
+<span class="w">  </span><span class="n">SHELL</span><span class="o">=/</span><span class="n">bin</span><span class="o">/</span><span class="n">bash</span>
+<span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="n">SHELL</span>
 <span class="nf">%setup</span>
-  <span class="cp"># runs on host - the path to the image is $SINGULARITY_ROOTFS</span>
+<span class="w">  </span><span class="cp"># runs on host - the path to the image is $SINGULARITY_ROOTFS</span>
 <span class="nf">%post</span>
-  <span class="cp"># post-setup script</span>
-  <span class="cp"># load environment variables</span>
-  <span class="p">.</span> <span class="o">/</span><span class="n">environment</span>
-  <span class="cp"># use bash as default shell</span>
-  <span class="n">echo</span> <span class="err">&#39;</span><span class="n">SHELL</span><span class="o">=/</span><span class="n">bin</span><span class="o">/</span><span class="n">bash</span><span class="err">&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">environment</span>
-  <span class="cp"># make environment file executable</span>
-  <span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="o">/</span><span class="n">environment</span>
-  <span class="cp"># default mount paths</span>
-  <span class="n">mkdir</span> <span class="o">/</span><span class="n">scratch</span> <span class="o">/</span><span class="n">data</span> 
-  <span class="err">#</span> <span class="n">load</span> <span class="n">in</span> <span class="n">extra</span> <span class="n">packages</span> <span class="k">for</span> <span class="n">python</span>
-  <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">locales</span>
-  <span class="n">locale</span><span class="o">-</span><span class="n">gen</span> <span class="n">en_US</span><span class="p">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
-  <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">git</span> <span class="n">wget</span> <span class="n">python3</span><span class="o">-</span><span class="n">dev</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span>
-  <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">clean</span>
-  <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">libcupti</span><span class="o">-</span><span class="n">dev</span>
-  <span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span>
-  <span class="n">pip3</span> <span class="n">install</span> <span class="n">keras</span>
-  <span class="n">pip3</span> <span class="n">install</span> <span class="n">numpy</span> <span class="n">scipy</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span> <span class="n">pandas</span> <span class="n">tensorboard</span> <span class="n">natsorted</span> <span class="n">tqdm</span>
+<span class="w">  </span><span class="cp"># post-setup script</span>
+<span class="w">  </span><span class="cp"># load environment variables</span>
+<span class="w">  </span><span class="p">.</span><span class="w"> </span><span class="o">/</span><span class="n">environment</span>
+<span class="w">  </span><span class="cp"># use bash as default shell</span>
+<span class="w">  </span><span class="n">echo</span><span class="w"> </span><span class="err">&#39;</span><span class="n">SHELL</span><span class="o">=/</span><span class="n">bin</span><span class="o">/</span><span class="n">bash</span><span class="err">&#39;</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="o">/</span><span class="n">environment</span>
+<span class="w">  </span><span class="cp"># make environment file executable</span>
+<span class="w">  </span><span class="n">chmod</span><span class="w"> </span><span class="o">+</span><span class="n">x</span><span class="w"> </span><span class="o">/</span><span class="n">environment</span>
+<span class="w">  </span><span class="cp"># default mount paths</span>
+<span class="w">  </span><span class="n">mkdir</span><span class="w"> </span><span class="o">/</span><span class="n">scratch</span><span class="w"> </span><span class="o">/</span><span class="n">data</span><span class="w"> </span>
+<span class="w">  </span><span class="cp"># load in extra packages for python</span>
+<span class="w">  </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">update</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="o">-</span><span class="n">y</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">locales</span>
+<span class="w">  </span><span class="n">locale</span><span class="o">-</span><span class="n">gen</span><span class="w"> </span><span class="n">en_US</span><span class="p">.</span><span class="n">UTF</span><span class="mi">-8</span>
+<span class="w">  </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">y</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">python3</span><span class="o">-</span><span class="n">dev</span><span class="w"> </span><span class="n">python3</span><span class="o">-</span><span class="n">pip</span>
+<span class="w">  </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">clean</span>
+<span class="w">  </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">y</span><span class="w"> </span><span class="n">libcupti</span><span class="o">-</span><span class="n">dev</span>
+<span class="w">  </span><span class="n">pip3</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">--</span><span class="n">upgrade</span><span class="w"> </span><span class="n">pip</span>
+<span class="w">  </span><span class="n">pip3</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">keras</span>
+<span class="w">  </span><span class="n">pip3</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">numpy</span><span class="w"> </span><span class="n">scipy</span><span class="w"> </span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="w"> </span><span class="n">pandas</span><span class="w"> </span><span class="n">tensorboard</span><span class="w"> </span><span class="n">natsorted</span><span class="w"> </span><span class="n">tqdm</span>
 <span class="nf">%runscript</span>
-  <span class="cp"># executes with the singularity run command</span>
-  <span class="cp"># delete this section to use existing docker ENTRYPOINT command</span>
+<span class="w">  </span><span class="cp"># executes with the singularity run command</span>
+<span class="w">  </span><span class="cp"># delete this section to use existing docker ENTRYPOINT command</span>
 <span class="nf">%test</span>
-  <span class="cp"># test that script is a success</span>
+<span class="w">  </span><span class="cp"># test that script is a success</span>
 </code></pre></div>
 
 <h2>1. Needed Docker Containers:</h2>
 <p>The best thing to do is start off with a docker container that is already prebuilt. The nice thing is that for cloud computing with tensorflow-gpu, tensorflow is maintained on docker and up to date. </p>
-<div class="highlight"><pre><span></span><code><span class="n">Bootstrap</span><span class="o">:</span> <span class="n">Docker</span>
-<span class="n">From</span><span class="o">:</span> <span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span><span class="o">:</span><span class="n">latest</span><span class="o">-</span><span class="n">gpu</span>
+<div class="highlight"><pre><span></span><code><span class="n">Bootstrap</span><span class="o">:</span><span class="w"> </span><span class="n">Docker</span>
+<span class="n">From</span><span class="o">:</span><span class="w"> </span><span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span><span class="o">:</span><span class="n">latest</span><span class="o">-</span><span class="n">gpu</span>
 </code></pre></div>
 
 <p>Other options are:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Bootstrap</span><span class="o">:</span> <span class="n">shub</span>
+<div class="highlight"><pre><span></span><code><span class="n">Bootstrap</span><span class="o">:</span><span class="w"> </span><span class="n">shub</span>
 <span class="n">From</span><span class="o">:</span>
 </code></pre></div>
 
@@ -183,18 +186,18 @@ Adam Li's blog            </a>
 <p>This is the main area where your image will install different packages and load different environment variables.</p>
 <h2>4. Run Script</h2>
 <p>This will run a script afterwards, say a scientific experiment:</p>
-<div class="highlight"><pre><span></span><code><span class="err">python3 main.py --args</span>
+<div class="highlight"><pre><span></span><code>python3 main.py --args
 </code></pre></div>
 
 <h2>5. Test</h2>
 <p>This will run test scripts to see that your "main.py" did what it was supposed to do. Were files saved? Were computations correct?</p>
 <h1>Common Commands</h1>
 <p>Pulling images, shelling into the image and executing the image with a script</p>
-<div class="highlight"><pre><span></span><code><span class="n">singularity</span> <span class="n">pull</span>
+<div class="highlight"><pre><span></span><code><span class="nv">singularity</span><span class="w"> </span><span class="nv">pull</span>
 
-<span class="n">singularity</span> <span class="n">shell</span>
+<span class="nv">singularity</span><span class="w"> </span><span class="nv">shell</span>
 
-<span class="n">singularity</span> <span class="k">exec</span>
+<span class="nv">singularity</span><span class="w"> </span><span class="k">exec</span>
 </code></pre></div>
 
 <p>Common argument flags:
@@ -204,7 +207,7 @@ Adam Li's blog            </a>
 * binds an existing directory onto the image: -B</p>
 <h1>Binding Nvidia GPU</h1>
 <p>An example use case that runs a tensorflow simg and runs a training script:</p>
-<div class="highlight"><pre><span></span><code>singularity exec --nv ./tensorflow.simg python main.py <span class="cp">${</span><span class="n">traindatadir</span><span class="cp">}</span> <span class="cp">${</span><span class="n">testdatadir</span><span class="cp">}</span> --output_data_dir <span class="cp">${</span><span class="n">outputdatadir</span><span class="cp">}</span> --log_data_dir <span class="cp">${</span><span class="n">logdatadir</span><span class="cp">}</span> --patient_to_loo <span class="cp">${</span><span class="n">patient</span><span class="cp">}</span> --expname <span class="cp">${</span><span class="n">expname</span><span class="cp">}</span>
+<div class="highlight"><pre><span></span><code>singularity<span class="w"> </span>exec<span class="w"> </span>--nv<span class="w"> </span>./tensorflow.simg<span class="w"> </span>python<span class="w"> </span>main.py<span class="w"> </span><span class="cp">${</span><span class="n">traindatadir</span><span class="cp">}</span><span class="w"> </span><span class="cp">${</span><span class="n">testdatadir</span><span class="cp">}</span><span class="w"> </span>--output_data_dir<span class="w"> </span><span class="cp">${</span><span class="n">outputdatadir</span><span class="cp">}</span><span class="w"> </span>--log_data_dir<span class="w"> </span><span class="cp">${</span><span class="n">logdatadir</span><span class="cp">}</span><span class="w"> </span>--patient_to_loo<span class="w"> </span><span class="cp">${</span><span class="n">patient</span><span class="cp">}</span><span class="w"> </span>--expname<span class="w"> </span><span class="cp">${</span><span class="n">expname</span><span class="cp">}</span>
 </code></pre></div>
 
 <h1>Conclusions</h1>
